@@ -1,0 +1,2109 @@
+<t t-name="website.content-sections-js">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <p class="h4">
+            <strong>排版區塊(含Js) - 01</strong>
+          </p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <p>複製html 需要刪除<font style="color: rgb(255, 0, 255);"> show<br/></font><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 6筆，適用短字串標題</font><font style="color: rgb(255, 0, 255);"><br/></font></p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" style="background-image: none;" data-name="複製html 按鈕">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 o_animate o_visible o_cc o_cc5 s_custom_fullImgHoevr1" data-name="Vertical Layout" data-custom-name="fullImgHoevr1" style="position: relative; background-image: none;">
+        <div class="container-fluid">
+          <div data-editor-message="DROP BUILDING BLOCKS HERE" class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip867393" data-custom-name="boxWrap">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip694450">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3507-9049da05/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1490"/>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="s_text info-content" data-snippet="s_text" data-name="Text">
+                      <div class="s_text title" data-name="inner-SpaceXs(25)">
+                        <h2>Title 1</h2>
+                      </div>
+                      <div class="s_text desc" data-name="inner-SpaceXs(25)">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel sapien eu libero tincidunt dictum.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s_text btn-content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner" data-original-title="" title="">
+                    <div class="s_text btn-wrap" data-name="文字按鈕區">
+                      <a href="#" data-original-title="" title="" class="btn btn-fill-primary">Title 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip867393" data-custom-name="boxWrap" style="background-image: none;">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip692304">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3507-9049da05/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1490"/>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="s_text info-content" data-snippet="s_text" data-name="Text">
+                      <div class="s_text title" data-name="inner-SpaceXs(25)">
+                        <h2>Title 2</h2>
+                      </div>
+                      <div class="s_text desc" data-name="inner-SpaceXs(25)">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel sapien eu libero tincidunt dictum. Integer non metus id felis consequat scelerisque. Proin feugiat eros et dui scelerisque, at condimentum justo tincidunt.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s_text btn-content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner" data-original-title="" title="">
+                    <div class="s_text btn-wrap" data-name="文字按鈕區">
+                      <a href="#" data-original-title="" title="" class="btn btn-fill-primary">Title 2</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip867393" data-custom-name="boxWrap" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3507-9049da05/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1490"/>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="s_text info-content" data-snippet="s_text" data-name="Text">
+                      <div class="s_text title" data-name="inner-SpaceXs(25)">
+                        <h2>Title 3</h2>
+                      </div>
+                      <div class="s_text desc" data-name="inner-SpaceXs(25)">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel sapien eu libero tincidunt dictum. Integer non metus id felis consequat scelerisque.&amp;nbsp;<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s_text btn-content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner" data-original-title="" title="">
+                    <div class="s_text btn-wrap" data-name="文字按鈕區">
+                      <a href="#" data-original-title="" title="" class="btn btn-fill-primary" aria-describedby="popover459094">Title 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip867393" data-custom-name="boxWrap" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3507-9049da05/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1490"/>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="s_text info-content" data-snippet="s_text" data-name="Text">
+                      <div class="s_text title" data-name="inner-SpaceXs(25)">
+                        <h2>Title 4</h2>
+                      </div>
+                      <div class="s_text desc" data-name="inner-SpaceXs(25)">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel sapien eu libero tincidunt dictum.<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s_text btn-content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner" data-original-title="" title="">
+                    <div class="s_text btn-wrap" data-name="文字按鈕區">
+                      <a href="#" data-original-title="" title="" class="btn btn-fill-primary">Title 4</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+    // 選擇所有容器
+    const containers = document.querySelectorAll('.s_custom_fullImgHoevr1 .s_custom_boxWrap');
+    // 檢查是否為非編輯模式
+    if (!document.body.classList.contains('editor_started')) {
+        // 初始化：預設第一個容器內的 div 為 .show
+        if (containers.length &gt; 0) {
+            const firstDiv = containers[0].querySelector('div');
+            if (firstDiv) {
+                firstDiv.classList.add('show');
+            }
+        }
+        // 綁定事件處理器到每個容器內的 .btn-wrap
+        containers.forEach(container =&gt; {
+            const btnWrap = container.querySelector('.btn-wrap'); // 找到內層的 .btn-wrap
+            if (btnWrap) {
+                btnWrap.addEventListener('mouseenter', function () {
+                    // 移除其他容器內的 .show
+                    containers.forEach(otherContainer =&gt; {
+                        const div = otherContainer.querySelector('div');
+                        if (div) {
+                            div.classList.remove('show');
+                        }
+                    });
+                    // 為當前容器內的 div 添加 .show
+                    const currentDiv = container.querySelector('div'); // 基於當前 container 操作
+                    if (currentDiv) {
+                        currentDiv.classList.add('show');
+                    }
+                });
+            }
+        });
+    }
+</script>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <p class="h4">
+            <strong>排版區塊(含Js) - 02</strong>
+          </p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <p>複製html 需要刪除<font style="color: rgb(255, 0, 255);"> show<br/></font><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 7筆</font><font style="color: rgb(255, 0, 255);"><br/></font></p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" style="background-image: none;" data-name="複製html 按鈕">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 o_cc o_cc5 s_custom_fullImgHoevr2" data-name="Vertical Layout" data-custom-name="fullImgHoevr2" style="background-image: none;">
+        <div class="container-fluid">
+          <div data-editor-message="DROP BUILDING BLOCKS HERE" class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block pt0 pb0 o_colored_level s_custom_headWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip714429" data-custom-name="headWrap">
+              <div class="s_allow_columns container-fluid">
+                <div class="s_text head-content" data-name="Text">
+                  <div class="s_text" data-snippet="s_text" data-name="Text">
+                    <h2>
+                    Section Title
+                    </h2>
+                  </div>
+                  <div class="s_text" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip946974">
+                    <a href="#" class="btn btn-primary" data-original-title="" title="" data-require-form="false">
+                      <span aria-describedby="tooltip445140" title="" data-original-title="">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3620-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3616-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid" data-original-title="" title="" aria-describedby="tooltip801443">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3618-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid ">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3622-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid ">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3617-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid ">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3619-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
+              <div class="s_allow_columns container-fluid">
+                <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="s_text img-content" data-name="Text">
+                    <img class="img-fluid o_we_custom_image" src="/web/image/3621-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
+                  </div>
+                </div>
+                <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                  <div class="inner">
+                    <div class="s_text title" data-snippet="s_text" data-name="Text">
+                      <h4>
+                        <a href="#" data-original-title="" title="">Content Header</a>
+                      </h4>
+                    </div>
+                    <div class="s_text desc" data-snippet="s_text" data-name="Text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl at faucibus fringilla, justo nulla venenatis lorem, sit amet interdum lorem justo eget odio. Donec at neque nec libero fermentum tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+document.addEventListener('DOMContentLoaded', function () {
+  // 確認 body 上是否沒有 'editor_started' class，才執行邏輯
+  if (!document.body.classList.contains('editor_started')) {
+    const containers = document.querySelectorAll('.s_custom_fullImgHoevr2 .s_custom_boxWrap');
+    // 先移除所有 .container-fluid 的 show class
+    containers.forEach(container =&gt; {
+      const fluid = container.querySelector('.container-fluid');
+      if (fluid) fluid.classList.remove('show');
+    });
+    // 預設第一個 section 的 .container-fluid 加上 show
+    if (containers.length &gt; 0) {
+      const firstContainer = containers[0].querySelector('.container-fluid');
+      if (firstContainer) {
+        firstContainer.classList.add('show');
+      }
+    }
+    // 滑入互動事件
+    containers.forEach(container =&gt; {
+      container.addEventListener('mouseenter', function () {
+        containers.forEach(c =&gt; {
+          const div = c.querySelector('.container-fluid');
+          if (div) div.classList.remove('show');
+        });
+        const currentDiv = this.querySelector('.container-fluid');
+        if (currentDiv) currentDiv.classList.add('show');
+      });
+    });
+  }
+});
+</script>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <p class="h4">
+            <strong>排版區塊(含Js) - 03</strong>
+          </p>
+          <p>* 它就是 fix 在旁邊的 News</p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" style="background-image: none;" data-name="複製html 按鈕">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_custom_exhibitionUpdates s_custom_fixed" data-name="Vertical Layout" style="background-image: none;" data-custom-name="exhibitionUpdates fixed">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level o_cc o_cc4 pt8 pb8 s_custom_controlBtn" data-snippet="s_text_block" data-name="Text" data-custom-name="controlBtn" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p><span class="fa fa-chevron-down"/>&amp;nbsp;News<br/></p>
+              </div>
+            </section>
+            <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb0 bg-black-75 s_custom_default" data-name="Static Carousel" data-number-of-elements="1" data-number-of-elements-small-devices="1" data-original-title="" title="" aria-describedby="tooltip81982" data-custom-name="default" data-number-desktop="1" style="background-image: none;">
+              <div class="container">
+                <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="myCarousel1747290089076">
+                  <div class="content oe_unremovable"/>
+                  <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level pt24 pb16 active" data-name="Slide" style="background-image: none;">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-12">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip234206"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <p class="h6">排版區塊(含Js) - 03<br/></p>
+                                </div>
+                                <div>
+                                  <div class="mt-2">
+                                    <p><strong>亦可改放 [動態輪播&amp;gt;List layout]</strong><br/><strong>垂直排版自訂樣式: fixed 控制是否 fix</strong><br/>Date: 20xx.xx.xx~xx<br/>Location: Vestibulum quam<br/>Booth No. : 0000<br/></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1747290089076" style="display: none;">
+                    <span class="fa fa-chevron-circle-left fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </a>
+                  <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1747290089076" style="display: none;">
+                    <span class="fa fa-chevron-circle-right fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+            document.querySelector('.s_custom_controlBtn').addEventListener('click', function() {
+            // 檢查 &lt;body&gt; 是否有 .editor_started 類別
+            if (!document.body.classList.contains('editor_started')) {
+                document.querySelector('.s_custom_exhibitionUpdates.s_custom_fixed').classList.toggle('active');
+            }
+        });
+        </script>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <p class="h4">
+            <strong>
+              <font class="text-o-color-5">排版區塊(含Js) - 04</font>
+            </strong>
+          </p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="複製html 按鈕" style="background-image: none;">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt40 pb48" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="h1">Great stories<br/></p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-9">
+                    <p data-original-title="" title="" aria-describedby="tooltip494838">Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.<br/><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 6筆</font><strong><br/></strong></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3 d-flex align-items-end justify-content-md-end" data-original-title="" title="" aria-describedby="tooltip656379">
+                    <p>
+                      <a class="btn btn-primary" href="#" data-require-form="false">View more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level s_custom_productRightScroll" data-name="Static Snippet" style="background-image: none;" data-custom-name="productRightScroll">
+              <div class="container-fluid">
+                <div class="content"/>
+                <div class="static_snippet_template s_product_product_borderless_1">
+                  <div class="row my-4" data-original-title="" title="" aria-describedby="tooltip575479">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_1" alt="" loading="lazy" data-original-id="219" data-original-src="/web/image/219-23f9fd55/website.s_product_list_default_image_1" data-mimetype="image/jpeg"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">consectetur adipiscing elit</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_4" alt="" loading="lazy" data-original-id="222" data-original-src="/web/image/222-2eb7b431/website.s_product_list_default_image_4" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip125706"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Sed laoreet molestie sapien</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">venenatis risus sed</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="" aria-describedby="popover621776">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 s_custom_noRemove text-center" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.body.classList.contains("editor_started")) return;
+        // 防抖函式，避免頻繁觸發
+        function debounce(fn, delay) {
+            let timer = null;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() =&gt; fn.apply(this, args), delay);
+            };
+        }
+        // 合併同一容器內多個 .row 的子元素
+        function mergeRows(container) {
+            const rows = Array.from(container.children).filter(child =&gt; child.classList.contains('row'));
+            if (rows.length &gt; 1) {
+                const firstRow = rows[0];
+                for (let i = 1; i &lt; rows.length; i++) {
+                    const currentRow = rows[i];
+                    while (currentRow.firstElementChild) {
+                        firstRow.appendChild(currentRow.firstElementChild);
+                    }
+                    currentRow.remove();
+                }
+            }
+        }
+        // 平滑滾動函式（含緩動）
+        function smoothScrollBy(container, distance, duration = 300) {
+            const start = container.scrollLeft;
+            const startTime = performance.now();
+            function scrollStep(timestamp) {
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
+                container.scrollLeft = start + distance * ease;
+                if (progress &lt; 1) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+            requestAnimationFrame(scrollStep);
+        }
+        let isScrollingLocked = false;
+        const scrollCooldown = 800;
+        // 初始化每個 row 元素的滾動與箭頭行為
+        function initRowElements() {
+            const rowElements = document.querySelectorAll(".s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]&gt;.row");
+            rowElements.forEach((rowElement) =&gt; {
+                rowElement.style.overflowX = "auto";
+                rowElement.style.overflowY = "hidden";
+                rowElement.style.overscrollBehaviorX = "contain";
+                // 檢查箭頭是否已存在，若無才新增
+                let leftArrow = rowElement.parentElement.querySelector('.carousel-arrow-left');
+                let rightArrow = rowElement.parentElement.querySelector('.carousel-arrow-right');
+                if (!leftArrow) {
+                    leftArrow = document.createElement("div");
+                    leftArrow.classList.add("carousel-arrow", "carousel-arrow-left");
+                    leftArrow.innerHTML = '&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;';
+                    rowElement.parentElement.appendChild(leftArrow);
+                }
+                if (!rightArrow) {
+                    rightArrow = document.createElement("div");
+                    rightArrow.classList.add("carousel-arrow", "carousel-arrow-right");
+                    rightArrow.innerHTML = '&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;';
+                    rowElement.parentElement.appendChild(rightArrow);
+                }
+                // 如果沒有橫向卷軸，就隱藏箭頭
+                const isScrollable = rowElement.scrollWidth &gt; rowElement.clientWidth;
+                leftArrow.style.display = isScrollable ? 'block' : 'none';
+                rightArrow.style.display = isScrollable ? 'block' : 'none';
+                // 滾動事件控制箭頭啟用狀態
+                rowElement.addEventListener("scroll", function () {
+                    const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
+                    const currentScrollLeft = rowElement.scrollLeft;
+                    leftArrow.classList.toggle("disabled", currentScrollLeft &lt;= 0);
+                    rightArrow.classList.toggle("disabled", currentScrollLeft &gt;= maxScrollLeft);
+                });
+                // 滑鼠滾輪滾動（含上下頁切換）
+                rowElement.addEventListener(
+                    "wheel",
+                    function (e) {
+                        const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
+                        const currentScrollLeft = rowElement.scrollLeft;
+                        const atLeftEdge = currentScrollLeft &lt;= 0;
+                        const atRightEdge = currentScrollLeft &gt;= maxScrollLeft;
+                        if ((atLeftEdge &amp;&amp; e.deltaY &lt; 0) || (atRightEdge &amp;&amp; e.deltaY &gt; 0)) {
+                            if (isScrollingLocked) return;
+                            e.preventDefault();
+                            isScrollingLocked = true;
+                            setTimeout(() =&gt; {
+                                isScrollingLocked = false;
+                            }, scrollCooldown);
+                        } else {
+                            e.preventDefault();
+                            smoothScrollBy(rowElement, e.deltaY * 2, 400);
+                        }
+                    },
+                    { passive: false }
+                );
+                // 左箭頭點擊事件
+                leftArrow.addEventListener("click", function () {
+                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
+                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
+                    smoothScrollBy(rowElement, -distance);
+                });
+                // 右箭頭點擊事件
+                rightArrow.addEventListener("click", function () {
+                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
+                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
+                    smoothScrollBy(rowElement, distance);
+                });
+            });
+        }
+        // 主流程：合併 row 並初始化
+        function processContainers() {
+            const containers = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
+            containers.forEach(container =&gt; {
+                mergeRows(container);
+            });
+            initRowElements();
+        }
+        // 監聽 .dynamic_snippet_template 內部新增元素
+        function startObserver() {
+            const targets = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
+            if (targets.length === 0) {
+                setTimeout(startObserver, 300); // 等待動態生成
+                return;
+            }
+            const debouncedProcess = debounce(processContainers, 200);
+            const observer = new MutationObserver((mutationsList) =&gt; {
+                for (const mutation of mutationsList) {
+                    if (mutation.type === 'childList' &amp;&amp; mutation.addedNodes.length &gt; 0) {
+                        debouncedProcess();
+                        break;
+                    }
+                }
+            });
+            targets.forEach(target =&gt; {
+                observer.observe(target, { childList: true, subtree: false });
+            });
+        }
+        // 頁面載入時先執行一次初始化
+        processContainers();
+        // 啟動監聽器
+        startObserver();
+    });
+</script>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>
+              <font class="text-o-color-5">排版區塊(含Js) - 05</font>
+            </strong>
+          </h4>
+          <p>複製html 需要刪除 <font style="color: rgb(255, 0, 255);">地圖上+右側描述的 active<br/></font><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 5筆&amp;nbsp;</font><br/></p>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="複製html 按鈕" style="background-image: none;">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt56 pb56" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="o_default_snippet_text h1" style="text-align: center;">Your Site Title</p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns o_container_small">
+                <p style="text-align: center;">
+                  <font style="color: rgb(156, 0, 0);">地圖上方小字的順序，要跟右側描述的順序一致。</font>
+                  <br/>
+                  <font style="color: rgb(156, 0, 0);">地圖定位 CSS 寫在下方自訂代碼區；如果客戶不需要編輯，可直接放在 SCSS 裡面。</font>
+                  <br/>
+                </p>
+                <p class="o_default_snippet_text" style="text-align: center;">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              </div>
+            </section>
+            <section class="s_text_block pt40 pb40 o_colored_level s_custom_mapEffect" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="map-Effect">
+              <div class="container s_allow_columns">
+                <div class="row">
+                  <div class="o_colored_level map-img-content col-lg-8 pt48">
+                    <div class="s_text map-brief-description" data-snippet="s_text" data-name="Text">
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>Headquarters<br/></p>
+                      </div>
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>Shanghai Branch<br/></p>
+                      </div>
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>US Branch<br/></p>
+                      </div>
+                    </div>
+                    <div class="s_text map-img" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <img class="img-fluid o_we_custom_image" src="/web/image/4289-21849b07/map.png" alt="" data-original-title="" title="" aria-describedby="tooltip731284" loading="lazy" data-original-id="4281" data-original-src="/web/image/4281-c7c7a893/map.png" data-mimetype="image/png" data-resize-width="983"/>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level map-description-content col-lg-4">
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">Headquarters</p>
+                      <p>Writing a story with personality for potential clients will assist with making a relationship connection.<br/></p>
+                    </div>
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">Shanghai Branch<br/></p>
+                      <p>making a relationship connection.<br/></p>
+                    </div>
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">US Branch<br/></p>
+                      <p>potential clients will assist<br/></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_noRemove" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="noRemove">
+              <div class="s_allow_columns container">
+                <section class="s_embed_code o_colored_level text-center pt0 pb0" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;">
+                  <div class="s_embed_code_embedded o_not_editable container">
+
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+    document.addEventListener("DOMContentLoaded", () =&gt; {
+    const body = document.body;
+    // 僅在非編輯模式下執行
+    if (!body.classList.contains("editor_started")) {
+        const infoElements = document.querySelectorAll(".map-description-content &gt; .s_text");
+        const dotLists = document.querySelectorAll(".map-brief-description &gt; .s_text");
+        // 預設為 info-1 和 dot-list.e-tech
+        const defaultActiveInfo = document.querySelector(".map-description-content &gt; .s_text:first-child");
+        const defaultActiveDot = document.querySelector(".map-brief-description &gt; .s_text:first-child");
+        if (defaultActiveInfo &amp;&amp; defaultActiveDot) {
+            defaultActiveInfo.classList.add("active");
+            defaultActiveDot.classList.add("active");
+        }
+        infoElements.forEach((infoElement, index) =&gt; {
+            infoElement.addEventListener("mouseenter", () =&gt; {
+                // 清除所有 active 狀態
+                infoElements.forEach(info =&gt; info.classList.remove("active"));
+                dotLists.forEach(dot =&gt; dot.classList.remove("active"));
+                // 為當前 info 和對應的 dot-list 加上 active
+                const targetDot = dotLists[index];
+                if (infoElement &amp;&amp; targetDot) {
+                    infoElement.classList.add("active");
+                    targetDot.classList.add("active");
+                }
+            });
+        });
+    }
+});
+</script>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb0" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>
+              <font class="text-o-color-5">排版區塊(含Js) - 06</font>
+            </strong>
+            <br/>
+          </h4>
+          <p data-original-title="" title="" aria-describedby="tooltip49942">&amp;nbsp;需設置 id值，<a href="https://www.youtube.com/watch?v=7B7bpd_oAHo" data-require-form="false" target="_blank" data-original-title="" title=""><u data-original-title="" title="" aria-describedby="tooltip549662">使用說明&amp;nbsp;<span class="fa fa-play-circle-o"/></u></a><br/>
+          </p>
+        </div>
+      </section>
+</div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="Text" data-custom-name="">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pb48 o_auto_screen_height pt48 s_custom_stickyBG" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-custom-name="stickyBG">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-right text-content o_colored_level col-lg-8">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_title o_colored_level pt0 pb24" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                  <div class="container s_allow_columns">
+                    <h2>Your Site Title</h2>
+                  </div>
+                </section>
+                <section class="s_faq_collapse pb32 o_colored_level pt0 s_custom_customDropdown" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;" data-custom-name="customDropdown">
+                  <div class="container">
+                    <div id="myCollapse1747641000935" class="accordion" role="tablist">
+                      <div class="card bg-white" data-name="Item">
+                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header s_faq_collapse_right_icon" data-target="#myCollapseTab1747641095035">Choose a ooxx</a>
+                        <div data-parent="#myCollapse1747641000935" role="tabpanel" id="myCollapseTab1747641095035" class="collapse show">
+                          <div class="card-body">
+                            <div class="s_text" data-snippet="s_text" data-name="Text">
+                              <p data-original-title="" title="" aria-describedby="tooltip220025">
+                                <a href="#area01" data-require-form="false" data-original-title="" title="">Area 01</a>
+                              </p>
+                            </div>
+                            <div class="s_text" data-snippet="s_text" data-name="Text">
+                              <p data-original-title="" title="" aria-describedby="tooltip961372">
+                                <a href="#area02" data-require-form="false" data-original-title="" title="">Area 02</a>
+                              </p>
+                            </div>
+                            <div class="s_text" data-snippet="s_text" data-name="Text">
+                              <p data-original-title="" title="" aria-describedby="tooltip961372">
+                                <a href="#area03" data-require-form="false" data-original-title="" title="">Area 03</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0 pb0 s_custom_anchorArea" data-snippet="s_text_block" data-name="Text" style="background-image: none;" id="area01" data-anchor="true" data-custom-name="anchorArea">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-6 bg-white-85 shadow">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 01</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">01-1</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text h5">
+                              <strong>Company Name</strong>
+                            </p>
+                            <p class="card-text">A card is a flexible and extensible content container. It includes options for headers and footers<br/></p>
+                            <div class="s_text align-icon pb8" data-snippet="s_text" data-name="對齊icon">
+                              <p><span class="fa fa-phone"/>+886-4-00000000</p>
+                            </div>
+                            <div class="s_text align-icon" data-snippet="s_text" data-name="對齊icon">
+                              <p><span class="fa fa-envelope" data-original-title="" title="" aria-describedby="tooltip376646"/>ooo@ooxx.com.tw<br/>xxx@ooxx.com.tw<br/>rrrrrrr@ooxx.com.tw<br/></p>
+                            </div>
+                            <div class="s_collapse" data-preview-height="50px" data-snippet="s_collapse" data-name="Collapse">
+                              <div class="s_collapse_height_wrap" style="height: 50px;" id="id53ab30c1c7f84">
+                                <div class="s_collapse_content_wrap">
+                                  <div class="s_collapse_content">
+                                    <div class="s_text pt16" data-snippet="s_text" data-name="Text">
+                                      <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.&amp;nbsp;Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="s_collapse_btn_wrap justify-content-center d-flex w-100 pt8 pb8 o_colored_level">
+                                  <div class="s_collapse_btn" data-content-wrap="id53ab30c1c7f84">
+                                    <div class="btn btn-primary o_not-animable s_collapse_btn_expand">
+                                      <span class="o_default_snippet_text">More</span>
+                                    </div>
+                                    <div class="btn btn-primary o_not-animable s_collapse_btn_reduce">
+                                      <span class="o_default_snippet_text">Close</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb0 pt32 s_custom_anchorArea" data-snippet="s_text_block" data-name="Text" style="background-image: none;" id="area02" data-anchor="true" data-custom-name="anchorArea">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-6 shadow bg-white-85">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 02</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">02-1</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="o_colored_level col-lg-6 shadow bg-white-85">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 02</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">02-2</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb0 pt32 s_custom_anchorArea" data-snippet="s_text_block" data-name="Text" style="background-image: none;" id="area03" data-anchor="true" data-custom-name="anchorArea">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-6 bg-white-85 border" style="border-width: 1px !important;">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 03</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">03-1</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                            <div class="s_collapse" data-preview-height="50px" data-snippet="s_collapse" data-name="Collapse">
+                              <div class="s_collapse_height_wrap" style="height: 50px;" id="id53ab30c1c7f84">
+                                <div class="s_collapse_content_wrap">
+                                  <div class="s_collapse_content">
+                                    <div class="s_text pt0" data-snippet="s_text" data-name="Text">
+                                      <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.&amp;nbsp;Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="s_collapse_btn_wrap justify-content-center d-flex w-100 pt8 pb8 o_colored_level">
+                                  <div class="s_collapse_btn" data-content-wrap="id53ab30c1c7f84">
+                                    <div class="btn btn-primary o_not-animable s_collapse_btn_expand">
+                                      <span class="o_default_snippet_text">More</span>
+                                    </div>
+                                    <div class="btn btn-primary o_not-animable s_collapse_btn_reduce">
+                                      <span class="o_default_snippet_text">Close</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="o_colored_level col-lg-6 bg-white-85 border" style="border-width: 1px !important;">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 03</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">03-2</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="o_colored_level col-lg-6 -white-85 bg-white-85 border" style="border-width: 1px !important;">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h3"><strong>Area 03</strong>&amp;nbsp; <span style="font-size: 24px;"><font class="text-o-color-1">03-3</font></span><br/></p>
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="s_col_no_bgcolor col-left img-content col-lg-9 pt32">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 111px;">
+                <section class="s_text_block o_colored_level pt0 pb0 s_custom_fixImg" data-snippet="s_text_block" style="background-image: none;" data-name="Text" data-custom-name="fixImg">
+                  <div class="s_allow_columns container">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4309-2b16ec7d/salesNetwork.svg" alt="" data-original-title="" title="" aria-describedby="tooltip984631" loading="lazy" style="width: 100% !important;" data-original-id="4309" data-original-src="/web/image/4309-2b16ec7d/salesNetwork.svg" data-mimetype="image/svg+xml" data-resize-width="1024"/>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
+        <div class="s_embed_code_embedded o_not_editable container">
+
+          <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.body.classList.contains("editor_started")) return;
+        (function () {
+  const oldSections = document.querySelectorAll('.s_custom_anchorArea');
+  if (oldSections.length === 0) return;
+  const firstSection = oldSections[0];
+  const targetRow = firstSection.querySelector('.row');
+  if (!targetRow) return;
+  // 預先蒐集所有 col 元素
+  const colElements = [];
+  oldSections.forEach((section, sectionIndex) =&gt; {
+    const id = section.getAttribute('id');
+    const isAnchor = section.getAttribute('data-anchor') === 'true';
+    const cols = section.querySelectorAll('[class*="col-lg"]');
+    cols.forEach((col, colIndex) =&gt; {
+      const clone = col.cloneNode(true);
+      // 將 id 和 data-anchor 僅放在每區塊的第一個 col 上
+      if (colIndex === 0 &amp;&amp; isAnchor &amp;&amp; id) {
+        clone.setAttribute('id', id);
+        clone.setAttribute('data-anchor', 'true');
+      }
+      colElements.push(clone);
+    });
+  });
+  // 清空第一個 section 的 row
+  targetRow.innerHTML = '';
+  // 將整理好的 col 加回第一個 row
+  colElements.forEach(col =&gt; targetRow.appendChild(col));
+  // 清除第一個 section 的 id 和 data-anchor 屬性
+  firstSection.removeAttribute('id');
+  firstSection.removeAttribute('data-anchor');
+  // 移除其他多餘的 section
+  oldSections.forEach((section, i) =&gt; {
+    if (i !== 0) section.remove();
+  });
+})();
+    });
+</script>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>排版區塊(含Js) - 07</strong>
+            <br/>
+          </h4>
+          <p>複製使用後<br/>請<u>手動移除</u>第一個section的 <u>自訂樣式: hidden</u> </p>
+        </div>
+      </section>
+</div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="Text" data-custom-name="">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level o_cc o_cc1 pb0 pt80 s_custom_hidden s_custom_fullHoverBackground" data-original-title="" title="" aria-describedby="tooltip750219" data-name="Custom Vertical Layout" style="background-image: none;" data-custom-name="hidden fullHoverBackground">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc1 s_custom_textUppercase s_custom_textCenter" data-snippet="s_text_block" data-name="Text" data-custom-name="textUppercase textCenter" style="background-color: rgba(255, 255, 255, 0) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: center;">Industries We Serve
+        </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt4 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip1474">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip582007">
+                <p style="text-align: center;">Where performance meets reliability.<br/></p>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level o_cc o_cc1 s_custom_indexApplication" data-name="Static Snippet" data-original-title="" title="" aria-describedby="tooltip975909" data-staticsnippet-template="horizontal" data-custom-name="indexApplication" style="background-image: none;">
+              <div class="container">
+                <div class="static_snippet_template s_product_product_horizontal">
+                  <div class="row my-4" data-original-title="" title="" aria-describedby="tooltip702643">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4370-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 01</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4373-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 02</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4369-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 03</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4374-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 04</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4372-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 05</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4371-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 06</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap" data-original-title="" title="" aria-describedby="tooltip212015">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-image bg1 active" style="background-image: url(&quot;https://demo-annielin.gtmc.app/web/image/6236-0e342565/preview_hor.jpg&quot;);"/>
+              <div class="bg-image bg2" style="background-image: url(&quot;https://demo-annielin.gtmc.app/web/image/6236-0e342565/preview_hor.jpg&quot;);"/>
+            </section>
+            <section class="s_text_block o_colored_level pt0 mt-4 mt-lg-0 text-center pb0 s_custom_allCatBtn" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="allCatBtn">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip947512">
+                <p data-original-title="" title="" aria-describedby="tooltip699283">
+                  <a href="#" data-require-form="false" class="btn btn-primary" data-original-title="" title="">Application Overview</a>
+                </p>
+                <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hedden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hedden noRemove">
+                  <div class="s_embed_code_embedded container o_not_editable">
+
+                    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const isLargeScreen = window.innerWidth &gt; 991;
+  // 監聽 body class 變化，編輯模式時移除動態內容
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === 'attributes' &amp;&amp; mutation.target.classList.contains('editor_started')) {
+        document.querySelectorAll('.cus-wrap').forEach(wrap =&gt; wrap.remove());
+      }
+    });
+  });
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ['class'],
+  });
+  // 如果不是編輯模式且是大螢幕，執行主邏輯
+  if (!document.body.classList.contains('editor_started') &amp;&amp; isLargeScreen) {
+    const sections = document.querySelectorAll('.s_custom_fullHoverBackground');
+    sections.forEach(sectionBlock =&gt; {
+      // 跳過有 s_custom_hidden 的
+      if (sectionBlock.classList.contains('s_custom_hidden')) return;
+      const section = sectionBlock.querySelector('.s_product_product_horizontal');
+      if (!section) return;
+      // 避免重複插入
+      if (section.querySelector('.cus-wrap')) return;
+      let bg1 = sectionBlock.querySelector('.bg-image.bg1');
+      let bg2 = sectionBlock.querySelector('.bg-image.bg2');
+      if (!bg1 || !bg2) {
+        bg1 = document.createElement('div');
+        bg2 = document.createElement('div');
+        bg1.className = 'bg-image bg1 active';
+        bg2.className = 'bg-image bg2';
+        sectionBlock.appendChild(bg1);
+        sectionBlock.appendChild(bg2);
+      }
+      const switchBackground = function (url) {
+        const current = sectionBlock.querySelector('.bg-image.active');
+        const next = current === bg1 ? bg2 : bg1;
+        next.style.backgroundImage = `url('${url}')`;
+        next.classList.add('active');
+        current.classList.remove('active');
+      };
+      // 建立自定義資訊與按鈕結構
+      const wrap = document.createElement('div');
+      wrap.className = 'cus-wrap';
+      const infoWrap = document.createElement('div');
+      infoWrap.className = 'cus-info-wrap';
+      const btnWrap = document.createElement('div');
+      btnWrap.className = 'cus-btn-wrap';
+      const cards = section.querySelectorAll('.o_carousel_product_card');
+      cards.forEach((card, index) =&gt; {
+        const info = card.querySelector('.o_carousel_product_card_body .info-wrap');
+        const btn = card.querySelector('.d-flex.justify-content-between');
+        const infoList = document.createElement('div');
+        infoList.className = 'cus-info-list';
+        if (info) infoList.appendChild(info.cloneNode(true));
+        infoWrap.appendChild(infoList);
+        const btnList = document.createElement('div');
+        btnList.className = 'cus-btn-list';
+        if (btn) {
+          const btnIcon = btn.querySelector('.cus-icon-btn');
+          if (btnIcon) btnList.appendChild(btnIcon.cloneNode(true));
+        }
+        btnList.dataset.index = index;
+        btnWrap.appendChild(btnList);
+      });
+      wrap.appendChild(infoWrap);
+      wrap.appendChild(btnWrap);
+      section.appendChild(wrap);
+      // 預設顯示第一個
+      const btnLists = wrap.querySelectorAll('.cus-btn-list');
+      const infoLists = wrap.querySelectorAll('.cus-info-list');
+      if (btnLists[0]) btnLists[0].classList.add('active');
+      if (infoLists[0]) infoLists[0].classList.add('show');
+      const defaultImg = cards[0]?.querySelector('.position-static img');
+      if (defaultImg?.src) switchBackground(defaultImg.src);
+      // 滑入切換
+      btnLists.forEach((btn, idx) =&gt; {
+        btn.addEventListener('mouseenter', () =&gt; {
+          btnLists.forEach(b =&gt; b.classList.remove('active'));
+          infoLists.forEach(i =&gt; i.classList.remove('show'));
+          btn.classList.add('active');
+          if (infoLists[idx]) infoLists[idx].classList.add('show');
+          const img = cards[idx]?.querySelector('.position-static img');
+          if (img?.src) switchBackground(img.src);
+        });
+      });
+      // 額外插入 .s_custom_allCatBtn
+      const allCatBlock = sectionBlock.querySelector('.s_custom_allCatBtn');
+      if (allCatBlock) {
+        const allBtns = allCatBlock.querySelectorAll('a.btn');
+        if (allBtns.length &gt; 0) {
+          const allBtnWrap = document.createElement('div');
+          allBtnWrap.className = 'cus-all-btn-wrap';
+          allBtns.forEach(btn =&gt; allBtnWrap.appendChild(btn.cloneNode(true)));
+          btnWrap.insertAdjacentElement('afterend', allBtnWrap);
+        }
+      }
+    });
+  }
+});
+</script>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level o_cc o_cc1 pb0 pt80 s_custom_fullHoverBackground" data-original-title="" title="" aria-describedby="tooltip750219" data-name="Custom Vertical Layout" style="background-image: none;" data-custom-name="fullHoverBackground">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc1 s_custom_textUppercase s_custom_textCenter" data-snippet="s_text_block" data-name="Text" data-custom-name="textUppercase textCenter" style="background-color: rgba(255, 255, 255, 0) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: center;">Industries We Serve
+        </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt4 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip1474">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip582007">
+                <p style="text-align: center;">Where performance meets reliability.<br/></p>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level o_cc o_cc1 s_custom_indexApplication" data-name="Static Snippet" data-original-title="" title="" aria-describedby="tooltip975909" data-staticsnippet-template="horizontal" data-custom-name="indexApplication" style="background-image: none;">
+              <div class="container">
+                <div class="static_snippet_template s_product_product_horizontal">
+                  <div class="row my-4" data-original-title="" title="" aria-describedby="tooltip702643">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4376-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 01</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4377-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 02</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4375-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 03</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4380-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 04</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4378-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 05</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="/web/image/4379-0e342565/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip816654" data-is-image-link-open-popup="false" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title">
+                                <h4>
+                                  <strong>title 06</strong>
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip952331">Great stories are for everyone even when only written for just one person. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                              </div>
+                              <div class="btn-wrap">
+                                <a href="#" data-require-form="false" data-original-title="" title="">more&amp;nbsp;&amp;nbsp;<i class="fa fa-angle-right" aria-hidden="true" data-original-title="" title="" aria-describedby="tooltip632420"/></a>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="#" class="cus-icon-btn" data-original-title="" title=""><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip487733" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>​
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-image bg1 active" style="background-image: url(&quot;https://demo-annielin.gtmc.app/web/image/6236-0e342565/preview_hor.jpg&quot;);"/>
+              <div class="bg-image bg2" style="background-image: url(&quot;https://demo-annielin.gtmc.app/web/image/6236-0e342565/preview_hor.jpg&quot;);"/>
+            </section>
+            <section class="s_text_block o_colored_level pt0 mt-4 mt-lg-0 text-center pb0 s_custom_allCatBtn" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="allCatBtn">
+              <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip947512">
+                <p data-original-title="" title="" aria-describedby="tooltip699283">
+                  <a href="#" data-require-form="false" class="btn btn-primary" data-original-title="" title="">Application Overview</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>排版區塊(含Js) - 08</strong>
+            <br/>
+          </h4>
+          <p>
+            <br/>
+          </p>
+        </div>
+      </section>
+</div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level" data-name="Vertical Layout" style="background-image: none;" data-custom-name="">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <img class="img-fluid o_we_custom_image" src="/web/image/4309-2b16ec7d/salesNetwork.svg" alt="" data-original-title="" title="" aria-describedby="tooltip678577" loading="lazy" data-original-id="4309" data-original-src="/web/image/4309-2b16ec7d/salesNetwork.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                  <br/>
+                </p>
+              </div>
+            </section>
+            <section class="s_faq_collapse pt32 pb32 o_colored_level s_custom_worldwide" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;" data-custom-name="worldwide ">
+              <div class="container">
+                <div id="myCollapse1755152124766" class="accordion" role="tablist" style="overflow: auto hidden; overscroll-behavior-x: contain;">
+                  <div class="card" data-name="Item" style="background-color: rgba(23, 198, 232, 0.12) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755152124767">Terms of service</a>
+                    <div class="collapse show" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152124767">
+                      <div class="card-body">
+                        <ul class="card-text">
+                          <li>These terms&amp;nbsp;</li>
+                          <li>Terms Agreement</li>
+                          <li>&amp;nbsp;agreement between</li>
+                          <li>he website</li>
+                          <li>Website operato</li>
+                          <li>we" or "our") and</li>
+                          <li>&amp;nbsp;you ("User",&amp;nbsp;</li>
+                          <li>his Agreement sets forth&amp;nbsp;</li>
+                          <li>the ge</li>
+                          <li>neral ter</li>
+                          <li>ms and conditio</li>
+                          <li>ns of your use of this website an</li>
+                          <li>d any of its pro</li>
+                          <li>ducts or s</li>
+                          <li>ervices&amp;nbsp;</li>
+                          <li>or "Services"</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-name="Item" style="background-color: rgba(255, 255, 255, 0.5) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text collapsed s_faq_collapse_right_icon" data-target="#myCollapseTab1755152124769">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152124769">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-name="Item" style="background-color: rgba(255, 255, 255, 0.5) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755152129226">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152129226">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-name="Item" style="background-color: rgba(255, 255, 255, 0.5) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755152129702">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152129702">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-name="Item" style="background-color: rgba(255, 255, 255, 0.5) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755152130132">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152130132">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" data-name="Item" style="background-color: rgba(255, 255, 255, 0.5) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755152130585">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755152124766" role="tabpanel" id="myCollapseTab1755152130585">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hidden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hidden noRemove">
+              <div class="s_embed_code_embedded o_not_editable container">
+
+                <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function debounce(fn, delay) {
+            let timer = null;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() =&gt; fn.apply(this, args), delay);
+            };
+        }
+        function smoothScrollBy(container, distance, duration = 400) {
+            const start = container.scrollLeft;
+            const startTime = performance.now();
+            function scrollStep(timestamp) {
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
+                container.scrollLeft = start + distance * ease;
+                if (progress &lt; 1) requestAnimationFrame(scrollStep);
+            }
+            requestAnimationFrame(scrollStep);
+        }
+        function getScrollDistance() {
+            let raw = getComputedStyle(document.documentElement)
+                .getPropertyValue('--scroll-distance2').trim();
+            if (raw.endsWith('px')) {
+                return parseFloat(raw);
+            } else if (raw.endsWith('%')) {
+                return window.innerWidth * (parseFloat(raw) / 100);
+            } else {
+                // 如果沒有單位，直接當成 px
+                return parseFloat(raw);
+            }
+        }
+        let isScrollingLocked = false;
+        const scrollCooldown = 800;
+        function initAccordions() {
+            const accordions = document.querySelectorAll(".s_custom_worldwide:not(.s_custom_hidden) .accordion");
+            accordions.forEach(accordion =&gt; {
+                accordion.style.overflowX = "auto";
+                accordion.style.overflowY = "hidden";
+                accordion.style.overscrollBehaviorX = "contain";
+                const isScrollable = accordion.scrollWidth &gt; accordion.clientWidth;
+                let leftArrow = accordion.parentElement.querySelector('.carousel-arrow-left');
+                let rightArrow = accordion.parentElement.querySelector('.carousel-arrow-right');
+                if (!isScrollable) {
+                    if (leftArrow) leftArrow.remove();
+                    if (rightArrow) rightArrow.remove();
+                    return;
+                }
+                if (!leftArrow) {
+                    leftArrow = document.createElement("div");
+                    leftArrow.classList.add("carousel-arrow", "carousel-arrow-left");
+                    leftArrow.innerHTML = '&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;';
+                    accordion.insertAdjacentElement("afterend", leftArrow);
+                }
+                if (!rightArrow) {
+                    rightArrow = document.createElement("div");
+                    rightArrow.classList.add("carousel-arrow", "carousel-arrow-right");
+                    rightArrow.innerHTML = '&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;';
+                    leftArrow.insertAdjacentElement("afterend", rightArrow);
+                }
+                accordion.addEventListener("scroll", function () {
+                    const maxScrollLeft = accordion.scrollWidth - accordion.clientWidth;
+                    leftArrow.classList.toggle("disabled", accordion.scrollLeft &lt;= 0);
+                    rightArrow.classList.toggle("disabled", accordion.scrollLeft &gt;= maxScrollLeft);
+                });
+                accordion.addEventListener("wheel", function (e) {
+                    const maxScrollLeft = accordion.scrollWidth - accordion.clientWidth;
+                    const atLeftEdge = accordion.scrollLeft &lt;= 0;
+                    const atRightEdge = accordion.scrollLeft &gt;= maxScrollLeft;
+                    if ((atLeftEdge &amp;&amp; e.deltaY &lt; 0) || (atRightEdge &amp;&amp; e.deltaY &gt; 0)) {
+                        if (isScrollingLocked) return;
+                        e.preventDefault();
+                        isScrollingLocked = true;
+                        setTimeout(() =&gt; isScrollingLocked = false, scrollCooldown);
+                    } else {
+                        e.preventDefault();
+                        smoothScrollBy(accordion, e.deltaY * 2, 400);
+                    }
+                }, { passive: false });
+                leftArrow.addEventListener("click", function () {
+                    smoothScrollBy(accordion, -getScrollDistance(), 400);
+                });
+                rightArrow.addEventListener("click", function () {
+                    smoothScrollBy(accordion, getScrollDistance(), 400);
+                });
+            });
+        }
+        function removeArrows() {
+            document.querySelectorAll('.carousel-arrow-left, .carousel-arrow-right').forEach(el =&gt; el.remove());
+        }
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.type === 'attributes' &amp;&amp; mutation.attributeName === 'class') {
+                    if (document.body.classList.contains('editor_started')) {
+                        removeArrows();
+                    } else {
+                        initAccordions();
+                    }
+                }
+            });
+        });
+        observer.observe(document.body, { attributes: true });
+        if (!document.body.classList.contains("editor_started")) {
+            initAccordions();
+        }
+    });
+</script>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>排版區塊(含Js) - 09</strong>
+            <br/>
+          </h4>
+          <p>
+            桌機與 08&amp;nbsp;相同，RWD 改收合</p>
+        </div>
+      </section>
+</div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
+        <div class="s_allow_columns container" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level" data-name="Vertical Layout" style="background-image: none;" data-custom-name="">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <img class="img-fluid o_we_custom_image" src="/web/image/4309-2b16ec7d/salesNetwork.svg" alt="" data-original-title="" title="" aria-describedby="tooltip678577" loading="lazy" data-original-id="4309" data-original-src="/web/image/4309-2b16ec7d/salesNetwork.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                  <br/>
+                </p>
+              </div>
+            </section>
+            <section class="s_faq_collapse pt32 pb32 o_colored_level s_custom_worldwideRWDcollapse s_custom_simpleFAQ" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;" data-custom-name="worldwideRWDcollapse simpleFAQ">
+              <div class="container">
+                <div id="myCollapse1755159193545" class="accordion" role="tablist" style="overflow: auto hidden; overscroll-behavior-x: contain;">
+                  <div class="card" data-name="Item" style="background-color: rgba(23, 198, 232, 0.12) !important;">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1755159193546">Terms of service</a>
+                    <div class="collapse" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193546">
+                      <div class="card-body">
+                        <ul class="card-text">
+                          <li>These terms&amp;nbsp;</li>
+                          <li>Terms Agreement</li>
+                          <li>&amp;nbsp;agreement between</li>
+                          <li>he website</li>
+                          <li>Website operato</li>
+                          <li>we" or "our") and</li>
+                          <li>&amp;nbsp;you ("User",&amp;nbsp;</li>
+                          <li>his Agreement sets forth&amp;nbsp;</li>
+                          <li>the ge</li>
+                          <li>neral ter</li>
+                          <li>ms and conditio</li>
+                          <li>ns of your use of this website an</li>
+                          <li>d any of its pro</li>
+                          <li>ducts or s</li>
+                          <li>ervices&amp;nbsp;</li>
+                          <li>or "Services"</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-white-50" data-name="Item">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1755159193548">Use of Cookies</a>
+                    <div class="collapse show" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193548">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-white-50" data-name="Item">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1755159193549">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193549">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-white-50" data-name="Item">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1755159193550">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193550">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-white-50" data-name="Item">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1755159193551">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193551">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-white-50" data-name="Item">
+                    <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1755159193552">Use of Cookies</a>
+                    <div class="collapse" data-parent="#myCollapse1755159193545" role="tabpanel" id="myCollapseTab1755159193552">
+                      <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hidden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hidden noRemove">
+              <div class="s_embed_code_embedded o_not_editable container">
+
+                <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function debounce(fn, delay) {
+            let timer = null;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() =&gt; fn.apply(this, args), delay);
+            };
+        }
+        function smoothScrollBy(container, distance, duration = 400) {
+            const start = container.scrollLeft;
+            const startTime = performance.now();
+            function scrollStep(timestamp) {
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
+                container.scrollLeft = start + distance * ease;
+                if (progress &lt; 1) requestAnimationFrame(scrollStep);
+            }
+            requestAnimationFrame(scrollStep);
+        }
+        function getScrollDistance() {
+            let raw = getComputedStyle(document.documentElement)
+                .getPropertyValue('--scroll-distance2').trim();
+            if (raw.endsWith('px')) {
+                return parseFloat(raw);
+            } else if (raw.endsWith('%')) {
+                return window.innerWidth * (parseFloat(raw) / 100);
+            } else {
+                // 如果沒有單位，直接當成 px
+                return parseFloat(raw);
+            }
+        }
+        let isScrollingLocked = false;
+        const scrollCooldown = 800;
+        function initAccordions() {
+            const accordions = document.querySelectorAll(".s_custom_worldwideRWDcollapse:not(.s_custom_hidden) .accordion");
+            accordions.forEach(accordion =&gt; {
+                accordion.style.overflowX = "auto";
+                accordion.style.overflowY = "hidden";
+                accordion.style.overscrollBehaviorX = "contain";
+                const isScrollable = accordion.scrollWidth &gt; accordion.clientWidth;
+                let leftArrow = accordion.parentElement.querySelector('.carousel-arrow-left');
+                let rightArrow = accordion.parentElement.querySelector('.carousel-arrow-right');
+                if (!isScrollable) {
+                    if (leftArrow) leftArrow.remove();
+                    if (rightArrow) rightArrow.remove();
+                    return;
+                }
+                if (!leftArrow) {
+                    leftArrow = document.createElement("div");
+                    leftArrow.classList.add("carousel-arrow", "carousel-arrow-left");
+                    leftArrow.innerHTML = '&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;';
+                    accordion.insertAdjacentElement("afterend", leftArrow);
+                }
+                if (!rightArrow) {
+                    rightArrow = document.createElement("div");
+                    rightArrow.classList.add("carousel-arrow", "carousel-arrow-right");
+                    rightArrow.innerHTML = '&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;';
+                    leftArrow.insertAdjacentElement("afterend", rightArrow);
+                }
+                accordion.addEventListener("scroll", function () {
+                    const maxScrollLeft = accordion.scrollWidth - accordion.clientWidth;
+                    leftArrow.classList.toggle("disabled", accordion.scrollLeft &lt;= 0);
+                    rightArrow.classList.toggle("disabled", accordion.scrollLeft &gt;= maxScrollLeft);
+                });
+                accordion.addEventListener("wheel", function (e) {
+                    const maxScrollLeft = accordion.scrollWidth - accordion.clientWidth;
+                    const atLeftEdge = accordion.scrollLeft &lt;= 0;
+                    const atRightEdge = accordion.scrollLeft &gt;= maxScrollLeft;
+                    if ((atLeftEdge &amp;&amp; e.deltaY &lt; 0) || (atRightEdge &amp;&amp; e.deltaY &gt; 0)) {
+                        if (isScrollingLocked) return;
+                        e.preventDefault();
+                        isScrollingLocked = true;
+                        setTimeout(() =&gt; isScrollingLocked = false, scrollCooldown);
+                    } else {
+                        e.preventDefault();
+                        smoothScrollBy(accordion, e.deltaY * 2, 400);
+                    }
+                }, { passive: false });
+                leftArrow.addEventListener("click", function () {
+                    smoothScrollBy(accordion, -getScrollDistance(), 400);
+                });
+                rightArrow.addEventListener("click", function () {
+                    smoothScrollBy(accordion, getScrollDistance(), 400);
+                });
+            });
+        }
+        function removeArrows() {
+            document.querySelectorAll('.carousel-arrow-left, .carousel-arrow-right').forEach(el =&gt; el.remove());
+        }
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.type === 'attributes' &amp;&amp; mutation.attributeName === 'class') {
+                    if (document.body.classList.contains('editor_started')) {
+                        removeArrows();
+                    } else {
+                        initAccordions();
+                    }
+                }
+            });
+        });
+        observer.observe(document.body, { attributes: true });
+        if (!document.body.classList.contains("editor_started")) {
+            initAccordions();
+        }
+    });
+</script>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

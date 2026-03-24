@@ -1,0 +1,598 @@
+<t t-name="website.home2-2">
+  <t t-call="website.layout">
+    <t t-set="pageName" t-value="'homepage'"/>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_carousel_wrapper o_full_screen_height s_custom_textleftmiddle" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="text-left-middle" style="">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1745486832292" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" data-target="#myCarousel1745486832292" class="active">
+            </li>
+            <li data-target="#myCarousel1745486832292" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel1745486832292" data-slide-to="2">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item o_colored_level o_background_video pt0 pb0 active" style="background-image: none;" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-bg-video-src="//fast.wistia.net/embed/iframe/e8fjx0g4u1?autoplay=true&amp;mute=true&amp;silentAutoPlay=true&amp;videoFoam=true&amp;playlistLoop=true&amp;controlsVisibleOnLoad=false&amp;playbackRateControl=false&amp;playbar=false&amp;smallPlayButton=false&amp;qualityControl=false&amp;volumeControl=false&amp;settingsControl=false&amp;fullscreenButton=false">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4270-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4269-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1745486832292">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1745486832292">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt88 o_cc o_cc4 pb80" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip369159">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-5 o_visible">
+              <h2 style="text-align: center;">Great stories</h2>
+            </div>
+            <div class="o_colored_level col-lg-7 o_visible" data-original-title="" title="" aria-describedby="tooltip874454">
+              <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+              <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+              <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+              <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                <p data-original-title="" title="" aria-describedby="tooltip307250">
+                  <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt72 pb0 o_cc o_cc4 o_auto_screen_height s_custom_insertBelow s_custom_fullContainer" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="position: relative;" data-custom-name="insertBelow fullContainer">
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left img-area col-lg-6">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
+                  <div class="s_allow_columns container-fluid">
+                    <p>
+                      <img class="img-fluid o_we_custom_image o_visible" src="/web/image/4272-49dfc4bc/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip734925" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level counter-area col-lg-6 pb0">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pb32 pt32 s_custom_fullContainer" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="fullContainer">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="70" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Country <br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="500" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Global&amp;nbsp;<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="300" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Customers<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level description-area pb0 col-lg-12 o_cc o_cc1" style="background-color: rgb(247, 247, 247) !important;">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section class="s_text_block o_colored_level pt88 pb96 o_cc o_cc1 s_custom_reverse" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" style="background-color: rgb(247, 247, 247) !important; background-image: none;" data-custom-name="reverse">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-6 o_visible">
+                        <h2 style="text-align: center;">Great stories</h2>
+                      </div>
+                      <div class="o_colored_level col-lg-6 o_visible" data-original-title="" title="" aria-describedby="tooltip874454">
+                        <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+                        <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                        <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+                        <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                          <p data-original-title="" title="" aria-describedby="tooltip307250">
+                            <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pt0 pb0 o_cc o_cc1 s_custom_fullWrapProduct s_custom_imgNoMargin s_custom_fullContainer s_custom_default" data-name="Static Snippet" data-custom-name="fullWrapProduct imgNoMargin fullContainer default" data-staticsnippet-template="default" style="background-color: rgba(255, 0, 0, 0) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="content"/>
+          <div class="static_snippet_template s_product_product_borderless_1">
+            <div class="row my-4">
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-4 pt0 border border-white" style="border-width: 1px !important; background-color: rgba(0, 0, 0, 0.48) !important;">
+                <div class="o_carousel_product_card w-100 card-s p-3">
+                  <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4273-c4b41a2f/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                    <div class="card-img">
+                      <p>
+                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="962"/>
+                      </p>
+                    </div>
+                    <div class="card-title">
+                      <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                        <font class="text-white">Category 01</font>
+                      </h3>
+                    </div>
+                    <div>
+                      <div class="mt-2">
+                        <p style="text-align: center;">
+                          <a class="btn btn-primary" href="#" data-require-form="false" data-original-title="" title="">Read more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pb0 pt16 o_cc o_cc3" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <p style="text-align: center;">↑分類or應用。↓產品 (帶系統，沒有 icon)</p>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level pt0 pb0 s_product_product_centered s_custom_fullWrapProduct s_custom_fullContainer s_custom_default o_dynamic_empty" data-name="Dynamic Snippet" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_centered" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="8" data-force-minimum-max-limit-to16="1" data-custom-name="fullWrapProduct fullContainer default" style="background-image: none;">
+        <div class="o_not_editable container-fluid">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt96 pb80 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-lg-4 s_col_no_bgcolor col-left" data-original-title="" title="" aria-describedby="tooltip315688">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 111px;">
+                <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="container s_allow_columns">
+                    <p class="h3">
+                      <strong>Great stories</strong>
+                      <br/>
+                    </p>
+                    <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection.<br/></p>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip672846">
+                      <p data-original-title="" title="" aria-describedby="tooltip307250">
+                        <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-8 col-right o_colored_level">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb0 o_cc o_cc1 pt24 s_custom_staggerBricks s_custom_default" data-name="Static Snippet" data-custom-name="staggerBricks default" data-staticsnippet-template="default" style="background-image: none; background-color: rgba(255, 0, 0, 0) !important;">
+                  <div class="container">
+                    <div class="content"/>
+                    <div class="static_snippet_template s_product_product_borderless_1">
+                      <div class="row my-4">
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="" aria-describedby="popover315492">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Category 01</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Category 02</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Category 03</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Category 04</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Category 05</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level pt0 border-white col-lg-6" style="background-color: rgba(0, 0, 0, 0.48) !important;">
+                          <div class="o_carousel_product_card w-100 card-s p-3">
+                            <a href="#" data-original-title="" title="">
+                              <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4274-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip591342" data-is-image-link-open-popup="false" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                            </a>
+                            <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                              <div class="card-img">
+                                <p>
+                                  <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" data-original-title="" title="" aria-describedby="tooltip969734" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                </p>
+                              </div>
+                              <div class="card-title">
+                                <h3 style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip102208">
+                                  <font class="text-white">Learn more</font>
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt88 o_cc o_cc4 pb80 s_custom_reverse" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip369159" data-custom-name="reverse">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-5">
+              <h2 style="text-align: center;">Great stories</h2>
+            </div>
+            <div class="o_colored_level col-lg-7" data-original-title="" title="" aria-describedby="tooltip874454">
+              <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+              <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+              <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+              <div class="s_text pt24" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip672846">
+                <p data-original-title="" title="" aria-describedby="tooltip307250">
+                  <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_parallax_no_overflow_hidden s_custom_fullScreenParallax" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip733584" data-scroll-background-ratio="0" data-custom-name="fullScreenParallax" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_parallax parallax s_parallax_is_fixed o_colored_level o_auto_screen_height" data-scroll-background-ratio="1" data-fade-method="none" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4277-808964a2/fullbg.jpg&quot;); background-position: 50% 50%;" data-original-id="4275" data-original-src="/web/image/4275-c7d976c5/fullbg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+              <div class="oe_structure oe_empty"/>
+              <div class="fade_color"/>
+            </section>
+            <section class="s_text_block o_colored_level pt88 pb80 s_parallax_no_overflow_hidden o_cc o_cc3 parallax s_parallax_is_fixed o_auto_screen_height" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" data-scroll-background-ratio="1" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4279-33cbbbb2/fullbg-line.png&quot;);" data-original-id="4276" data-original-src="/web/image/4276-3860ebdf/fullbg-line.png" data-mimetype="image/png" data-resize-width="1920"/>
+              <div class="s_allow_columns container">
+                <div class="row" data-original-title="" title="" aria-describedby="tooltip35924">
+                  <div class="o_colored_level col-lg-5" data-original-title="" title="" aria-describedby="tooltip874454">
+                    <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling 01</p>
+                    <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                    <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.<br/></p>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p data-original-title="" title="" aria-describedby="tooltip307250">
+                        <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_parallax_no_overflow_hidden s_custom_fullScreenParallax" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip733584" data-scroll-background-ratio="0" data-custom-name="fullScreenParallax" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_parallax parallax s_parallax_is_fixed o_colored_level o_auto_screen_height" data-scroll-background-ratio="1" data-fade-method="none" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4278-808964a2/fullbg.jpg&quot;); background-position: 50% 50%;" data-original-id="4275" data-original-src="/web/image/4275-c7d976c5/fullbg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+              <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡"/>
+              <div class="fade_color"/>
+            </section>
+            <section class="s_text_block o_colored_level pt88 pb80 s_parallax_no_overflow_hidden o_cc o_cc3 parallax s_parallax_is_fixed o_auto_screen_height" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" data-scroll-background-ratio="1" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4280-33cbbbb2/fullbg-line.png&quot;);" data-original-id="4276" data-original-src="/web/image/4276-3860ebdf/fullbg-line.png" data-mimetype="image/png" data-resize-width="1920"/>
+              <div class="s_allow_columns container">
+                <div class="row" data-original-title="" title="" aria-describedby="tooltip35924">
+                  <div class="o_colored_level col-lg-5" data-original-title="" title="" aria-describedby="tooltip874454">
+                    <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling 02</p>
+                    <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                    <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.<br/></p>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p data-original-title="" title="" aria-describedby="tooltip307250">
+                        <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_title o_colored_level pt72 pb8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="container s_allow_columns">
+          <h2>Event &amp;amp; News<br/></h2>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 s_blog_post_card pb80 o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 pb40 o_colored_level o_cc o_cc1" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(35, 99, 102) !important;">
+        <div class="s_allow_columns container">
+          <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip92163">
+            <div class="o_colored_level col-lg-10">
+              <h3>
+                <font class="text-white">Great stories have a <b class="o_default_snippet_text">personality</b>.</font>
+              </h3>
+              <p data-original-title="" title="" aria-describedby="tooltip733625">
+                <font class="text-white">Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</font>
+              </p>
+            </div>
+            <div class="o_colored_level col-lg-2">
+              <p>
+                <a href="/contactus" data-require-form="false" data-original-title="" title="" class="btn btn-primary">Contact Us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

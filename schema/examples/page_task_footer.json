@@ -1,0 +1,50 @@
+{
+  "version": "v1.0",
+  "command": "/page",
+  "task_type": "snippet",
+  "intent_summary": "Update footer using XPath structure and SCSS only.",
+  "resources": {
+    "templates": [
+      {
+        "name": "footerwcalltoaction-1",
+        "path": "templates/footerwcalltoaction-1.xml"
+      }
+    ],
+    "docs": [
+      "resources/header_footer_rules.md"
+    ]
+  },
+  "footer_variant": "footer-1",
+  "constraints": {
+    "rules": [
+      "Footer output must be XPath XML + SCSS.",
+      "Header XML must not be modified."
+    ],
+    "locks": [
+      {
+        "target": "footer",
+        "policy": "xpath_required",
+        "notes": "Footer changes must use QWeb inherit XPath." 
+      },
+      {
+        "target": "header",
+        "policy": "scss_only",
+        "notes": "Header is SCSS-only; do not output header XML."
+      }
+    ]
+  },
+  "outputs": {
+    "files": [
+      {
+        "type": "xml",
+        "path": "outputs/footer-YYYYMMDD-HHMM.xml",
+        "required": true
+      },
+      {
+        "type": "scss",
+        "path": "outputs/footer-YYYYMMDD-HHMM.scss",
+        "required": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": "v1.0",
+  "targets": [
+    {
+      "name": "base-dynamic-products",
+      "path": "templates/base-dynamic-products.xml",
+      "policy": "structure_locked"
+    },
+    {
+      "name": "base-dynamic-news",
+      "path": "templates/base-dynamic-news.xml",
+      "policy": "structure_locked"
+    }
+  ]
+}

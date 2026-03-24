@@ -1,0 +1,223 @@
+{
+  "version": "1.0",
+  "generated_from": "templates/",
+  "items": [
+    {
+      "name": "home-1",
+      "category": "home",
+      "xml": "templates/home-1.xml",
+      "scss": "templates/home-1.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "home-2",
+      "category": "home",
+      "xml": "templates/home-2.xml",
+      "scss": "templates/home-2.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "home-3",
+      "category": "home",
+      "xml": "templates/home-3.xml",
+      "scss": "templates/home-3.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "home-4",
+      "category": "home",
+      "xml": "templates/home-4.xml",
+      "scss": "templates/home-4.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "banner",
+      "category": "banner",
+      "xml": "templates/banner.xml",
+      "scss": "templates/banner.scss",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "banner-arrow",
+      "category": "component",
+      "xml": "templates/banner-arrow.xml",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "carousel-arrow",
+      "category": "component",
+      "xml": "templates/carousel-arrow.xml",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "content-sections",
+      "category": "content",
+      "xml": "templates/content-sections.xml",
+      "scss": "templates/content-sections.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "content-sections-2",
+      "category": "content",
+      "xml": "templates/content-sections-2.xml",
+      "scss": "templates/content-sections-2.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "content-sections-3",
+      "category": "content",
+      "xml": "templates/content-sections-3.xml",
+      "scss": "templates/content-sections-3.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "content-sections-js",
+      "category": "content",
+      "xml": "templates/content-sections-js.xml",
+      "scss": "templates/content-sections-js.scss",
+      "rules": ["snippet_catalog", "layout_patterns"]
+    },
+    {
+      "name": "time-line",
+      "category": "content",
+      "xml": "templates/time-line.xml",
+      "scss": "templates/time-line.scss",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "form-contact",
+      "category": "form",
+      "xml": "templates/form-contact.xml",
+      "rules": ["form_rules", "snippet_catalog"]
+    },
+    {
+      "name": "footerwcalltoaction-1",
+      "category": "footer",
+      "xml": "templates/footerwcalltoaction-1.xml",
+      "rules": ["header_footer_rules"],
+      "lock_policy": "xpath_required",
+      "footer_variants": ["footer-1", "ft-1"]
+    },
+    {
+      "name": "footerwcalltoaction-2",
+      "category": "footer",
+      "xml": "templates/footerwcalltoaction-2.xml",
+      "rules": ["header_footer_rules"],
+      "lock_policy": "xpath_required",
+      "footer_variants": ["footer-2", "ft-2"]
+    },
+    {
+      "name": "header-menus",
+      "category": "header",
+      "scss": "templates/header-menus.scss",
+      "rules": ["header_footer_rules"],
+      "lock_policy": "scss_only",
+      "header_variants": ["menu-1", "menu-2", "menu-3", "menu-4", "m-1", "m-2", "m-3", "m-4"]
+    },
+    {
+      "name": "btn-style",
+      "category": "button",
+      "scss": "templates/btn-style.scss",
+      "rules": ["button_styles"]
+    },
+    {
+      "name": "customized-Static-Snippet",
+      "category": "static",
+      "xml": "templates/customized-Static-Snippet.xml",
+      "scss": "templates/customized-Static-Snippet.scss",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "basd-Static-Snippet",
+      "category": "static",
+      "xml": "templates/basd-Static-Snippet.xml",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "Static-Snippet-carousel",
+      "category": "static",
+      "xml": "templates/Static-Snippet-carousel.xml",
+      "scss": "templates/Static-Snippet-carousel.scss",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "customized-static-carousel",
+      "category": "static",
+      "xml": "templates/customized-static-carousel.xml",
+      "scss": "templates/customized-static-carousel.scss",
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "customized-dynamic-products",
+      "category": "dynamic",
+      "xml": "templates/customized-dynamic-products.xml",
+      "scss": "templates/customized-dynamic-products.scss",
+      "rules": ["dynamic_rules", "snippet_catalog"]
+    },
+    {
+      "name": "customized-dynamic-products-js",
+      "category": "dynamic",
+      "xml": "templates/customized-dynamic-products-js.xml",
+      "scss": "templates/customized-dynamic-products-js.scss",
+      "js": "templates/customized-dynamic-products-js.js",
+      "html": "templates/customized-dynamic-products-js.html",
+      "rules": ["dynamic_rules", "snippet_catalog"]
+    },
+    {
+      "name": "customized-dynamic-news",
+      "category": "dynamic",
+      "xml": "templates/customized-dynamic-news.xml",
+      "scss": "templates/customized-dynamic-news.scss",
+      "html": "templates/customized-dynamic-news.html",
+      "rules": ["dynamic_rules", "snippet_catalog"]
+    },
+    {
+      "name": "base-dynamic-products",
+      "category": "dynamic",
+      "xml": "templates/base-dynamic-products.xml",
+      "html": "templates/base-dynamic-products.html",
+      "rules": ["dynamic_rules", "snippet_catalog"],
+      "usage": ["page", "create"],
+      "output_mode": "section_only",
+      "structure_locked": true,
+      "lock_policy": "structure_locked",
+      "allowed_ops": [
+        "section_class_add",
+        "section_data_custom_name_set",
+        "scss_override_only"
+      ],
+      "forbidden_ops": [
+        "inner_dom_insert",
+        "inner_dom_delete",
+        "template_key_change",
+        "xml_replace",
+        "xml_modify"
+      ],
+      "notes": "Absolute structure for dynamic products; do not add or alter inner structure."
+    },
+    {
+      "name": "base-dynamic-news",
+      "category": "dynamic",
+      "xml": "templates/base-dynamic-news.xml",
+      "html": "templates/base-dynamic-news.html",
+      "rules": ["dynamic_rules", "snippet_catalog"],
+      "usage": ["page", "create"],
+      "output_mode": "section_only",
+      "structure_locked": true,
+      "lock_policy": "structure_locked",
+      "allowed_ops": [
+        "section_class_add",
+        "section_data_custom_name_set",
+        "scss_override_only"
+      ],
+      "forbidden_ops": [
+        "inner_dom_insert",
+        "inner_dom_delete",
+        "template_key_change",
+        "xml_replace",
+        "xml_modify"
+      ],
+      "notes": "Absolute structure for dynamic news/blog; do not add or alter inner structure."
+    }
+  ]
+}

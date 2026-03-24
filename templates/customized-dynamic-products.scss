@@ -1,0 +1,379 @@
+//  -------------------------------------             動態區塊 - 客製JS捲軸 開始          -------------------------------------  //
+$showItem: 5; // 顯示幾個產品
+$proListAspectRatio: 1; // ※※※  放入產品 SCSS 之後請移除此行，箭頭的高度才會抓到正確的圖片比例  ※※※
+// 捲軸 - 捲動幅度
+:root {
+  --scroll-distance: 38vw;
+}
+@include laptop {
+  :root {
+    --scroll-distance: 50vw;
+  }
+}
+@include media-breakpoint-down(md) {
+  :root {
+    --scroll-distance: 80vw;
+  }
+}
+@include media-breakpoint-down(xs) {
+  :root {
+    --scroll-distance: 55vw;
+  }
+}
+@include mobile-s {
+  :root {
+    --scroll-distance: 68vw;
+  }
+}
+.s_custom_productRightScroll {
+    // 箭頭
+    .carousel-arrow {
+        height: var(--arrowWidth);
+        width: var(--arrowWidth);
+        border: 1px solid var(--arrowColor);
+        border-radius: var(--arrowRadius);
+        background: var(--arrowBg);
+        position: absolute;
+        top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
+        cursor: pointer;
+        z-index: 2;
+        @include transition;
+        @media (max-width: $wrap-size ) {
+            top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
+        }
+        @include media-breakpoint-down(md) {
+            top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
+        }
+        @include mobile-s {
+            top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
+        }
+        &:hover {
+            background-color: var(--arrowBgHover);
+            border-color: var(--arrowColorHover);
+            .fa::before {
+                border-color: var(--arrowColorHover) !important;
+            }
+        }
+        &.carousel-arrow-left {
+            left: calc(var(--container-pd-x) * 2);
+            @include media-breakpoint-down(md) {
+                left: var(--container-pd-x);
+            }
+        }
+        &.carousel-arrow-right {
+            right: calc((100vw - #{$wrap-size}) / 2 + var(--container-pd-x));
+            @include media-breakpoint-down(md) {
+                right: var(--container-pd-x);
+            }
+        }
+        .fa::before {
+            content: "";
+            display: block;
+            width: calc(var(--arrowWidth) * .36);
+            height: calc(var(--arrowWidth) * .36);
+            background-color: unset;
+            border-top: 1px solid var(--arrowColor);
+            border-left: 1px solid var(--arrowColor);
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transition;
+        }
+        .fa-angle-left::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            margin-left: calc(var(--arrowWidth) * .4 / 4);
+        }
+        .fa-angle-right::before {
+            transform: translate(-50%, -50%) rotate(135deg);
+            margin-left: calc(var(--arrowWidth) * .4 / -4);
+        }
+        &.disabled {
+            opacity: 0;
+        }
+    }
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .container-fluid {
+            // overflow: visible;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+            @media (min-width: $wrap-size ) {
+                margin-left: calc((100% - 1500px) / 2) !important;
+            }
+            @media (max-width: $wrap-size ) {
+                padding-left: var(--container-pd-x);
+            }
+        }
+        .static_snippet_template,
+        .dynamic_snippet_template {
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+                @include transition;
+                >div[class*="col"] {
+                    padding-left: 0 !important;
+                    padding-right: 20px !important;
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+            }
+            .card {
+                padding: 0 !important;
+            }
+            .o_carousel_product_card_body {
+                padding: 0 0 15px;
+            }
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_productRightScroll {
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .row{
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            >div[class*="col"] {
+                max-width: calc(100vw / #{$showItem} - 15px)  !important;
+                flex: 0 0 calc(100vw / #{$showItem} - 15px)  !important;
+                @media (max-width: $wrap-size ) {
+                    max-width: calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                }
+                @include media-breakpoint-down(md) {
+                    max-width: calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                }
+                @include mobile-s {
+                    max-width: calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                }
+            }
+        }
+    }
+}
+//  -------------------------------------             動態區塊 - 客製JS捲軸 結束          -------------------------------------  //
+
+
+//  -------------------------------------                   上下區塊，交疊效果                       -------------------------------------  //
+:root {
+	--upperSection: 150px;
+}
+@include media-breakpoint-down(sm) {
+	:root {
+		--upperSection: 30vh;
+	}
+}
+@include mobile-s {
+	:root {
+		--upperSection: 10vh;
+	}
+}
+.s_custom_upperNext {
+	&:not(.s_column_layout):not(.s_vertical_layout)>[class*='container'] {
+		z-index: 2;
+	}
+	section:last-child {
+		z-index: 2;
+	}
+	.o_carousel_product_img_link {
+		margin: auto 15px 15px;
+		padding: 0 !important;
+	}
+	.o_carousel_product_card_body {
+		padding: 15px 15px 0 !important;
+		.o_carousel_product_img_link {
+			margin: auto 0 15px;
+		}
+	}
+	.card-title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2; // 控制多行的行數
+		-webkit-box-orient: vertical;
+		max-height: calc(2 * var(--h5) * 1.5);
+	}
+	.o_carousel_product_card_alias {
+		white-space: nowrap;    // 禁止換行
+		overflow: hidden;       // 超出隱藏
+		text-overflow: ellipsis; // 顯示省略號
+		margin-bottom: 15px;
+		flex-wrap: inherit !important;
+	}
+	+section {
+		margin-top: calc(var(--upperSection) * -1);
+		z-index: 1;
+		&::before {
+			content: "";
+			display: block;
+			height: calc(var(--upperSection));
+			background-color: inherit;
+		}
+	}
+	// 區塊交疊時，上方交疊區塊有左右側箭頭的狀況
+	&.s_custom_hasArrow,
+	&.s_custom_hasArrowL {
+		section:last-child {
+			&.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom),
+			&.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) {
+				a[class*='carousel-control-'] {
+					// top: auto;
+					transform: none;
+				}
+				a.carousel-control-prev {
+					margin-bottom: var(--arrowWidth);
+				}
+			}
+		}
+	}
+	&.s_custom_hasArrow {
+		+ section {
+			margin-top: calc(var(--arrowWidth) * -1);
+			&::before {
+				height: calc(var(--arrowWidth));
+			}
+		}
+		.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'],
+		.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'] {
+			top: calc(100% - var(--arrowWidth) * 2.5);
+		}
+	}
+	&.s_custom_hasArrowL {
+		+ section {
+			margin-top: calc(var(--arrowL) * -1);
+			&::before {
+				height: calc(var(--arrowL));
+			}
+		}
+		.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'],
+		.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'] {
+			top: calc(100% - var(--arrowL) * 2.5);
+		}
+	}
+}
+//  -------------------------------------                   上下區塊，交疊效果                       -------------------------------------  //
+
+
+//  -------------------------------------            動態-產品 - 滿版+微間隙 開始           -------------------------------------  //
+.s_custom_fullWrapProduct .dynamic_snippet_template {
+	@include media-breakpoint-down(sm) {
+		overflow: auto;
+		display: flex;
+	}
+	&>.row {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		@include media-breakpoint-down(sm) {
+			flex: 0 0 76vw;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&>div {
+			padding: 0;
+			border: 1px solid #fff;
+			&:hover {
+				.o_carousel_product_img_link {
+					transform: scale(1.1);
+				}
+			}
+		}
+		.col-3 {
+			@include media-breakpoint-down(md) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
+	.o_carousel_product_img_link {
+		padding: 0 !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include transition;
+		&::before {
+			content: "";
+			background-color: rgba(0, 0, 0, 0.48);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+	}
+	.o_carousel_product_card_body,
+	.o_carousel_product_card_footer {
+		z-index: 1;
+	}
+	.o_carousel_product_card_body {
+		color: #fff;
+		padding: 0 !important;
+		.text-muted {
+			color: #fff !important;
+		}
+		.h5,
+		.h6 {
+			margin-top: 0 !important;
+		}
+		.h5 {
+			font-size: var(--h3);
+		}
+	}
+	.o_carousel_product_card_footer {
+		padding-bottom: 0 !important;
+		margin-bottom: 0;
+		.btn::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+section[class*="s_product_product_"].s_custom_fullWrapProduct.s_product_product_centered {
+	.o_carousel_product_card_footer {
+		background-color: unset !important;
+	}
+	.o_carousel_product_card {
+		padding: 60px 30px !important;
+		overflow: hidden;
+		@include media-breakpoint-down(sm) {
+			padding: 60px 20px;
+		}
+	}
+	.o_carousel_product_img_link {
+		position: absolute !important;
+		img {
+			object-fit: scale-down;
+			height: 100%;
+		}
+	}
+}
+//  -------------------------------------            動態-產品 - 滿版+微間隙 結束           -------------------------------------  //
+
+
+//  -------------------------------------                  輪播-上下交錯(偶數往上)    開始                  -------------------------------------  //
+.s_custom_interlaceCarousel {
+	.static_snippet_template >.row {
+		align-items: flex-start;
+	}
+	.carousel-item>.row>[class*='col-'] .card {
+		height: unset !important;
+	}
+	.carousel-item .row>div:nth-child(odd) {
+		transform: translateY(50px);
+		margin-bottom: 50px;
+		@include media-breakpoint-down(sm) {
+			transform: none;
+			margin-bottom: 0;
+		}
+	}
+}
+//  -------------------------------------                  輪播-上下交錯(偶數往上)    結束                  -------------------------------------  //

@@ -1,0 +1,189 @@
+<t t-name="website.content-sections-js">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb56 pt64" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="h1">Great stories<br/></p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-9">
+                    <p data-original-title="" title="" aria-describedby="tooltip494838">Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.<br/><font style="color: rgb(156, 0, 0);">以下擇一使用<br/></font><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 6筆</font><strong><br/></strong></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3 d-flex align-items-end justify-content-md-end" data-original-title="" title="" aria-describedby="tooltip656379">
+                    <p>
+                      <a class="btn btn-primary" href="#" data-require-form="false">View more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic pb32 o_colored_level s_product_product_borderless_1 pt16 s_custom_productRightScroll o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="6" data-custom-name="productRightScroll" data-force-minimum-max-limit-to16="1">
+              <div class="o_not_editable container-fluid">
+                <div class="css_non_editable_mode_hidden">
+                  <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                </div>
+                <div class="dynamic_snippet_template"/>
+              </div>
+            </section>
+            <section class="s_embed_code o_colored_level pt0 pb0 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="noRemove">
+              <div class="s_embed_code_embedded o_not_editable container">
+
+                <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (document.body.classList.contains("editor_started")) return;
+        // 防抖函式，避免頻繁觸發
+        function debounce(fn, delay) {
+            let timer = null;
+            return function (...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() =&gt; fn.apply(this, args), delay);
+            };
+        }
+        // 合併同一容器內多個 .row 的子元素
+        function mergeRows(container) {
+            const rows = Array.from(container.children).filter(child =&gt; child.classList.contains('row'));
+            if (rows.length &gt; 1) {
+                const firstRow = rows[0];
+                for (let i = 1; i &lt; rows.length; i++) {
+                    const currentRow = rows[i];
+                    while (currentRow.firstElementChild) {
+                        firstRow.appendChild(currentRow.firstElementChild);
+                    }
+                    currentRow.remove();
+                }
+            }
+        }
+        // 平滑滾動函式（含緩動）
+        function smoothScrollBy(container, distance, duration = 300) {
+            const start = container.scrollLeft;
+            const startTime = performance.now();
+            function scrollStep(timestamp) {
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
+                container.scrollLeft = start + distance * ease;
+                if (progress &lt; 1) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+            requestAnimationFrame(scrollStep);
+        }
+        let isScrollingLocked = false;
+        const scrollCooldown = 800;
+        // 初始化每個 row 元素的滾動與箭頭行為
+        function initRowElements() {
+            const rowElements = document.querySelectorAll(".s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]&gt;.row");
+            rowElements.forEach((rowElement) =&gt; {
+                rowElement.style.overflowX = "auto";
+                rowElement.style.overflowY = "hidden";
+                rowElement.style.overscrollBehaviorX = "contain";
+                // 檢查箭頭是否已存在，若無才新增
+                let leftArrow = rowElement.parentElement.querySelector('.carousel-arrow-left');
+                let rightArrow = rowElement.parentElement.querySelector('.carousel-arrow-right');
+                if (!leftArrow) {
+                    leftArrow = document.createElement("div");
+                    leftArrow.classList.add("carousel-arrow", "carousel-arrow-left");
+                    leftArrow.innerHTML = '&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;';
+                    rowElement.parentElement.appendChild(leftArrow);
+                }
+                if (!rightArrow) {
+                    rightArrow = document.createElement("div");
+                    rightArrow.classList.add("carousel-arrow", "carousel-arrow-right");
+                    rightArrow.innerHTML = '&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;';
+                    rowElement.parentElement.appendChild(rightArrow);
+                }
+                // 如果沒有橫向卷軸，就隱藏箭頭
+                const isScrollable = rowElement.scrollWidth &gt; rowElement.clientWidth;
+                leftArrow.style.display = isScrollable ? 'block' : 'none';
+                rightArrow.style.display = isScrollable ? 'block' : 'none';
+                // 滾動事件控制箭頭啟用狀態
+                rowElement.addEventListener("scroll", function () {
+                    const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
+                    const currentScrollLeft = rowElement.scrollLeft;
+                    leftArrow.classList.toggle("disabled", currentScrollLeft &lt;= 0);
+                    rightArrow.classList.toggle("disabled", currentScrollLeft &gt;= maxScrollLeft);
+                });
+                // 滑鼠滾輪滾動（含上下頁切換）
+                rowElement.addEventListener(
+                    "wheel",
+                    function (e) {
+                        const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
+                        const currentScrollLeft = rowElement.scrollLeft;
+                        const atLeftEdge = currentScrollLeft &lt;= 0;
+                        const atRightEdge = currentScrollLeft &gt;= maxScrollLeft;
+                        if ((atLeftEdge &amp;&amp; e.deltaY &lt; 0) || (atRightEdge &amp;&amp; e.deltaY &gt; 0)) {
+                            if (isScrollingLocked) return;
+                            e.preventDefault();
+                            isScrollingLocked = true;
+                            setTimeout(() =&gt; {
+                                isScrollingLocked = false;
+                            }, scrollCooldown);
+                        } else {
+                            e.preventDefault();
+                            smoothScrollBy(rowElement, e.deltaY * 2, 400);
+                        }
+                    },
+                    { passive: false }
+                );
+                // 左箭頭點擊事件
+                leftArrow.addEventListener("click", function () {
+                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
+                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
+                    smoothScrollBy(rowElement, -distance);
+                });
+                // 右箭頭點擊事件
+                rightArrow.addEventListener("click", function () {
+                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
+                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
+                    smoothScrollBy(rowElement, distance);
+                });
+            });
+        }
+        // 主流程：合併 row 並初始化
+        function processContainers() {
+            const containers = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
+            containers.forEach(container =&gt; {
+                mergeRows(container);
+            });
+            initRowElements();
+        }
+        // 監聽 .dynamic_snippet_template 內部新增元素
+        function startObserver() {
+            const targets = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
+            if (targets.length === 0) {
+                setTimeout(startObserver, 300); // 等待動態生成
+                return;
+            }
+            const debouncedProcess = debounce(processContainers, 200);
+            const observer = new MutationObserver((mutationsList) =&gt; {
+                for (const mutation of mutationsList) {
+                    if (mutation.type === 'childList' &amp;&amp; mutation.addedNodes.length &gt; 0) {
+                        debouncedProcess();
+                        break;
+                    }
+                }
+            });
+            targets.forEach(target =&gt; {
+                observer.observe(target, { childList: true, subtree: false });
+            });
+        }
+        // 頁面載入時先執行一次初始化
+        processContainers();
+        // 啟動監聯器
+        startObserver();
+    });
+</script>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

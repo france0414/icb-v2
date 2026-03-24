@@ -1,0 +1,370 @@
+//  ------------------------------          左側文字+右側icon & 傾斜背景色 開始          ---------------------------  //
+.s_custom_leaningOverflow {
+  padding: 60px 0 !important;
+  margin: -60px 0;
+  overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+    margin: 0;
+  }
+}
+
+.leaning-area {
+  margin-top: -60px;
+  margin-bottom: -60px;
+  z-index: 1;
+  transform: skewX(-10deg);
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: none;
+  }
+
+  >.row {
+    @include media-breakpoint-down(md) {
+      gap: 14px 0;
+      padding: 36px 0;
+    }
+  }
+}
+
+.leaning-area-item {
+  transform: skewX(10deg);
+
+  @include media-breakpoint-down(md) {
+    transform: none;
+  }
+}
+
+//  ------------------------------          左側文字+右側icon & 傾斜背景色 結束          ---------------------------  //
+
+//  -------------------------------------                  詳細介紹 01      開始                 -------------------------------------  //
+.s_custom_pageIntro {
+  .s_blockquote_icon {
+    font-size: 16px;
+    width: unset;
+    height: unset;
+    background-color: unset;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.s_custom_textUnderLeft {
+  .row>div {
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+
+    &:last-child {
+      width: auto;
+      flex: 0 0 auto;
+      max-width: 100%;
+      padding: 30px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+#wrapwrap:not(.odoo-editor-editable) {
+  .s_custom_textUnderLeft .row>div:last-child {
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+
+    @include media-breakpoint-down(md) {
+      position: static;
+    }
+  }
+}
+
+//  -------------------------------------                  詳細介紹 01       結束                -------------------------------------  //
+
+//  -------------------------------------                  交錯式-1圖多文      開始                 -------------------------------------  //
+.s_custom_moreDescription {
+  .s_text_image {
+    &:nth-child(odd)>.container>.row {
+      >div:first-child {
+        padding-right: 30px;
+        border-right: 1px solid #ddd;
+      }
+
+      >div:nth-child(2) {
+        padding-left: 30px;
+      }
+    }
+
+    &:nth-child(even)>.container>.row {
+      flex-direction: row-reverse;
+
+      >div:first-child {
+        padding-left: 30px;
+        border-left: 1px solid #ddd;
+      }
+
+      >div:nth-child(2) {
+        padding-right: 30px;
+      }
+    }
+
+    >.container>.row {
+      @include media-breakpoint-down(md) {
+        >div {
+          border: none !important;
+          padding-right: 15px !important;
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+
+  .description+.description {
+    border-top: 1px solid #ddd;
+  }
+}
+
+//  -------------------------------------                  交錯式-1圖多文       結束                -------------------------------------  //
+
+//  -------------------------------------                  文字介紹 + 圖片輪播2       開始                 -------------------------------------  //
+.s_custom_textmultiCarousel {
+  >div>.row>div:not(.description) {
+    @include laptop-m {
+      flex-grow: 1;
+      max-width: unset;
+    }
+  }
+
+  .description {
+    padding-left: calc((100vw - $wrap-size) / 2);
+    padding-right: var(--container-pd-x);
+
+    @include wrap {
+      padding-left: var(--container-pd-x);
+    }
+
+    @include laptop-m {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    ~div::before {
+      content: "";
+      width: 2px;
+      height: 80%;
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+
+      @include media-breakpoint-down(md) {
+        width: 80%;
+        height: 2px;
+        right: 50%;
+        top: calc(100% - 2px);
+        transform: translateX(50%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+      }
+    }
+  }
+}
+
+//  -------------------------------------                  文字介紹 + 圖片輪播2        結束                -------------------------------------  //
+
+//  -------------------------------------                  色塊交錯 -文字介紹 + 特點數字      開始                 -------------------------------------  //
+.s_custom_textUnderFeature {
+  .img-area {
+    * {
+      height: 100%;
+      z-index: 1;
+
+      @include media-breakpoint-down(md) {
+        height: unset;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .description-area,
+  .counter-area {
+    padding-right: calc((100vw - #{$wrap-size}) / 2);
+    padding-left: var(--container-pd-x);
+
+    @include wrap {
+      padding-right: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .description-area .s_custom_backgroundColor {
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+  }
+
+  .counter-area {
+    .col-lg-4 {
+      @include media-breakpoint-down(sm) {
+        flex: 1 0 50%;
+      }
+
+      @include mobile-s {
+        flex: 1 0 100%;
+      }
+    }
+  }
+
+  .sub-title-area {
+    padding-left: calc((100vw - $wrap-size) / 2);
+
+    @include wrap {
+      padding-left: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+
+    [style*='width'] {
+      @include media-breakpoint-down(md) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+#wrapwrap:not(.odoo-editor-editable) {
+  .s_custom_backgroundColor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30%;
+    right: 0;
+
+    .row {
+      height: 100% !important;
+    }
+  }
+
+  .counter-area .s_custom_backgroundColor {
+    @include media-breakpoint-up(lg) {
+      opacity: 0;
+    }
+  }
+
+  .sub-title-area .s_hr {
+    margin-right: calc(var(--container-pd-x) * -2);
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+  }
+}
+
+//  -------------------------------------                  色塊交錯 -文字介紹 + 特點數字       結束                -------------------------------------  //
+
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 開始           -------------------------------------  //
+// 變數
+$insertBelowSpace: 180px;
+
+.s_custom_insertBelow {
+
+  .img-area,
+  .counter-area {
+    margin-bottom: calc(#{$insertBelowSpace} * -1);
+    z-index: 2;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .counter-area {
+    display: flex;
+    align-items: flex-end;
+
+    >div {
+      width: 100%;
+      padding-bottom: #{$insertBelowSpace};
+
+      @include media-breakpoint-down(md) {
+        padding-bottom: 0;
+      }
+    }
+
+    .s_text_block .col-lg-4 {
+      @include media-breakpoint-down(md) {
+        flex: 0 0 33.33%;
+      }
+
+      @include media-breakpoint-down(xs) {
+        flex: 0 0 100%;
+      }
+    }
+
+    +.description-area {
+      padding-top: #{$insertBelowSpace};
+      position: relative;
+      z-index: 1;
+
+      @include media-breakpoint-down(md) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .img-area p {
+    margin-bottom: 0;
+  }
+
+  .counter-area {
+    padding-right: calc((100vw - #{$wrap-size}) / 2);
+    padding-left: var(--container-pd-x);
+
+    @include wrap {
+      padding-right: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 結束           -------------------------------------  //
+
+//  -------------------------------------            全彩-線稿視差效果 開始           -------------------------------------  //
+.s_custom_fullScreenParallax .oe_structure>section {
+  height: 100vh;
+
+  @media(max-width: 991px) {
+    height: unset;
+    min-height: 45vh;
+  }
+}
+
+//  -------------------------------------            全彩-線稿視差效果 結束           -------------------------------------  //

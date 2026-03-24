@@ -1,0 +1,135 @@
+<data inherit_id="website.layout" name="Links" active="False">
+  <xpath expr="//div[@id='footer']" position="replace">
+    <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+      <section class="s_text_block pt0 pb0 s_custom_footerContact" data-name="Text" data-snippet="s_text_block" style="background-image: none;" data-custom-name="footerContact" data-original-title="" title="" aria-describedby="tooltip437027">
+        <div class="container" data-original-title="" title="" aria-describedby="tooltip921829">
+          <div class="row">
+            <div class="o_colored_level col-lg-12 footer-content-wrap pt0 pb0" data-original-title="" title="" aria-describedby="tooltip365644">
+              <div class="s_text title-wrap" data-snippet="s_text" data-name="Text">
+                <h3>What can we do to help?</h3>
+              </div>
+              <div class="s_text content-wrap" data-snippet="s_text" data-name="Text">
+                <div class="s_text des-content" data-snippet="s_text" data-name="Text">
+                  <p>Whether you need <strong>OEM/ODM</strong> customized machine tools, we are happy to offer you professional solutions. Please let us know your requirements, and we will do our utmost to serve you.</p>
+                </div>
+                <div class="s_text btn-wrap" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip450287">
+                  <a class="btn btn-primary btn-lg" href="/contactus" data-original-title="" title="">
+                    <span class="fa fa-envelope-o" data-original-title="" title="" aria-describedby="tooltip113367" data-is-image-link-open-popup="false"/>
+                    <u data-original-title="" title="" aria-describedby="tooltip252414">&amp;nbsp;Contact Us</u>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt0 pb0 s_custom_footrMainInfo" data-name="Text" data-snippet="s_text_block" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip755224" data-custom-name="footrMainInfo">
+        <div class="container">
+          <div class="row" data-original-title="" title="" aria-describedby="tooltip163161">
+            <div class="o_colored_level products-allist pb0 pt0 col-lg-4" data-original-title="" title="" aria-describedby="tooltip464941">
+              <h6>Products</h6>
+              <ul class="list-unstyled">
+                <li class="list-item">
+                  <a href="/shop/category/vertical-knee-milling-machine-4" data-original-title="" title="">Vertical Knee Milling Machine</a>
+                </li>
+                <li class="list-item ">
+                  <a href="/shop/category/cnc-bed-mill-5" data-original-title="" title="">CNC Bed Mill</a>
+                </li>
+                <li class="list-item ">
+                  <a href="/shop/category/cnc-vertical-alloy-wheel-diamond-lathe-6" data-original-title="" title="">CNC Vertical Alloy Wheel Diamond Lathe</a>
+                </li>
+                <li class="list-item ">
+                  <a href="/shop/category/cnc-id-od-grinding-machine-7" data-original-title="" title="">CNC ID/OD Grinding Machine
+</a>
+                </li>
+                <li class="list-item ">
+                  <a href="/shop/category/column-machines-8" data-original-title="" title="">Column Machines</a>
+                </li>
+              </ul>
+            </div>
+            <div class="o_colored_level sitemap-info col-lg-2" data-original-title="" title="" aria-describedby="tooltip163438">
+              <ul class="list-unstyled" data-original-title="" title="" aria-describedby="tooltip904749">
+                <li class="list-item ">
+                  <h6>
+                    <a href="/oem/odm" data-original-title="" title="">OEM/ODM</a>
+                  </h6>
+                </li>
+                <li>
+                  <h6 data-original-title="" title="" aria-describedby="tooltip509521">
+                    <a href="/global" data-original-title="" title="">Global</a>
+                  </h6>
+                </li>
+                <li class="list-item">
+                  <h6>
+                    <a href="/application" data-original-title="" title="">Applications</a>
+                  </h6>
+                </li>
+                <li class="list-item">
+                  <h6 data-original-title="" title="" aria-describedby="tooltip177193">
+                    <a href="/sustainability" data-original-title="" title="">Sustainable</a>
+                  </h6>
+                </li>
+                <li class="list-item">
+                  <h6>
+                    <a href="/support" data-original-title="" title="">Support</a>
+                  </h6>
+                </li>
+                <li>
+                  <h6>
+                    <a href="/company-profile" data-original-title="" title="">About Us</a>
+                  </h6>
+                </li>
+              </ul>
+            </div>
+            <div class="o_colored_level company-info pb0 col-lg-4" data-original-title="" title="" aria-describedby="tooltip766091">
+              <h5>TOP-ONE MACHINERY CO., LTD.</h5>
+              <ul class="list-unstyled">
+                <li data-original-title="" title="" aria-describedby="tooltip46330">
+                  <a href="https://maps.app.goo.gl/36BhtaSYj7QA5x9u8" target="_blank" data-original-title="" title="" aria-describedby="popover789853">No. 2-161, Shenqing Rd., Qingshui Dist.,&amp;nbsp;<br/>Taichung City 43641, Taiwan&amp;nbsp;(R.O.C.)</a>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip547756">
+                  <i class="fa fa-1x fa-fw fa-envelope mr-2"/>
+                  <a href="mailto:topone@topone-m.com">topone@topone-m.com</a>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip667730">
+                  <i class="fa fa-1x fa-fw fa-phone mr-2"/>
+                  <span class="o_force_ltr">
+                    <a href="tel:+886-4-2620-2901" data-original-title="" title="">+886-4-2620-2901</a>
+                  </span>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip667730">
+                  <i class="fa fa-fw mr-2 fa-1x fa-fax" data-original-title="" title="" aria-describedby="tooltip437185"/>
+                  <span class="o_force_ltr">
+                    <a href="Fax:+886-4-2620-2955" data-original-title="" title="">+886-4-2620-2955</a>
+                  </span>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip667730">
+                  <i class="fa fa-1x fa-fw fa-skype mr-2"/>
+                  <span class="o_force_ltr">
+                    <a href="skype:23405257?chat" data-original-title="" title="" target="_blank">23405257</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="o_colored_level company-info pb0 col-lg-1" data-original-title="" title="" aria-describedby="tooltip766091">
+              <h5>
+                <br/>
+              </h5>
+              <section class="s_embed_code pt64 pb64 text-center s_custom_dns" data-snippet="s_embed_code" data-name="Embed Code" data-custom-name="dns">
+                <div class="s_embed_code_embedded container o_not_editable" contenteditable="false">
+                  <div class="text-monospace pt8 bg-light o_default_snippet_text">
+    將其替換為您自己的 HTML 代碼
+</div>
+                  <script language="JavaScript" src="https://Dunsregistered.dnb.com" type="text/javascript"/>
+                  <!-- iframe id='Iframe1' src='https://dunsregistered.dnb.com/SealAuthentication.aspx?Cid=1' width='114px' height='97px' frameborder='0' scrolling='no' allowtransparency='true'  -->
+                  <!-- /iframe -->
+                  <iframe id="Iframe1" src="https://dunsregistered.dnb.com/SealAuthentication.aspx?Cid=1" width="114px" height="97px" frameborder="0" scrolling="no" allowtransparency="true"/>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </xpath>
+</data>

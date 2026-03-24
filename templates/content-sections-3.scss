@@ -1,0 +1,150 @@
+//  -------------------------------------             Counter 前/後符號 顏色 開始          -------------------------------------  //
+.s_custom_counterAfterColor .counter-after,
+.s_custom_counterBeforeColor .counter-before {
+    color: var(--o-color-1);
+}
+
+//  -------------------------------------             Counter 前/後符號 顏色 結束          -------------------------------------  //
+
+//  -------------------------------------                  特點+背景圖    開始                  -------------------------------------  //
+$fixBGList_aspectRatio: 16/9; // 背景圖 RWD 顯示比例
+
+.s_custom_fixBGList {
+    >.container>.row {
+        @include media-breakpoint-up(lg) {
+            margin: 0;
+
+            >[class*=col] {
+                padding-right: var(--container-pd-x);
+                padding-left: var(--container-pd-x);
+            }
+        }
+    }
+
+    .s_card,
+    .card-header {
+        border: none;
+    }
+
+    .card-header,
+    .card-body {
+        padding: 0;
+    }
+
+    .s_card,
+    .card-body {
+        color: inherit !important;
+    }
+
+    .s_card {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: unset;
+    }
+
+    .card-body {
+        padding-top: 16px;
+    }
+
+    .oe_img_bg {
+        @include media-breakpoint-down(md) {
+            position: static !important;
+            aspect-ratio: $fixBGList_aspectRatio;
+
+            +.container>.row {
+                margin-left: calc(var(--container-pd-x) * -1);
+                margin-right: calc(var(--container-pd-x) * -1);
+
+                >div {
+                    padding-left: var(--container-pd-x);
+                    padding-right: var(--container-pd-x);
+                }
+            }
+        }
+    }
+}
+
+//  -------------------------------------                  特點+背景圖    結束                  -------------------------------------  //
+
+//  -------------------------------------                  單元相簿 (搭配點擊視窗+圖片輪播)      開始                 -------------------------------------  //
+$brickAlbum_aspectRatio: 16/7;
+
+.s_custom_brickAlbum {
+    .static_snippet_template>.row {
+        gap: 30px 0;
+
+        @include media-breakpoint-down(sm) {
+            gap: 20px 0;
+        }
+    }
+
+    .static_snippet_template>.row>div:not([class*=col-lg-6]) {
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 calc((100% / 12 * 6) - (2 * 15px)) !important;
+            max-width: calc((100% / 12 * 6) - (2 * 15px)) !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 calc((100% / 12 * 12) - (2 * 15px)) !important;
+            max-width: calc((100% / 12 * 12) - (2 * 15px)) !important;
+        }
+    }
+
+    .o_carousel_product_card_img_top {
+        aspect-ratio: $brickAlbum_aspectRatio;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .o_carousel_product_img_link {
+        display: inline !important;
+        overflow: unset !important;
+    }
+}
+
+body:not(.editor_started) .s_custom_brickAlbum {
+    .o_carousel_product_card {
+        display: block;
+        background-color: inherit;
+        position: relative;
+
+        &:hover::before {
+            opacity: .4;
+        }
+
+        &::before {
+            content: "";
+            background-color: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            opacity: .8;
+            pointer-events: none;
+            @include transition;
+        }
+    }
+
+    .o_carousel_product_card_body {
+        padding: 24px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        pointer-events: none;
+
+        .card-title {
+            margin: 0 !important;
+        }
+    }
+}
+
+//  -------------------------------------                  單元相簿 (搭配點擊視窗+圖片輪播)       結束                -------------------------------------  //

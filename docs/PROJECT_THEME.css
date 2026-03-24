@@ -1,0 +1,159 @@
+/*
+   Odoo Color System — 語意對照表（通用於所有專案）
+   AI 撰寫 SCSS 時，一律使用 var() 變數，不寫死色碼。
+   實際色碼由站台 CSS 自動帶入，不需要手動維護。
+*/
+
+/* =========================================
+   1. 品牌色
+   ========================================= */
+/* var(--o-color-1) = 品牌主色 (Primary)          — 按鈕、連結、強調色 */
+/* var(--o-color-2) = 品牌次色 (Secondary)        — 輔助色、次要按鈕 */
+/* var(--o-color-3) = 中性淺色 (Light Neutral)    — 淺灰背景、分隔線 */
+/* var(--o-color-4) = 中性白色 (White)            — 預設白底 */
+/* var(--o-color-5) = 中性深色 (Dark Text)        — 標題、正文深色 */
+
+/* =========================================
+   2. 色塊主題 (Color Combinations)
+   AI 在 section 上套用 o_cc + o_cc1~o_cc5
+   ========================================= */
+
+/* o_cc1 = 白底（預設底色，最常用）
+   適用：大部分區塊、一般內容區 */
+
+/* o_cc2 = 淺灰/淡色底（視覺區隔用）
+   適用：交替區塊、特色區、引言區 */
+
+/* o_cc3 = 主色底（強調區塊）
+   適用：CTA 區塊、重點 Banner、價格表亮點 */
+
+/* o_cc4 = 自訂色底
+   適用：特殊設計需求 */
+
+/* o_cc5 = 深色底
+   適用：Footer、Hero Banner、全螢幕背景 */
+
+/* =========================================
+   3. 色塊主題內可用的子變數
+   ========================================= */
+
+/*
+   每個 o_ccN 內部有以下子變數（N = 1~5）：
+   
+   --o-ccN-bg              背景色
+   --o-ccN-text            正文文字色
+   --o-ccN-headings        標題文字色
+   --o-ccN-btn-primary     主按鈕背景色
+   --o-ccN-btn-primary-border  主按鈕邊框色
+   --o-ccN-btn-secondary   次按鈕背景色
+   --o-ccN-btn-secondary-border  次按鈕邊框色
+   --o-ccN-link            連結色
+*/
+
+/* =========================================
+   4. AI 撰寫 SCSS 規則
+   ========================================= */
+
+/*
+   ✅ 正確：
+   color: var(--o-color-1);
+   background-color: var(--o-cc2-bg);
+   border-color: var(--o-cc1-btn-primary);
+
+   ❌ 禁止：
+   color: #35979c;        ← 寫死色碼
+   background: $primary;  ← 用 Bootstrap 變數（Odoo 14 不一定有）
+*/
+/* 
+   Project Theme Colors (One-Time Setup) 
+   請將網站 F12 Computed Styles 中的變數貼在此處 
+   依你專案的配色貼入
+*/
+
+:root {
+    /* =========================================
+       1. Base Brand Colors (核心品牌色)
+       ========================================= */
+    --primary: #35979c;
+    /* 主色：藍綠色 */
+    --secondary: #42476d;
+    /* 次色：深藍色 */
+
+    /* Functional Colors */
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f7f7f7;
+    --dark: #191a1a;
+
+    /* Odoo Standard Colors */
+    --o-color-1: #35979c;
+    --o-color-2: #42476d;
+    --o-color-3: #EDEDED;
+    --o-color-4: #FFFFFF;
+    --o-color-5: #383E45;
+
+    /* =========================================
+       2. Odoo Color Combinations (色塊主題)
+       ========================================= */
+
+    /* [o_cc1] White Background (預設白底) */
+    --o-cc1-bg: #FFFFFF;
+    --o-cc1-text: #212529;
+    --o-cc1-headings: #212529;
+    --o-cc1-btn-primary: #35979c;
+    --o-cc1-btn-primary-border: #42476d;
+    --o-cc1-btn-secondary: #42476d;
+    --o-cc1-btn-secondary-border: #35979c;
+    --o-cc1-link: #276e72;
+
+    /* [o_cc2] Light Gray Background (淺灰底 - 用於區隔) */
+    --o-cc2-bg: #EDEDED;
+    --o-cc2-text: #212529;
+    --o-cc2-headings: #35979c;
+    /* 標題變為主色 */
+    --o-cc2-btn-primary: #35979c;
+    --o-cc2-btn-primary-border: #35979c;
+    --o-cc2-btn-secondary: #42476d;
+    --o-cc2-btn-secondary-border: #42476d;
+
+    /* [o_cc3] Primary Background (主色底 - 強調區塊) */
+    --o-cc3-bg: #35979c;
+    /* 推測值，若無則預設主色 */
+    --o-cc3-text: #FFFFFF;
+    --o-cc3-headings: #FFFFFF;
+    --o-cc3-btn-primary: #35979c;
+    --o-cc3-btn-primary-border: #35979c;
+    /* 在主色底上通常會有邊框或變色 */
+    --o-cc3-btn-secondary: #EDEDED;
+    --o-cc3-btn-secondary-border: #EDEDED;
+    --o-cc3-link: #57c1c6;
+
+    /* [o_cc4] Custom Dark/Light (自訂) */
+    --o-cc4-text: #FFFFFF;
+    --o-cc4-headings: #FFFFFF;
+    --o-cc4-btn-primary: #383E45;
+    --o-cc4-btn-primary-border: #42476d;
+    --o-cc4-btn-secondary: #42476d;
+    --o-cc4-btn-secondary-border: #383E45;
+
+    /* [o_cc5] Dark Background (深色底 - Footer/Hero) */
+    --o-cc5-bg: #383E45;
+    --o-cc5-text: #FFFFFF;
+    --o-cc5-headings: #FFFFFF;
+    --o-cc5-btn-primary: #35979c;
+    --o-cc5-btn-secondary-border: #EDEDED;
+
+    /* =========================================
+       3. Grays & Opacities (通用灰階)
+       ========================================= */
+    --gray: #6C757D;
+    --gray-dark: #343A40;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Transparencies */
+    --white-50: rgba(255, 255, 255, 0.5);
+    --black-50: rgba(0, 0, 0, 0.5);
+}

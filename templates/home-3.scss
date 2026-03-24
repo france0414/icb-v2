@@ -1,0 +1,351 @@
+//  -------------------------------------            banner 文字靠左居中 結束           -------------------------------------  //     
+.s_custom_textleftmiddle .carousel-item>.oe_unremovable[class*=container] {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+    >.row {
+        width: 100%;
+        justify-content: flex-start;
+        align-content: center;
+    }
+}
+//  -------------------------------------            banner 文字靠左居中 結束           -------------------------------------  //
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 開始           -------------------------------------  //   
+// 變數
+$insertBelowSpace: 180px;
+.s_custom_insertBelow {
+    .img-area,
+    .counter-area {
+        margin-bottom: calc(#{$insertBelowSpace} * -1);
+        z-index: 2;
+        position: relative;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0;
+        }
+    }
+    .counter-area {
+        display: flex;
+        align-items: flex-end;
+        >div {
+            width: 100%;
+            padding-bottom: #{$insertBelowSpace};
+            @include media-breakpoint-down(md) {
+                padding-bottom: 0;
+            }
+        }
+        .s_text_block .col-lg-4 {
+            @include media-breakpoint-down(md) {
+                flex: 0 0 33.33%;
+            }
+            @include media-breakpoint-down(xs) {
+                flex: 0 0 100%;
+            }
+        }
+        +.description-area {
+            padding-top: #{$insertBelowSpace};
+            position: relative;
+            z-index: 1;
+            @include media-breakpoint-down(md) {
+                padding-top: 0;
+            }
+        }
+    }
+    .img-area p {
+        margin-bottom: 0;
+    }
+    .counter-area {
+        padding-right: calc((100vw - #{$wrap-size}) / 2);
+        padding-left: var(--container-pd-x);
+        @include wrap {
+            padding-right: var(--container-pd-x);
+        }
+        @include media-breakpoint-down(md) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 結束           -------------------------------------  //   
+//  -------------------------------------            自訂-產品分類 - 滿版+icon+微間隙 開始           -------------------------------------  //   
+.s_custom_fullWrapProduct .s_product_product_borderless_1 {
+    >.row {
+        gap: 0;
+        @include media-breakpoint-down(sm) {
+            flex-wrap: nowrap;
+            overflow: auto
+        }
+        >.col-lg-4 {
+            flex: 0 0 33.33333333% !important;
+            max-width: 33.33333333% !important;
+            margin: 0 !important;
+            padding: 0;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 50% !important;
+                max-width: 50% !important;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 76vw !important;
+                max-width: 76vw !important;
+            }
+        }
+        >div {
+            overflow: hidden;
+            &:hover {
+                &::before {
+                    opacity: .7;
+                }
+            }
+            &::before {
+                content: "";
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                pointer-events: none;
+                @include transition;
+            }
+        }
+    }
+    .o_carousel_product_card_body {
+        z-index: 1;
+        border-bottom: none !important;
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_fullWrapProduct .s_product_product_borderless_1 {
+    >.row>div:hover {
+        .o_carousel_product_card_img_top {
+            transform: scale(1.1);
+        }
+    }
+    .o_carousel_product_card_img_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+    }
+    .o_carousel_product_card_body {
+        padding: 60px 30px;
+        z-index: 2;
+        border-bottom: none !important;
+        @include media-breakpoint-down(sm) {
+            padding: 60px 20px;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+//  -------------------------------------            自訂-產品分類 - 滿版+icon+微間隙 結束           -------------------------------------  //   
+//  -------------------------------------            動態-產品 - 滿版+微間隙 開始           -------------------------------------  //   
+.s_custom_fullWrapProduct .dynamic_snippet_template {
+    @include media-breakpoint-down(sm) {
+        overflow: auto;
+        display: flex;
+    }
+    >.row {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 76vw;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        >div {
+            padding: 0;
+            border: 1px solid #fff;
+            &:hover {
+                .o_carousel_product_img_link {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .col-3 {
+            @include media-breakpoint-down(md) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+    .o_carousel_product_img_link {
+        padding: 0 !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include transition;
+        &::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.48);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+    }
+    .o_carousel_product_card_body,
+    .o_carousel_product_card_footer {
+        z-index: 1;
+    }
+    .o_carousel_product_card_body {
+        color: #fff;
+        padding: 0 !important;
+        .text-muted {
+            color: #fff !important;
+        }
+        .h5,
+        .h6 {
+            margin-top: 0 !important;
+        }
+        .h5 {
+            font-size: var(--h3);
+        }
+    }
+    .o_carousel_product_card_footer {
+        padding-bottom: 0 !important;
+        margin-bottom: 0;
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+section[class*="s_product_product_"].s_custom_fullWrapProduct.s_product_product_centered {
+    .o_carousel_product_card_footer {
+        background-color: unset !important;
+    }
+    .o_carousel_product_card {
+        padding: 60px 30px !important;
+        overflow: hidden;
+        @include media-breakpoint-down(sm) {
+            padding: 60px 20px;
+        }
+    }
+    .o_carousel_product_img_link {
+        position: absolute !important;
+        img {
+            object-fit: scale-down;
+            height: 100%;
+        }
+    }
+}
+//  -------------------------------------            動態-產品 - 滿版+微間隙 結束           -------------------------------------  //   
+//  -------------------------------------            自訂-上下錯位  開始           -------------------------------------  //   
+.s_custom_staggerBricks .s_product_product_borderless_1 {
+    >.row {
+        gap: 30px 0;
+        padding-bottom: 60px;
+        @include media-breakpoint-down(md) {
+            flex-wrap: nowrap;
+            overflow: auto
+        }
+        >.col-lg-6 {
+            @include media-breakpoint-down(md) {
+                flex: 0 0 40vw !important;
+                max-width: 40vw !important;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 76vw !important;
+                max-width: 76vw !important;
+            }
+        }
+        >div {
+            overflow: hidden;
+            &:nth-child(even) {
+                transform: translateY(60px);
+            }
+            &:hover {
+                &::before {
+                    opacity: .7;
+                }
+            }
+            &::before {
+                content: "";
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                pointer-events: none;
+                @include transition;
+            }
+        }
+    }
+    .o_carousel_product_card_body {
+        z-index: 1;
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_staggerBricks .s_product_product_borderless_1 {
+    >.row>div:hover {
+        .o_carousel_product_card_img_top {
+            transform: scale(1.1) !important;
+        }
+    }
+    .o_carousel_product_card>a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    .o_carousel_product_card_img_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+    }
+    .o_carousel_product_card_body {
+        padding: 60px 30px;
+        z-index: 2;
+        min-height: 420px;
+        justify-content: center !important;
+        @include media-breakpoint-down(sm) {
+            min-height: unset;
+            padding: 60px 20px;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+//  -------------------------------------            自訂-上下錯位  結束           -------------------------------------  //   
+//  -------------------------------------            全彩-線稿視差效果 開始           -------------------------------------  //
+.s_custom_fullScreenParallax .oe_structure>section {
+    height: 100vh;
+    @media(max-width: 991px) {
+        height: unset;
+        min-height: 45vh;
+    }
+}
+//  -------------------------------------            全彩-線稿視差效果 結束           -------------------------------------  //

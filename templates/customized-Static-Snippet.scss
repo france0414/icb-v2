@@ -1,0 +1,597 @@
+//  -------------------------------------                  文字壓在圖片上面，hover圖片變大                       -------------------------------------  //
+.s_custom_titleUpperBg {
+  .o_carousel_product_card {
+    position: relative;
+    &:hover {
+      .o_carousel_product_card_body {
+        background-color: var(--o-color-1);
+      }
+    }
+    .o_carousel_product_card_body {
+      padding: 14px 30px;
+      background-color: color-mix(in srgb, var(--o-color-1) 5%, #252525 65%);
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      backdrop-filter: blur(5px);
+      @include transition;
+      @include media-breakpoint-down(xs) {
+        padding: 12px 20px;
+      }
+      .card-title {
+        color: #fff;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+    .o_carousel_product_card_img_top {
+      @include media-breakpoint-down(md) {
+        max-height: 350px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+//  -------------------------------------                  文字壓在圖片上面，hover圖片變大                       -------------------------------------  //
+
+
+//  -----------------------       三連區 - 公司簡介+產品簡述+產品(中間背景穿插3區塊)  開始        --------------------------------  //
+  //背景圖hover效果 + 文字在背景之上 開始//
+  .s_custom_textInnerBg {
+    position: relative;
+    &:hover {
+     .col-bg img {
+        transform: scale(1.05);
+     }
+    }
+    >div {
+      position: static;
+      @include media-breakpoint-down(md) {
+        padding-right: var(--container-pd-x);
+        padding-left: var(--container-pd-x);
+      }
+    }
+    .row > [class*='col']:not(.col-bg) {
+      padding: clamp(20px, 2vw, 40px);
+      position: relative;
+      z-index: 2;
+    }
+  }
+  #wrapwrap:not(.odoo-editor-editable) .s_custom_textInnerBg {
+      .col-bg {
+        display: flex;
+        justify-content: stretch;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+        >* {
+            width: 100%;
+            margin-bottom: 0;
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            @include transition;
+        }
+    }
+      a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+  }
+  //背景圖hover效果 + 文字在背景之上 開始//
+.s_custom_threeChains {
+   .first-content {
+       padding-left: calc(var(--container-pd-x) + (100% - #{$wrap-size}) / 2);
+       padding-right: calc(var(--container-pd-x) + (100% - #{$wrap-size}) / 2);
+      @include wrap {
+          padding-left: var(--container-pd-x);
+          padding-right: var(--container-pd-x);
+      }
+      @include media-breakpoint-down(sm) {
+          padding: 0;
+      }
+   }
+  .bg-effect {
+      flex: auto;
+      max-width: unset;
+      width: unset;
+    }
+  .bg-effect,
+  .third-content {
+    section >.container {
+      @include wrap {
+          padding: 0 var(--container-pd-x);
+      }
+    }
+  }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_threeChains {
+    >*>.row>[class*='col']:not(.bg-effect) {
+        z-index: 1;
+    }
+  .bg-effect {
+    margin: -240px 0;
+    padding: 0;
+    @include media-breakpoint-down(sm) {
+        margin: -140px 0;
+    }
+    section {
+      padding: 300px 0 !important;
+      @include media-breakpoint-down(sm) {
+          padding: 200px 0 !important;
+      }
+      >div {
+          padding-left: var(--container-pd-x);
+          padding-right: var(--container-pd-x);
+      }
+    }
+  }
+}
+//  -----------------------       三連區 - 公司簡介+產品簡述+產品(中間背景穿插3區塊)  結束       --------------------------------  //
+
+
+//  -------------------------------          出血-頁籤切換效果 開始            -------------------------------------  //
+@keyframes tabEffectContent {
+  0% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.s_custom_tabEffectContent>[class*='container'] {
+    min-height: 55vh;
+}
+.s_custom_tabEffect {
+    position: static;
+    >.container {
+        position: static;
+    }
+    .s_tabs_main {
+        color: var(--o-color-1);
+        padding: 36px;
+        background-color: rgb(243, 243 ,243);
+        @include media-breakpoint-down(md) {
+            padding: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 20px;
+        }
+    }
+    &.s_tabs .nav-pills {
+        padding-right: 30px;
+        @include media-breakpoint-down(md) {
+            max-height: 22vh;
+            overflow-y: auto;
+        }
+        .nav-item {
+            padding-right: 20px;
+            border-left: none !important;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 50%;
+                padding-right: 0;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 100%;
+            }
+        }
+        .nav-link {
+            color: var(--o-color-1) !important;
+            font-weight: bold;
+            padding-left: 24px;
+            padding-right: 0;
+            background-color: unset !important;
+            border-top: none;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            &.active,
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+                &::after {
+                    flex-grow: 1;
+                    min-width: 40px;
+                }
+            }
+            &::before,
+            &::after {
+                content: "";
+                background-color: var(--o-color-1);
+                @include transition;
+            }
+            &::before {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                top: 18px;
+                left: 0;
+                position: absolute;
+                opacity: 0;
+            }
+            &::after {
+                flex-grow: 0;
+                height: 1px;
+                margin-right: -45px;
+                z-index: 0;
+                position: relative;
+                top: 14px;
+                @include media-breakpoint-down(md) {
+                    content: none;
+                }
+            }
+            &:not(.active) {
+                color: color-mix(in srgb, var(--o-color-1) 30%, #848484 95%) !important;
+                background-color: unset;
+                &:hover {
+                    color: var(--o-color-1) !important;
+                    background-color: unset;
+                }
+            }
+        }
+    }
+    .s_tabs_content {
+        .s_media_list_img_wrapper {
+            @include media-breakpoint-down(md) {
+                position: static;
+            }
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_tabEffect {
+    .tab-pane,
+    .tab-pane *:not(.s_media_list_body) {
+        height: 100%;
+        max-height: 72vh;
+        @include media-breakpoint-down(md) {
+            max-height: unset;
+            height: auto;
+        }
+    }
+       .tab-pane.fade{
+      transform: translateX(0);
+      animation: tabEffectContent2 0.8s ease-in-out;
+      &.show{
+        animation: tabEffectContent 1s ease-in-out;
+      }
+    }
+    .s_tabs_content {
+        position: absolute;
+        top: 0;
+        bottom: 50px;
+        right: 0;
+        max-width: unset;
+        width: calc((1550px - var(--container-pd-x) * 2) * .66667 + (100% - (1550px - var(--container-pd-x) * 2)) / 2);
+        padding: 0;
+        @media (max-width:$wrap-size) {
+          width: calc((100% - var(--container-pd-x) * 2) * .66667 + var(--container-pd-x));
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            position: static;
+            padding: 0;
+        }
+    }
+    .s_media_list_body {
+        position: absolute;
+        padding: 30px 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        @include media-breakpoint-down(md) {
+            min-height: 40vh;
+            position: relative;
+            top: auto;
+            transform: none;
+            z-index: 1;
+        }
+    }
+}
+//  -------------------------------          出血-頁籤切換效果 結束            -------------------------------------  //
+
+
+//  -------------------------------------            自訂-產品分類 - 滿版+icon+微間隙 開始           -------------------------------------  //   
+.s_custom_fullWrapProduct .s_product_product_borderless_1 {
+    >.row {
+        gap: 0;
+        @include media-breakpoint-down(sm) {
+            flex-wrap: nowrap;
+            overflow: auto
+        }
+        >.col-lg-4 {
+            flex: 0 0 33.33333333% !important;
+            max-width: 33.33333333% !important;
+            margin: 0 !important;
+            padding: 0;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 50% !important;
+                max-width: 50% !important;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 76vw !important;
+                max-width: 76vw !important;
+            }
+        }
+        >div {
+            overflow: hidden;
+            &:hover {
+                &::before {
+                    opacity: .7;
+                }
+            }
+            &::before {
+                content: "";
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                pointer-events: none;
+                @include transition;
+            }
+        }
+    }
+    .o_carousel_product_card_body {
+        z-index: 1;
+        border-bottom: none !important;
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_fullWrapProduct .s_product_product_borderless_1 {
+    >.row>div:hover {
+        .o_carousel_product_card_img_top {
+            transform: scale(1.1);
+        }
+    }
+    .o_carousel_product_card_img_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+    }
+    .o_carousel_product_card_body {
+        padding: 60px 30px;
+        z-index: 2;
+        border-bottom: none !important;
+        @include media-breakpoint-down(sm) {
+            padding: 60px 20px;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+//  -------------------------------------            自訂-產品分類 - 滿版+icon+微間隙 結束           -------------------------------------  //
+
+
+//  -------------------------------------            自訂-上下錯位  開始           -------------------------------------  //   
+.s_custom_staggerBricks .s_product_product_borderless_1 {
+    >.row {
+        gap: 30px 0;
+        padding-bottom: 60px;
+        @include media-breakpoint-down(md) {
+            flex-wrap: nowrap;
+            overflow: auto
+        }
+        >.col-lg-6 {
+            @include media-breakpoint-down(md) {
+                flex: 0 0 40vw !important;
+                max-width: 40vw !important;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 76vw !important;
+                max-width: 76vw !important;
+            }
+        }
+        >div {
+            overflow: hidden;
+            &:nth-child(even) {
+                transform: translateY(60px);
+            }
+            &:hover {
+                &::before {
+                    opacity: .7;
+                }
+            }
+            &::before {
+                content: "";
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                pointer-events: none;
+                @include transition;
+            }
+        }
+    }
+    .o_carousel_product_card_body {
+        z-index: 1;
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_staggerBricks .s_product_product_borderless_1 {
+    >.row>div:hover {
+        .o_carousel_product_card_img_top {
+            transform: scale(1.1) !important;
+        }
+    }
+    .o_carousel_product_card>a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    .o_carousel_product_card_img_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+    }
+    .o_carousel_product_card_body {
+        padding: 60px 30px;
+        z-index: 2;
+        min-height: 420px;
+        justify-content: center !important;
+        @include media-breakpoint-down(sm) {
+            min-height: unset;
+            padding: 60px 20px;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+//  -------------------------------------            自訂-上下錯位  結束           -------------------------------------  //
+
+
+//  -------------------------------------                  輪播-上下交錯(偶數往上)    開始                  -------------------------------------  //
+.s_custom_interlaceCarousel {
+    .static_snippet_template >.row {
+        align-items: flex-start;
+    }
+    .carousel-item>.row>[class*='col-'] .card {
+        height: unset !important;
+    }
+    .carousel-item .row>div:nth-child(odd) {
+        transform: translateY(50px);
+        margin-bottom: 50px;
+        @include media-breakpoint-down(sm) {
+            transform: none;
+            margin-bottom: 0;
+        }
+    }
+}
+//  -------------------------------------                  輪播-上下交錯(偶數往上)    結束                  -------------------------------------  //
+
+
+//  -------------------------------------                  文字壓在圖片上面，hover圖片變大 2  開始                    -------------------------------------  //
+.s_custom_titleUpperBg2 {
+    @include media-breakpoint-down(md) {
+        >.container {
+            overflow: hidden;
+        }
+        .static_snippet_template>.row {
+            flex-wrap: nowrap !important;
+            overflow: auto;
+            margin-right: calc(var(--container-pd-x) * -1);
+            padding-bottom: 20px;
+            >div {
+                flex: 0 0 66vw !important;
+                max-width: 66vw !important;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .static_snippet_template>.row>div {
+            flex: 0 0 80vw !important;
+            max-width: 80vw !important;
+        }
+    }
+    .o_carousel_product_card {
+        background-color: inherit;
+        position: relative;
+        .o_carousel_product_card_body {
+            padding: 30px;
+            background-color: inherit;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            backdrop-filter: blur(5px);
+            @include transition;
+            @include media-breakpoint-down(xs) {
+                padding: 20px;
+            }
+            @include mobile-s {
+                position: static;
+            }
+            .card-title {
+                margin-bottom: 16px !important;
+                margin-top: 0 !important;
+                >* {
+                    margin-bottom: 0 !important;
+                }
+            }
+            .card-body {
+                padding: 0;
+                p {
+                    @include clamp-3;
+                    max-height: unset;
+                    @include media-breakpoint-down(xs) {
+                        @include clamp-2;
+                    }
+                }
+            }
+        }
+        .o_carousel_product_card_img_top {
+            @include media-breakpoint-down(md) {
+                max-height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+body:not(.editor_started) .s_custom_titleUpperBg2 {
+    .o_carousel_product_card .o_carousel_product_card_body .card-body {
+        max-height: 0;
+        opacity: 0;
+        @include transition;
+        @include media-breakpoint-down(md) {
+            max-height: unset;
+            opacity: 1;
+        }
+    }
+    .o_carousel_product_card:hover .o_carousel_product_card_body .card-body {
+        max-height: 300px;
+        opacity: 1;
+    }
+    .btn-wrap {
+        @include media-breakpoint-down(md) {
+            height: 0;
+            opacity: 0;
+        }
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+//  -------------------------------------                  文字壓在圖片上面，hover圖片變大 2  結束                    -------------------------------------  //

@@ -1,0 +1,102 @@
+<t t-name="website.customized-static-snippet">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>&amp;nbsp;<strong>排版部落格-01</strong><br/>
+          </h4>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" style="background-image: none;" data-name="複製html 結構按鈕">
+        <div class="container s_allow_columns" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt72 pb72 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none; background-color: rgb(250, 250, 250) !important;" data-original-title="" title="" aria-describedby="tooltip454821">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch" data-original-title="" title="" aria-describedby="tooltip888681">
+            <div class="s_col_no_bgcolor col-left col-lg-12 pb40">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 83px;">
+                <section class="s_title o_colored_level pt0 pb0 s_custom_titleUnderLine" data-vcss="001" data-snippet="s_title" style="background-image: none;" data-name="Title" data-custom-name="titleUnderLine">
+                  <div class="s_allow_columns container">
+                    <h2 style="text-align: left;">News</h2>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="s_col_no_bgcolor col-left pb24 col-lg-5" data-original-title="" title="" aria-describedby="tooltip16010">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" data-editor-message="拖曳區塊到這裡" style="top: 83px;">
+                <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic o_colored_level s_blog_post_big_picture s_custom_hoverUnderLine pt0 pb0 o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-id="9" data-template-key="website_blog.dynamic_filter_template_blog_post_big_picture" data-number-of-elements="1" data-filter-by-blog-id="-1" data-number-of-elements-small-devices="1" data-number-of-records="1" data-force-minimum-max-limit-to16="1" data-blog-sort-id="1" data-custom-name="hoverUnderLine">
+                  <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-7" data-original-title="" title="" aria-describedby="tooltip43408">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb32 o_colored_level pt0 s_blog_post_card s_custom_newsSummary s_custom_noPic s_custom_hoverUnderLine s_custom_dateLeft o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="1" data-filter-by-blog-id="2" data-number-of-elements-small-devices="1" data-number-of-records="4" data-force-minimum-max-limit-to16="1" data-custom-name="newsSummary noPic hoverUnderLine dateLeft">
+                  <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip43508">
+                    <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip918415">
+                      <a href="#" class="btn btn-primary" data-original-title="" title="">More News</a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>&amp;nbsp;<strong>排版部落格-02</strong><br/>
+          </h4>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" style="background-image: none;" data-name="複製html 結構按鈕">
+        <div class="container s_allow_columns" style="text-align: right;">
+          <button class="btn btn-primary copy-btn">複製 html</button>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt56 pb56" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip169072">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p class="o_default_snippet_text h1">Your Site Title</p>
+              </div>
+            </section>
+            <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_blog_post_card pt0 pb0 s_custom_textUpper s_custom_default s_custom_arrowTop s_custom_arrowRight o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="9" data-carousel-interval="8000" data-force-minimum-max-limit-to16="1" data-custom-name="text-Upper default arrowTop arrowRight">
+              <div class="container o_not_editable">
+                <div class="css_non_editable_mode_hidden">
+                  <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                </div>
+                <div class="dynamic_snippet_template"/>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                  <br/>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    
+    </div>
+  </t>
+</t>

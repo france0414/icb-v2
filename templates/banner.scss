@@ -1,0 +1,234 @@
+//  -------------------------------------                   Banner - 三角形遮罩                       -------------------------------------  //           
+.s_custom_bannerGeometricTriangle {
+  .carousel-item {
+
+    // 遮罩顏色設定
+    &::before {
+      content: "";
+      background: rgb(255, 255, 255);
+      background: linear-gradient(121deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 53%, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 1) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      @include media-breakpoint-down(md) {
+        background: linear-gradient(121deg, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .5) 53%, rgba(255, 255, 255, .5) 53%, rgba(255, 255, 255, .5) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%);
+      }
+    }
+
+    >.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80vh !important;
+
+      &::before,
+      &::after {
+        content: none !important;
+      }
+
+      >.row {
+        align-content: center;
+        position: static;
+
+        @include media-breakpoint-down(md) {
+          flex-direction: row-reverse;
+          flex-wrap: nowrap;
+        }
+
+        @include media-breakpoint-down(sm) {
+          height: 100%;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .carousel-content {
+      position: relative;
+      z-index: 2;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+
+    .carousel-img {
+      position: absolute;
+      width: 43%;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      margin-top: 83px;
+      /*header height*/
+      z-index: 1;
+
+      @include media-breakpoint-down(md) {
+        width: 50%;
+        margin: 0;
+        position: static;
+        transform: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 60%;
+        order: -1;
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+//  -------------------------------------               Banner - 三角形遮罩 結束          -------------------------------------  //
+
+// --------------  Banner 2 開始 ----------------//
+@keyframes banner2 {
+  0% {
+    background-size: 130%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes banner2-dot {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+$banner2-time: 15s; // 需與輪播秒數一致
+
+.s_custom_banner2 {
+  .carousel-indicators {
+    >li {
+      width: 35px;
+      height: 5px !important;
+      overflow: hidden;
+      position: relative;
+      border-radius: 0 !important;
+      opacity: 1;
+
+      &.active {
+        &::before {
+          content: "";
+          width: 0;
+          height: 100%;
+          background-color: $primary;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation: banner2-dot $banner2-time linear;
+        }
+      }
+    }
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 96 / 45;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      aspect-ratio: 8 / 5;
+    }
+
+    @include media-breakpoint-down(xs) {
+      aspect-ratio: 5 / 6;
+    }
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+    background-size: 130%;
+    animation: banner2 $banner2-time linear;
+
+    @include media-breakpoint-down(sm) {
+      background-size: cover;
+      animation: none;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.active {
+      @include media-breakpoint-up(md) {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+// --------------  Banner 2 結束 ----------------//
+
+//  -------------------------------------            banner 文字靠左居中 結束           -------------------------------------  //     
+.s_custom_textleftmiddle .carousel-item>.oe_unremovable[class*=container] {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  height: 100%;
+
+  >.row {
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center;
+  }
+}
+
+//  -------------------------------------            banner 文字靠左居中 結束           -------------------------------------  //
+
+//  -------------------------------------            純影片 banner 開始           -------------------------------------  //
+body:not(.editor_started) {
+  .s_custom_pureVideoBanner {
+    .o_bg_video_iframe {
+      top: -14.5% !important;
+
+      @include media-breakpoint-down(lg) {
+        height: 120% !important;
+        width: 120% !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        top: -13.5% !important
+      }
+    }
+  }
+}
+
+.s_custom_pureVideoBanner {
+  .carousel-item {
+    &::before {
+      content: "";
+      height: 150px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 100%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .o_background_video,
+  .oe_img_bg {
+    aspect-ratio: 24 / 11.5;
+
+    @include media-breakpoint-down(md) {
+      aspect-ratio: 24 / 14.5;
+    }
+  }
+}
+
+//  -------------------------------------            純影片 banner 結束           -------------------------------------  //  

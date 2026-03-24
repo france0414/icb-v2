@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "icb/page_task.schema.json",
+  "title": "ICB Page Task Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "command", "task_type", "constraints", "outputs"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^v\\d+\\.\\d+$"
+    },
+    "command": {
+      "type": "string",
+      "enum": ["/page", "/create", "/clone", "/dynamic", "/btn", "/js", "/block"]
+    },
+    "task_type": {
+      "type": "string",
+      "enum": ["page", "snippet", "style", "clone", "dynamic"]
+    },
+    "intent_summary": {
+      "type": "string",
+      "maxLength": 240
+    },
+    "header_variant": {"$ref": "#/$defs/header_variant"},
+    "footer_variant": {"$ref": "#/$defs/footer_variant"},
+    "output_mode": {"$ref": "#/$defs/output_mode"},
+    "resources": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "templates": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/template_ref"}
+        },
+        "docs": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rules", "locks"],
+      "properties": {
+        "rules": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "locks": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/lock_rule"}
+        }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["files"],
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/output_file"}
+        },
+        "notes": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "template_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "path"],
+      "properties": {
+        "name": {"type": "string"},
+        "path": {"type": "string"},
+        "structure_locked": {"type": "boolean"},
+        "allowed_ops": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/op_type"}
+        },
+        "forbidden_ops": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/op_type"}
+        }
+      }
+    },
+    "lock_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target", "policy"],
+      "properties": {
+        "target": {"type": "string"},
+        "policy": {
+          "type": "string",
+          "enum": ["xml_locked", "scss_only", "xpath_required", "structure_locked"]
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "output_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "path"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["xml", "scss", "js", "html", "json", "md"]
+        },
+        "path": {"type": "string"},
+        "required": {"type": "boolean"}
+      }
+    },
+    "header_variant": {
+      "type": "string",
+      "enum": ["menu-1", "menu-2", "menu-3", "menu-4", "m-1", "m-2", "m-3", "m-4"]
+    },
+    "footer_variant": {
+      "type": "string",
+      "enum": ["footer-1", "footer-2", "ft-1", "ft-2"]
+    },
+    "output_mode": {
+      "type": "string",
+      "enum": ["section_only", "qweb_full"]
+    },
+    "op_type": {
+      "type": "string",
+      "enum": [
+        "section_class_add",
+        "section_data_custom_name_set",
+        "scss_override_only",
+        "xpath_only",
+        "inner_dom_insert",
+        "inner_dom_delete",
+        "template_key_change",
+        "xml_replace",
+        "xml_modify"
+      ]
+    }
+  }
+}

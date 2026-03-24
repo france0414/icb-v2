@@ -1,0 +1,393 @@
+<t t-name="website.customized-carousel">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb0 pt112" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc1 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" data-custom-name="titleUnderLine" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: left;">
+                  <strong>Customized carousel</strong>
+                  <br/>
+                </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 o_cc o_cc1 pt0" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h6 style="text-align: left;">Hover background image is clearly enlarged&amp;nbsp;<br/>
+                </h6>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+              <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                <p style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip581929">
+                  <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                </p>
+              </div>
+            </section>
+            <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb88 o_cc o_cc4 s_custom_carouselHoverBgEffect s_custom_arrowTop s_custom_arrowRight s_custom_default" data-name="Static Carousel" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-staticarousel-template="default" data-number-desktop="3" data-original-title="" title="" aria-describedby="tooltip531539" data-custom-name="carouselHoverBgEffect arrowTop arrowRight default" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="container" data-original-title="" title="" aria-describedby="tooltip825838">
+                <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1 pointer-event" data-interval="200000" data-ride="carousel" id="myCarousel1733814994253">
+                  <div class="content oe_unremovable"/>
+                  <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip652016">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2380-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2381-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2381-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item o_colored_level" data-name="Slide" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip652016">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2380-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2381-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="" aria-describedby="popover494742">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2381-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1733814994253" style="display: none;">
+                    <span class="fa fa-chevron-circle-left fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </a>
+                  <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1733814994253" style="display: none;">
+                    <span class="fa fa-chevron-circle-right fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level o_cc o_cc2 pb0 pt64" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip750219">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
+              <div class="s_allow_columns container">
+                <h2>Customized carousel
+        </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt4" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>Hover background image is clearly enlarged</p>
+                <p data-original-title="" title="" aria-describedby="tooltip379599">
+                  <a href="#" data-require-form="false" class="btn btn-primary">Read more</a>
+                </p>
+              </div>
+            </section>
+            <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb0 s_custom_staticCarousel2 s_custom_fullContainer s_custom_inherit s_custom_ s_custom_arrowTop s_custom_arrowRight s_custom_imgNoMargin s_custom_default" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="staticCarousel2 fullContainer inherit  arrowTop arrowRight imgNoMargin default">
+              <div class="container-fluid" data-original-title="" title="" aria-describedby="tooltip402427">
+                <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="myCarousel1742130555793">
+                  <div class="content oe_unremovable"/>
+                  <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level pb0 active" data-name="Slide" style="background-image: none;">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize" data-original-title="" title="" aria-describedby="tooltip866218">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3804-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 01</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3806-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962" data-original-title="" title="" aria-describedby="tooltip959158"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 02</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3805-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip111777" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 03</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3807-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip893664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 04</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item o_colored_level pb0" data-name="Slide" style="background-image: none;">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize" data-original-title="" title="" aria-describedby="tooltip866218">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3807-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip893664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 05</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3807-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip893664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 06</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3807-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip893664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 07</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 col-3 o_colored_level">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/3807-abcd7251/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip893664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <h6>Name 08</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1742130555793">
+                    <span class="fa fa-chevron-circle-left fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </a>
+                  <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1742130555793">
+                    <span class="fa fa-chevron-circle-right fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

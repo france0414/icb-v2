@@ -1,0 +1,92 @@
+//  -----------最新消息 左邊帶圖消息  右邊列表沒帶圖  s_custom_newsSummary --------------  //
+.s_custom_dateLeft{
+  .s_blog_posts_post{
+    .card{
+      background-color:  transparent;
+      border:0;
+      border-bottom: 1px solid $borderColor;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      @include media-breakpoint-down(xs) {
+        flex-direction: column-reverse;
+      }
+    }
+    .card-body{
+      padding:0 0 30px ;
+      @include media-breakpoint-up(sm) {
+        width: calc(100% - 160px);
+        padding:20px;
+      }
+      .s_blog_posts_post_teaser{
+        @include clamp-2;
+      }
+    }
+    .card-footer{
+      padding:0 0 8px !important;
+      justify-content: flex-end !important;
+      @include media-breakpoint-up(sm) {
+        width: 160px;
+        padding:20px !important;
+        flex-direction: column-reverse;
+      }
+      .text-muted :first-child{
+        margin-right: 10px;
+        display: inline-block;
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+//  -----------最新消息 左邊帶圖消息  右邊列表沒帶圖  s_custom_newsSummary end --------------  //
+
+//  -------------------------------------             客製訊息列表 開始          -------------------------------------  //
+$blogAspectRatioEffect: 16/9;   
+.s_custom_textUpper.s_blog_post_card {
+    .card {
+        border: none;
+        &:hover {
+            .s_blog_posts_post_cover {
+                opacity: 1;
+            }
+        }
+        .s_blog_posts_post_cover {
+            margin: 0 !important;
+        }
+    }
+    .card-body h4 {
+        margin-bottom: 0 !important;
+    }
+    .s_blog_posts_post_cover {
+        opacity: .7;
+        @include transition;
+    }
+    .card-body {
+        order: -1;
+        padding: 0 0 20px !important;
+    }
+    .s_blog_posts_post_teaser {
+        display: none !important;
+    }
+    .card-footer {
+        order: -2;
+        padding: 0 0 10px!important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        > span:first-child::before {
+            content: none;
+        }
+        > span:last-child a {
+            font-size: 16px;
+            font-weight: normal !important;
+            color: rgba(52, 58, 64, 0.4);
+            padding: 0 0 0 8px;
+            margin-left: 8px;
+            background-color: unset;
+            border-left: 1px solid rgba(52, 58, 64, 0.4);
+        }
+    }
+}
+//  -------------------------------------             客製訊息列表 結束          -------------------------------------  //

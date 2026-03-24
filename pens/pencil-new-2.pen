@@ -1,0 +1,1821 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Machine Tool B2B Home V2",
+      "clip": true,
+      "width": 1920,
+      "fill": "#F3F5F8",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "InfNK",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 96,
+          "fill": "#0D1621",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gG7va",
+              "x": 120,
+              "y": 28,
+              "name": "logo",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zDHo3",
+                  "name": "mark",
+                  "width": 22,
+                  "height": 22,
+                  "fill": "#2F6BFF",
+                  "cornerRadius": 3
+                },
+                {
+                  "type": "text",
+                  "id": "4r5Ty",
+                  "name": "brand",
+                  "fill": "#FFFFFF",
+                  "content": "ForgeAxis",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HsYPm",
+              "x": 700,
+              "y": 36,
+              "name": "nav",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SoUTo",
+                  "name": "n1",
+                  "fill": "#B8C6D8",
+                  "content": "Solutions",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "olvs3",
+                  "name": "n2",
+                  "fill": "#B8C6D8",
+                  "content": "Machines",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "0EHux",
+                  "name": "n3",
+                  "fill": "#B8C6D8",
+                  "content": "Industries",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "5jAfa",
+                  "name": "n4",
+                  "fill": "#B8C6D8",
+                  "content": "Insights",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8gqeq",
+              "x": 1490,
+              "y": 26,
+              "name": "actions",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xOXFs",
+                  "name": "login",
+                  "fill": "#DEE8F4",
+                  "content": "Partner Login",
+                  "fontFamily": "IBM Plex Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "VzNxm",
+                  "name": "btn",
+                  "fill": "#2F6BFF",
+                  "cornerRadius": 6,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b0kFb",
+                      "name": "btnT",
+                      "fill": "#FFFFFF",
+                      "content": "Request Quote",
+                      "fontFamily": "IBM Plex Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aznAe",
+          "name": "Hero",
+          "metadata": {
+            "type": "unsplash",
+            "username": "alex_quezada",
+            "link": "https://unsplash.com/@alex_quezada",
+            "author": "Alex Quezada"
+          },
+          "width": "fill_container",
+          "height": 860,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1715639732338-984ad26ac5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODk4MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HenGM",
+              "x": 120,
+              "y": 110,
+              "name": "chip",
+              "fill": "#13283E",
+              "cornerRadius": 3,
+              "padding": [
+                8,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wcX1q",
+                  "name": "chipT",
+                  "fill": "#7CB1FF",
+                  "content": "INDUSTRIAL PRECISION SYSTEMS",
+                  "fontFamily": "Rajdhani",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "07Pjl",
+              "x": 0,
+              "y": 0,
+              "name": "ovHero2",
+              "width": 1920,
+              "height": 860,
+              "fill": "#0A111A66"
+            },
+            {
+              "type": "text",
+              "id": "NeeDS",
+              "x": 120,
+              "y": 220,
+              "name": "heroT",
+              "fill": "#F3F8FF",
+              "content": "Machine tools engineered\nfor unstable production realities.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 76,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "9gjhm",
+              "x": 120,
+              "y": 480,
+              "name": "heroB",
+              "fill": "#AAC0D8",
+              "content": "When batch mix shifts and tolerance windows tighten, ForgeAxis keeps throughput stable with modular machines and automation logic.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 19,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Mr75c",
+          "name": "Trust",
+          "width": "fill_container",
+          "height": 260,
+          "fill": "#F8FAFD",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "lzkJV",
+              "x": 120,
+              "y": 34,
+              "name": "trustK",
+              "fill": "#35516D",
+              "content": "TRUSTED BY GLOBAL MANUFACTURERS",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "frame",
+              "id": "Psvmv",
+              "x": 120,
+              "y": 76,
+              "name": "band",
+              "width": 1680,
+              "height": 74,
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cBFAz",
+                  "name": "a",
+                  "width": "fill_container",
+                  "height": 62,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9YeCj",
+                      "name": "at",
+                      "fill": "#1F3954",
+                      "content": "NORDMET",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mIxcO",
+                  "name": "b",
+                  "width": "fill_container",
+                  "height": 62,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L2PJF",
+                      "name": "bt",
+                      "fill": "#1F3954",
+                      "content": "PRIME GEAR",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zZ1wd",
+                  "name": "c",
+                  "width": "fill_container",
+                  "height": 62,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SyzgB",
+                      "name": "ct",
+                      "fill": "#1F3954",
+                      "content": "AEROFAB",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K9Hxg",
+                  "name": "d",
+                  "width": "fill_container",
+                  "height": 62,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VSIAy",
+                      "name": "dt",
+                      "fill": "#1F3954",
+                      "content": "EASTGRID",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cT4Gg",
+          "name": "Solutions",
+          "width": "fill_container",
+          "height": 840,
+          "fill": "#EAF0F6",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "5BVLC",
+              "x": 120,
+              "y": 92,
+              "name": "sK",
+              "fill": "#35516D",
+              "content": "B2B SOLUTION STACK",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "i3vMG",
+              "x": 120,
+              "y": 116,
+              "name": "sT",
+              "fill": "#112D47",
+              "content": "Modular architecture\nfor throughput-first operations.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 62,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "mQylh",
+              "x": 120,
+              "y": 338,
+              "name": "sB",
+              "fill": "#48657F",
+              "content": "High irregularity, but controlled spacing: deliberate overlap with readable breathing room.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "RRbzQ",
+              "x": 980,
+              "y": 140,
+              "name": "sa",
+              "width": 470,
+              "height": 264,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12
+            },
+            {
+              "type": "text",
+              "id": "1azX6",
+              "x": 1012,
+              "y": 172,
+              "name": "saT",
+              "fill": "#183550",
+              "content": "5-Axis Precision Cell",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "tgasQ",
+              "x": 1012,
+              "y": 228,
+              "name": "saB",
+              "fill": "#4A6882",
+              "content": "Tight contour control for aerospace and high-spec medical components.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "EsGOx",
+              "x": 1330,
+              "y": 280,
+              "name": "sb",
+              "width": 470,
+              "height": 264,
+              "fill": "#102032",
+              "cornerRadius": 12
+            },
+            {
+              "type": "text",
+              "id": "okpFw",
+              "x": 1362,
+              "y": 312,
+              "name": "sbT",
+              "fill": "#EAF2FF",
+              "content": "Automated Pallet Flow",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "OqhCU",
+              "x": 1362,
+              "y": 368,
+              "name": "sbB",
+              "fill": "#AFC3DA",
+              "content": "Unattended queue balancing for longer lights-out production windows.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "067QS",
+              "x": 830,
+              "y": 438,
+              "name": "sc",
+              "width": 470,
+              "height": 244,
+              "fill": "#FFFFFF",
+              "cornerRadius": 12
+            },
+            {
+              "type": "text",
+              "id": "Say1g",
+              "x": 862,
+              "y": 468,
+              "name": "scT",
+              "fill": "#183550",
+              "content": "Remote Service Layer",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "91lHk",
+              "x": 862,
+              "y": 524,
+              "name": "scB",
+              "fill": "#4A6882",
+              "content": "Predictive diagnostics and escalation pathways that protect line uptime.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "hlJUb",
+              "x": 1530,
+              "y": 84,
+              "name": "shape",
+              "width": 150,
+              "height": 150,
+              "fill": "#2F6BFF",
+              "cornerRadius": 18
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9HCf4",
+          "name": "Products",
+          "width": "fill_container",
+          "height": 1080,
+          "fill": "#F9FBFD",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "aXrzl",
+              "x": 120,
+              "y": 84,
+              "name": "pK",
+              "fill": "#35516D",
+              "content": "MACHINE SERIES",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "HZvkc",
+              "x": 120,
+              "y": 108,
+              "name": "pT",
+              "fill": "#112D47",
+              "content": "Flagship lines tuned\nfor different production realities.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 60,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "0oa4f",
+              "x": 120,
+              "y": 322,
+              "name": "pB",
+              "fill": "#496781",
+              "content": "Controlled asymmetry: larger hero product, two offset supporting lines, and staggered labels.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "OvAIs",
+              "x": 120,
+              "y": 400,
+              "name": "p1",
+              "metadata": {
+                "type": "unsplash",
+                "username": "georgeiermann",
+                "link": "https://unsplash.com/@georgeiermann",
+                "author": "Georg Eiermann"
+              },
+              "width": 680,
+              "height": 382,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1749572859308-0b05d7ddc04c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 12
+            },
+            {
+              "type": "text",
+              "id": "7LdM7",
+              "x": 142,
+              "y": 796,
+              "name": "p1t",
+              "fill": "#112D47",
+              "content": "VX-500 Vertical Center",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "XnoZC",
+              "x": 840,
+              "y": 430,
+              "name": "p2",
+              "metadata": {
+                "type": "unsplash",
+                "username": "mirrors_are_more_fun",
+                "link": "https://unsplash.com/@mirrors_are_more_fun",
+                "author": "Red Shuheart"
+              },
+              "width": 420,
+              "height": 236,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1731339792557-47583fea380a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "Jw85W",
+              "x": 862,
+              "y": 678,
+              "name": "p2t",
+              "fill": "#112D47",
+              "content": "TR-800 Turning Platform",
+              "fontFamily": "Rajdhani",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ddyaf",
+              "x": 1280,
+              "y": 352,
+              "name": "p3",
+              "metadata": {
+                "type": "unsplash",
+                "username": "cadop",
+                "link": "https://unsplash.com/@cadop",
+                "author": "Mathew Schwartz"
+              },
+              "width": 500,
+              "height": 282,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1641312874336-6279a832a3dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "M4Fal",
+              "x": 1302,
+              "y": 646,
+              "name": "p3t",
+              "fill": "#112D47",
+              "content": "HX Hybrid Automation Cell",
+              "fontFamily": "Rajdhani",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "PAkvY",
+              "x": 1490,
+              "y": 176,
+              "name": "badge",
+              "width": 220,
+              "height": 96,
+              "fill": "#102032",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "Jeuwn",
+              "x": 1518,
+              "y": 198,
+              "name": "b1",
+              "fill": "#EAF2FF",
+              "content": "24/7",
+              "fontFamily": "Rajdhani",
+              "fontSize": 38,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "PqNcx",
+              "x": 1518,
+              "y": 242,
+              "name": "b2",
+              "fill": "#A8BED5",
+              "content": "global parts coverage",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "akRuc",
+          "name": "KPI",
+          "width": "fill_container",
+          "height": 840,
+          "fill": "#0F1C2B",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "xvbbj",
+              "x": 120,
+              "y": 78,
+              "name": "kK",
+              "fill": "#7AAFFF",
+              "content": "PERFORMANCE EVIDENCE",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "8K60O",
+              "x": 120,
+              "y": 102,
+              "name": "kT",
+              "fill": "#F2F7FF",
+              "content": "Measured gains from live plants\nwith high-mix workloads.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "bXPpq",
+              "x": 120,
+              "y": 286,
+              "name": "kB",
+              "fill": "#A4BCD4",
+              "content": "Operational benchmarks from multi-plant deployments.",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "EdtBz",
+              "x": 120,
+              "y": 370,
+              "name": "k1",
+              "width": 530,
+              "height": 168,
+              "fill": "#15273A",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "HyhJW",
+              "x": 154,
+              "y": 406,
+              "name": "k1a",
+              "fill": "#F4F8FF",
+              "content": "-27%",
+              "fontFamily": "Rajdhani",
+              "fontSize": 46,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Up8CZ",
+              "x": 154,
+              "y": 464,
+              "name": "k1b",
+              "fill": "#9FB6CD",
+              "content": "setup changeover time",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "273R5",
+              "x": 695,
+              "y": 370,
+              "name": "k2",
+              "width": 530,
+              "height": 168,
+              "fill": "#1A2D42",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "WUhVQ",
+              "x": 729,
+              "y": 406,
+              "name": "k2a",
+              "fill": "#F4F8FF",
+              "content": "-31%",
+              "fontFamily": "Rajdhani",
+              "fontSize": 46,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "JPCUH",
+              "x": 729,
+              "y": 464,
+              "name": "k2b",
+              "fill": "#9FB6CD",
+              "content": "tool wear variance",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "flEBf",
+              "x": 1270,
+              "y": 370,
+              "name": "k3",
+              "width": 530,
+              "height": 168,
+              "fill": "#20384F",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "84aIb",
+              "x": 1304,
+              "y": 406,
+              "name": "k3a",
+              "fill": "#F4F8FF",
+              "content": "+18%",
+              "fontFamily": "Rajdhani",
+              "fontSize": 46,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "FddVW",
+              "x": 1304,
+              "y": 464,
+              "name": "k3b",
+              "fill": "#9FB6CD",
+              "content": "line throughput",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "6ruSP",
+              "x": 120,
+              "y": 620,
+              "name": "quote",
+              "width": 1680,
+              "height": 96,
+              "fill": "#13263A",
+              "cornerRadius": 8
+            },
+            {
+              "type": "text",
+              "id": "5kRY4",
+              "x": 154,
+              "y": 650,
+              "name": "quoteT",
+              "fill": "#D6E4F3",
+              "content": "\"ForgeAxis gave us predictable quality at higher output. We now quote tighter delivery windows with confidence.\"",
+              "lineHeight": 1.5,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mutur",
+          "name": "Flow",
+          "width": "fill_container",
+          "height": 860,
+          "fill": "#EEF3F8",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "aXpNf",
+              "x": 120,
+              "y": 90,
+              "name": "fK",
+              "fill": "#35516D",
+              "content": "INTEGRATION FLOW",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "CeL0l",
+              "x": 120,
+              "y": 114,
+              "name": "fT",
+              "fill": "#112D47",
+              "content": "Deployment sequence designed\nfor minimal production disruption.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 58,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "z51Bj",
+              "x": 120,
+              "y": 392,
+              "name": "fa",
+              "width": 350,
+              "height": 218,
+              "fill": "#FFFFFF",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "arQXR",
+              "x": 150,
+              "y": 422,
+              "name": "faN",
+              "fill": "#2F6BFF",
+              "content": "01",
+              "fontFamily": "Rajdhani",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "CEHy9",
+              "x": 150,
+              "y": 472,
+              "name": "faT",
+              "fill": "#17334E",
+              "content": "Process Audit",
+              "fontFamily": "Rajdhani",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "eYW1r",
+              "x": 150,
+              "y": 524,
+              "name": "faB",
+              "fill": "#4A6882",
+              "content": "Map parts, batch mix, and takt constraints.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "FdWeN",
+              "x": 520,
+              "y": 332,
+              "name": "fb",
+              "width": 350,
+              "height": 218,
+              "fill": "#102032",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "CeRjL",
+              "x": 550,
+              "y": 362,
+              "name": "fbN",
+              "fill": "#79ADFF",
+              "content": "02",
+              "fontFamily": "Rajdhani",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gOiMw",
+              "x": 550,
+              "y": 412,
+              "name": "fbT",
+              "fill": "#EAF2FF",
+              "content": "Cell Design",
+              "fontFamily": "Rajdhani",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "knlPL",
+              "x": 550,
+              "y": 464,
+              "name": "fbB",
+              "fill": "#AFC3DA",
+              "content": "Define machine, tooling, and automation data pathways.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "83DA3",
+              "x": 920,
+              "y": 412,
+              "name": "fc",
+              "width": 350,
+              "height": 218,
+              "fill": "#FFFFFF",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "MMqwn",
+              "x": 950,
+              "y": 442,
+              "name": "fcN",
+              "fill": "#2F6BFF",
+              "content": "03",
+              "fontFamily": "Rajdhani",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "x1VRR",
+              "x": 950,
+              "y": 492,
+              "name": "fcT",
+              "fill": "#17334E",
+              "content": "Ramp-Up",
+              "fontFamily": "Rajdhani",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "LssJX",
+              "x": 950,
+              "y": 544,
+              "name": "fcB",
+              "fill": "#4A6882",
+              "content": "Validate quality windows and cycle consistency.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "9fSIT",
+              "x": 1320,
+              "y": 352,
+              "name": "fd",
+              "width": 350,
+              "height": 218,
+              "fill": "#102032",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "mWYVL",
+              "x": 1350,
+              "y": 382,
+              "name": "fdN",
+              "fill": "#79ADFF",
+              "content": "04",
+              "fontFamily": "Rajdhani",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "7Q4ne",
+              "x": 1350,
+              "y": 432,
+              "name": "fdT",
+              "fill": "#EAF2FF",
+              "content": "Scale Sustain",
+              "fontFamily": "Rajdhani",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TQgdw",
+              "x": 1350,
+              "y": 484,
+              "name": "fdB",
+              "fill": "#AFC3DA",
+              "content": "Service loops keep uptime and throughput stable.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jwzCf",
+          "name": "Industry Applications Hover",
+          "width": "fill_container",
+          "height": 700,
+          "fill": "#0F1D2C",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "atSLx",
+              "x": 0,
+              "y": 0,
+              "name": "appBg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "shavr",
+                "link": "https://unsplash.com/@shavr",
+                "author": "Shavr IK"
+              },
+              "width": 1920,
+              "height": 700,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1720036237217-5b1d3e90ed60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODk2OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "2mvIL",
+              "x": 0,
+              "y": 0,
+              "name": "ov",
+              "width": 1920,
+              "height": 700,
+              "fill": "#0A111A66"
+            },
+            {
+              "type": "text",
+              "id": "kSszD",
+              "x": 120,
+              "y": 68,
+              "name": "appK",
+              "fill": "#9CC0EC",
+              "content": "INDUSTRY APPLICATIONS",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "KHvLx",
+              "x": 120,
+              "y": 94,
+              "name": "appT",
+              "fill": "#F4F8FF",
+              "content": "Hover a sector to preview\nits production environment.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 58,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "3Oksz",
+              "x": 120,
+              "y": 230,
+              "name": "appHint",
+              "fill": "#C7D8EC",
+              "content": "Concept: background switches with sector hover interaction.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "SsVgR",
+              "x": 120,
+              "y": 286,
+              "name": "appRow",
+              "width": 1680,
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7OG82",
+                  "name": "app1",
+                  "width": "fill_container",
+                  "height": 94,
+                  "fill": "#2F6BFF",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "965iE",
+                      "name": "app1t",
+                      "fill": "#FFFFFF",
+                      "content": "Aerospace",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "krzxV",
+                      "name": "app1b",
+                      "fill": "#DCE8FF",
+                      "content": "thin-wall precision",
+                      "fontFamily": "IBM Plex Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Fs15I",
+                  "name": "app2",
+                  "width": "fill_container",
+                  "height": 94,
+                  "fill": "#102032",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x5DyZ",
+                      "name": "app2t",
+                      "fill": "#EAF2FF",
+                      "content": "Automotive",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cGSWN",
+                      "name": "app2b",
+                      "fill": "#AFC3DA",
+                      "content": "high-volume repeatability",
+                      "fontFamily": "IBM Plex Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u9T47",
+                  "name": "app3",
+                  "width": "fill_container",
+                  "height": 94,
+                  "fill": "#102032",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l6v8j",
+                      "name": "app3t",
+                      "fill": "#EAF2FF",
+                      "content": "Medical",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qwa4w",
+                      "name": "app3b",
+                      "fill": "#AFC3DA",
+                      "content": "micro tolerance control",
+                      "fontFamily": "IBM Plex Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mFZco",
+                  "name": "app4",
+                  "width": "fill_container",
+                  "height": 94,
+                  "fill": "#102032",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "padding": [
+                    18,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j6tGz",
+                      "name": "app4t",
+                      "fill": "#EAF2FF",
+                      "content": "Energy",
+                      "fontFamily": "Rajdhani",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ExncG",
+                      "name": "app4b",
+                      "fill": "#AFC3DA",
+                      "content": "heavy-duty machining",
+                      "fontFamily": "IBM Plex Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VGm7C",
+              "x": 1460,
+              "y": 470,
+              "name": "appState",
+              "width": 340,
+              "height": 102,
+              "fill": "#12263B",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "x5JVM",
+              "x": 1490,
+              "y": 498,
+              "name": "appStateT",
+              "fill": "#9FB8D2",
+              "content": "Current Preview",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "BEr0k",
+              "x": 1490,
+              "y": 520,
+              "name": "appStateV",
+              "fill": "#F3F8FF",
+              "content": "Aerospace Components",
+              "fontFamily": "Rajdhani",
+              "fontSize": 30,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fiHDv",
+          "name": "Insights",
+          "width": "fill_container",
+          "height": 960,
+          "fill": "#F8FAFD",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "hEvi2",
+              "x": 120,
+              "y": 84,
+              "name": "iK",
+              "fill": "#35516D",
+              "content": "INSIGHTS",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "K5r3w",
+              "x": 120,
+              "y": 108,
+              "name": "iT",
+              "fill": "#112D47",
+              "content": "Factory intelligence stories\nfor operation leaders.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "c92vz",
+              "x": 120,
+              "y": 300,
+              "name": "iA",
+              "metadata": {
+                "type": "unsplash",
+                "username": "arnosenoner",
+                "link": "https://unsplash.com/@arnosenoner",
+                "author": "Arno Senoner"
+              },
+              "width": 760,
+              "height": 428,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1651525670054-279c154bc3b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 12
+            },
+            {
+              "type": "text",
+              "id": "1Hnok",
+              "x": 120,
+              "y": 744,
+              "name": "iATag",
+              "fill": "#3B5873",
+              "content": "AUTOMATION",
+              "fontFamily": "Rajdhani",
+              "fontSize": 13,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "AK2CV",
+              "x": 120,
+              "y": 766,
+              "name": "iAT",
+              "fill": "#112D47",
+              "content": "From standalone machines\nto synchronized cells.",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "vhn15",
+              "x": 980,
+              "y": 338,
+              "name": "iB",
+              "metadata": {
+                "type": "unsplash",
+                "username": "santesson89",
+                "link": "https://unsplash.com/@santesson89",
+                "author": "Andrea De Santis"
+              },
+              "width": 420,
+              "height": 236,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1624855538737-e49987b57f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "9TwlH",
+              "x": 980,
+              "y": 586,
+              "name": "iBTag",
+              "fill": "#3B5873",
+              "content": "QUALITY",
+              "fontFamily": "Rajdhani",
+              "fontSize": 13,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "XcdmU",
+              "x": 980,
+              "y": 608,
+              "name": "iBT",
+              "fill": "#112D47",
+              "content": "Reducing variance\nacross multi-plant runs.",
+              "fontFamily": "Rajdhani",
+              "fontSize": 30,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "FgB1U",
+              "x": 1430,
+              "y": 420,
+              "name": "iC",
+              "metadata": {
+                "type": "unsplash",
+                "username": "sgalagaev",
+                "link": "https://unsplash.com/@sgalagaev",
+                "author": "Ансплэш Степана"
+              },
+              "width": 360,
+              "height": 202,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1723847165390-f45ef02f6b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMyODkzOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "sRcms",
+              "x": 1430,
+              "y": 634,
+              "name": "iCTag",
+              "fill": "#3B5873",
+              "content": "SERVICE",
+              "fontFamily": "Rajdhani",
+              "fontSize": 13,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "HW4Xj",
+              "x": 1430,
+              "y": 656,
+              "name": "iCT",
+              "fill": "#112D47",
+              "content": "Predictive service\nplanning in practice.",
+              "fontFamily": "Rajdhani",
+              "fontSize": 28,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jJlLf",
+          "name": "CTA",
+          "width": "fill_container",
+          "height": 420,
+          "fill": "#2554C7",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "irCBb",
+              "x": 120,
+              "y": 76,
+              "name": "cK",
+              "fill": "#D7E8FF",
+              "content": "READY TO UPGRADE YOUR LINE?",
+              "fontFamily": "Rajdhani",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "XPFMI",
+              "x": 120,
+              "y": 102,
+              "name": "cT",
+              "fill": "#FFFFFF",
+              "content": "Get your machine roadmap\nfrom our engineering team.",
+              "lineHeight": 0.94,
+              "fontFamily": "Rajdhani",
+              "fontSize": 60,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "HSPnD",
+              "x": 120,
+              "y": 254,
+              "name": "cB",
+              "fill": "#D8E8FF",
+              "content": "Share part profiles and takt targets. Receive a tailored equipment plan in 5 business days.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "tgyTZ",
+              "x": 120,
+              "y": 296,
+              "name": "cbA",
+              "width": 220,
+              "height": 48,
+              "fill": "#FFFFFF",
+              "cornerRadius": 6
+            },
+            {
+              "type": "text",
+              "id": "w5SR7",
+              "x": 148,
+              "y": 310,
+              "name": "cbAT",
+              "fill": "#2554C7",
+              "content": "Schedule Consultation",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "kXzW7",
+              "x": 354,
+              "y": 296,
+              "name": "cbB",
+              "width": 212,
+              "height": 48,
+              "fill": "#2554C7",
+              "cornerRadius": 6
+            },
+            {
+              "type": "text",
+              "id": "69fLU",
+              "x": 382,
+              "y": 310,
+              "name": "cbBT",
+              "fill": "#EEF5FF",
+              "content": "View Integration Flow",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "FNzKQ",
+              "x": 1380,
+              "y": 104,
+              "name": "card",
+              "width": 340,
+              "height": 176,
+              "fill": "#1A44AD",
+              "cornerRadius": 10
+            },
+            {
+              "type": "text",
+              "id": "zV5xj",
+              "x": 1410,
+              "y": 130,
+              "name": "ca",
+              "fill": "#AFC8FF",
+              "content": "Average project kickoff",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "sghc5",
+              "x": 1410,
+              "y": 148,
+              "name": "cb",
+              "fill": "#FFFFFF",
+              "content": "21 Days",
+              "fontFamily": "Rajdhani",
+              "fontSize": 60,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "ecQvr",
+              "x": 1410,
+              "y": 218,
+              "name": "cc",
+              "fill": "#D0E0FF",
+              "content": "from initial discovery to final machine spec",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qTknF",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": 240,
+          "fill": "#0C1320",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "kMaSA",
+              "x": 120,
+              "y": 50,
+              "name": "flogo",
+              "fill": "#F8FBFF",
+              "content": "ForgeAxis",
+              "fontFamily": "Rajdhani",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jASz4",
+              "x": 120,
+              "y": 90,
+              "name": "ftag",
+              "fill": "#9CB0C5",
+              "content": "Machine tools and automation systems engineered for sustained throughput.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "pXjDt",
+              "x": 980,
+              "y": 56,
+              "name": "fc1",
+              "fill": "#BCCDE1",
+              "content": "Products\nVertical Centers\nTurning Platforms\nAutomation Cells",
+              "lineHeight": 1.6,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "OXpwx",
+              "x": 1240,
+              "y": 56,
+              "name": "fc2",
+              "fill": "#BCCDE1",
+              "content": "Support\nService Network\nSpare Parts\nTraining",
+              "lineHeight": 1.6,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "wrHgD",
+              "x": 1460,
+              "y": 56,
+              "name": "fc3",
+              "fill": "#BCCDE1",
+              "content": "Company\nAbout\nCase Studies\nContact",
+              "lineHeight": 1.6,
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "NcLvL",
+              "x": 120,
+              "y": 196,
+              "name": "fline",
+              "width": 1680,
+              "height": 1,
+              "fill": "#25384B"
+            },
+            {
+              "type": "text",
+              "id": "Th38S",
+              "x": 120,
+              "y": 208,
+              "name": "copy",
+              "fill": "#70879E",
+              "content": "2026 ForgeAxis Industrial Systems. All rights reserved.",
+              "fontFamily": "IBM Plex Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

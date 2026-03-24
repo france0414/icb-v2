@@ -1,0 +1,292 @@
+<t t-name="website.base-dynamic-products">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty" style="&#10;    justify-content: flex-start;&#10;">
+      <section class="s_text_block pt40 o_colored_level pb16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h3>
+            <strong>動態內容 &amp;gt; 產品</strong>
+          </h3>
+          <h3>
+            <strong>動態內容 &amp;gt; 動態輪播</strong>
+          </h3>
+        </div>
+      </section>
+      <section class="s_text_block pt40 pb40 o_colored_level o_cc o_cc3" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-3">
+              <p>自訂樣式 :&amp;nbsp; &amp;nbsp;<br/><br/>nameHoverUnderLine : hover 時標題出現底線<br/>scaleL : hover 圖片變大<br/>scaleS : hover 圖片變小<br/><br/>寫於全域scss裡</p>
+            </div>
+            <div class="o_colored_level col-lg-6">
+              <p><br/><br/>borderHover : hover框線變色<br/>GapS: 間距縮小</p>
+              <p>
+                <br/>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="container s_allow_columns">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Borderless Product n°1</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level s_product_product_borderless_1 pt0 pb0 o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="200000" data-custom-name="">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Borderless Product n°1</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 pb0 s_custom_nameHoverUnderLine s_custom_scaleL s_custom_arrowRight s_custom_titleHoverFull s_product_product_borderless_1 o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="10000" data-custom-name="nameHoverUnderLine scaleL arrowRight titleHoverFull">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="container s_allow_columns">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Borderless Product n°2</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level s_product_product_borderless_2 pt0 pb0 s_custom_scaleL s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_2" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL nameHoverUnderLine nameHoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Borderless Product n°2</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_product_product_borderless_2 pt0 pb32 s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_2" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Centered Product</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level s_product_product_centered pt0 pb0 s_custom_nameHoverUnderLine s_custom_scaleL o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_centered" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="nameHoverUnderLine scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Centered Product</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 pb0 s_product_product_centered s_custom_nameHoverUnderLine s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_centered" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="nameHoverUnderLine scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Classic Card</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 pb0 s_product_product_add_to_cart s_custom_imgNoMargin s_custom_nameHoverUnderLine s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="imgNoMargin nameHoverUnderLine scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Classic Card</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 pb0 s_product_product_add_to_cart o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="50000">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Detailed Product</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 s_product_product_view_detail pb0 s_custom_scaleL s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_view_detail" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL nameHoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Detailed Product</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_product_product_view_detail pt0 pb0 s_custom_scaleL s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_view_detail" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="50000" data-custom-name="scaleL nameHoverUnderLine" data-force-minimum-max-limit-to16="1">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Horizontal Card</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 s_product_product_horizontal_card pb0 s_custom_textTop s_custom_scaleL o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_horizontal_card" data-product-category-id="all" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="textTop scaleL ">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Horizontal Card</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_product_product_horizontal_card pt0 pb0 s_custom_textTop s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_horizontal_card" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="textTop scaleL">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Image only</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 s_product_product_mini_image pb0 s_custom_scaleL o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_mini_image" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播 &amp;gt;&amp;nbsp; <strong>Image only</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 s_product_product_mini_image pb0 s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_mini_image" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Image with name</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 s_product_product_mini_name pb0 s_custom_scaleL o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_mini_name" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Image with name</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_product_product_mini_name pt0 pb0 s_custom_scaleL o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_mini_name" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Image with Price</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 s_product_product_mini_price pb0 s_custom_scaleL o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_mini_price" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 產品&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Large Banner</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level s_product_product_banner pb0 pt0 s_custom_scaleL s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_banner" data-product-category-id="all" data-number-of-elements="1" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="scaleL nameHoverUnderLine" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp; <strong>Large Banner</strong></h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_product_product_banner pt0 pb96 s_custom_scaleL s_custom_ s_custom_imgNoMargin s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_banner" data-number-of-elements="1" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="200000" data-custom-name="scaleL  imgNoMargin nameHoverUnderLine" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

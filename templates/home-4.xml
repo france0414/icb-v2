@@ -1,0 +1,581 @@
+<t t-name="website.home2-2">
+  <t t-call="website.layout">
+    <t t-set="pageName" t-value="'homepage'"/>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_carousel_wrapper s_custom_pureVideoBanner" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="pureVideoBanner">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1747290027525" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay d-none">
+            <li data-slide-to="0" data-target="#myCarousel1747290027525" class="active">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt128 pb128 o_colored_level o_background_video active" style="background-image: none;" data-name="Slide" data-bg-video-src="//fast.wistia.net/embed/iframe/e8fjx0g4u1?autoplay=true&amp;mute=true&amp;silentAutoPlay=true&amp;videoFoam=true&amp;playlistLoop=true&amp;controlsVisibleOnLoad=false&amp;playbackRateControl=false&amp;playbar=false&amp;smallPlayButton=false&amp;qualityControl=false&amp;volumeControl=false&amp;settingsControl=false&amp;fullscreenButton=false">
+              <div class="oe_unremovable container">
+                    </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay d-none" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1747290027525">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay d-none" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1747290027525">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_custom_exhibitionUpdates s_custom_fixed" data-name="Vertical Layout" style="background-image: none;" data-custom-name="exhibitionUpdates fixed">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level o_cc o_cc4 pt8 pb8 s_custom_controlBtn" data-snippet="s_text_block" data-name="Text" data-custom-name="controlBtn" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p><span class="fa fa-chevron-down"/>&amp;nbsp;News<br/></p>
+              </div>
+            </section>
+            <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb0 bg-black-75 s_custom_default" data-name="Static Carousel" data-number-of-elements="1" data-number-of-elements-small-devices="1" data-original-title="" title="" aria-describedby="tooltip81982" data-custom-name="default" data-number-desktop="1" style="background-image: none;">
+              <div class="container">
+                <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="myCarousel1747290089076">
+                  <div class="content oe_unremovable"/>
+                  <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level pt24 pb16 active" data-name="Slide" style="background-image: none;">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-12">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip234206"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div class="card-title mt-4">
+                                  <p class="h6">Title&amp;nbsp;Title&amp;nbsp;Title<br/></p>
+                                </div>
+                                <div>
+                                  <div class="mt-2">
+                                    <p><strong>亦可改放 [動態輪播&amp;gt;List layout]</strong><br/><strong>垂直排版自訂樣式: fixed 控制是否 fix</strong><br/>Date: 20xx.xx.xx~xx<br/>Location: Vestibulum quam<br/>Booth No. : 0000<br/></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1747290089076" style="display: none;">
+                    <span class="fa fa-chevron-circle-left fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </a>
+                  <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1747290089076" style="display: none;">
+                    <span class="fa fa-chevron-circle-right fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_hidden" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="hidden">
+              <div class="s_allow_columns container">
+                <p>
+                  <br/>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb56 pt104" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="h1">Great stories<br/></p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-9">
+                    <p data-original-title="" title="" aria-describedby="tooltip494838">Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.<br/><font style="color: rgb(156, 0, 0);">以下擇一使用&amp;nbsp; &amp;nbsp; &amp;nbsp;</font><font style="color: rgb(156, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 6筆</font><strong><br/></strong></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3 d-flex align-items-end justify-content-md-end" data-original-title="" title="" aria-describedby="tooltip656379">
+                    <p>
+                      <a class="btn btn-primary" href="#" data-require-form="false">View more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level s_custom_productRightScroll" data-name="Static Snippet" style="background-image: none;" data-custom-name="productRightScroll">
+              <div class="container-fluid">
+                <div class="content"/>
+                <div class="static_snippet_template s_product_product_borderless_1">
+                  <div class="row my-4" data-original-title="" title="" aria-describedby="tooltip575479">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_1" alt="" loading="lazy" data-original-id="219" data-original-src="/web/image/219-23f9fd55/website.s_product_list_default_image_1" data-mimetype="image/jpeg"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">consectetur adipiscing elit</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_4" alt="" loading="lazy" data-original-id="222" data-original-src="/web/image/222-2eb7b431/website.s_product_list_default_image_4" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip125706"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Sed laoreet molestie sapien</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">venenatis risus sed</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="" aria-describedby="popover621776">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
+                          </div>
+                          <div>
+                            <div class="mt-2">
+                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic pb32 o_colored_level s_product_product_borderless_1 pt16 s_custom_productRightScroll o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="6" data-custom-name="productRightScroll" data-force-minimum-max-limit-to16="1">
+              <div class="o_not_editable container-fluid">
+                <div class="css_non_editable_mode_hidden">
+                  <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                </div>
+                <div class="dynamic_snippet_template"/>
+              </div>
+            </section>
+            </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb56 pt56" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip775194">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pb0 pt0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="o_default_snippet_text h1">Great personality</p>
+                <p class="h5">
+                  <strong>
+                    <font class="text-o-color-1">Consider telling a great story that provides personality.</font>
+                  </strong>
+                  <br/>
+                </p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.&amp;nbsp;Great stories have a personality. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_counterAfterColor" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="counterAfterColor">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-6">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="70" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>Great stories</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-6">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="18" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>Consider telling</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-12">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="25" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>relationship</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt56 pb56" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="o_default_snippet_text h1" style="text-align: center;">Your Site Title</p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns o_container_small">
+                <p style="text-align: center;"><font style="color: rgb(156, 0, 0);">地圖上方小字的順序，要跟右側描述的順序一致。</font><br/><font style="color: rgb(156, 0, 0);">地圖定位 CSS 寫在下方自訂代碼區；如果客戶不需要編輯，可直接放在 SCSS 裡面。<br/></font><font style="background-color: rgb(255, 255, 0);">建議數量: 最多 5筆</font>&amp;nbsp;<br/></p>
+                <p class="o_default_snippet_text" style="text-align: center;">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              </div>
+            </section>
+            <section class="s_text_block pt40 pb40 o_colored_level s_custom_mapEffect" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="map-Effect">
+              <div class="container s_allow_columns">
+                <div class="row">
+                  <div class="o_colored_level map-img-content col-lg-8 pt48">
+                    <div class="s_text map-brief-description" data-snippet="s_text" data-name="Text">
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>Headquarters<br/></p>
+                      </div>
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>Shanghai Branch<br/></p>
+                      </div>
+                      <div class="s_text" data-snippet="s_text" data-name="地圖標示區">
+                        <p>US Branch<br/></p>
+                      </div>
+                    </div>
+                    <div class="s_text map-img" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <img class="img-fluid o_we_custom_image" src="/web/image/4289-21849b07/map.png" alt="" data-original-title="" title="" aria-describedby="tooltip731284" loading="lazy" data-original-id="4281" data-original-src="/web/image/4281-c7c7a893/map.png" data-mimetype="image/png" data-resize-width="983"/>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level map-description-content col-lg-4">
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">Headquarters</p>
+                      <p>Writing a story with personality for potential clients will assist with making a relationship connection.<br/></p>
+                    </div>
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">Shanghai Branch<br/></p>
+                      <p>making a relationship connection.<br/></p>
+                    </div>
+                    <div class="s_text map-info" data-snippet="s_text" data-name="內容小區">
+                      <p class="h5">US Branch<br/></p>
+                      <p>potential clients will assist<br/></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_hidden" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="hidden">
+              <div class="container s_allow_columns">
+                </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt56 pb56 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip523864">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-5" data-original-title="" title="" aria-describedby="tooltip786727">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 56px;">
+                <section class="s_title o_colored_level pt0 pb16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                  <div class="container s_allow_columns">
+                    <p class="h1">Your Site Title</p>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip96407">
+                    <p><font style="color: rgb(156, 0, 0);">也可換成 動態輪播 Borderless Product n°1 或 Card layout</font><br/><font style="color: rgb(156, 0, 0);">** [自訂樣式] 要設定一樣<br/></font>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                    <div class="s_text pt16" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-7">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pb0 pt0 s_custom_interlaceCarousel s_custom_arrowTop s_custom_arrowRight s_custom_scaleS" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-desktop="3" data-custom-name="interlace-Carousel arrowTop arrowRight scaleS">
+                  <div class="container" data-original-title="" title="" aria-describedby="tooltip533234">
+                    <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="myCarousel1747291452003">
+                      <div class="content oe_unremovable"/>
+                      <div class="carousel-inner">
+                        <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;">
+                          <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                            <div class="row my-4 s_col_no_resize" data-original-title="" title="" aria-describedby="tooltip581295">
+                              <div class="d-flex flex-grow-0 flex-shrink-0 col-4 o_colored_level">
+                                <div class="o_carousel_product_card w-100 card-s p-3">
+                                  <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                    <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4284-2680a847/preview_hor4.jpg" alt="" loading="lazy" data-original-id="4282" data-original-src="/web/image/4282-69fc0a7e/preview_hor4.jpg" data-mimetype="image/jpeg" data-resize-width="605"/>
+                                  </a>
+                                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                    <div class="card-title mt-4">
+                                      <p class="h6">
+                                        <strong>Lorem ipsum dolor sit amet</strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-grow-0 flex-shrink-0 col-4 o_colored_level">
+                                <div class="o_carousel_product_card w-100 card-s p-3">
+                                  <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                    <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4285-2680a847/preview_hor4.jpg" alt="" loading="lazy" data-original-id="4282" data-original-src="/web/image/4282-69fc0a7e/preview_hor4.jpg" data-mimetype="image/jpeg" data-resize-width="605"/>
+                                  </a>
+                                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                    <div class="card-title mt-4">
+                                      <p class="h6">
+                                        <strong>Curabitur volutpat</strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                                <div class="o_carousel_product_card w-100 card-s p-3">
+                                  <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                    <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4286-2680a847/preview_hor4.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip969146" data-original-id="4282" data-original-src="/web/image/4282-69fc0a7e/preview_hor4.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                                  </a>
+                                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                    <div class="card-title mt-4">
+                                      <p class="h6">
+                                        <strong>Fusce bibendum lacus</strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item o_colored_level" data-name="Slide" style="background-image: none;">
+                          <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                            <div class="row my-4 s_col_no_resize" data-original-title="" title="" aria-describedby="tooltip581295">
+                              <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                                <div class="o_carousel_product_card w-100 card-s p-3">
+                                  <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                    <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4287-2680a847/preview_hor4.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip969146" data-original-id="4282" data-original-src="/web/image/4282-69fc0a7e/preview_hor4.jpg" data-mimetype="image/jpeg" data-resize-width="605"/>
+                                  </a>
+                                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                    <div class="card-title mt-4">
+                                      <p class="h6">
+                                        <strong>Fusce bibendum lacus</strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                                <div class="o_carousel_product_card w-100 card-s p-3">
+                                  <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                    <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4288-2680a847/preview_hor4.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip969146" data-original-id="4282" data-original-src="/web/image/4282-69fc0a7e/preview_hor4.jpg" data-mimetype="image/jpeg" data-resize-width="605"/>
+                                  </a>
+                                  <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                    <div class="card-title mt-4">
+                                      <p class="h6">
+                                        <strong>Fusce bibendum lacus</strong>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1747291452003">
+                        <span class="fa fa-chevron-circle-left fa-2x"/>
+                        <span class="sr-only o_default_snippet_text">Previous</span>
+                      </a>
+                      <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1747291452003">
+                        <span class="fa fa-chevron-circle-right fa-2x"/>
+                        <span class="sr-only o_default_snippet_text">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt56 pb56" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip169072">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p class="o_default_snippet_text h1">Your Site Title</p>
+              </div>
+            </section>
+            <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_blog_post_card pt0 pb0 s_custom_textUpper s_custom_default s_custom_arrowTop s_custom_arrowRight o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="9" data-carousel-interval="8000" data-force-minimum-max-limit-to16="1" data-custom-name="text-Upper default arrowTop arrowRight">
+              <div class="container o_not_editable">
+                <div class="css_non_editable_mode_hidden">
+                  <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                </div>
+                <div class="dynamic_snippet_template"/>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                  <br/>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt56 pb96" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip622880">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p class="h1">Consider telling a great story provides<br/></p>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb0 pt32 s_custom_titleUpperBg2 s_custom_scaleL s_custom_default" data-name="Static Snippet" data-custom-name="titleUpperBg2 scaleL default" style="background-image: none;">
+              <div class="container">
+                <div class="content"/>
+                <div class="static_snippet_template s_product_product_borderless_1">
+                  <div class="row my-4">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-6 o_cc o_cc3" style="background-color: rgba(73, 110, 86, 0.41) !important;">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4290-4d5f47a4/preview_hor3.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip842654" data-original-id="4283" data-original-src="/web/image/4283-226fc811/preview_hor3.jpg" data-mimetype="image/jpeg" data-resize-width="730"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h4">Lorem ipsum dolor sit amet</p>
+                          </div>
+                          <div class="card-body">
+                            <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. ersonality for potential clients will assist with making a relationship connection.<br/></p>
+                            <div class="s_text pt24 btn-wrap" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip741669">
+                              <p data-original-title="" title="" aria-describedby="tooltip477047">
+                                <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level col-lg-6 o_cc o_cc3" style="background-color: rgba(87, 193, 198, 0.62) !important;">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/4291-4d5f47a4/preview_hor3.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip842654" data-original-id="4283" data-original-src="/web/image/4283-226fc811/preview_hor3.jpg" data-mimetype="image/jpeg" data-resize-width="730"/>
+                        </a>
+                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                          <div class="card-title mt-4">
+                            <p class="h4">Lorem ipsum dolor sit amet</p>
+                          </div>
+                          <div class="card-body">
+                            <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. ersonality for potential clients will assist with making a relationship connection.<br/></p>
+                            <div class="s_text pt24 btn-wrap" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip741669">
+                              <p data-original-title="" title="" aria-describedby="tooltip477047">
+                                <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

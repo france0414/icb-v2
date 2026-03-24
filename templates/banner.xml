@@ -1,0 +1,262 @@
+<t t-name="website.-3">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>Banner-01</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper o_full_screen_height s_custom_bannerGeometricTriangle" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="bannerGeometricTriangle" style="">
+        <div class="s_carousel s_carousel_default carousel slide pointer-event" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1733819452549" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-target="#myCarousel1733819452549" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#myCarousel1733819452549" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel1733819452549" data-slide-to="2">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/1828-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 01</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1832-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1829-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-4" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 02</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1833-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1830-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 03</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1831-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1733819452549">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1733819452549">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>Banner-02</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_banner2" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="banner2">
+        <div class="s_carousel s_carousel_default carousel carousel-fade slide pointer-event" data-interval="15000" data-ride="carousel" data-pause="false" id="myCarousel1741938042465" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip899350">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" data-target="#myCarousel1741938042465" class="active">
+            </li>
+            <li data-target="#myCarousel1741938042465" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel1741938042465" data-slide-to="2">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/3737-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip783067" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="container oe_unremovable" data-original-title="" title="" aria-describedby="tooltip6774">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      Slide Title 1</h2>
+                    <p class="lead o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip987591">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2" data-original-title="" title="">Read more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/3737-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip783067" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container" data-original-title="" title="" aria-describedby="tooltip6774">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      Slide Title 2</h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2" data-original-title="" title="">Read more</a>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/3737-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip783067" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container" data-original-title="" title="" aria-describedby="tooltip6774">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      Slide Title 3</h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2" data-original-title="" title="">Read more</a>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1741938042465">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1741938042465">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>Banner-03</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper o_full_screen_height s_custom_textleftmiddle" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="text-left-middle" style="">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1745486832292" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" data-target="#myCarousel1745486832292" class="active"/>
+            <li data-target="#myCarousel1745486832292" data-slide-to="1"/>
+            <li data-target="#myCarousel1745486832292" data-slide-to="2"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item o_colored_level o_background_video pt0 pb0 active" style="background-image: none;" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-bg-video-src="//fast.wistia.net/embed/iframe/e8fjx0g4u1?autoplay=true&amp;mute=true&amp;silentAutoPlay=true&amp;videoFoam=true&amp;playlistLoop=true&amp;controlsVisibleOnLoad=false&amp;playbackRateControl=false&amp;playbar=false&amp;smallPlayButton=false&amp;qualityControl=false&amp;volumeControl=false&amp;settingsControl=false&amp;fullscreenButton=false">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4270-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4269-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip206049" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip876417">
+                  <div class="carousel-content col-lg-6 o_colored_level o_cc o_cc5 o_visible" style="background-color: rgba(255, 0, 0, 0) !important;" data-original-title="" title="" aria-describedby="tooltip304996">
+                    <h2>
+                      <font class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1745486832292">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1745486832292">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>Banner-04</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_pureVideoBanner" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="pureVideoBanner">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1747290027525" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay d-none">
+            <li data-slide-to="0" data-target="#myCarousel1747290027525" class="active">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt128 pb128 o_colored_level o_background_video active" style="background-image: none;" data-name="Slide" data-bg-video-src="//fast.wistia.net/embed/iframe/e8fjx0g4u1?autoplay=true&amp;mute=true&amp;silentAutoPlay=true&amp;videoFoam=true&amp;playlistLoop=true&amp;controlsVisibleOnLoad=false&amp;playbackRateControl=false&amp;playbar=false&amp;smallPlayButton=false&amp;qualityControl=false&amp;volumeControl=false&amp;settingsControl=false&amp;fullscreenButton=false">
+              <div class="oe_unremovable container">
+                    </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay d-none" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1747290027525">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay d-none" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1747290027525">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

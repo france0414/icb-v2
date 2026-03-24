@@ -1,0 +1,285 @@
+<t t-name="website.dynamic-news">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block pt40 o_colored_level pb16" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (2)">
+        <div class="s_allow_columns container">
+          <h3>
+            <strong>動態內容 &amp;gt; 動態區塊(部落格)</strong>
+          </h3>
+          <h3>
+            <strong>動態內容 &amp;gt; 動態輪播(部落格)</strong>
+          </h3>
+          <h3>
+            <strong style="font-weight: bolder">動態內容 &amp;gt; 部落格&amp;nbsp;</strong>
+          </h3>
+          <div class="s_text" data-snippet="s_text" data-name="Text">
+            <p>動態內容&amp;gt;部落格, 下方demo沒有展示, 但是基本上與動態區塊的部落格一樣, 但是此區塊可以<strong>選擇部落格的分類 (為Icb預設之功能)</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pb40 o_colored_level pt48 o_cc o_cc3" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-11">
+              <div class="s_table_of_feature table-responsive" data-vcss="001" data-snippet="s_table_of_feature" data-name="Table of Feature" data-tablefeature-template="flexible_content">
+                <table class="table mb-3 o_cc o_cc1 o_colored_level">
+                  <thead class="o_colored_level o_cc o_cc5">
+                    <tr>
+                      <td class="th">自訂樣式/模板</td>
+                      <td class="th" style="text-align: center;">Big picture layout</td>
+                      <td class="th" style="text-align: center;">Card layout</td>
+                      <td style="text-align: center;">
+                        <strong>Horizontal layout</strong>
+                      </td>
+                      <td style="text-align: center;">
+                        <strong>List layout</strong>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="th">cardRadius<br/>圓角 20px<br/></td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="th">cardRadiusS<br/>圓角 10px</td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="th">borderHover hover&amp;nbsp;<br/>外框線變色</td>
+                      <td>
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <span style="color: rgb(33, 37, 41);font-size: 16px;font-style: normal;font-weight: 400;background-color: rgb(255, 255, 255)">v</span>
+                        <br/>
+                      </td>
+                      <td>
+                        <br/>
+                      </td>
+                      <td>
+                        <br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">hoverUnderLine hover 長出底線<br/></td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">titleLine<br/>標題字有底線<br/></td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">v</td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">blockLine<br/>訊息之間有分隔線<br/></td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">v</td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">picTop<br/>圖片在上面<br/></td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">已預設</td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">picBottom<br/>圖片在下面<br/></td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">v</td>
+                      <td style="text-align: center;">已預設</td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="th s_table_of_feature_label" style="width:200px">dateTop<br/>日期資訊在文字上方<br/></td>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                      <td style="text-align: center;">
+                        v
+                      </td>
+                      <td style="text-align: center;"/>
+                      <td style="text-align: center;">
+                        <br/>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態區塊&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Card layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_card Card Horizontal List pt0 pb0 s_custom_GapM s_custom_cardRadius s_custom_borderHover s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="4" data-custom-name="GapM cardRadius  borderHover  hoverUnderLine" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Card layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_blog_post_card pt0 pb16 s_custom_imgNoMargin s_custom_cardRadiusS s_custom_picBottom s_custom_dateTop s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="imgNoMargin cardRadiusS picBottom dateTop hoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態區塊&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Big picture layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_big_picture pt0 pb16 s_custom_cardRadius o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_big_picture" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="4" data-force-minimum-max-limit-to16="1" data-custom-name="cardRadius">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Big picture layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_blog_post_big_picture pt0 pb8 s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_big_picture" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="50000" data-custom-name="hoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態區塊&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Horizontal layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_horizontal pt0 pb8 s_custom_cardRadiusS s_custom_picTop s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_horizontal" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="4" data-custom-name="cardRadiusS picTop hoverUnderLine" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24 s_custom_hoverUnderLine" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)" data-custom-name="hoverUnderLine">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>Horizontal layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 s_blog_post_horizontal pb16 s_custom_cardRadius s_custom_picTop s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_horizontal" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000" data-custom-name="cardRadius  picTop hoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態區塊&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>List layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic pt32 o_colored_level s_blog_post_list pb16 s_custom_cardRadius s_custom_titleLine s_custom_blockLine o_dynamic_empty" data-name="Dynamic Snippet" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_list" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="5" data-custom-name="cardRadius titleLine blockLine" data-force-minimum-max-limit-to16="1">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb24" data-snippet="s_text_block" style="background-image: none;" data-name="Custom Text (3)">
+        <div class="s_allow_columns container">
+          <h4>區塊 &amp;gt; 動態輪播&amp;nbsp;&amp;gt;&amp;nbsp;
+<strong>List layout</strong>
+</h4>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 s_blog_post_list pb56 o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_list" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

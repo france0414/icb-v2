@@ -1,0 +1,59 @@
+<t t-name="website.customized-news-hanaria">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <!-- Hanaria Style News Snippet Draft (Odoo Dynamic Layout) -->
+            <!-- 注意：此為沙盒草稿 (放在 outputs/)，用來測試 Hanaria 左標題右列表的版型 -->
+            <section class="top-news pb64 pt64 s_custom_news_hanaria bg-white oe_qi_default">
+                
+                <div class="container">
+                    <div class="row align-items-start">
+                        
+                        <!-- 左側標題區塊 -->
+                        <div class="col-lg-3 mb-4 mb-lg-0">
+                            <div class="top-news__content">
+                                <h3 class="c-title c-title--sm">
+                                    <div class="c-title__ja">お知らせ</div>
+                                    <div class="c-title__en">News</div>
+                                </h3>
+                            </div>
+                            <div class="top-news__more mt-4">
+                                <a href="/blog" class="btn btn-outline-custom">
+                                    <span>View All</span>
+                                    <i class="fa fa-angle-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 右側動態區塊 (嚴格遵守 Odoo 原生 Snippet 結構) -->
+                        <div class="col-lg-9">
+                            <!-- 
+                                使用 s_dynamic_snippet 做為 Blog/News 的容器
+                                Filter-id="1" 代表 Blog Post
+                                Template-key 使用 Card 樣板 (因 Odoo list 預設無日期)，再用 SCSS 把 Card 壓成 Hanaria 的無圖單行風格 
+                            -->
+                            <section data-snippet="s_dynamic_snippet" 
+                                     class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_card s_custom_hanaria_list" 
+                                     data-name="Dynamic Snippet" 
+                                     data-filter-id="1" 
+                                     data-template-key="website_blog.dynamic_filter_template_blog_post_card" 
+                                     data-number-of-elements="5" 
+                                     data-number-of-elements-small-devices="3" 
+                                     data-number-of-records="5" 
+                                     data-custom-name="s_custom_hanaria_list">
+                                
+                                <div class="o_not_editable container-fluid p-0">
+                                    <div class="css_non_editable_mode_hidden">
+                                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"></div>
+                                    </div>
+                                    <!-- Odoo 的非同步 JS 會在這裡生成文章的 DOM -->
+                                    <div class="dynamic_snippet_template"></div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>

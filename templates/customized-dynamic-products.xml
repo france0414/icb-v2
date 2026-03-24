@@ -1,0 +1,90 @@
+<t t-name="website.customized-dynamic-products">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_column_layout o_colored_level pt80 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb0 o_cc o_cc1 o_auto_screen_height s_custom_upperNext s_custom_hasArrowL s_custom_fullContainer" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" data-scroll-background-ratio="1" data-custom-name="upperNext hasArrowL fullContainer" data-original-title="" title="" aria-describedby="tooltip788295" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1839-c4b41a2f/preview_bg.jpg&quot;); background-position: 44.8% 100%; background-color: rgb(18, 18, 18) !important;" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch" data-original-title="" title="" aria-describedby="tooltip315361">
+            <div class="s_col_no_bgcolor col-left col-lg-8 offset-lg-2">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section class="s_text_image o_colored_level pt0 s_custom_titleUnderLine pb32" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-custom-name="titleUnderLine" data-original-title="" title="" aria-describedby="tooltip462343">
+                  <div class="container">
+                    <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip555296">
+                      <div class="pt16 pb16 o_colored_level col-lg-7" data-original-title="" title="" aria-describedby="tooltip151679">
+                        <h2 class="mb-4">Products<br/></h2>
+                        <p class="mb-0">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.<br/></p>
+                      </div>
+                      <div class="pt16 o_colored_level offset-lg-1 col-lg-3 pb0" data-original-title="" title="" aria-describedby="tooltip151679">
+                        <p data-original-title="" title="" aria-describedby="tooltip450039" class="text-md-right">
+                          <a href="#" class="btn btn-primary mb-2" data-original-title="" title="">Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-10">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 pb0 s_product_product_borderless_1 o_cc o_cc1 dingL s_custom_titleUp s_custom_nameHoverUnderLine s_custom_arrowRight s_custom_arrowL s_custom_arrowNoSeparate s_custom_arrowNoGap s_custom_noGap s_custom_fullContainer s_custom_scaleL s_custom_default o_dynamic_empty" data-name="Products" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="100000" data-custom-name="titleUp nameHoverUnderLine arrowRight arrowL arrowNoSeparate arrowNoGap noGap fullContainer scaleL default" style="background-image: none; background-color: rgba(255, 0, 0, 0) !important;">
+                  <div class="o_not_editable container-fluid">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level pt0 pb0 s_product_product_centered s_custom_fullWrapProduct s_custom_fullContainer s_custom_default o_dynamic_empty" data-name="Dynamic Snippet" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_centered" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="8" data-force-minimum-max-limit-to16="1" data-custom-name="fullWrapProduct fullContainer default" style="background-image: none;">
+        <div class="o_not_editable container-fluid">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt56 pb56 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip523864">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-5" data-original-title="" title="" aria-describedby="tooltip786727">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 111px;">
+                <section class="s_title o_colored_level pt0 pb16" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                  <div class="container s_allow_columns">
+                    <p class="h1">Your Site Title</p>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip96407">
+                    <p>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it's genuine for the one, it's genuine for the rest.</p>
+                    <div class="s_text pt16" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-7">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic pt32 pb32 o_colored_level s_product_product_borderless_1 s_custom_interlaceCarousel s_custom_arrowTop s_custom_arrowRight s_custom_scaleS o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="6" data-carousel-interval="5000" data-custom-name="interlace-Carousel arrowTop arrowRight scaleS" data-force-minimum-max-limit-to16="1">
+                  <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

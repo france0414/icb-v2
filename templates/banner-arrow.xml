@@ -1,0 +1,427 @@
+<t t-name="website.arrow">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_title pt40 o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h2 style="text-align: center;">基礎箭頭</h2>
+          <p style="text-align: center;">
+            <br/>
+          </p>
+          <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip847872">
+            <a href="/shop/test-5?category=4#attr=" class="btn btn-primary" data-original-title="" title="" aria-describedby="popover608077">產品箭頭 - 展示</a>
+          </p>
+        </div>
+      </section>
+      <section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_colored_level pt56" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+        <div class="container">
+          <div id="myCarousel1734330927787" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+            <div class="carousel-inner" style="padding: 0;">
+              <div class="carousel-item active" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_08" data-name="Image" data-index="0" loading="lazy" data-original-id="238" data-original-src="/web/image/238-3582e5e7/website.library_image_08" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_03" data-name="Image" data-index="1" loading="lazy" data-original-id="232" data-original-src="/web/image/232-e364d171/website.library_image_03" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_02" data-name="Image" data-index="2" loading="lazy" data-original-id="239" data-original-src="/web/image/239-eaadeceb/website.library_image_02" data-mimetype="image/jpeg"/>
+              </div>
+            </div>
+            <ul class="carousel-indicators o_we_no_overlay">
+              <li class="o_indicators_left text-center d-none active" aria-label="Previous" title="Previous">
+              </li>
+              <li data-target="#myCarousel1734330927787" data-slide-to="0" style="background-image: url(/web/image/website.library_image_08)">
+              </li>
+              <li data-target="#myCarousel1734330927787" data-slide-to="1" style="background-image: url(/web/image/website.library_image_03)">
+              </li>
+              <li data-target="#myCarousel1734330927787" data-slide-to="2" style="background-image: url(/web/image/website.library_image_02)">
+              </li>
+              <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+            </li>
+            </ul>
+            <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#myCarousel1734330927787" data-slide="prev" aria-label="Previous" title="Previous">
+              <span class="fa fa-chevron-left fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Previous</span>
+            </a>
+            <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#myCarousel1734330927787" data-slide="next" aria-label="Next" title="Next">
+              <span class="fa fa-chevron-right fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded pt24 o_colored_level s_image_gallery_indicators_arrows_boxed" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+        <div class="container">
+          <div id="myCarousel1734330950725" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+            <div class="carousel-inner" style="padding: 0;">
+              <div class="carousel-item active" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_08" data-name="Image" data-index="0" loading="lazy" data-original-id="238" data-original-src="/web/image/238-3582e5e7/website.library_image_08" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_03" data-name="Image" data-index="1" loading="lazy" data-original-id="232" data-original-src="/web/image/232-e364d171/website.library_image_03" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_02" data-name="Image" data-index="2" loading="lazy" data-original-id="239" data-original-src="/web/image/239-eaadeceb/website.library_image_02" data-mimetype="image/jpeg"/>
+              </div>
+            </div>
+            <ul class="carousel-indicators o_we_no_overlay">
+              <li class="o_indicators_left text-center d-none active" aria-label="Previous" title="Previous">
+              </li>
+              <li data-target="#myCarousel1734330950725" data-slide-to="0" style="background-image: url(/web/image/website.library_image_08)">
+              </li>
+              <li data-target="#myCarousel1734330950725" data-slide-to="1" style="background-image: url(/web/image/website.library_image_03)">
+              </li>
+              <li data-target="#myCarousel1734330950725" data-slide-to="2" style="background-image: url(/web/image/website.library_image_02)">
+              </li>
+              <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+            </li>
+            </ul>
+            <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#myCarousel1734330950725" data-slide="prev" aria-label="Previous" title="Previous">
+              <span class="fa fa-chevron-left fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Previous</span>
+            </a>
+            <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#myCarousel1734330950725" data-slide="next" aria-label="Next" title="Next">
+              <span class="fa fa-chevron-right fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded pt24 o_colored_level s_image_gallery_indicators_arrows_rounded" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+        <div class="container">
+          <div id="myCarousel1734330948911" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+            <div class="carousel-inner" style="padding: 0;">
+              <div class="carousel-item active" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_08" data-name="Image" data-index="0" loading="lazy" data-original-id="238" data-original-src="/web/image/238-3582e5e7/website.library_image_08" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_03" data-name="Image" data-index="1" loading="lazy" data-original-id="232" data-original-src="/web/image/232-e364d171/website.library_image_03" data-mimetype="image/jpeg"/>
+              </div>
+              <div class="carousel-item" style="">
+                <img class="img img-fluid d-block" src="/web/image/website.library_image_02" data-name="Image" data-index="2" loading="lazy" data-original-id="239" data-original-src="/web/image/239-eaadeceb/website.library_image_02" data-mimetype="image/jpeg"/>
+              </div>
+            </div>
+            <ul class="carousel-indicators o_we_no_overlay">
+              <li class="o_indicators_left text-center d-none active" aria-label="Previous" title="Previous">
+              </li>
+              <li data-target="#myCarousel1734330948911" data-slide-to="0" style="background-image: url(/web/image/website.library_image_08)">
+              </li>
+              <li data-target="#myCarousel1734330948911" data-slide-to="1" style="background-image: url(/web/image/website.library_image_03)">
+              </li>
+              <li data-target="#myCarousel1734330948911" data-slide-to="2" style="background-image: url(/web/image/website.library_image_02)">
+              </li>
+              <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+            </li>
+            </ul>
+            <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#myCarousel1734330948911" data-slide="prev" aria-label="Previous" title="Previous">
+              <span class="fa fa-chevron-left fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Previous</span>
+            </a>
+            <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#myCarousel1734330948911" data-slide="next" aria-label="Next" title="Next">
+              <span class="fa fa-chevron-right fa-2x text-white"/>
+              <span class="sr-only o_default_snippet_text">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="s_image_gallery o_spc-small o_masonry pt24 pb24 o_colored_level" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="232" data-original-src="/web/image/232-e364d171/website.library_image_03" data-mimetype="image/jpeg"/>
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_10" data-index="3" data-name="Image" loading="lazy" data-original-id="233" data-original-src="/web/image/233-ec844543/website.library_image_10" data-mimetype="image/jpeg"/>
+            </div>
+            <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_13" data-index="1" data-name="Image" loading="lazy" data-original-id="234" data-original-src="/web/image/234-b79594e5/website.library_image_13" data-mimetype="image/jpeg"/>
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_05" data-index="4" data-name="Image" loading="lazy" data-original-id="235" data-original-src="/web/image/235-b2f273d7/website.library_image_05" data-mimetype="image/jpeg"/>
+            </div>
+            <div class="o_masonry_col o_snippet_not_selectable col-lg-4">
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_14" data-index="2" data-name="Image" loading="lazy" data-original-id="236" data-original-src="/web/image/236-20ddd2c2/website.library_image_14" data-mimetype="image/jpeg"/>
+              <img class="img img-fluid d-block" src="/web/image/website.library_image_16" data-index="5" data-name="Image" loading="lazy" data-original-id="237" data-original-src="/web/image/237-5e34d857/website.library_image_16" data-mimetype="image/jpeg"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330965912" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#myCarousel1734330965912">
+            </li>
+            <li data-slide-to="1" data-target="#myCarousel1734330965912">
+            </li>
+            <li data-slide-to="2" data-target="#myCarousel1734330965912">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40 o_colored_level">
+                    <h2 style="font-size: 62px;" class="o_default_snippet_text">Clever Slogan</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p class="lead o_default_snippet_text">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p>
+                      <a href="/" class="btn btn-primary mb-2 o_default_snippet_text">Start your journey</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edit this title</font>
+                    </h2>
+                    <h4>
+                      <font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Good writing is simple, but not simplistic.</font>
+                    </h4>
+                    <p>
+                      <br/>
+                    </p>
+                    <p class="o_default_snippet_text">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1734330965912">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1734330965912">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+        <div class="s_carousel carousel slide s_carousel_bordered" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330971755" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#myCarousel1734330971755">
+            </li>
+            <li data-slide-to="1" data-target="#myCarousel1734330971755">
+            </li>
+            <li data-slide-to="2" data-target="#myCarousel1734330971755">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40 o_colored_level">
+                    <h2 style="font-size: 62px;" class="o_default_snippet_text">Clever Slogan</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p class="lead o_default_snippet_text">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p>
+                      <a href="/" class="btn btn-primary mb-2 o_default_snippet_text">Start your journey</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt128 pb128 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edit this title</font>
+                    </h2>
+                    <h4>
+                      <font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Good writing is simple, but not simplistic.</font>
+                    </h4>
+                    <p>
+                      <br/>
+                    </p>
+                    <p class="o_default_snippet_text">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1734330971755">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1734330971755">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+        <div class="s_carousel carousel slide s_carousel_boxed" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330969824" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#myCarousel1734330969824">
+            </li>
+            <li data-slide-to="1" data-target="#myCarousel1734330969824">
+            </li>
+            <li data-slide-to="2" data-target="#myCarousel1734330969824">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40 o_colored_level">
+                    <h2 style="font-size: 62px;" class="o_default_snippet_text">Clever Slogan</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p class="lead o_default_snippet_text">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p>
+                      <a href="/" class="btn btn-primary mb-2 o_default_snippet_text">Start your journey</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt128 pb128 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edit this title</font>
+                    </h2>
+                    <h4>
+                      <font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Good writing is simple, but not simplistic.</font>
+                    </h4>
+                    <p>
+                      <br/>
+                    </p>
+                    <p class="o_default_snippet_text">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1734330969824">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1734330969824">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+        <div class="s_carousel carousel slide s_carousel_rounded" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330982745" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#myCarousel1734330982745"/>
+            <li data-slide-to="1" data-target="#myCarousel1734330982745"/>
+            <li data-slide-to="2" data-target="#myCarousel1734330982745"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip469642">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                    </h2>
+                    <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format. Don't write about products or services here, write about solutions.</p>
+                    <p>
+                      <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contact us</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40 o_colored_level">
+                    <h2 style="font-size: 62px;" class="o_default_snippet_text">Clever Slogan</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p class="lead o_default_snippet_text">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p>
+                      <a href="/" class="btn btn-primary mb-2 o_default_snippet_text">Start your journey</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt128 pb128 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+              <div class="container oe_unremovable">
+                <div class="row content">
+                  <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+                    <h2>
+                      <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edit this title</font>
+                    </h2>
+                    <h4>
+                      <font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Good writing is simple, but not simplistic.</font>
+                    </h4>
+                    <p>
+                      <br/>
+                    </p>
+                    <p class="o_default_snippet_text">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1734330982745">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1734330982745">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

@@ -1,0 +1,924 @@
+<t t-name="website.time-line">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_text_block o_colored_level pb0 pt32 bg-black-15" data-snippet="s_text_block" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>time line-01</strong>
+          </h4>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb4 s_custom_timeLine01 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine01">
+        <div class="container">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-8">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-4">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4252-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4246-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4248-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-8">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-4">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4250-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12 o_animate o_anim_fade_in o_animate_both_scroll" style="">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-12 o_animate o_anim_fade_in o_animate_both_scroll" style="">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>time line-02</strong>
+          </h4>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb0 s_custom_timeLine02 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine02">
+        <div class="container">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level border o_animate o_anim_fade_in o_visible" style="border-width: 1px !important;">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-8">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4253-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level border" style="border-width: 1px !important;">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-12" style="border-color: rgb(220, 220, 220) !important;">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-3">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4247-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level shadow">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-12">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-3">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4251-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level shadow">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-8">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4256-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level shadow">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-12">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-12">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pb0 pt32 bg-black-15" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>time line-03</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_timeline pt24 pb48 o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden s_custom_timeLine03" data-snippet="s_timeline" data-name="Timeline" style="background-image: none; position: relative;" data-scroll-background-ratio="1" data-custom-name="timeLine03" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/03&quot;,&quot;colors&quot;:{&quot;c1&quot;:&quot;rgba(8, 82, 148, 0.36)&quot;,&quot;c2&quot;:&quot;rgba(57, 132, 198, 0.32)&quot;},&quot;flip&quot;:[]}">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4258-0e342565/preview_hor.jpg&quot;);" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="950"/>
+        <div class="o_we_bg_filter bg-black-25"/>
+        <div class="o_we_shape o_web_editor_Wavy_03" style="background-image: url(&quot;/web_editor/shape/web_editor%2FWavy%2F03.svg?c1=rgba(8%2C%2082%2C%20148%2C%200.36)&amp;c2=rgba(57%2C%20132%2C%20198%2C%200.32)&quot;);"/>
+        <div class="s_timeline_line o_container_small">
+          <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <b class="o_default_snippet_text">
+                  <font class="text-white">2019</font>
+                </b>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <span style="color: rgb(255, 255, 255);">A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <b class="o_default_snippet_text">
+                  <font class="text-white">2019</font>
+                </b>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">Your title,&amp;nbsp;A timeline is a graphical representation on which important events are marked.</font>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <b class="o_default_snippet_text">
+                  <font class="text-white">2019</font>
+                </b>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">A&amp;nbsp;timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.</font>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <b class="o_default_snippet_text">
+                  <font class="text-white">2019</font>
+                </b>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">A&amp;nbsp;timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.</font>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <b class="o_default_snippet_text">
+                  <font class="text-white">2019</font>
+                </b>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">A&amp;nbsp;timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.</font>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>time line-04</strong>
+          </h4>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level s_custom_timeLine04 pb0 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine04">
+        <div class="o_container_small">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level o_animate o_anim_fade_in o_animate_both_scroll" style="">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-2">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                      </div>
+                      <div class="o_colored_level col-lg-6">
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4249-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-2" style="border-color: rgb(220, 220, 220) !important;">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                      </div>
+                      <div class="o_colored_level col-lg-10" style="border-color: rgb(220, 220, 220) !important;">
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-3 offset-lg-2">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4255-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="undefined"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level border" style="border-width: 1px !important;">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-12">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-3">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4257-50176ac3/preview_hor2.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4242" data-original-src="/web/image/4242-fbb84b0d/preview_hor2.png" data-mimetype="image/png" data-resize-width="undefined"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level shadow">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-8">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/4214-ab928b4e/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 o_colored_level">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-12">
+                        <p class="h2">
+                          <strong>2019</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb16" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.15) !important;"/>
+                        </div>
+                        <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-12">
+                        <p>
+                          <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level pt32 bg-black-15 pb16" data-snippet="s_text_block" data-name="標題">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>time line-05</strong>
+          </h4>
+        </div>
+      </section>
+      <section class="s_timeline pt24 pb48 o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden s_custom_timeLine05" data-snippet="s_timeline" data-name="Timeline" style="position: relative; background-image: none;" data-scroll-background-ratio="1" data-custom-name="timeLine05">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4254-0e342565/preview_hor.jpg&quot;);" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="950"/>
+        <div class="o_we_bg_filter bg-black-15"/>
+        <div class="s_timeline_line o_container_small" style="border-color: rgb(255, 98, 25) !important;">
+          <div class="s_timeline_row d-block d-md-flex flex-row o_animate o_anim_fade_in_up o_visible" data-name="Row" style="">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <font class="text-white">2019
+              </font>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100 bg-black-25" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">
+                    A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.
+                  </font>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row o_animate o_anim_fade_in_up o_visible" data-name="Row" style="">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <font class="text-white">2019</font>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100 bg-black-25" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">
+                    Your title,&amp;nbsp;A timeline is a graphical representation on which important events are marked.
+                  </font>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+          <div class="s_timeline_row d-block d-md-flex flex-row o_animate o_anim_fade_in_up o_visible" data-name="Row" style="">
+            <div class="s_timeline_date">
+              <span class="bg-white">
+                <font class="text-white">2019</font>
+              </span>
+            </div>
+            <div class="s_timeline_content d-flex">
+              <div class="s_timeline_card s_card card w-100 bg-black-25" data-name="Card" data-snippet="s_card">
+                <div class="card-body">
+                  <p>
+                    <font class="text-white">
+                    A&amp;nbsp;timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.&amp;nbsp;A timeline is a graphical representation on which important events are marked. A timeline is a graphical representation on which important events are marked.</font>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="s_timeline_content"/>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>
+              <font class="text-o-color-5">time line-06</font>
+            </strong>
+          </h4>
+          <p>垂直排版: 設定漸層背景色 (50%/50%)<br/>內容-文字區塊，要選對應的背景色</p>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt48 pb40 s_custom_timeLine06" data-name="Vertical Layout" style="background-image: linear-gradient(90deg, rgb(245, 245, 245) 0%, rgb(245, 245, 245) 50%, rgb(53, 151, 156) 50%, rgb(53, 151, 156) 100%);" data-custom-name="timeLine06">
+        <div class="container">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-8">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-4">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4297-a07f7fc7/preview_bg.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24 o_cc o_cc4" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4300-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-3">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4299-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24 o_cc o_cc4" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-8">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-4">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4298-790eafc2/preview_hor.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-12 o_animate o_anim_fade_in o_animate_both_scroll" style="">
+                    <h3>
+                      <strong>2019</strong>
+                    </h3>
+                    <p><strong>Your title<br/></strong>A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.A timeline is a graphical representation on which important events are marked.<br/></p>
+                  </div>
+                  <div class="o_colored_level col-lg-12 o_animate o_anim_fade_in o_animate_both_scroll" style="">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip182769" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>
+              <font class="text-o-color-5">time line-07</font>
+            </strong>
+          </h4>
+          <p>
+            <br/>
+          </p>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level s_custom_timeline07" data-name="Vertical Layout" style="background-image: none;" data-custom-name="time-line-07">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1990</strong>
+                        <br/>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="o_colored_level img-content col-lg-6 pt0 pb0">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1993</strong>
+                        <br/>
+                      </p>
+                    </div>
+                    <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1995</strong>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1998</strong>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h4>
+            <strong>
+              <font class="text-o-color-5">time line-08</font>
+            </strong>
+          </h4>
+          <p>
+            <br/>
+          </p>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level s_custom_timeline08" data-name="Vertical Layout" style="background-image: none;" data-custom-name="time-line-08">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1990</strong>
+                        <br/>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="o_colored_level img-content col-lg-6 pb0 pt0">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                        <div class="o_colored_level col-lg-4 pt16 pb16">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1993</strong>
+                        <br/>
+                      </p>
+                    </div>
+                    <p>Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1995</strong>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image o_colored_level pt64 pb64" data-snippet="s_text_image" data-name="Text - Image" style="background-color: rgb(245, 245, 245) !important; background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level text-content pt16 pb16">
+                    <div class="s_text time-year" data-snippet="s_text" data-name="Text">
+                      <p class="h2">
+                        <strong>1998</strong>
+                      </p>
+                    </div>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p>Start with the customer – find out what they want and give it to them.&amp;nbsp;
+                    <br/></p>
+                  </div>
+                  <div class="col-lg-6 o_colored_level img-content pt16 pb16">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <div class="row">
+                        <div class="o_colored_level col-lg-12">
+                          <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="227" data-original-src="/web/image/227-e364d171/website.s_text_image_default_image" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip881184" style=""/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>

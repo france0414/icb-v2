@@ -1,0 +1,30 @@
+{
+  "version": "v1.0",
+  "policies": {
+    "scss_only": {
+      "description": "Only SCSS overrides allowed; no XML output or DOM changes.",
+      "allowed_ops": ["scss_override_only"],
+      "forbidden_ops": ["xml_replace", "xml_modify", "inner_dom_insert", "inner_dom_delete"]
+    },
+    "xpath_required": {
+      "description": "XML must be output using QWeb inherit + xpath; no full XML replacement.",
+      "allowed_ops": ["xpath_only"],
+      "forbidden_ops": ["xml_replace"]
+    },
+    "structure_locked": {
+      "description": "Structure is immutable; only section-level class/data and SCSS allowed.",
+      "allowed_ops": [
+        "section_class_add",
+        "section_data_custom_name_set",
+        "scss_override_only"
+      ],
+      "forbidden_ops": [
+        "inner_dom_insert",
+        "inner_dom_delete",
+        "template_key_change",
+        "xml_replace",
+        "xml_modify"
+      ]
+    }
+  }
+}

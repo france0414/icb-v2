@@ -1,0 +1,158 @@
+//  -------------------------------------             動態區塊 - 客製JS捲軸 開始          -------------------------------------  //  
+$showItem: 5; // 顯示幾個產品
+$proListAspectRatio: 1; // ※※※  放入產品 SCSS 之後請移除此行，箭頭的高度才會抓到正確的圖片比例  ※※※
+// 捲軸 - 捲動幅度
+:root {
+  --scroll-distance: 38vw;
+}
+@include laptop {
+  :root {
+    --scroll-distance: 50vw;
+  }
+}
+@include media-breakpoint-down(md) {
+  :root {
+    --scroll-distance: 80vw;
+  }
+}
+@include media-breakpoint-down(xs) {
+  :root {
+    --scroll-distance: 55vw;
+  }
+}
+@include mobile-s {
+  :root {
+    --scroll-distance: 68vw;
+  }
+}
+.s_custom_productRightScroll {
+    // 箭頭
+    .carousel-arrow {
+        height: var(--arrowWidth);
+        width: var(--arrowWidth);
+        border: 1px solid var(--arrowColor);
+        border-radius: var(--arrowRadius);
+        background: var(--arrowBg);
+        position: absolute;
+        top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
+        cursor: pointer;
+        z-index: 2;
+        @include transition;
+        @media (max-width: $wrap-size ) {
+            top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
+        }
+        @include media-breakpoint-down(md) {
+            top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
+        }
+        @include mobile-s {
+            top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
+        }
+        &:hover {
+            background-color: var(--arrowBgHover);
+            border-color: var(--arrowColorHover);
+            .fa::before {
+                border-color: var(--arrowColorHover) !important;
+            }
+        }
+        &.carousel-arrow-left {
+            left: calc(var(--container-pd-x) * 2);
+            @include media-breakpoint-down(md) {
+                left: var(--container-pd-x);
+            }
+        }
+        &.carousel-arrow-right {
+            right: calc((100vw - #{$wrap-size}) / 2 + var(--container-pd-x));
+            @include media-breakpoint-down(md) {
+                right: var(--container-pd-x);
+            }
+        }
+        .fa::before {
+            content: "";
+            display: block;
+            width: calc(var(--arrowWidth) * .36);
+            height: calc(var(--arrowWidth) * .36);
+            background-color: unset;
+            border-top: 1px solid var(--arrowColor);
+            border-left: 1px solid var(--arrowColor);
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transition;
+        }
+        .fa-angle-left::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            margin-left: calc(var(--arrowWidth) * .4 / 4);
+        }
+        .fa-angle-right::before {
+            transform: translate(-50%, -50%) rotate(135deg);
+            margin-left: calc(var(--arrowWidth) * .4 / -4);
+        }
+        &.disabled {
+            opacity: 0;
+        }
+    }
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .container-fluid {
+            // overflow: visible;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+            @media (min-width: $wrap-size ) {
+                margin-left: calc((100% - 1500px) / 2) !important;
+            }
+            @media (max-width: $wrap-size ) {
+                padding-left: var(--container-pd-x);
+            }
+        }
+        .static_snippet_template,
+        .dynamic_snippet_template {
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+                @include transition;
+                >div[class*="col"] {
+                    padding-left: 0 !important;
+                    padding-right: 20px !important;
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+            }
+            .card {
+                padding: 0 !important;
+            }
+            .o_carousel_product_card_body {
+                padding: 0 0 15px;
+            }
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_productRightScroll {
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .row{
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            >div[class*="col"] {
+                max-width: calc(100vw / #{$showItem} - 15px)  !important;
+                flex: 0 0 calc(100vw / #{$showItem} - 15px)  !important;
+                @media (max-width: $wrap-size ) {
+                    max-width: calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                }
+                @include media-breakpoint-down(md) {
+                    max-width: calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                }
+                @include mobile-s {
+                    max-width: calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                }
+            }
+        }
+    }
+}
+//  -------------------------------------             動態區塊 - 客製JS捲軸 結束          -------------------------------------  //

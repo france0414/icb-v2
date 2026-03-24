@@ -1,0 +1,211 @@
+/* 此 SCSS 遵守 Odoo AI 規則：
+   1. 包含在 #wrapwrap:not(.odoo-editor-editable) 內保護重疊與絕對定位
+   2. 針對被 Odoo 動態生成的 .s_dynamic_snippet 與內部 .card 寫樣式
+*/
+.s_custom_news_hanaria {
+    $brand-primary: #172148;
+    /* Hanaria 深藍色 */
+
+    /* 左側標題區塊樣式 */
+    .c-title {
+        .c-title__ja {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .c-title__en {
+            font-size: 0.875rem;
+            color: #888;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn-outline-custom {
+        border: 1px solid $brand-primary;
+        color: $brand-primary;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            background-color: $brand-primary;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+
+    /* 攔截 Odoo 動態產生的部落格列表 (s_blog_post_card 樣板) 並蓋成 Hanaria 樣式 */
+    .s_dynamic_snippet.s_custom_hanaria_list {
+        .dynamic_snippet_template {
+
+            /* 打破 Odoo 的 Grid 系統，強制轉向為垂直列表 */
+            .row {
+                flex-direction: column;
+                margin: 0;
+
+                /* 讓內部所有的 col-* 放棄原有寬度，全部佔滿 100% */
+                >[class*='col-'] {
+                    max-width: 100% !important;
+                    flex: 0 0 100% !important;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+            /* 針對 Card 樣板的結構進行攔截覆寫 */
+            .s_blog_posts_post {
+                width: 100%;
+                // flex: 0 0 100%; 這邊不用設定了，已經交給上層 col 處理
+
+                .card {
+                    border: none !important;
+                    border-bottom: 1px solid #eaeaea !important;
+                    border-radius: 0;
+                    background-color: transparent !important;
+                    transition: all 0.3s ease;
+                    padding: 1.5rem 0;
+                    margin-bottom: 0 !important;
+                    flex-direction: column;
+                    /* 將圖文改為垂直堆疊 (日期在上，標題在下) */
+                    align-items: flex-start;
+
+                    &:hover {
+                        background-color: #f8f9fa !important;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+
+                        /* 標題變色 */
+                        .card-body h4 {
+                            color: $brand-primary !important;
+                        }
+                    }
+
+                    /* 隱藏預設圖片 (因為 Hanaria 的消息列表通常不帶圖) */
+                    .s_blog_posts_post_cover {
+                        display: none !important;
+                    }
+
+                    .card-body {
+                        padding: 0 !important;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+
+                        /* 將 card-body 排序到下方 (配合 .card-footer 的 order: 1) */
+                        order: 2;
+                        margin-top: 10px;
+                        /* 與上方日期的間距 */
+
+                        @include media-breakpoint-down(sm) {
+                            /* 手機版保持堆疊，不用修改 */
+                            margin-top: 5px;
+                        }
+
+                        h4 {
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin: 0;
+                            color: #333;
+                            transition: color 0.3s ease;
+                        }
+
+                        /* 移除摘要 */
+                        .s_blog_posts_post_teaser {
+                            display: none !important;
+                        }
+                    }
+
+                    /* 控制底部日期區塊的位置，移到最左邊 */
+                    .card-footer {
+                        background: transparent !important;
+                        border: none !important;
+                        padding: 0 !important;
+                        margin-right: 1.5rem;
+
+                        /* 強制為單行橫向排列，徹底覆寫 Odoo 的 wrap 或 between */
+                        display: flex !important;
+                        flex-direction: row !important;
+                        align-items: center !important;
+                        justify-content: flex-start !important;
+                        flex-wrap: nowrap !important;
+                        gap: 15px;
+                        /* 日期與分類標籤之間的距離 */
+
+                        /* 確保寬度由內容決定，不要被擠壓換行 */
+                        flex: 0 0 auto;
+                        white-space: nowrap;
+
+                        /* 將 card-footer 排序到上方 */
+                        order: 1;
+                        margin-bottom: 0 !important;
+
+                        @include media-breakpoint-down(sm) {
+                            margin-top: 0;
+                            /* 手機版日期保持在上面 */
+                        }
+
+                        /* 隱藏 Odoo 預設加在日期旁的日曆 icon */
+                        i.fa-calendar,
+                        i.fa {
+                            display: none !important;
+                        }
+
+                        /* 1. 處理日期 (第一個 span.text-muted) */
+                        span.text-muted:first-child {
+                            color: #6c757d;
+                            font-size: 0.95rem;
+                            margin: 0 !important;
+                            /* 清除 Odoo 預設 mb-0 */
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        /* 2. 處理分類標籤 (包含 "In " 與 <a> 的第二個 span) */
+                        span.text-muted:not(:first-child) {
+                            /* CSS 魔法：設定 font-size: 0 讓游離的 "In " 純文字消失 */
+                            font-size: 0 !important;
+                            margin: 0 !important;
+
+                            /* 重製為 Hanaria 原版的「黃色小圓點 + 純文字」風格，而非泡泡框 */
+                            a {
+                                display: inline-flex !important;
+                                align-items: center;
+                                font-size: 0.85rem !important;
+                                /* 解除上層的 font-size: 0 */
+                                font-weight: normal !important;
+                                /* 蓋掉 Odoo 的 .font-weight-bold */
+                                color: #6c757d;
+                                text-decoration: none;
+                                border: none !important;
+                                background: transparent !important;
+                                padding: 0 !important;
+
+                                /* 仿造 Hanaria.jp 的小圓點 */
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 6px;
+                                    height: 6px;
+                                    background-color: #e5cc70;
+                                    /* Hanaria 的黃色 */
+                                    border-radius: 50%;
+                                    margin-right: 8px;
+                                }
+
+                                &:hover {
+                                    color: $brand-primary;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

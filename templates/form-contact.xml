@@ -1,0 +1,104 @@
+  <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="container s_allow_columns">
+          <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+            <div class="container">
+              <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true" data-privacy-checkbox="use" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-model_name="mail.mail">
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                  <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+                        <span class="s_website_form_label_content"/>
+                      </label>
+                      <div class="col-sm">
+                        <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
+                        <div class="s_website_form_field_description small form-text text-muted">
+            單獨的電子郵件地址用逗號區分.
+        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+                        <span class="s_website_form_label_content"/>
+                      </label>
+                      <div class="col-sm">
+                        <input type="hidden" class="form-control s_website_form_input" name="subject" value="聯絡我們"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required  " data-type="char" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="on5qbriabyw">
+                        <span class="s_website_form_label_content">Your Name</span>
+                        <span class="s_website_form_mark"> *</span>
+                      </label>
+                      <div class="col-sm">
+                        <input type="text" class="form-control s_website_form_input" name="name" required="1" data-fill-with="name" id="on5qbriabyw"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12 s_website_form_custom   " data-type="tel" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="o5v4hkewneea">
+                        <span class="s_website_form_label_content">Phone Number</span>
+                      </label>
+                      <div class="col-sm">
+                        <input type="tel" class="form-control s_website_form_input" name="phone" data-fill-with="phone" id="o5v4hkewneea"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required  " data-type="email" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="oyutj3euxfjc">
+                        <span class="s_website_form_label_content">Your Email</span>
+                        <span class="s_website_form_mark"> *</span>
+                      </label>
+                      <div class="col-sm">
+                        <input type="email" class="form-control s_website_form_input" name="email" required="1" data-fill-with="email" id="oyutj3euxfjc"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12 s_website_form_custom   " data-type="char" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="opanoqqhn5i">
+                        <span class="s_website_form_label_content">Your Company</span>
+                      </label>
+                      <div class="col-sm">
+                        <input type="text" class="form-control s_website_form_input" name="company" data-fill-with="commercial_company_name" id="opanoqqhn5i"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required  " data-type="text" data-name="Field">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                      <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="omztxgys9evn">
+                        <span class="s_website_form_label_content">Your Question</span>
+                        <span class="s_website_form_mark"> *</span>
+                      </label>
+                      <div class="col-sm">
+                        <textarea class="form-control s_website_form_input" name="description" required="1" id="omztxgys9evn" rows="3"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group privacy-checkbox col-12">
+                    <div class="checkbox form-check">
+                      <div class="pretty-checkbox radius-style">
+                        <input class="form-check-input" type="checkbox" name="privacy" id="contact_privacy" value="I am aware of privacy policy and agree to the regulations on the collection and use of personal data" required="required"/>
+                        <label class="form-check-label" for="contact_privacy">
+                          <span class="title">I am aware of <a href="/privacy" target="_blank">privacy policy</a> and agree to the regulations on the collection and use of personal data</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+                    <div style="width: 200px;" class="s_website_form_label"/>
+                    <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send o_default_snippet_text">Submit</a>
+                    <span id="s_website_form_result"/>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+         
+        </div>
+      </section>

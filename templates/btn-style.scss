@@ -1,0 +1,1128 @@
+
+//------------------ 按鈕，右下角斜切 開始 ------------------//
+.oe_website_sale>section .btn i {
+    display: none;
+}
+.btn-fill-primary,
+.btn-primary {
+    background-color: var(--o-cc1-btn-primary);
+}
+.btn-fill-primary:hover,
+.btn-primary:hover {
+    background-color: var(--o-cc1-btn-primary-border);
+}
+.btn-fill-secondary,
+.btn-secondary {
+    background-color: var(--o-cc1-btn-secondary);
+}
+.btn-fill-secondary:hover,
+.btn-secondary:hover {
+    background-color: var(--o-cc1-btn-secondary-border);
+}
+.o_cc2 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc2-btn-primary);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc2-btn-primary) 90%, #222 35%);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc2-btn-secondary);
+        &:hover {
+            background-color: var(--o-cc2-btn-secondary);
+            background-color: color-mix(in srgb, var(--o-cc2-btn-secondary) 90%, #222 35%);
+        }
+    }
+}
+.o_cc3 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc3-btn-primary);
+        &:hover {
+            background-color: var(--o-cc3-btn-primary-border);
+            background-color: color-mix(in srgb, var(--o-cc3-btn-primary) 90%, #222 35%);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc3-btn-secondary);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc3-btn-secondary) 90%, #222 10%);
+        }
+    }
+}
+.o_cc4 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc4-btn-primary);
+        &:hover {
+            background-color: var(--o-cc4-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc4-btn-secondary);
+        &:hover {
+            background-color: var(--o-cc4-btn-secondary-border);
+        }
+    }
+}
+.o_cc5 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc5-btn-primary);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc5-btn-primary) 90%, #222 35%);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        color: var(--o-cc5-link);
+        background-color: var(--o-cc5-btn-secondary);
+        border-color: var(--o-cc5-btn-secondary-border);
+        &:hover {
+            color: var(--o-cc5-link);
+            background-color: color-mix(in srgb, var(--o-cc5-btn-secondary) 90%, #222 5%);
+        }
+    }
+    .btn-outline-secondary {
+        color: var(--o-cc5-btn-secondary);
+        border-color: var(--o-cc5-btn-secondary);
+        &:hover {
+            color: var(--o-cc5-btn-secondary-link);
+            background-color: var(--o-cc5-btn-secondary-border);
+            border-color: var(--o-cc5-btn-secondary-border);
+        }
+    }
+}
+#wrapwrap .btn:not(.dropdown-toggle):not(.oe_search_button):not([class*=outline]):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote):not(.js_add_cart_json) {
+    padding-right: 30px;
+    mask: linear-gradient(314deg, rgba(167, 11, 11, 0) 16px, black 0%);
+    border: none;
+}
+//------------------ 按鈕，右下角斜切 結束 ------------------//
+
+
+//------------------ 按鈕，普通箭頭 開始 ------------------//
+.oe_website_sale>section .btn i {
+    display: none;
+}
+.btn-fill-primary,
+.btn-primary {
+    background-color: var(--o-cc1-btn-primary);
+    border-color: var(--o-cc1-btn-primary);
+    &:hover {
+        background-color: var(--o-cc1-btn-primary-border);
+        border-color: var(--o-cc1-btn-primary-border);
+    }
+}
+.btn-fill-secondary,
+.btn-secondary {
+    background-color: var(--o-cc1-btn-secondary);
+    border-color: var(--o-cc1-btn-secondary);
+    &:hover {
+        background-color: var(--o-cc1-btn-secondary-border);
+        border-color: var(--o-cc1-btn-secondary-border);
+    }
+}
+.o_cc2 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc2-btn-primary);
+        border-color: var(--o-cc2-btn-primary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc2-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc2-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc2-btn-secondary);
+        border-color: var(--o-cc2-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc2-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc2-btn-secondary-border);
+        }
+    }
+}
+.o_cc3 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc3-btn-primary);
+        border-color: var(--o-cc3-btn-primary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc3-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc3-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc3-btn-secondary);
+        border-color: var(--o-cc3-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc3-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc3-btn-secondary-border);
+        }
+    }
+}
+.o_cc4 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc4-btn-primary);
+        border-color: var(--o-cc4-btn-primary-border);
+        &:hover {
+            background-color: var(--o-cc4-btn-secondary);
+            border-color: var(--o-cc4-btn-secondary);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc4-btn-secondary);
+        border-color: var(--o-cc4-btn-secondary);
+        &:hover {
+            color: var(--o-cc4-btn-link);
+            background-color: var(--o-cc4-btn-secondary-border);
+            border-color: var(--o-cc4-btn-secondary-border);
+        }
+    }
+}
+.o_cc5 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc5-btn-primary);
+        &:hover {
+            color: var(--o-cc5-btn-link);
+            background-color: color-mix(in srgb, var(--o-cc5-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc5-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc5-btn-secondary);
+        border-color: var(--o-cc5-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc5-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc5-btn-secondary-border);
+        }
+    }
+    .btn-outline-secondary {
+        color: var(--o-cc5-link);
+        border-color: var(--o-cc5-link);
+        &:hover {
+            background-color: var(--o-cc5-btn-secondary);
+            border-color: var(--o-cc5-btn-secondary);
+        }
+    }
+}
+header,
+section {
+    .btn:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote) {
+        display: inline-flex !important;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &:hover::after {
+            animation: btn-bounce-left2 .8s ease 0s 1 normal none;
+        }
+        &::after {
+            content: "\f105";
+            font-family: "FontAwesome" !important;
+            display: block;
+            padding-left: 4px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        i {
+            display: none;
+        }
+    }
+}
+#wrapwrap.odoo-editor-editable {
+    header,
+    section {
+        .btn:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote):hover::after {
+            animation: none;
+        }
+    }
+}
+@keyframes btn-bounce-left2 {
+    20% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+//------------------ 按鈕，普通箭頭 結束 ------------------//
+
+
+//------------------ 按鈕，細箭頭 開始 ------------------//
+.oe_website_sale>section .btn i {
+    display: none;
+}
+.btn-fill-primary,
+.btn-primary {
+    background-color: var(--o-cc1-btn-primary);
+    border-color: var(--o-cc1-btn-primary);
+    &:hover {
+        background-color: var(--o-cc1-btn-primary-border);
+        border-color: var(--o-cc1-btn-primary-border);
+    }
+}
+.btn-fill-secondary,
+.btn-secondary {
+    background-color: var(--o-cc1-btn-secondary);
+    border-color: var(--o-cc1-btn-secondary);
+    &:hover {
+        background-color: var(--o-cc1-btn-secondary-border);
+        border-color: var(--o-cc1-btn-secondary-border);
+    }
+}
+.o_cc2 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc2-btn-primary);
+        border-color: var(--o-cc2-btn-primary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc2-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc2-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc2-btn-secondary);
+        border-color: var(--o-cc2-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc2-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc2-btn-secondary-border);
+        }
+    }
+}
+.o_cc3 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc3-btn-primary);
+        border-color: var(--o-cc3-btn-primary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc3-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc3-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc3-btn-secondary);
+        border-color: var(--o-cc3-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc3-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc3-btn-secondary-border);
+        }
+    }
+}
+.o_cc4 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc4-btn-primary);
+        border-color: var(--o-cc4-btn-primary-border);
+        &:hover {
+            background-color: var(--o-cc4-btn-secondary);
+            border-color: var(--o-cc4-btn-secondary);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc4-btn-secondary);
+        border-color: var(--o-cc4-btn-secondary);
+        &:hover {
+            color: var(--o-cc4-btn-link);
+            background-color: var(--o-cc4-btn-secondary-border);
+            border-color: var(--o-cc4-btn-secondary-border);
+        }
+    }
+}
+.o_cc5 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc5-btn-primary);
+        &:hover {
+            color: var(--o-cc5-btn-link);
+            background-color: color-mix(in srgb, var(--o-cc5-btn-primary) 90%, #222 35%);
+            border-color: var(--o-cc5-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc5-btn-secondary);
+        border-color: var(--o-cc5-btn-secondary-border);
+        &:hover {
+            background-color: color-mix(in srgb, var(--o-cc5-btn-secondary) 90%, #222 35%);
+            border-color: var(--o-cc5-btn-secondary-border);
+        }
+    }
+    .btn-outline-secondary {
+        color: var(--o-cc5-link);
+        border-color: var(--o-cc5-link);
+        &:hover {
+            background-color: var(--o-cc5-btn-secondary);
+            border-color: var(--o-cc5-btn-secondary);
+        }
+    }
+}
+header,
+section {
+    .btn:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote) {
+        display: inline-flex !important;
+        gap: 6px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &:hover::after {
+            animation: btn-bounce-left 1s ease 0s 1 normal none;
+        }
+        &::after {
+            content: "";
+            width: 22px;
+            height: 8px;
+            border-right: 1px solid currentColor;
+            border-bottom: 1px solid currentColor;
+            display: block;
+            z-index: 2;
+            transform: skewX(45deg);
+            pointer-events: none;
+        }
+        &.btn-lg::after {
+            height: 10px;
+            width: 30px;
+        }
+        &.btn-sm::after {
+            height: 5px;
+            width: 14px;
+        }
+        i {
+            display: none;
+        }
+    }
+}
+#wrapwrap.odoo-editor-editable {
+    header,
+    section {
+        .btn:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote):hover::after {
+            animation: none;
+        }
+    }
+}
+@keyframes btn-bounce-left {
+    20% {
+        transform: translateX(-2px) skewX(45deg);
+    }
+    80% {
+        transform: translateX(6px) skewX(45deg);
+    }
+    90% {
+        transform: translateX(-2px) skewX(45deg);
+    }
+    100% {
+        transform: skewX(45deg);
+    }
+}
+//------------------ 按鈕，細箭頭 結束 ------------------//
+
+
+//------------------ 按鈕，實心圓點放大 開始 ------------------//
+//-- 說明此款 主題選項>按鈕>填充物 左右 pading 至少要36px (小: 20px。大: 40px)---//
+$dot-bg: #fff;   // 預設: 白色，其餘有接上色彩球變數者不使用此變數
+.oe_website_sale>section .btn i {
+    display: none;
+}
+#wrapwrap {
+    .btn[class*='primary'],
+    .btn[class*='secondary'] {
+        &:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote) {
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 12px;
+                z-index: -1;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+            &:hover {
+                // background-color: unset !important;
+                &::before {
+                    transform: scale(100);
+                }
+            }
+            &.btn-lg::before {
+                left: 16px;
+            }
+            &.btn-sm::before {
+                width: 4px;
+                height: 4px;
+                left: 8px;
+            }
+        }
+    }
+    .oe_edited_link::before {
+        border: none;
+    }
+    .btn-primary:not(.dropdown-toggle) {
+        border-color: var(--o-cc1-btn-primary);
+        @include transition;
+        &:hover {
+            color: var(--o-cc1-btn-primary);
+            border-color: var(--o-cc1-btn-primary);
+        }
+        &::before {
+            background-color: $dot-bg;
+        }
+    }
+    .btn-fill-primary {
+        &:hover {
+            &::before {
+                background-color: var(--o-cc1-btn-primary-border);
+            }
+        }
+        &::before {
+            background-color: $dot-bg;
+        }
+    }
+    .btn-outline-primary:not(.dropdown-toggle) {
+        border-color: var(--o-cc1-btn-primary);
+        color: var(--o-cc1-btn-primary);
+        &:hover {
+            color: $dot-bg;
+            background-color: $dot-bg;
+            border-color: var(--o-cc1-btn-primary);
+        }
+        &::before {
+            background-color: var(--o-cc1-btn-primary);
+        }
+    }
+    .btn-primary.flat {
+        color: var(--o-cc1-btn-primary);
+        background: unset;
+        &:hover {
+            color: $dot-bg;
+        }
+        &::before {
+            background-color: var(--o-cc1-btn-primary);
+        }
+    }
+    .btn-secondary:not(.dropdown-toggle) {
+        border-color: var(--o-cc1-btn-secondary-border);
+        &:hover {
+            color: var(--o-cc1-btn-secondary-border);
+            border-color: var(--o-cc1-btn-secondary-border);
+        }
+        &::before {
+            background-color: $dot-bg;
+        }
+    }
+    .btn-fill-secondary {
+        &:hover {
+            &::before {
+                background-color: var(--o-cc1-btn-secondary);
+            }
+        }
+        &::before {
+            background-color: $dot-bg;
+        }
+    }
+    .btn-outline-secondary:not(.dropdown-toggle) {
+        background-color: unset;
+        border-color: var(--o-cc1-btn-secondary-border);
+        color: var(--o-cc1-btn-secondary-border);
+        &:hover {
+            color: $dot-bg;
+            border-color: var(--o-cc1-btn-secondary-border);
+        }
+        &::before {
+            background-color: var(--o-cc1-btn-secondary-border);
+        }
+    }
+    .btn-secondary.flat {
+        color: var(--o-cc1-btn-secondary-border);
+        background: unset;
+        &:hover {
+            color: $dot-bg;
+        }
+        &::before {
+            background-color: var(--o-cc1-btn-secondary-border);
+        }
+    }
+    .o_cc1 {
+        .btn-primary:not(.dropdown-toggle) {
+            &:hover {
+                color: var(--o-cc1-btn-primary);
+                border-color: var(--o-cc1-btn-primary);
+            }
+        }
+        .btn-outline-primary:not(.dropdown-toggle) {
+            border-color: var(--o-cc1-btn-primary);
+            color: var(--o-cc1-btn-primary);
+            &:hover {
+                color: $dot-bg;
+            }
+        }
+        .btn-primary.flat:hover {
+            color: $dot-bg;
+        }
+        .btn-secondary:not(.dropdown-toggle) {
+            &:hover {
+                color: var(--o-cc1-btn-secondary-border);
+                border-color: var(--o-cc1-btn-secondary-border);
+            }
+        }
+        .btn-outline-secondary:not(.dropdown-toggle) {
+            background-color: $dot-bg;
+            border-color: var(--o-cc1-btn-secondary-border);
+            color: var(--o-cc1-btn-secondary-border);
+            &::before {
+                border-color: var(--o-cc1-btn-secondary-border);
+            }
+            &:hover {
+                color: var(--o-cc1-btn-secondary);
+                border-color: var(--o-cc1-btn-secondary-border);
+            }
+        }
+        .btn-secondary.flat:hover {
+            color: var(--o-cc1-btn-secondary);
+        }
+    }
+    .o_cc2 {
+        .btn-fill-primary,
+        .btn-primary:not(.dropdown-toggle) {
+            background-color: var(--o-cc2-btn-primary);
+            border-color: var(--o-cc2-btn-primary-border);
+            &:hover {
+                border-color: var(--o-cc2-btn-primary-border);
+            }
+        }
+        .btn-outline-primary:not(.dropdown-toggle) {
+            background-color: unset;
+            border-color: var(--o-cc2-btn-primary);
+            color: var(--o-cc2-btn-primary);
+            &:hover {
+                color: $dot-bg;
+            }
+        }
+        .btn-fill-secondary,
+        .btn-secondary:not(.dropdown-toggle) {
+            background-color: var(--o-cc2-btn-secondary);
+            border-color: var(--o-cc2-btn-secondary-border);
+            &:hover {
+                border-color: var(--o-cc2-btn-secondary-border);
+                &::before {
+                    background-color: var(--o-cc2-btn-secondary-border);
+                }
+            }
+        }
+        .btn-outline-secondary:not(.dropdown-toggle) {
+            border-color: var(--o-cc2-btn-secondary);
+            color: var(--o-cc2-btn-secondary);
+        }
+        .btn-primary.flat {
+            background: unset;
+            &:hover {
+                color: $dot-bg;
+            }
+        }
+        .btn-secondary.flat {
+            background: unset;
+            &:hover {
+                color: $dot-bg;
+            }
+        }
+    }
+    .o_cc3 {
+        .btn-fill-primary,
+        .btn-primary:not(.dropdown-toggle) {
+            background-color: var(--o-cc3-btn-primary);
+            border-color: var(--o-cc3-btn-primary-border);
+            &:hover {
+                border-color: var(--o-cc3-btn-primary-border);
+                &::before {
+                }
+            }
+        }
+        .btn-outline-primary:not(.dropdown-toggle) {
+            background-color: unset;
+            border-color: var(--o-cc3-btn-primary-border);
+            color: var(--o-cc3-btn-primary-border);
+            &:hover {
+                color: $dot-bg;
+                &::before {
+                    background-color: var(--o-cc3-btn-primary);
+                }
+            }
+            &::before {
+                background-color: var(--o-cc3-btn-primary-border);
+            }
+        }
+        .btn-fill-secondary:hover {
+            &::before {
+                background-color: $dot-bg;
+            }
+        }
+        .btn-outline-secondary:not(.dropdown-toggle) {
+            background: unset;
+        }
+        .flat {
+            color: var(--o-cc3-btn-primary-border);
+            background-color: transparent !important;
+            &.btn-secondary {
+                color: color-mix(in srgb, var(--o-cc3-btn-secondary) 90%, #222 70%);
+                &::before {
+                    background-color: var(--o-cc3-btn-secondary);
+                }
+            }
+        }
+    }
+    .o_cc4 {
+        .btn-fill-primary,
+        .btn-primary:not(.dropdown-toggle) {
+            background-color: var(--o-cc4-btn-primary);
+            border-color: var(--o-cc4-btn-primary-border);
+            &:hover {
+                color: var(--o-cc4-btn-primary);
+                border-color: var(--o-cc4-btn-primary);
+                &::before {
+                    background-color: var(--o-cc4-link);
+                }
+            }
+        }
+        .btn-outline-primary:not(.dropdown-toggle) {
+            border-color: var(--o-cc4-btn-primary);
+            color: var(--o-cc4-btn-primary);
+            background-color: unset;
+            &:hover {
+                color: $dot-bg;
+            }
+            &::before {
+                background-color: var(--o-cc4-btn-primary);
+            }
+        }
+        .btn-outline-secondary:not(.dropdown-toggle) {
+            background-color: unset;
+            border-color: var(--o-cc4-btn-primary-border);
+            color: var(--o-cc4-btn-primary-border);
+            &:hover {
+                color:$dot-bg;
+                border-color: var(--o-cc4-btn-primary);
+            }
+            &::before {
+                background-color: var(--o-cc4-btn-primary-border);
+            }
+        }
+        .flat {
+            &:hover {
+                color: var(--o-cc4-btn-primary-border);
+            }
+            &.btn-secondary {
+                color: var(--o-cc4-btn-secondary);
+                &::before {
+                    background-color: var(--o-cc4-btn-secondary);
+                }
+                &:hover::before {
+                    background-color: $dot-bg;
+                }
+            }
+        }
+    }
+    .o_cc5 {
+        .btn-fill-primary:hover {
+            color: var(--o-cc5-btn-primary);
+            &::before {
+                background-color: $dot-bg;
+            }
+        }
+        .btn-outline-primary:not(.dropdown-toggle) {
+            background-color: unset;
+            border-color: var(--o-cc5-btn-primary);
+            color: var(--o-cc5-btn-primary);
+            &::before {
+                background-color: var(--o-cc5-btn-primary);
+            }
+            &:hover {
+                color: var(--o-cc5-btn-primary-border);
+                border-color: var(--o-cc5-btn-primary);
+                &::before {
+                    background-color: $dot-bg;
+                }
+            }
+        }
+        .btn-fill-secondary:hover {
+            &::before {
+                background-color: var(--o-cc5-btn-secondary);
+            }
+        }
+        .btn-outline-secondary:not(.dropdown-toggle) {
+            border-color: var(--o-cc5-btn-secondary-border);
+            color: var(--o-cc5-btn-secondary-border);
+            &:hover {
+                color: var(--o-cc5-btn-secondary);
+                border-color: var(--o-cc5-btn-secondary);
+            }
+            &::before {
+                background-color: $dot-bg;
+            }
+        }
+        .flat {
+            color: var(--o-cc5-btn-primary-border);
+            background-color: transparent;
+            &::before {
+                background-color: var(--o-cc5-btn-primary-border);
+            }
+            &:hover {
+                color: var(--o-cc5-btn-primary-border);
+                &::before {
+                    background-color: $dot-bg;
+                }
+            }
+            &.btn-secondary:hover {
+                color: var(--o-cc5-btn-secondary);
+            }
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) {
+    .btn[class*='primary'],
+    [class*='secondary'] {
+        &:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote)::before {
+            @include transition;
+            pointer-events: auto;
+        }
+    }
+}
+//------------------ 按鈕，實心圓點放大 結束 ------------------//
+
+
+//------------------ 按鈕，閃光效果 開始 ------------------//
+.oe_website_sale>section .btn i {
+    display: none;
+}
+.btn-fill-primary,
+.btn-primary {
+    background-color: var(--o-cc1-btn-primary);
+    border-color: var(--o-cc1-btn-primary);
+    &:hover {
+        background-color: var(--o-cc1-btn-primary-border);
+        border-color: var(--o-cc1-btn-primary-border);
+    }
+}
+.btn-fill-secondary,
+.btn-secondary {
+    background-color: var(--o-cc1-btn-secondary);
+    border-color: var(--o-cc1-btn-secondary);
+    &:hover {
+        background-color: var(--o-cc1-btn-secondary-border);
+        border-color: var(--o-cc1-btn-secondary-border);
+    }
+}
+.o_cc2 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc2-btn-primary);
+        border-color: var(--o-cc2-btn-primary-border);
+        &:hover {
+            background-color: var(--o-cc2-btn-primary-border);
+            border-color: var(--o-cc2-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc2-btn-secondary);
+        border-color: var(--o-cc2-btn-secondary-border);
+        &:hover {
+            background-color: var(--o-cc2-btn-secondary-border);
+            border-color: var(--o-cc2-btn-secondary-border);
+        }
+    }
+}
+.o_cc3 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc3-btn-primary);
+        border-color: var(--o-cc3-btn-primary-border);
+        &:hover {
+            border-color: var(--o-cc3-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc3-btn-secondary);
+        border-color: var(--o-cc3-btn-secondary-border);
+        &:hover {
+            background-color: var(--o-cc3-btn-secondary-border);
+            border-color: var(--o-cc3-btn-secondary-border);
+        }
+    }
+}
+.o_cc4 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc4-btn-primary);
+        border-color: var(--o-cc4-btn-primary-border);
+        &:hover {
+            background-color: var(--o-cc4-btn-primary-border);
+            border-color: var(--o-cc4-btn-primary-border);
+        }
+    }
+    .btn-fill-primary {
+        border-color: var(--o-cc4-link);
+        &:hover {
+            border-color: var(--o-cc4-btn-link);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc4-btn-secondary);
+        border-color: var(--o-cc4-btn-secondary);
+        &:hover {
+            color: var(--o-cc4-btn-link);
+            background-color: var(--o-cc4-btn-secondary-border);
+            border-color: var(--o-cc4-btn-secondary-border);
+        }
+    }
+    .btn-fill-secondary {
+        border-color: var(--o-cc4-btn-secondary-border);
+    }
+}
+.o_cc5 {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc5-btn-primary);
+        border-color: var(--o-cc5-btn-primary-border);
+        &:hover {
+            background-color: var(--o-cc5-btn-primary-border);
+            border-color: var(--o-cc5-btn-primary-border);
+        }
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc5-btn-secondary);
+        border-color: var(--o-cc5-btn-secondary-border);
+        &:hover {
+            background-color: var(--o-cc5-btn-secondary-border);
+            border-color: var(--o-cc5-btn-secondary-border);
+        }
+    }
+    .btn-outline-secondary {
+        color: var(--o-cc5-link);
+        border-color: var(--o-cc5-link);
+        &:hover {
+            background-color: var(--o-cc5-btn-secondary-border);
+            border-color: var(--o-cc5-btn-secondary-border);
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) {
+    header,
+    section {
+        .btn:not(.dropdown-toggle) {
+            position: relative;
+            overflow: hidden;
+            &:hover::before {
+                animation: shine .75s;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -75%;
+                z-index: 2;
+                display: block;
+                content: '';
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+                transform: skewX(-25deg);
+            }
+        }
+    }
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+//------------------ 按鈕，閃光效果 結束 ------------------//
+
+
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+//------------------ 按鈕，hover 傾斜填滿 開始 ------------------//
+.oe_website_sale>section .btn i {
+    display: none;
+}
+#wrapwrap {
+    .btn-fill-primary,
+    .btn-primary {
+        background-color: var(--o-cc1-btn-primary);
+        border-color: var(--o-cc1-btn-primary);
+        &:hover {
+            border-color: var(--o-cc1-btn-primary-border);
+            &::after {
+                background-color: var(--o-cc1-btn-primary-border);
+            }
+        }
+    }
+    .btn-outline-primary:hover::after {
+        background-color: var(--o-cc1-btn-primary-border);
+    }
+    .btn-fill-secondary,
+    .btn-secondary {
+        background-color: var(--o-cc1-btn-secondary);
+        border-color: var(--o-cc1-btn-secondary);
+        &:hover {
+            border-color: var(--o-cc1-btn-secondary-border);
+            &::after {
+                background-color: var(--o-cc1-btn-secondary-border);
+            }
+        }
+    }
+    .btn-outline-secondary:hover::after {
+        background-color: var(--o-cc1-btn-secondary-border);
+    }
+    .o_cc2 {
+        .btn-fill-primary,
+        .btn-primary {
+            background-color: var(--o-cc2-btn-primary);
+            border-color: var(--o-cc2-btn-primary-border);
+            &:hover {
+                border-color: var(--o-cc2-btn-primary-border);
+            }
+        }
+        .btn-fill-secondary,
+        .btn-secondary {
+            background-color: var(--o-cc2-btn-secondary);
+            border-color: var(--o-cc2-btn-secondary-border);
+            &:hover {
+                border-color: var(--o-cc2-btn-secondary-border);
+            }
+        }
+    }
+    .o_cc3 {
+        .btn-fill-primary,
+        .btn-primary {
+            border-color: var(--o-cc3-btn-primary-border);
+            &:hover {
+                border-color: var(--o-cc3-btn-primary-border);
+                &::after {
+                    background-color: var(--o-cc3-btn-primary-border);
+                }
+            }
+        }
+        .btn-outline-primary:hover::after {
+            background-color: var(--o-cc3-btn-primary-border);
+        }
+        .btn-fill-secondary,
+        .btn-secondary {
+            background-color: var(--o-cc3-btn-secondary);
+            border-color: var(--o-cc3-btn-secondary-border);
+            &:hover {
+                color: var(--o-cc3-btn-secondary);
+                border-color: var(--o-cc3-btn-secondary-border);
+            }
+        }
+    }
+    .o_cc4 {
+        .btn-fill-primary,
+        .btn-primary {
+            background-color: var(--o-cc4-btn-primary);
+            border-color: var(--o-cc4-btn-primary-border);
+            &:hover {
+                color: var(--o-cc4-btn-primary);
+                border-color: var(--o-cc4-btn-primary-border);
+                &::after {
+                    background-color: var(--o-cc4-link);
+                }
+            }
+        }
+        .btn-fill-secondary,
+        .btn-secondary {
+            background-color: var(--o-cc4-btn-secondary);
+            border-color: var(--o-cc4-btn-secondary-border);
+            &:hover {
+                border-color: var(--o-cc4-btn-secondary-border);
+                &::after {
+                    background-color: var(--o-cc4-btn-secondary-border);
+                }
+            }
+        }
+        .btn-outline-secondary:hover {
+            &::after {
+                background-color: var(--o-cc4-btn-secondary);
+            }
+        }
+    }
+    .o_cc5 {
+        .btn-fill-primary,
+        .btn-primary {
+            border-color: var(--o-cc5-btn-primary-border);
+            &:hover {
+                border-color: var(--o-cc5-btn-primary-border);
+            }
+        }
+        .btn-fill-secondary,
+        .btn-secondary {
+            border-color: var(--o-cc5-btn-secondary-border);
+            &:hover {
+                border-color: var(--o-cc5-btn-secondary-border);
+            }
+        }
+    }
+    .btn[class*='primary'],
+    .btn[class*='secondary'] {
+        &:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote) {
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            &:hover {
+                background-color: unset;
+                &::after {
+                    height: 350%;
+                    width: 130%;
+                }
+            }
+            &::after {
+                content: '';
+                width: 100%;
+                height: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                transform: translate(-50%, -50%) rotate(-30deg);
+                pointer-events: none;
+                @include transition;
+            }
+        }
+    }
+}
+#wrapwrap.odoo-editor-editable {
+    .btn[class*='primary'],
+    .btn[class*='secondary'] {
+        &:not(.dropdown-toggle):not(.oe_search_button):not(.o_add_compare_dyn):not(.o_add_compare):not(.o_add_quote)::after {
+            transition: none;
+        }
+    }
+}
+//------------------ 按鈕，hover 傾斜填滿 結束 ------------------//

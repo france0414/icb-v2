@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "icb/template_index.schema.json",
+  "title": "ICB Templates Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generated_from", "items"],
+  "properties": {
+    "version": {"type": "string"},
+    "generated_from": {"type": "string"},
+    "items": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/index_item"}
+    }
+  },
+  "$defs": {
+    "index_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "category"],
+      "properties": {
+        "name": {"type": "string"},
+        "category": {
+          "type": "string",
+          "enum": [
+            "home",
+            "banner",
+            "component",
+            "content",
+            "form",
+            "footer",
+            "header",
+            "button",
+            "static",
+            "dynamic"
+          ]
+        },
+        "xml": {"type": "string"},
+        "scss": {"type": "string"},
+        "js": {"type": "string"},
+        "html": {"type": "string"},
+        "rules": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "usage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["page", "create", "clone", "dynamic", "btn", "js", "block"]
+          }
+        },
+        "structure_locked": {"type": "boolean"},
+        "notes": {"type": "string"}
+        ,"lock_policy": {
+          "type": "string",
+          "enum": ["scss_only", "xpath_required", "structure_locked"]
+        },
+        "header_variants": {
+          "type": "array",
+          "items": {"$ref": "icb/page_task.schema.json#/$defs/header_variant"}
+        },
+        "footer_variants": {
+          "type": "array",
+          "items": {"$ref": "icb/page_task.schema.json#/$defs/footer_variant"}
+        },
+        "output_mode": {
+          "type": "string",
+          "enum": ["section_only", "qweb_full"]
+        },
+        "allowed_ops": {
+          "type": "array",
+          "items": {"$ref": "icb/page_task.schema.json#/$defs/op_type"}
+        },
+        "forbidden_ops": {
+          "type": "array",
+          "items": {"$ref": "icb/page_task.schema.json#/$defs/op_type"}
+        }
+      }
+    }
+  }
+}

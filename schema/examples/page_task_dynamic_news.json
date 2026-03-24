@@ -1,0 +1,58 @@
+{
+  "version": "v1.0",
+  "command": "/dynamic",
+  "task_type": "dynamic",
+  "intent_summary": "Add dynamic news/blog block using locked base structure.",
+  "output_mode": "section_only",
+  "resources": {
+    "templates": [
+      {
+        "name": "base-dynamic-news",
+        "path": "templates/base-dynamic-news.xml",
+        "structure_locked": true,
+        "allowed_ops": [
+          "section_class_add",
+          "section_data_custom_name_set",
+          "scss_override_only"
+        ],
+        "forbidden_ops": [
+          "inner_dom_insert",
+          "inner_dom_delete",
+          "template_key_change",
+          "xml_replace",
+          "xml_modify"
+        ]
+      }
+    ],
+    "docs": [
+      "resources/dynamic_rules.md"
+    ]
+  },
+  "constraints": {
+    "rules": [
+      "Do not alter inner DOM structure for locked dynamic templates.",
+      "Only add classes or data-custom-name at section level."
+    ],
+    "locks": [
+      {
+        "target": "templates/base-dynamic-news.xml",
+        "policy": "structure_locked",
+        "notes": "Base dynamic news/blog structure is immutable." 
+      }
+    ]
+  },
+  "outputs": {
+    "files": [
+      {
+        "type": "xml",
+        "path": "outputs/dynamic-news-YYYYMMDD-HHMM.xml",
+        "required": true
+      },
+      {
+        "type": "scss",
+        "path": "outputs/dynamic-news-YYYYMMDD-HHMM.scss",
+        "required": false
+      }
+    ]
+  }
+}

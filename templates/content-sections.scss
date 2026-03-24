@@ -1,0 +1,596 @@
+//  -------------------------------------                   icon 特色清單 開始                       -------------------------------------  //
+.s_custom_iconCardHorizontal {
+  .o_carousel_product_card {
+    padding: 0 !important;
+    border-color: transparent !important;
+    background-color: unset !important;
+
+    &:hover {
+      border-color: transparent !important;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    >.row {
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 10px 30px;
+      margin: 0;
+
+      @include media-breakpoint-down(md) {
+        gap: 10px 0;
+      }
+
+      >div.icon-content {
+        padding: 10px !important;
+      }
+
+      >.o_carousel_product_card_body {
+        padding-top: 0;
+        // padding-right: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        // @include media-breakpoint-down(md) {
+        //   padding-right: 0 !important;
+        // }
+        @include media-breakpoint-down(sm) {
+          text-align: left;
+        }
+
+        &.col-lg-1 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(8.33333333% - 30px);
+            max-width: calc(8.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-2 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(16.66666667% - 30px);
+            max-width: calc(16.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-3 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(25% - 30px);
+            max-width: calc(25% - 30px);
+          }
+        }
+
+        &.col-lg-4 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(33.33333333% - 30px);
+            max-width: calc(33.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-5 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(41.66666667% - 30px);
+            max-width: calc(41.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-6 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(50% - 30px);
+            max-width: calc(50% - 30px);
+          }
+        }
+
+        &.col-lg-7 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(58.33333333% - 30px);
+            max-width: calc(58.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-8 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(66.66666667% - 30px);
+            max-width: calc(66.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-9 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(75% - 30px);
+            max-width: calc(75% - 30px);
+          }
+        }
+
+        &.col-lg-10 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(83.33333333% - 30px);
+            max-width: calc(83.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-11 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(91.66666667% - 30px);
+            max-width: calc(91.66666667% - 30px);
+          }
+        }
+      }
+    }
+  }
+
+  .card-title>* {
+    margin-bottom: 0;
+  }
+}
+
+//  icon 特色清單 -- icon 比例 1:1
+.s_custom_iconCardHorizontal.s_custom_1x1 .o_carousel_product_card>.row>.icon-content {
+  aspect-ratio: 1/1;
+
+  @media(max-width: 991px) {
+    flex: 0 0 130px;
+  }
+}
+
+//  -------------------------------------                   icon 特色清單 結束                      -------------------------------------  //
+
+//  -------------------------------          出血-頁籤切換效果 開始            -------------------------------------  //
+@keyframes tabEffectContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tabEffectContent2 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.s_custom_tabEffectContent>[class*='container'] {
+  min-height: 55vh;
+}
+
+.s_custom_tabEffect {
+  position: static;
+
+  >.container {
+    position: static;
+  }
+
+  .s_tabs_main {
+    color: var(--o-color-1);
+    padding: 36px;
+    background-color: rgb(243, 243, 243);
+
+    @include media-breakpoint-down(md) {
+      padding: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px;
+    }
+  }
+
+  &.s_tabs .nav-pills {
+    padding-right: 30px;
+
+    @include media-breakpoint-down(md) {
+      max-height: 22vh;
+      overflow-y: auto;
+    }
+
+    .nav-item {
+      padding-right: 20px;
+      border-left: none !important;
+
+      @include media-breakpoint-down(md) {
+        flex: 0 0 50%;
+        padding-right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 100%;
+      }
+    }
+
+    .nav-link {
+      color: var(--o-color-1) !important;
+      font-weight: bold;
+      padding-left: 24px;
+      padding-right: 0;
+      background-color: unset !important;
+      border-top: none;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+
+      &.active,
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+
+        &::after {
+          flex-grow: 1;
+          min-width: 40px;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        background-color: var(--o-color-1);
+        @include transition;
+      }
+
+      &::before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 18px;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+      }
+
+      &::after {
+        flex-grow: 0;
+        height: 1px;
+        margin-right: -45px;
+        z-index: 0;
+        position: relative;
+        top: 14px;
+
+        @include media-breakpoint-down(md) {
+          content: none;
+        }
+      }
+
+      &:not(.active) {
+        color: color-mix(in srgb, var(--o-color-1) 30%, #848484 95%) !important;
+        background-color: unset;
+
+        &:hover {
+          color: var(--o-color-1) !important;
+          background-color: unset;
+        }
+      }
+    }
+  }
+
+  .s_tabs_content {
+    .s_media_list_img_wrapper {
+      @include media-breakpoint-down(md) {
+        position: static;
+      }
+    }
+  }
+}
+
+#wrapwrap:not(.odoo-editor-editable) .s_custom_tabEffect {
+
+  .tab-pane,
+  .tab-pane *:not(.s_media_list_body) {
+    height: 100%;
+    max-height: 72vh;
+
+    @include media-breakpoint-down(md) {
+      max-height: unset;
+      height: auto;
+    }
+  }
+
+  .tab-pane.fade {
+    transform: translateX(0);
+    animation: tabEffectContent2 0.8s ease-in-out;
+
+    &.show {
+      animation: tabEffectContent 1s ease-in-out;
+    }
+  }
+
+  .s_tabs_content {
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    right: 0;
+    max-width: unset;
+    width: calc((1550px - var(--container-pd-x) * 2) * .66667 + (100% - (1550px - var(--container-pd-x) * 2)) / 2);
+    padding: 0;
+
+    @media (max-width:$wrap-size) {
+      width: calc((100% - var(--container-pd-x) * 2) * .66667 + var(--container-pd-x));
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      position: static;
+      padding: 0;
+    }
+  }
+
+  .s_media_list_body {
+    position: absolute;
+    padding: 30px 6%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-down(md) {
+      min-height: 40vh;
+      position: relative;
+      top: auto;
+      transform: none;
+      z-index: 1;
+    }
+  }
+}
+
+//  -------------------------------          出血-頁籤切換效果 結束            -------------------------------------  //
+
+//  -------------------------------------            hover 互動 - hover 背景圖放大+出現描述  開始           -------------------------------------  //
+#wrapwrap:not(.odoo-editor-editable) {
+  .s_custom_hoverBgTextEfect {
+    >.container-fluid>.row {
+      flex-wrap: nowrap;
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
+
+      >.col {
+        @include transition;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          flex-grow: 2;
+
+          @include media-breakpoint-down(md) {
+            flex-grow: 1;
+          }
+
+          .o_we_bg_filter {
+            opacity: .8;
+          }
+
+          .s_card .card-body,
+          .s_card .card-footer {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .s_card {
+
+      .card-body,
+      .card-footer {
+        display: none;
+
+        @include media-breakpoint-down(md) {
+          display: block;
+        }
+      }
+
+      .card-body>p {
+        color: var(--o-color-4);
+        @include clamp-3;
+        max-height: 3.1 * 18px * 1.7;
+      }
+    }
+  }
+}
+
+.s_custom_hoverBgTextEfect {
+  >.container-fluid>.row {
+    min-height: 65vh;
+  }
+
+  .col {
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+      flex-grow: 1;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .o_we_bg_filter {
+    @include transition;
+  }
+
+  .s_card {
+    border: none;
+  }
+
+  .card-header {
+    background: transparent;
+    border-bottom: none;
+  }
+
+  .card-footer {
+    border-top: none;
+    background: transparent;
+  }
+
+  .card-body {
+    padding-top: 0;
+    padding-bottom: clapm(24px, 3.33vw, 40px);
+    background: transparent !important;
+  }
+}
+
+//  -------------------------------------            hover 互動 - hover 背景圖放大+出現描述 結束           -------------------------------------  //
+
+//  -------------------------------------               圖文交錯-背景fix 開始                -------------------------------------  //
+.s_custom_scrollItemBgFix {
+  @include media-breakpoint-down(xs) {
+    padding-top: 250px !important;
+  }
+
+  .s_parallax_bg {
+    @include media-breakpoint-down(xs) {
+      height: 250px;
+      background-size: 150%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: 100% 30% !important;
+    }
+  }
+
+  .o_we_bg_filter {
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  &:nth-child(even) .s_parallax_bg {
+    @include media-breakpoint-down(xs) {
+      background-position: 0% 30% !important;
+    }
+  }
+}
+
+//  -------------------------------------               圖文交錯-背景fix 刪除                -------------------------------------  //
+
+//  -------------------------------------            Counter color 開始開            -------------------------------------  //
+.s_custom_counterPrimary {
+
+  .counter-before,
+  .counter-after {
+    //font-size: clamp(16px, 2vw, 20px);
+    //font-weight: bold;
+  }
+}
+
+.s_custom_counterPrimary {
+
+  .counter-before,
+  .counter-after {
+    color: $primary;
+  }
+}
+
+.s_custom_counterSecondary {
+
+  .counter-before,
+  .counter-after {
+    color: $secondary;
+  }
+}
+
+//  -------------------------------------             Counter color 結束              -------------------------------------  //
+
+//  -------------------------------------                FAQ simple 開始              -------------------------------------  //
+.s_custom_simpleFAQ.s_faq_collapse {
+  .accordion>.card {
+    .card-header {
+      position: relative;
+
+      &::before {
+        content: "" !important;
+        --base-width: 2px;
+        width: 24px;
+        aspect-ratio: 1;
+        border: 6px solid var(--o-color-1);
+        background: conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 180deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin-left: 0;
+      }
+
+      &.collapsed::before {
+        background:
+          conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 90deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+      }
+
+      &.s_faq_collapse_right_icon::before {
+        right: 10px;
+        left: auto !important;
+      }
+    }
+  }
+
+  &.s_faq_collapse_big {
+    .accordion>.card .card-header {
+      padding-left: 60px;
+
+      &::before {
+        --b: 2px;
+        border-width: 10px;
+        width: 40px;
+        background:
+          conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 180deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+      }
+
+      &.collapsed {
+        &::before {
+          background:
+            conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 90deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+          top: 20px;
+        }
+      }
+    }
+
+    .accordion>.card .card-header.s_faq_collapse_right_icon {
+      padding-right: 60px;
+      padding-left: 1em;
+
+      &::before {
+        right: 10px;
+      }
+    }
+  }
+
+  &.s_custom_borderRadius .accordion>.card .card-header::before {
+    border-radius: 50%;
+  }
+}
+
+//  -------------------------------------              FAQ simple 結束              -------------------------------------  //
+
+//  ---------------------             單側圖片滿版 開始             ---------------------//
+.s_custom_imgFillContent {
+  >.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    >.row {
+      margin: 0;
+
+      >div[class*="col-"] {
+        padding: 0;
+      }
+    }
+  }
+
+  .flex-row-reverse {
+    >.s_media_list_body {
+      padding-left: calc(((100vw - #{$wrap-size}) / 2) + var(--container-pd-x));
+    }
+  }
+
+  .row:not(.flex-row-reverse) {
+    >.s_media_list_body {
+      padding-right: calc(((100vw - #{$wrap-size}) / 2) + var(--container-pd-x));
+    }
+  }
+}
+
+//  ---------------------             單側圖片滿版 結束             ---------------------//

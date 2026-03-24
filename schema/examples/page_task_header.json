@@ -1,0 +1,34 @@
+{
+  "version": "v1.0",
+  "command": "/page",
+  "task_type": "style",
+  "intent_summary": "Apply header style via SCSS only; no header XML output.",
+  "resources": {
+    "docs": [
+      "resources/header_footer_rules.md"
+    ]
+  },
+  "header_variant": "menu-1",
+  "constraints": {
+    "rules": [
+      "Header XML must not be modified.",
+      "Only SCSS overrides are allowed for header changes."
+    ],
+    "locks": [
+      {
+        "target": "header",
+        "policy": "scss_only",
+        "notes": "Header is system-owned; output SCSS only." 
+      }
+    ]
+  },
+  "outputs": {
+    "files": [
+      {
+        "type": "scss",
+        "path": "outputs/header-YYYYMMDD-HHMM.scss",
+        "required": true
+      }
+    ]
+  }
+}

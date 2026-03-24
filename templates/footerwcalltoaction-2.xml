@@ -1,0 +1,194 @@
+<data inherit_id="website.layout" name="Links" active="False">
+  <xpath expr="//div[@id='footer']" position="replace">
+    <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+      <section class="s_text_block o_cc o_cc3 pt72 pb72 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden s_custom_ftContact" data-name="Text" data-snippet="s_text_block" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip518482" data-custom-name="ftContact" data-scroll-background-ratio="1">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2275-032e23f7/ft-contact.jpg&quot;);" data-original-id="2274" data-original-src="/web/image/2274-ddb0d1f1/ft-contact.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+        <div class="o_we_bg_filter" style="background-color: rgba(5, 34, 51, 0.89) !important;"/>
+        <div data-original-title="" title="" aria-describedby="tooltip289427" class="container">
+          <div class="row">
+            <div class="o_colored_level pb0 col-lg-12" data-original-title="" title="" aria-describedby="tooltip756503">
+              <h2 style="text-align: center;">What can we do to help?</h2>
+              <p style="text-align: center;">Get in touch with us! We provide help and support.</p>
+              <p style="text-align: center;">
+                <a href="/contactus" data-require-form="false" class="btn btn-fill-primary rounded-circle" data-original-title="" title="">Contact Today !</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt48 pb16" data-name="Text" data-snippet="s_text_block" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip518482">
+        <div class="container" data-original-title="" title="" aria-describedby="tooltip13304">
+          <div class="row" data-original-title="" title="" aria-describedby="tooltip274414">
+            <div class="o_colored_level pb8 col-lg-6" data-original-title="" title="" aria-describedby="tooltip395141">
+              <section class="s_faq_collapse o_colored_level s_custom_footerTab" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;" data-custom-name="footerTab">
+                <div class="container">
+                  <div id="myCollapse1745387904319" class="accordion" role="tablist">
+                    <div class="card" data-name="Item" data-original-title="" title="" aria-describedby="tooltip565902" style="background-color: rgba(255, 255, 255, 0) !important;">
+                      <p class="h6">
+                        <a href="/" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1745387904320" data-original-title="" title="" aria-describedby="tooltip330855">
+                          <strong>Products</strong>
+                        </a>
+                      </p>
+                      <div data-parent="#myCollapse1745387904319" role="tabpanel" id="myCollapseTab1745387904320" class="collapse show">
+                        <div class="card-body">
+                          <div class="s_text" data-name="Text">
+                            <ul class="list-unstyled" data-original-title="" title="" aria-describedby="tooltip677755">
+                              <li class="list-item">
+                                <a href="/shop/category/bearing-adapter-sleeves-5" data-original-title="" title="" data-require-form="false">Bearing Adapter Sleeves</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/bearing-lock-washers-18" data-original-title="" title="" data-require-form="false">Bearing Lock Washers</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/hydraulic-adapter-sleeves-6" data-original-title="" title="" data-require-form="false">Hydraulic Adapter Sleeves</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/inch-lock-washer-19" data-original-title="" title="" data-require-form="false">Inch Lock Washer</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/snw-snp-adapter-sleeves-7" data-original-title="" title="" data-require-form="false">SNW/SNP Adapter Sleeves<br/></a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/bearing-lock-plate-20" data-original-title="" title="" data-require-form="false">Bearing Lock Plate</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/withdrawal-sleeves-8" data-original-title="" title="" data-require-form="false">Withdrawal Sleeves</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/inch-lock-plate-21" data-original-title="" title="" data-require-form="false">Inch Lock Plate</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/hydraulic-withdrawal-sleeves-9" data-original-title="" title="" data-require-form="false">Hydraulic Withdrawal Sleeves</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/hook-wrench-22" data-original-title="" title="" data-require-form="false">Hook Wrench</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/bearing-lock-nuts-15" data-original-title="" title="" data-require-form="false">Bearing Lock Nuts</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/self-lubricating-brass-bushing-23" data-original-title="" title="" data-require-form="false">Self Lubricating Brass Bushing</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/inch-lock-nut-16" data-original-title="" title="" data-require-form="false">Inch Lock Nuts</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/linear-guide-24" data-original-title="" title="" data-require-form="false">Linear Guide</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/bearing-locknut-no-washer-needed-17" data-original-title="" title="" data-require-form="false">Bearing Locknut(No washer needed)</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/shop/category/ball-screw-25" data-original-title="" title="" data-require-form="false">Ball Screw</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-name="Item" data-original-title="" title="" aria-describedby="tooltip277515" style="background-color: rgba(255, 255, 255, 0) !important;">
+                      <p class="h6">
+                        <a href="/" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header s_faq_collapse_right_icon collapsed" data-target="#myCollapseTab1745387904324">
+                          <strong data-original-title="" title="" aria-describedby="tooltip498650">Applications</strong>
+                        </a>
+                      </p>
+                      <div data-parent="#myCollapse1745387904319" role="tabpanel" id="myCollapseTab1745387904324" class="collapse">
+                        <div class="card-body">
+                          <div class="s_text" data-name="Text">
+                            <ul class="list-unstyled">
+                              <li class="list-item">
+                                <a href="/automotive-industry" data-original-title="" title="" data-require-form="false">Automotive Industry</a>
+                              </li>
+                              <li class="list-item" data-original-title="" title="" aria-describedby="tooltip65587">
+                                <a href="/steel-industry" data-original-title="" title="" data-require-form="false">Steel Industry</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/paper-and-printing-industry" data-original-title="" title="" data-require-form="false">Paper &amp;amp; Printing Industry</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/heavy-industry-and-mining-machinery" data-original-title="" title="" data-require-form="false">Heavy Industry &amp;amp; Mining Machinery</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/sports-equipment-industry" data-original-title="" title="" data-require-form="false">Sports Equipment Industry</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/medical-equipment" data-original-title="" title="" data-require-form="false">Medical Equipment</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/building-and-furniture-decoration-industry" data-original-title="" title="" data-require-form="false">Building &amp;amp; Furniture Decoration Industry</a>
+                              </li>
+                              <li class="list-item">
+                                <a href="/agricultural-machinery" data-original-title="" title="" data-require-form="false">Agricultural Machinery</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="o_colored_level pb16 col-lg-2" data-original-title="" title="" aria-describedby="tooltip203219">
+              <ul class="list-unstyled" data-original-title="" title="" aria-describedby="tooltip954813">
+                <li data-original-title="" title="" aria-describedby="tooltip253179">
+                  <p data-original-title="" title="" aria-describedby="tooltip908646" class="h6">
+                    <a href="/oem-odm" data-require-form="false" data-original-title="" title="">
+                      <strong data-original-title="" title="" aria-describedby="tooltip22447">OEM/ODM</strong>
+                    </a>
+                  </p>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip253179">
+                  <p data-original-title="" title="" aria-describedby="tooltip253179" class="h6">
+                    <a href="/blog/news-2" data-require-form="false" data-original-title="" title="">
+                      <strong>Support</strong>
+                    </a>
+                  </p>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip253179">
+                  <p data-original-title="" title="" aria-describedby="tooltip253179" class="h6">
+                    <a href="/about-chin-sing-precision" data-require-form="false" data-original-title="" title="">
+                      <strong data-original-title="" title="" aria-describedby="tooltip475219">About Us</strong>
+                    </a>
+                  </p>
+                </li>
+                <li data-original-title="" title="" aria-describedby="tooltip253179">
+                  <p data-original-title="" title="" aria-describedby="tooltip253179" class="h6">
+                    <a href="/contactus" data-require-form="false" data-original-title="" title="">
+                      <strong data-original-title="" title="" aria-describedby="tooltip504519">Contact Us</strong>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="o_colored_level pb0 ft-company col-lg-3" data-original-title="" title="" aria-describedby="tooltip756503">
+              <div class="s_text pb8" data-snippet="s_text" data-name="Text">
+                <p class="h6">
+                  <strong>Chin Sing Precison Industry Co. , LTD</strong>
+                </p>
+              </div>
+              <div class="s_text pb8" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip724226">
+                <p>No. 21, Chenggong 3rd St., Minxiong Township,Chiayi County 621, Taiwan (R.O.C.)</p>
+              </div>
+              <ul class="list-unstyled">
+                <li class="pt-1">
+                  <i class="fa fa-1x fa-fw fa-envelope mr-2"/>
+                  <a href="mailto:info@chinhsing.com" data-original-title="" title="" data-require-form="false">info@chinhsing.com</a>
+                </li>
+                <li class="pt-1" data-original-title="" title="" aria-describedby="tooltip585997">
+                  <i class="fa fa-1x fa-fw fa-phone mr-2"/>
+                  <span class="o_force_ltr">
+                    <a href="tel:+886-5-2216899" data-require-form="false">+886-5-2216899</a>
+                  </span>
+                </li>
+                <li class="pt-1" data-original-title="" title="" aria-describedby="tooltip585997"><i class="fa fa-1x fa-fw fa-print mr-2"/>
+                  +886-5-2219788
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </xpath>
+</data>
