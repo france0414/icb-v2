@@ -8,6 +8,7 @@
 
 
 
+
 <!-- ICB_SKILL_INSTRUCTIONS_START -->
 ## Odoo AI Development Rules (Auto-synced)
 

@@ -40,13 +40,13 @@
     {
       "name": "banner-arrow",
       "category": "component",
-      "xml": "templates/banner-arrow.xml",
+      "xml": "templates/improved/banners/banner-arrow.xml",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "carousel-arrow",
       "category": "component",
-      "xml": "templates/carousel-arrow.xml",
+      "xml": "templates/improved/banners/carousel-arrow.xml",
       "rules": ["snippet_catalog"]
     },
     {
@@ -59,41 +59,41 @@
     {
       "name": "content-sections-2",
       "category": "content",
-      "xml": "templates/content-sections-2.xml",
-      "scss": "templates/content-sections-2.scss",
+      "xml": "templates/improved/content-sections/content-sections-2.xml",
+      "scss": "templates/improved/content-sections/content-sections-2.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "content-sections-3",
       "category": "content",
-      "xml": "templates/content-sections-3.xml",
-      "scss": "templates/content-sections-3.scss",
+      "xml": "templates/improved/content-sections/content-sections-3.xml",
+      "scss": "templates/improved/content-sections/content-sections-3.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "content-sections-js",
       "category": "content",
-      "xml": "templates/content-sections-js.xml",
-      "scss": "templates/content-sections-js.scss",
+      "xml": "templates/improved/content-sections/content-sections-js.xml",
+      "scss": "templates/improved/content-sections/content-sections-js.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "time-line",
       "category": "content",
-      "xml": "templates/time-line.xml",
-      "scss": "templates/time-line.scss",
+      "xml": "templates/improved/timelines/time-line.xml",
+      "scss": "templates/improved/timelines/time-line.scss",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "form-contact",
       "category": "form",
-      "xml": "templates/form-contact.xml",
+      "xml": "templates/improved/forms/form-contact.xml",
       "rules": ["form_rules", "snippet_catalog"]
     },
     {
       "name": "footerwcalltoaction-1",
       "category": "footer",
-      "xml": "templates/footerwcalltoaction-1.xml",
+      "xml": "templates/improved/footers/footerwcalltoaction-1.xml",
       "rules": ["header_footer_rules"],
       "lock_policy": "xpath_required",
       "footer_variants": ["footer-1", "ft-1"]
@@ -101,7 +101,7 @@
     {
       "name": "footerwcalltoaction-2",
       "category": "footer",
-      "xml": "templates/footerwcalltoaction-2.xml",
+      "xml": "templates/improved/footers/footerwcalltoaction-2.xml",
       "rules": ["header_footer_rules"],
       "lock_policy": "xpath_required",
       "footer_variants": ["footer-2", "ft-2"]
@@ -117,58 +117,58 @@
     {
       "name": "btn-style",
       "category": "button",
-      "scss": "templates/btn-style.scss",
+      "scss": "templates/improved/buttons/btn-style.scss",
       "rules": ["button_styles"]
     },
     {
       "name": "customized-Static-Snippet",
       "category": "static",
-      "xml": "templates/customized-Static-Snippet.xml",
-      "scss": "templates/customized-Static-Snippet.scss",
+      "xml": "templates/improved/carousels/customized-Static-Snippet.xml",
+      "scss": "templates/improved/carousels/customized-Static-Snippet.scss",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "basd-Static-Snippet",
       "category": "static",
-      "xml": "templates/basd-Static-Snippet.xml",
+      "xml": "templates/base/basd-Static-Snippet.xml",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "Static-Snippet-carousel",
       "category": "static",
-      "xml": "templates/Static-Snippet-carousel.xml",
-      "scss": "templates/Static-Snippet-carousel.scss",
+      "xml": "templates/improved/carousels/Static-Snippet-carousel.xml",
+      "scss": "templates/improved/carousels/Static-Snippet-carousel.scss",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "customized-static-carousel",
       "category": "static",
-      "xml": "templates/customized-static-carousel.xml",
-      "scss": "templates/customized-static-carousel.scss",
+      "xml": "templates/improved/carousels/customized-static-carousel.xml",
+      "scss": "templates/improved/carousels/customized-static-carousel.scss",
       "rules": ["snippet_catalog"]
     },
     {
       "name": "customized-dynamic-products",
       "category": "dynamic",
-      "xml": "templates/customized-dynamic-products.xml",
-      "scss": "templates/customized-dynamic-products.scss",
+      "xml": "templates/improved/dynamic/products/customized-dynamic-products.xml",
+      "scss": "templates/improved/dynamic/products/customized-dynamic-products.scss",
       "rules": ["dynamic_rules", "snippet_catalog"]
     },
     {
       "name": "customized-dynamic-products-js",
       "category": "dynamic",
-      "xml": "templates/customized-dynamic-products-js.xml",
-      "scss": "templates/customized-dynamic-products-js.scss",
-      "js": "templates/customized-dynamic-products-js.js",
-      "html": "templates/customized-dynamic-products-js.html",
+      "xml": "templates/improved/dynamic/products/customized-dynamic-products-js.xml",
+      "scss": "templates/improved/dynamic/products/customized-dynamic-products-js.scss",
+      "js": "templates/improved/dynamic/products/customized-dynamic-products-js.js",
+      "html": "templates/improved/dynamic/products/customized-dynamic-products-js.html",
       "rules": ["dynamic_rules", "snippet_catalog"]
     },
     {
       "name": "customized-dynamic-news",
       "category": "dynamic",
-      "xml": "templates/customized-dynamic-news.xml",
-      "scss": "templates/customized-dynamic-news.scss",
-      "html": "templates/customized-dynamic-news.html",
+      "xml": "templates/improved/dynamic/news/customized-dynamic-news.xml",
+      "scss": "templates/improved/dynamic/news/customized-dynamic-news.scss",
+      "html": "templates/improved/dynamic/news/customized-dynamic-news.html",
       "rules": ["dynamic_rules", "snippet_catalog"]
     },
     {
