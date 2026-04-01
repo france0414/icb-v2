@@ -422,6 +422,198 @@
           </a>
         </div>
       </section>
+
+      <!-- ========== 靜態 Banner 箭頭 s_carousel_wrapper ========== -->
+      <section class="s_title pt64 pb0 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h2 style="text-align: center;">靜態 Banner 箭頭 (s_carousel_wrapper)</h2>
+          <p style="text-align: center;">直接在 section.s_carousel_wrapper 上疊加 s_custom_arrow* 即可控制箭頭位置</p>
+        </div>
+      </section>
+
+      <!-- arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowTop</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowTop">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowTop" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowTop"/>
+            <li data-slide-to="1" data-target="#wcArrowTop"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowTop</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowBottom -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowBottom</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowBottom" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowBottom">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowBottom" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowBottom"/>
+            <li data-slide-to="1" data-target="#wcArrowBottom"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowBottom</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowBottom"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowBottom"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowLeft -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowLeft</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowLeft" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowLeft">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLeft" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowLeft"/>
+            <li data-slide-to="1" data-target="#wcArrowLeft"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowLeft</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowLeft"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowLeft"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowRight -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowRight</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowRight" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRight" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowRight"/>
+            <li data-slide-to="1" data-target="#wcArrowRight"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowRight</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowRight"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowRight"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowRight arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowRight&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowRight s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight arrowTop">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRightTop" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowRightTop"/>
+            <li data-slide-to="1" data-target="#wcArrowRightTop"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowRight arrowTop</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowRightTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowRightTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowNoLine -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowNoLine</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowNoLine" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoLine">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoLine" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowNoLine"/>
+            <li data-slide-to="1" data-target="#wcArrowNoLine"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowNoLine</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowNoLine"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowNoLine"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowNoSeparate arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowNoSeparate&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowNoSeparate s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoSeparate arrowTop">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoSepTop" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowNoSepTop"/>
+            <li data-slide-to="1" data-target="#wcArrowNoSepTop"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowNoSeparate arrowTop</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowNoSepTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowNoSepTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
+
+      <!-- arrowL arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowL&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section class="s_carousel_wrapper s_custom_arrowL s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowL arrowTop">
+        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLTop" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-slide-to="0" class="active" data-target="#wcArrowLTop"/>
+            <li data-slide-to="1" data-target="#wcArrowLTop"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">arrowL arrowTop</h2></div></div></div>
+            </div>
+            <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+              <div class="container oe_unremovable"><div class="row content"><div class="carousel-content col-lg-6 o_colored_level"><h2 class="o_default_snippet_text">Slide 2</h2></div></div></div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#wcArrowLTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#wcArrowLTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+        </div>
+      </section>
     </div>
   </t>
 </t>
