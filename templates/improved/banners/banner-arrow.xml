@@ -435,8 +435,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowTop</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowTop">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowTop" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowTop">
+        <div class="s_carousel s_carousel_default s_custom_arrowTop carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowTop" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowTop"/>
             <li data-slide-to="1" data-target="#wcArrowTop"/>
@@ -458,8 +458,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowBottom</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowBottom" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowBottom">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowBottom" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowBottom">
+        <div class="s_carousel s_carousel_default s_custom_arrowBottom carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowBottom" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowBottom"/>
             <li data-slide-to="1" data-target="#wcArrowBottom"/>
@@ -481,8 +481,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowLeft</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowLeft" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowLeft">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLeft" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowLeft">
+        <div class="s_carousel s_carousel_default s_custom_arrowLeft carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLeft" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowLeft"/>
             <li data-slide-to="1" data-target="#wcArrowLeft"/>
@@ -504,8 +504,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowRight</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowRight" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRight" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight">
+        <div class="s_carousel s_carousel_default s_custom_arrowRight carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRight" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowRight"/>
             <li data-slide-to="1" data-target="#wcArrowRight"/>
@@ -527,8 +527,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowRight&amp;nbsp;arrowTop</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowRight s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight arrowTop">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRightTop" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowRight arrowTop">
+        <div class="s_carousel s_carousel_default s_custom_arrowRight s_custom_arrowTop carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowRightTop" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowRightTop"/>
             <li data-slide-to="1" data-target="#wcArrowRightTop"/>
@@ -550,8 +550,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowNoLine</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowNoLine" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoLine">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoLine" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoLine">
+        <div class="s_carousel s_carousel_default s_custom_arrowNoLine carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoLine" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowNoLine"/>
             <li data-slide-to="1" data-target="#wcArrowNoLine"/>
@@ -573,8 +573,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowNoSeparate&amp;nbsp;arrowTop</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowNoSeparate s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoSeparate arrowTop">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoSepTop" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowNoSeparate arrowTop">
+        <div class="s_carousel s_carousel_default s_custom_arrowNoSeparate s_custom_arrowTop carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowNoSepTop" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowNoSepTop"/>
             <li data-slide-to="1" data-target="#wcArrowNoSepTop"/>
@@ -596,8 +596,8 @@
       <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
         <div class="s_allow_columns container"><p>arrowL&amp;nbsp;arrowTop</p></div>
       </section>
-      <section class="s_carousel_wrapper s_custom_arrowL s_custom_arrowTop" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowL arrowTop">
-        <div class="s_carousel s_carousel_default carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLTop" style="background-image: none;">
+      <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="arrowL arrowTop">
+        <div class="s_carousel s_carousel_default s_custom_arrowL s_custom_arrowTop carousel slide" data-interval="0" data-ride="carousel" data-pause="false" id="wcArrowLTop" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
             <li data-slide-to="0" class="active" data-target="#wcArrowLTop"/>
             <li data-slide-to="1" data-target="#wcArrowLTop"/>
