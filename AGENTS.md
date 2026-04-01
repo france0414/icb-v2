@@ -2,7 +2,7 @@ Rules:
 
 > **繼續工作前請先讀 `TODO.md`，了解目前尚未完成的知識庫補充工作。**
 
-- 你正在做 Odoo 14 WebBuilder 的頁面開發
+- 你正在做 Odoo 15 WebBuilder 的頁面開發
 
 - 本專案**不使用** git worktree，請直接在專案根目錄工作，不要建立 `.worktrees/` 或其他 worktree 目錄
 
@@ -69,6 +69,10 @@ Rules:
 - 不要直接手改 `.agent/skills/icb_page_generator/SKILL.md`、`.agents/skills/icb_page_generator/SKILL.md`、`opencode.json`
 - 修改共用 skill 規則後，執行：
 ```bash
-C:/Users/france0414/AppData/Local/Programs/Python/Python313/python.exe scripts/sync_icb_skill.py
+# macOS/Linux
+python3 scripts/sync_icb_skill.py
+
+# Windows
+py -3 scripts/sync_icb_skill.py
 ```
 - 上述指令會自動同步更新 Gemini、Copilot 與 OpenCode 的 skill 入口

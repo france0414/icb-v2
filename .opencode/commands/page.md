@@ -2,6 +2,11 @@
 
 依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。若需全新設計改用 /create。
 
+## Hard Rules
+
+- 執行 `/page` 時，禁止使用 Superpowers skills 或其他外部技能流程；只允許使用本專案 ICB 規則與資源。
+- 本專案禁止使用 git worktree；不得建立 `.worktrees/` 或任何 worktree 目錄。
+
 ## Steps
 
 1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`

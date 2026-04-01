@@ -51,7 +51,7 @@
 - Bootstrap 4 響應式間距（`pt-md-5` 等）已列入 SCSS 知識庫，對 Section 內部使用
 - 自訂 class 必須搭配 `data-custom-name` 屬性，否則編輯模式存檔後會消失
 - 外掛模組（產品分類、特殊頁面）採用「設計師即時提供 HTML → AI 讀取後產出 SCSS」策略，不需要預先存入知識庫
-- Skill 同步指令：`C:/Users/france0414/AppData/Local/Programs/Python/Python313/python.exe scripts/sync_icb_skill.py`
+- Skill 同步指令：`python3 scripts/sync_icb_skill.py`（macOS/Linux）或 `py -3 scripts/sync_icb_skill.py`（Windows）
 - 已補 `scss_reference.md`：動態新聞/產品 class 對照、箭頭 class 清單與適用範圍、修正 hoverUnderLine 針對部落格卡片標題
 
 ---

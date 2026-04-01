@@ -1,11 +1,11 @@
-# icb (ICB Odoo 14)
+# icb (ICB Odoo 15)
 
-ICB 的 Odoo 14 WebBuilder 知識入口與工作流程。
+ICB 的 Odoo 15 WebBuilder 知識入口與工作流程。
 
 ## When
 
 - 生成頁面（XML + SCSS）、加入 Snippet、動態產品/部落格區塊、按鈕風格、互動 JS
-- 釐清 Odoo 14 前端規範（容器、RWD、編輯器可編輯性、動態鎖定結構）
+- 釐清 Odoo 15 前端規範（容器、RWD、編輯器可編輯性、動態鎖定結構）
 
 ## Steps
 

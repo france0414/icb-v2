@@ -1,0 +1,114 @@
+[
+  {
+    "name": "dynamic_products_list",
+    "type": "dynamic",
+    "category": "content",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["title", "data_source"],
+      "optional": ["subtitle", "limit", "cta_text", "cta_link"]
+    },
+    "features": ["dynamic_query", "card_grid", "pagination"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["product_list", "homepage"],
+    "not_for": ["static_catalog"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "dynamic_products_carousel",
+    "type": "dynamic_carousel",
+    "category": "content",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["title", "data_source"],
+      "optional": ["subtitle", "limit", "cta_text", "cta_link"]
+    },
+    "features": ["dynamic_query", "carousel", "autoplay"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["product_highlight", "homepage"],
+    "not_for": ["static_catalog"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "static_snippet_template",
+    "type": "static",
+    "category": "layout",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["template_class"],
+      "optional": ["title", "subtitle"]
+    },
+    "features": ["static_template_slot"],
+    "style_options": ["light_mode"],
+    "best_for": ["product_catalog", "blog_cards"],
+    "not_for": ["dynamic_feed"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "static_snippet_carousel",
+    "type": "snippet_carousel",
+    "category": "layout",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["template_class"],
+      "optional": ["title", "subtitle", "autoplay"]
+    },
+    "features": ["carousel", "static_template_slot"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["product_highlight", "blog_highlight"],
+    "not_for": ["dynamic_feed"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "faq_collapse",
+    "type": "faq_collapse",
+    "category": "interaction",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["items"],
+      "optional": ["title", "subtitle"]
+    },
+    "features": ["accordion", "toggle"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["faq", "support"],
+    "not_for": ["product_list"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "tabs_content",
+    "type": "s_tabs",
+    "category": "interaction",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["tabs"],
+      "optional": ["title", "subtitle"]
+    },
+    "features": ["tabs", "content_switch"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["feature_breakdown", "service_tabs"],
+    "not_for": ["single_column_copy"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  },
+  {
+    "name": "countdown_timer",
+    "type": "countdown",
+    "category": "interaction",
+    "structure": "section > container > row > col",
+    "fields": {
+      "required": ["end_time"],
+      "optional": ["title", "subtitle", "cta_text", "cta_link"]
+    },
+    "features": ["countdown", "cta_button"],
+    "style_options": ["light_mode", "center_align"],
+    "best_for": ["launch", "promotion"],
+    "not_for": ["static_catalog"],
+    "odoo_snippet_id": "",
+    "version": "v0.1"
+  }
+]

@@ -117,11 +117,16 @@ cd icb-Ai-workflow
 修改完 `scripts/icb_skill_source.json` 後，執行以下其中一種方式：
 
 ```bash
-C:/Users/france0414/AppData/Local/Programs/Python/Python313/python.exe scripts/sync_icb_skill.py
+# macOS/Linux
+python3 scripts/sync_icb_skill.py
+
+# Windows
+py -3 scripts/sync_icb_skill.py
 ```
 
 或使用：
 - `scripts/sync_icb_skill.bat`
+- `scripts/sync_icb_skill.sh`
 - VS Code task：`Sync Odoo Skill`
 
 ### 4. 同步後會更新哪些檔案

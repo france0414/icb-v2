@@ -1,0 +1,22 @@
+{
+  "stage": "discuss",
+  "flow": [
+    "collector",
+    "discuss",
+    "assign",
+    "executor",
+    "reviewer",
+    "master"
+  ],
+  "status": "pending",
+  "require_approval": true,
+  "approved": false,
+  "logs": [
+    {
+      "time": "2026-03-27T06:24:08.349Z",
+      "actor": "controller",
+      "action": "stage_advanced",
+      "note": "Advanced task stage"
+    }
+  ]
+}

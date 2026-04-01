@@ -1,0 +1,110 @@
+[
+  {
+    "name": "text_image_split",
+    "type": "s_text_image",
+    "category": "layout",
+    "structure": "section > container > row > col",
+    "odoo_snippet_id": "s_text_image",
+    "container_variants": ["container", "container-fluid", "o_container_small"],
+    "fields": {
+      "required": ["title", "body", "image"],
+      "optional": ["button_text", "button_link", "alignment"]
+    },
+    "slots": [
+      "title",
+      "body",
+      "cta",
+      "image"
+    ],
+    "insertions": {
+      "cta": ["text_column"]
+    },
+    "notes": [
+      "Uses two columns with text on left and image on right",
+      "Row alignment supports align-items-start|center|end"
+    ],
+    "version": "v0.1"
+  },
+  {
+    "name": "faq_collapse_basic",
+    "type": "s_faq_collapse",
+    "category": "interaction",
+    "structure": "section > container > accordion > card",
+    "odoo_snippet_id": "s_faq_collapse",
+    "container_variants": ["container", "container-fluid", "o_container_small"],
+    "variants": [
+      {"class": "s_faq_collapse_light", "label": "light"},
+      {"class": "s_faq_collapse_boxed", "label": "boxed"},
+      {"class": "s_faq_collapse_big", "label": "big"}
+    ],
+    "fields": {
+      "required": ["items"],
+      "optional": ["title", "subtitle"]
+    },
+    "slots": [
+      "item_title",
+      "item_body"
+    ],
+    "insertions": {
+      "items": ["accordion"]
+    },
+    "notes": [
+      "Accordion structure uses .card with header link and collapse body",
+      "data-parent links to the accordion container"
+    ],
+    "version": "v0.1"
+  },
+  {
+    "name": "tabs_basic",
+    "type": "s_tabs",
+    "category": "interaction",
+    "structure": "section > container > s_tabs_main > nav + tab-content",
+    "odoo_snippet_id": "s_tabs",
+    "container_variants": ["container", "container-fluid", "o_container_small"],
+    "variants": [
+      {"class": "horizontal", "label": "horizontal"},
+      {"class": "vertical", "label": "vertical"}
+    ],
+    "fields": {
+      "required": ["tabs"],
+      "optional": ["title", "subtitle"]
+    },
+    "slots": [
+      "tab_label",
+      "tab_content"
+    ],
+    "insertions": {
+      "tab_content": ["oe_structure"]
+    },
+    "notes": [
+      "Supports horizontal and vertical layouts",
+      "Each tab content wraps an oe_structure for nested snippets"
+    ],
+    "version": "v0.1"
+  },
+  {
+    "name": "three_columns_cards",
+    "type": "s_three_columns",
+    "category": "layout",
+    "structure": "section > container > row > col > card",
+    "odoo_snippet_id": "s_three_columns",
+    "container_variants": ["container", "container-fluid", "o_container_small"],
+    "fields": {
+      "required": ["items"],
+      "optional": ["alignment", "card_style"]
+    },
+    "slots": [
+      "item_image",
+      "item_title",
+      "item_body"
+    ],
+    "insertions": {
+      "items": ["row"]
+    },
+    "notes": [
+      "Row uses align-items-stretch",
+      "Each item is a col-lg-4 with card and card-body"
+    ],
+    "version": "v0.1"
+  }
+]

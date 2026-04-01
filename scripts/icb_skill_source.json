@@ -7,7 +7,7 @@
       "opencode.json",
       ".claude/commands/*.md"
     ],
-    "sync_command": "C:/Users/france0414/AppData/Local/Programs/Python/Python313/python.exe scripts/sync_icb_skill.py",
+    "sync_command": "python3 scripts/sync_icb_skill.py (macOS/Linux) | py -3 scripts/sync_icb_skill.py (Windows)",
     "generated_targets": [
       ".agent/skills/icb_page_generator/SKILL.md",
       ".agents/skills/icb_page_generator/SKILL.md",
@@ -17,7 +17,7 @@
   },
   "skill_name": "icb_page_generator",
   "title": "Odoo Page Generator",
-  "description": "Odoo 14 網頁開發的統一知識入口。當使用者要求生成頁面、加入 Snippet、動態產品或部落格區塊、按鈕風格、互動 JS 元件，或詢問 Odoo 14 前端規範時，使用此 skill。",
+  "description": "Odoo 15 網頁開發的統一知識入口。當使用者要求生成頁面、加入 Snippet、動態產品或部落格區塊、按鈕風格、互動 JS 元件，或詢問 Odoo 15 前端規範時，使用此 skill。",
   "read_order": [
     "先讀 {repo_posix}/AGENTS.md",
     "再讀 {repo_posix}/TODO.md，確認目前尚未完成的知識庫工作",
@@ -33,6 +33,8 @@
     "重疊與絕對定位保護：所有會導致元素重疊的 SCSS (如負邊距 mt-n5、絕對定位 position:absolute 覆蓋圖文) 必須加上 `#wrapwrap:not(.odoo-editor-editable)` 前綴，確保在 Odoo 編輯模式下元素會解開重疊，讓使用者能正常點擊並替換文字與圖片",
     "斷點規範：符合 Bootstrap 4.5 的斷點，請使用 Bootstrap 4.5 的斷點寫法（含 media-breakpoint-up/down mixin）。若需額外斷點，請使用 docs/user_custom_rules.scss 的自訂 RWD 斷點變數與 mixin（//--自訂RWD 斷點變數 開始--// 區塊）",
     "Snippet：必須有 data-snippet 和 data-name 屬性",
+    "Snippet 來源：乾淨 snippets 來源必須是 Odoo 15 官方原始 XML。",
+    "Snippet 例外標註：若有例外（非 Odoo 15 官方原始 XML），產出檔案的檔頭必須標註：exception: <reason> | source: <url/path>",
     "自訂命名：s_custom_PascalCase 必須搭配 data-custom-name=\"PascalCase\"",
     "Icon 規範：主要使用 Font Awesome v4（例如 `fa fa-star`）",
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
@@ -132,7 +134,7 @@
     ],
     [
       "/clone",
-      "抓取外部競品網站區塊並轉化為 Odoo 14 沙盒草稿 (Scraping sandbox)"
+      "抓取外部競品網站區塊並轉化為 Odoo 15 沙盒草稿 (Scraping sandbox)"
     ]
   ],
   "output_principles": [
@@ -175,13 +177,15 @@
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
     "/clone 採 Free-First：預設先用 Playwright MCP（或等價瀏覽器抓取工具）；僅在使用者提供 FIRECRAWL_API_KEY 且明確要求批次抓取時才啟用 Firecrawl。",
+    "本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。",
+    "執行 /page 時，禁止使用 Superpowers skills 或其他外部技能流程；僅使用本專案 ICB 規則與資源。",
     "抽出 SCSS：從 XML 提取 SCSS 獨立成檔案時，絕對必須將 HTML 跳脫字元（如 &amp;, &gt;）還原（如 &, >），避免 SCSS 編譯錯誤。",
     "若需求屬於 Header、Footer、Blog、Shop 或其他 Odoo 系統自動生成頁面，預設只能輸出 SCSS，不可直接輸出 XML。"
   ],
   "claude_commands": [
     {
       "file": "icb.md",
-      "content": "# icb (ICB Odoo 14)\n\nICB 的 Odoo 14 WebBuilder 知識入口與工作流程。\n\n## When\n\n- 生成頁面（XML + SCSS）、加入 Snippet、動態產品/部落格區塊、按鈕風格、互動 JS\n- 釐清 Odoo 14 前端規範（容器、RWD、編輯器可編輯性、動態鎖定結構）\n\n## Steps\n\n1. 先讀 `AGENTS.md`（硬規則、輸出規則、可用指令）\n2. 再讀 `TODO.md`（尚未完成的知識庫補充工作）\n3. 讀 `docs/PROJECT_THEME.css`（配色）\n4. 需要 Snippet/動態/按鈕/JS/版面/SCSS 查詢時，讀 ` .agent/skills/icb_page_generator/resources/` 對應文件\n5. 產出檔案一律放 `outputs/`，檔名包含日期時間\n\n## Hard Rules\n\n- 所有頁面 XML 必須有 QWeb 外框（`<t t-name>` + `website.layout` + `#wrap`）\n- 每個 `<section>` 內必須明確使用 `.container` 或 `.container-fluid`\n- 不要在 XML 內寫 `<style>`；新樣式放 SCSS\n- 動態產品/新聞有 locked 結構：只能套 class/設定 data-*，不可手刻卡片內部結構\n"
+      "content": "# icb (ICB Odoo 15)\n\nICB 的 Odoo 15 WebBuilder 知識入口與工作流程。\n\n## When\n\n- 生成頁面（XML + SCSS）、加入 Snippet、動態產品/部落格區塊、按鈕風格、互動 JS\n- 釐清 Odoo 15 前端規範（容器、RWD、編輯器可編輯性、動態鎖定結構）\n\n## Steps\n\n1. 先讀 `AGENTS.md`（硬規則、輸出規則、可用指令）\n2. 再讀 `TODO.md`（尚未完成的知識庫補充工作）\n3. 讀 `docs/PROJECT_THEME.css`（配色）\n4. 需要 Snippet/動態/按鈕/JS/版面/SCSS 查詢時，讀 ` .agent/skills/icb_page_generator/resources/` 對應文件\n5. 產出檔案一律放 `outputs/`，檔名包含日期時間\n\n## Hard Rules\n\n- 所有頁面 XML 必須有 QWeb 外框（`<t t-name>` + `website.layout` + `#wrap`）\n- 每個 `<section>` 內必須明確使用 `.container` 或 `.container-fluid`\n- 不要在 XML 內寫 `<style>`；新樣式放 SCSS\n- 動態產品/新聞有 locked 結構：只能套 class/設定 data-*，不可手刻卡片內部結構\n"
     },
     {
       "file": "page.md",
@@ -193,7 +197,7 @@
     },
     {
       "file": "clone.md",
-      "content": "# clone (外站翻譯草稿)\n\n把外部網站區塊翻譯成 Odoo 14 相容的草稿（預設不晉升公版元件）。\n\n## Steps\n\n1. 先以結構還原為主（容器/row/col），能用結構就不要多寫 SCSS\n2. 動態內容（產品/新聞）必須對接 `s_dynamic_snippet*`，不可手刻假卡片\n3. 抓站結果只落在 `outputs/`，不要寫入 `templates/`\n4. SCSS 盡量從 `templates/` 同名 `.scss` 精準提取（不要通靈發明）\n"
+      "content": "# clone (外站翻譯草稿)\n\n把外部網站區塊翻譯成 Odoo 15 相容的草稿（預設不晉升公版元件）。\n\n## Steps\n\n1. 先以結構還原為主（容器/row/col），能用結構就不要多寫 SCSS\n2. 動態內容（產品/新聞）必須對接 `s_dynamic_snippet*`，不可手刻假卡片\n3. 抓站結果只落在 `outputs/`，不要寫入 `templates/`\n4. SCSS 盡量從 `templates/` 同名 `.scss` 精準提取（不要通靈發明）\n"
     },
     {
       "file": "dynamic.md",

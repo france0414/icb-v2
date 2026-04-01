@@ -22,6 +22,8 @@
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
     "/clone 採 Free-First：預設先用 Playwright MCP（或等價瀏覽器抓取工具）；僅在使用者提供 FIRECRAWL_API_KEY 且明確要求批次抓取時才啟用 Firecrawl。",
+    "本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。",
+    "執行 /page 時，禁止使用 Superpowers skills 或其他外部技能流程；僅使用本專案 ICB 規則與資源。",
     "抽出 SCSS：從 XML 提取 SCSS 獨立成檔案時，絕對必須將 HTML 跳脫字元（如 &amp;, &gt;）還原（如 &, >），避免 SCSS 編譯錯誤。",
     "若需求屬於 Header、Footer、Blog、Shop 或其他 Odoo 系統自動生成頁面，預設只能輸出 SCSS，不可直接輸出 XML。"
   ]
