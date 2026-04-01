@@ -10,7 +10,7 @@ This index maps each template to its source files and rule references.
 | home-4 | home | templates/improved/home-recipes/home-4.xml | templates/improved/home-recipes/home-4.scss | - | - | snippet_catalog, layout_patterns |
 | banner | banner | templates/improved/banners/banner.xml | templates/improved/banners/banner.scss | - | - | snippet_catalog |
 | banner-arrow | component | templates/improved/banners/banner-arrow.xml | - | - | - | snippet_catalog |
-| carousel-arrow | component | templates/improved/banners/carousel-arrow.xml | - | - | - | snippet_catalog |
+| carousel-arrow | component | templates/improved/banners/carousel-arrow.xml | - | - | - | snippet_catalog | 箭頭位置樣式展示，適用 s_dynamic_snippet_carousel、s_dynamic_snippet_products、s_carousel_wrapper |
 | content-sections | content | templates/improved/content-sections/content-sections.xml | templates/improved/content-sections/content-sections.scss | - | - | snippet_catalog, layout_patterns |
 | content-sections-2 | content | templates/improved/content-sections/content-sections-2.xml | templates/improved/content-sections/content-sections-2.scss | - | - | snippet_catalog, layout_patterns |
 | content-sections-3 | content | templates/improved/content-sections/content-sections-3.xml | templates/improved/content-sections/content-sections-3.scss | - | - | snippet_catalog, layout_patterns |
