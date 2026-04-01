@@ -13,10 +13,10 @@
 
 | 頁面 | XML 範本 | SCSS 範本 |
 |------|---------|----------|
-| Home-1 | `templates/home-1.xml` (613 行) | `templates/home-1.scss` |
-| Home-2 | `templates/home-2.xml` (609 行) | `templates/home-2.scss` |
-| Home-3 | `templates/home-3.xml` (599 行) | `templates/home-3.scss` |
-| Home-4 | `templates/home-4.xml` (582 行) | `templates/home-4.scss` |
+| Home-1 | `templates/improved/home-recipes/home-1.xml` (613 行) | `templates/improved/home-recipes/home-1.scss` |
+| Home-2 | `templates/improved/home-recipes/home-2.xml` (609 行) | `templates/improved/home-recipes/home-2.scss` |
+| Home-3 | `templates/improved/home-recipes/home-3.xml` (599 行) | `templates/improved/home-recipes/home-3.scss` |
+| Home-4 | `templates/improved/home-recipes/home-4.xml` (582 行) | `templates/improved/home-recipes/home-4.scss` |
 
 ### 模式二：混搭組合
 用配方了解區塊組成，再到 `custom_blocks.md` 查找個別元件的 XML 來源進行替換。

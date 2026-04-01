@@ -3,7 +3,7 @@
 在 Odoo 中，表單 (`s_website_form`) 是一個與後端系統 (例如 `mail.mail` 或 CRM) 深度綁定的動態元件。如果直接在模板中 hardcode `<form>` HTML，會失去 Odoo 的防偽造 (CSRF)、欄位驗證與自動路由功能。
 
 預設策略是 **「佈局容器 (Layout) + 原生表單投放 (Dropzone)」** 的完全解耦。
-但當使用者提供 **真實的 `s_website_form` 結構** (例如 `templates/form-contact.xml`) 時，AI 可以直接輸出完整表單結構，並維持原生欄位與屬性。
+但當使用者提供 **真實的 `s_website_form` 結構** (例如 `templates/improved/forms/form-contact.xml`) 時，AI 可以直接輸出完整表單結構，並維持原生欄位與屬性。
 
 ---
 
@@ -12,7 +12,7 @@
 ### 1-1. 佈局外殼 (Layout Container)
 在撰寫聯絡我們 (`Contact Us`) 或任何包含表單的區塊時，若**沒有**提供真實 `s_website_form` 結構，**XML 內不可包含 `<form>`**。我們只負責建立左右分欄、背景、聯絡資訊與提示文字，並留下一個名為 `.icb-form` (或其他自訂 class) 的空白區域，指示使用者將表單拖入。
 
-**結構範例 (`contact.xml`)**：
+**結構範例 (`templates/improved/forms/form-contact.xml`)**：
 ```xml
 <section class="s_text_block icb-contact-layout">
     <div class="container">
@@ -41,7 +41,7 @@
 ### 1-3. 真實表單結構 (可直接輸出)
 若使用者已提供真實 `s_website_form` 結構，允許直接輸出完整 `<form>` HTML。必須維持原生欄位屬性與 class，並以提供的結構為準，不得自行改寫。
 
-**來源：** `templates/form-contact.xml`
+**來源：** `templates/improved/forms/form-contact.xml`
 
 **結構範例 (精簡版，實際輸出請完整保留欄位)：**
 ```xml

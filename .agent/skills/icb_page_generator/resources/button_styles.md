@@ -5,7 +5,7 @@
 > 按鈕 SCSS 直接寫入全域樣式的 `// 按鈕區 開始` ~ `// 按鈕區 結束` 區間，**不需要任何包裹 class**。
 
 > [!WARNING]
-> **`templates/btn-style.scss` 中的區塊僅用於模板預覽頁面的樣式隔離！**
+> **`templates/improved/buttons/btn-style.scss` 中的區塊僅用於模板預覽頁面的樣式隔離！**
 > 在實際網站中，選定一種風格後，SCSS 直接作用於 `#wrapwrap .btn`、`header .btn`、`section .btn` 等全域選擇器。
 > 若某個特定按鈕需要脫離全站風格，才需要額外撰寫覆蓋 SCSS（例如某區塊不要箭頭效果）。
 
@@ -155,10 +155,10 @@ AI 生成按鈕樣式時，必須理解以下組合：
 ## 3. 預設風格庫（6 種）
 
 以下為可直接套用的預設風格，選擇一種後全站統一使用。
-完整的 SCSS 與預覽展示在 `templates/btn-style.scss` 中。
+完整的 SCSS 與預覽展示在 `templates/improved/buttons/btn-style.scss` 中。
 
 > [!NOTE]
-> 下方 SCSS 範例為**精簡版核心邏輯**，實際部署時請從 `templates/btn-style.scss` 中複製完整版（含 o_cc1~o_cc5 色彩變數、尺寸適配、編輯器模式處理）。
+> 下方 SCSS 範例為**精簡版核心邏輯**，實際部署時請從 `templates/improved/buttons/btn-style.scss` 中複製完整版（含 o_cc1~o_cc5 色彩變數、尺寸適配、編輯器模式處理）。
 
 ---
 

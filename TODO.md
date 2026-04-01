@@ -37,22 +37,33 @@
 ## Phase 6：待辦
 
 - [x] 導入 MCP Scraper 基礎能力（Playwright MCP）
-- [x] 建立 `/clone` Free-First 規則（預設先用 Playwright，非必要不啟用付費服務）
+- [x] 建立抓站轉化 Free-First 規則（`/create` 預設先用 Playwright，非必要不啟用付費服務）
 - [x] 建立草稿沙盒原則（抓站結果只落在 `outputs/`，不自動寫入 `templates/`）
 - [x] 建立 Promotion 保守機制（僅在使用者明確要求時才晉升公版/元件化）
-- [ ] （可選）導入 Firecrawl 作為批次抓站加速器（需 API Key / 可能付費）
-- [ ] 補一份 `/clone` 自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
+- [ ] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
 
 ---
 
 ## 備忘
 
-- 指令已縮短為：`/page`、`/dynamic`、`/btn`、`/js`、`/block`
 - Bootstrap 4 響應式間距（`pt-md-5` 等）已列入 SCSS 知識庫，對 Section 內部使用
 - 自訂 class 必須搭配 `data-custom-name` 屬性，否則編輯模式存檔後會消失
 - 外掛模組（產品分類、特殊頁面）採用「設計師即時提供 HTML → AI 讀取後產出 SCSS」策略，不需要預先存入知識庫
 - Skill 同步指令：`python3 scripts/sync_icb_skill.py`（macOS/Linux）或 `py -3 scripts/sync_icb_skill.py`（Windows）
-- 已補 `scss_reference.md`：動態新聞/產品 class 對照、箭頭 class 清單與適用範圍、修正 hoverUnderLine 針對部落格卡片標題
+- 已補 `.agent/skills/icb_page_generator/resources/scss_reference.md`：動態新聞/產品 class 對照、箭頭 class 清單與適用範圍、修正 hoverUnderLine 針對部落格卡片標題
+
+---
+
+## 討論共識快照（2026-04-01）
+
+1. **大一統 `/create` 哲學（Odoo 承重牆）**：
+   正式廢除 `/clone`。外站網址抓取只是 `/create` 的一種輸入方式。AI 嚴禁 1:1 照抄 DOM，而是必須「借鑑視覺」，將其轉譯為符合 Odoo 承重牆（Bootstrap Grid、QWeb 架構、Dynamic Snippet locked 特性）的全新架構。
+2. **AI 防智力退化（Lobotomy）政策**：
+   決議「不」將底層指令檔裡的「Odoo 15」全面替換為「ICB」。因為「Odoo 15」是呼叫 LLM 內部龐大 QWeb 與 Bootstrap 4 預訓練知識庫的鑰匙，保留它能確保產出的代碼品質與穩定性。
+3. **抓站 Free-First 策略**：
+   全面整合 Browser MCP（如 Playwright, Google Chrome DevTools MCP）。當 `/create` 需要解析外站時，強制優先在本地端使用免付費工具，目前無限期擱置 Firecrawl。
+4. **SSOT (單一知識來源) 全覆蓋**：
+   確立 `icb_skill.source.json` 為唯一大腦。同步腳本 `sync_icb_skill.py` 現已覆蓋 Gemini、Copilot、OpenCode，以及**開局強制讀取的 `CLAUDE.md`**，確保多平台 AI 開發知識 100% 零落差。
 
 ---
 
@@ -72,19 +83,16 @@
 ### 目前硬規則（優先）
 - Header：不可改 XML，僅允許 SCSS 覆寫（基於同一結構的 4 種樣式）
 - Footer：以提供的 2 份模板為基準，輸出完整 XPath XML + SCSS
-- Dynamic Products：`templates/base-dynamic-products.xml` 為鎖定結構，不可額外添加 inner 結構
-- Dynamic News：`templates/base-dynamic-news.xml` 為鎖定結構，不可額外添加 inner 結構
+- Dynamic Products：`templates/base/base-dynamic-products.xml` 為鎖定結構，不可額外添加 inner 結構
+- Dynamic News：`templates/base/base-dynamic-news.xml` 為鎖定結構，不可額外添加 inner 結構
 - 動態資料的 HTML 結構可作為樣式參考（用於對應渲染後的 class）：
-  - `templates/base-dynamic-products.html`
-  - `templates/base-dynamic-news.html`
+  - `templates/base/base-dynamic-products.html`
+  - `templates/base/base-dynamic-news.html`
 
 ### 落地順序（先做這三類）
 1. Header/Footer schema v1（先把不可做/可做寫清楚）✅
 2. Dynamic lock validator（檢查是否誤改 locked 結構）✅
 3. 擴充 templates index 欄位，支援 pipeline 最小檢索✅
 
-### 後續待辦（/clone）
-- 流程優化構想：HTML → 行為分析 → capability → 結構重建（先記錄，晚點處理）
-
 ### 後續待辦（片段規格）
-- 填寫 `docs/snippet_spec_template.md` 1-2 份範例，作為特殊 snippet 組合與編輯規範的起點
+- 填寫 `docs/design/snippet_spec_template.md` 1-2 份範例，作為特殊 snippet 組合與編輯規範的起點

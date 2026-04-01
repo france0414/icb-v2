@@ -11,7 +11,7 @@ ICB 的 Odoo 15 WebBuilder 知識入口與工作流程。
 
 1. 先讀 `AGENTS.md`（硬規則、輸出規則、可用指令）
 2. 再讀 `TODO.md`（尚未完成的知識庫補充工作）
-3. 讀 `docs/PROJECT_THEME.css`（配色）
+3. 讀 `docs/design/PROJECT_THEME.css`（配色）
 4. 需要 Snippet/動態/按鈕/JS/版面/SCSS 查詢時，讀 ` .agent/skills/icb_page_generator/resources/` 對應文件
 5. 產出檔案一律放 `outputs/`，檔名包含日期時間
 

@@ -28,10 +28,10 @@ description: 呼叫歷史開發過的優良區塊與版面配置
 ### 2. 查找公版結構 (templates/)
 
 若使用者需求與某個公版結構接近，到 `templates/` 讀取對應 XML 骨架：
-- **靜態版型** → `basd-Static-Snippet.xml`, `customized-Static-Snippet.xml`
-- **靜態輪播** → `Static-Snippet-carousel.xml`, `customized-static-carousel.xml`
-- **動態產品** → `dynamic-products.xml`, `customized-dynamic-products.xml`, `customized-dynamic-products-js.xml`
-- **動態新聞** → `dynamic-news.xml`, `customized-dynamic-news.xml`
+- **靜態版型** → `templates/base/basd-Static-Snippet.xml`, `templates/improved/carousels/customized-Static-Snippet.xml`
+- **靜態輪播** → `templates/improved/carousels/Static-Snippet-carousel.xml`, `templates/improved/carousels/customized-static-carousel.xml`
+- **動態產品** → `templates/base/base-dynamic-products.xml`, `templates/improved/dynamic/products/customized-dynamic-products.xml`, `templates/improved/dynamic/products/customized-dynamic-products-js.xml`
+- **動態新聞** → `templates/base/base-dynamic-news.xml`, `templates/improved/dynamic/news/customized-dynamic-news.xml`
 
 ### 3. 無參數時列出清單
 

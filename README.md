@@ -1,120 +1,133 @@
-# ICB AI Workflow - ODOO 拖曳模板訓練專案
+# ICB AI Workflow - ODOO 15 頁面生成工具包
 
 ## 📋 專案描述
-本專案旨在讓 AI Agent 執行 XML 結構時能夠：
-- 先認識系統目前有的拖曳模板
-- 陸續累積其他結構+樣式，訓練更多 Skill 能力
-- 建立完整的 ODOO 頁面生成工作流程
+
+本專案是一個 **AI 協作工具包**，讓設計師透過 AI 終端機工具（OpenCode、Claude Code 等）快速生成符合 Odoo 15 規範的頁面 XML + SCSS。
+
+核心功能：
+- **套版模式 `/page`**：從 `templates/` 挑選配方與積木，直接組裝現成頁面。
+- **創作模式 `/create`**：AI 全新設計版面（接受純文字描述 或 外部網址/截圖）。AI 會執行結構解析，並嚴格轉換為 Odoo 的 Bootstrap 4 QWeb 架構。
 
 ## 🏗️ 專案架構
 
-### 📁 主要資料夾結構
 ```
-.agent/                         # Gemini / 通用 Agent 入口與 workflows
-├── skills/icb_page_generator/ # Odoo skill 入口之一
-└── workflows/                  # 指令型工作流程
-
-.agents/                        # Copilot / VS Code agent skills
-└── skills/icb_page_generator/ # Odoo skill 入口之一
-
-.opencode/                      # OpenCode 指令與本地設定
-└── commands/                   # page、dynamic、btn、js、block 等指令
-
-.vscode/tasks.json              # VS Code task，含 Sync Odoo Skill
-
-docs/                           # 專案配色與樣式規範
-├── PROJECT_THEME.css
-└── user_custom_rules.scss
-
-scripts/                        # Skill 單一來源與同步工具
-├── icb_skill_source.json      # 共用 skill 主來源
-├── sync_icb_skill.py          # 自動同步腳本
-└── sync_icb_skill.bat         # Windows 一鍵同步入口
-
-outputs/                        # AI 產出的 XML / SCSS 成品
-
-templates/                      # 公版結構庫（XML + 內嵌 SCSS），AI 讀取參考用
-
-AGENTS.md                       # 全域規則
-TODO.md                         # 知識庫待完成項目
-opencode.json                   # OpenCode 全域 instructions（同步產物）
+icb-v2/
+│
+├── ── AI 工具入口（同步產物，勿手改）──────────
+├── .agent/                          # Gemini Agent
+│   ├── skills/icb_page_generator/   #   SKILL.md + resources/
+│   └── workflows/                   #   指令型工作流程
+├── .agents/                         # Copilot Agent
+│   └── skills/icb_page_generator/   #   SKILL.md
+├── .claude/commands/                # Claude 指令
+├── .opencode/commands/              # OpenCode 指令
+│
+├── ── 單一來源（要改規則改這裡）─────────────
+├── sources/
+│   └── skill/
+│       └── icb_skill.source.json    # Skill 主來源
+│
+├── ── 零件倉庫 ──────────────────────────
+├── templates/
+│   ├── improved/                    # 改良版（可直接組裝）
+│   │   ├── banners/
+│   │   ├── content-sections/
+│   │   ├── carousels/
+│   │   ├── home-recipes/
+│   │   ├── footers/
+│   │   ├── forms/
+│   │   ├── timelines/
+│   │   ├── headers/
+│   │   ├── buttons/
+│   │   └── dynamic/
+│   │       ├── products/
+│   │       └── news/
+│   ├── base/                        # 原生 Odoo snippet 骨架
+│   └── catalogs/                    # 分類目錄（AI 按需讀取）
+│
+├── ── 知識文件 ──────────────────────────
+├── docs/
+│   └── design/                      # 設計規範
+│       ├── PROJECT_THEME.css
+│       ├── user_custom_rules.scss
+│       ├── COLOR_USAGE_GUIDELINES.md
+│       ├── COLOR_EXCEPTIONS.md
+│       ├── BUTTON_LINK_GUIDELINES.md
+│       └── snippet_spec_template.md
+│
+├── ── 客戶素材 & 產出 ────────────────────
+├── clientinfo/                      # 客戶素材（gitignored）
+├── outputs/                         # AI 產出的 XML/SCSS（gitignored）
+│
+├── ── 工具 & 雜項 ────────────────────────
+├── scripts/
+│   ├── sync_icb_skill.py           # Skill 同步腳本
+│   ├── sync_icb_skill.sh           # macOS/Linux 快捷
+│   ├── sync_icb_skill.bat          # Windows 快捷
+│   ├── build_preview.py
+│   └── validate_dynamic_lock.py
+├── playground/                      # 實驗草稿區（gitignored）
+├── _archived/                       # 歸檔區（gitignored）
+│
+├── AGENTS.md                        # 全域規則
+├── CLAUDE.md                        # Claude 專屬設定（自動同步）
+├── TODO.md                          # 待完成項目
+└── opencode.json                    # OpenCode 設定（同步產物）
 ```
 
-## 🚀 功能特點
+## 🧠 核心設計哲學 (Core Philosophy)
 
-### 🤖 AI Agent 技能
-- **ODOO 頁面生成器**: 自動生成符合規範的 ODOO XML 結構
-- **模板識別**: 理解現有的拖曳模板結構
-- **樣式應用**: 自動應用符合品牌的樣式規範
+本專案遵循三大核心開發哲學，以確保 AI 協作的高效與系統穩定：
 
+1. **Odoo 只是「承重牆」**：
+   我們不是要蓋跟競品一模一樣的 HTML 房子，而是要借鑑其設計概念，生出符合 Odoo「承重牆」（Bootstrap Grid、QWeb 限定外框、Dynamic Snippet 動態鎖定區塊）的建築。嚴禁直接複製外部 HTML。
+2. **大一統的 `/create` 創作模式**：
+   無論是憑空想像（純文字）還是模仿抓站（給網址 URL/截圖），一律使用 `/create`。AI 會自動啟動 Fetch 或 Browser MCP 抓取內容，並強制執行 Phase A（先出骨架設計報表），由設計師確認水電管線沒亂拉後，才產生 `outputs/` 沙盒草稿。
+3. **保留原廠框架提詞以維持 AI 智商**：
+   專案對外品牌為 ICB，但在底層指令中堅持保留「Odoo 15」字眼。這是解鎖 LLM 大型語言模型內 Bootstrap 4 與 QWeb 深層預訓練知識的「密碼」，能有效防止 AI 憑空發明錯誤代碼（AI Lobotomy）。
 
-### 📚 開發文檔
-- **完整的 ODOO 開發規範**: 包含按鈕、版面、動態規則等
-- **組件庫文檔**: 可重用的 XML 組件集合
-- **AI 使用指南**: 如何與 AI 協作開發 ODOO 頁面
+## 🚀 使用方式
 
-### 🎨 樣式撰寫規範
-- **所有樣式請獨立寫在 SCSS 檔案**（如 docs/user_custom_rules.scss），**不要寫 CSS 或 style 於頁面 XML**。
-- XML 只負責結構與 class，樣式由 SCSS 控制，方便使用者彈性合併與管理。
+### 1. 設計師操作
 
-## 🛠️ 使用方式
+開啟 AI 終端機工具，輸入指令：
 
-### 1. 環境準備
 ```bash
-# 克隆專案
-git clone https://github.com/france0414/icb-Ai-workflow.git
-
-# 進入專案目錄
-cd icb-Ai-workflow
+/page 首頁                    # 用現成模板配方快速組裝首頁
+/create 關於我們               # AI 自由設計新版面（純文字靈感）
+/create https://example.com   # AI 自動抓站，並轉譯為 Odoo 相容草稿
+/dynamic                      # 快速加入動態產品/新聞區塊
+/btn                          # 套用按鈕風格
+/js                           # 加入互動 JS 元件
+/block                        # 呼叫歷史客製化區塊
 ```
 
-### 1-1. Worktree 使用規範
-- 本專案**不使用** git worktree
-- 請直接在專案根目錄工作，不要建立 `.worktrees/` 或其他 worktree 目錄
-- 詳細規範請見 `CLAUDE.md`
+### 2. 放置客戶素材
 
-### 2. 查看文檔
-- 閱讀 `docs/` 資料夾中的開發規範
-- 參考 `library/component_library.xml` 了解可用組件
+把客戶的文字、圖片、PPT 等放到 `clientinfo/`，AI 會自動讀取。
 
-### 2-1. 放置參考素材
-- 若你要提供 AI 參考內容，請放到 `clientInfo/`；公版結構放在 `templates/`
-- 可放文字資料、圖片資料、PPT、Excel 或其他需求整理檔
-- `clientInfo/` 是輸入素材區，不是正式產出區
-### 3. 使用 AI Agent
-- 參考 `.agent/workflows/` 中的工作流程
-- 使用 `.agent/skills/` 中定義的技能
+### 3. 取得產出
 
-### 4. 使用同步捷徑
-- VS Code 可直接執行預設 task：`Sync Odoo Skill`
-- 也可執行 `scripts/sync_icb_skill.bat`
-- 或直接執行 `scripts/sync_icb_skill.py`
+AI 產出的 XML + SCSS 會放在 `outputs/`，設計師複製貼入 Odoo 後台即可。
 
-## Skill 維護方式
+## 🛠️ Skill 維護方式
 
-目前 Odoo skill 已改成「單一來源 + 自動同步」的維護方式，目的是讓 Gemini、Copilot 與 OpenCode 使用同一套規則。
+### 單一來源 + 自動同步
 
-### 1. 真正要修改的檔案
-- `scripts/icb_skill_source.json`
+所有 AI 工具（Gemini、Copilot、Claude、OpenCode）共用同一套規則。
 
-這份檔案是共用 skill 的主來源。若要修改：
-- skill 描述
-- 核心規則
-- 可用指令
-- OpenCode instructions
+**真正要修改的檔案：**
+```
+sources/skill/icb_skill.source.json
+```
 
-都應該優先修改這裡。
-
-### 2. 不要直接手改的檔案
+**不要直接手改的檔案（同步產物）：**
 - `.agent/skills/icb_page_generator/SKILL.md`
 - `.agents/skills/icb_page_generator/SKILL.md`
+- `.claude/commands/*.md`
 - `opencode.json`
 
-這三個檔案是同步產物，手改後很容易在下次同步時被覆蓋。
-
-### 3. 修改後怎麼同步
-
-修改完 `scripts/icb_skill_source.json` 後，執行以下其中一種方式：
+### 修改後同步
 
 ```bash
 # macOS/Linux
@@ -124,36 +137,22 @@ python3 scripts/sync_icb_skill.py
 py -3 scripts/sync_icb_skill.py
 ```
 
-或使用：
-- `scripts/sync_icb_skill.bat`
-- `scripts/sync_icb_skill.sh`
-- VS Code task：`Sync Odoo Skill`
+或使用 VS Code task：`Sync Odoo Skill`
 
-### 4. 同步後會更新哪些檔案
-- `.agent/skills/icb_page_generator/SKILL.md`
-- `.agents/skills/icb_page_generator/SKILL.md`
-- `opencode.json`
+## 🎨 樣式規範
 
-### 4-1. 正式產出放哪裡
-- AI 新生成的 XML、SCSS 與其他交付成品，統一放到 `outputs/`
-- `clientInfo/` 保留給使用者投餵參考資料，`templates/` 放公版結構庫，不建議再當成正式輸出區
+- 所有樣式獨立寫在 SCSS，不要在 XML 內寫 `<style>`
+- 設計規範文件在 `docs/design/`
+- 共用客製樣式在 `docs/design/user_custom_rules.scss`
 
-### 5. 這樣做的好處
-- 只改一份主來源，避免多個 AI 入口規則分岔
-- 讓 Gemini、Copilot、OpenCode 維持一致
-- 後續更容易請 AI 協助維護 skill
-- 出問題時更容易追查是主來源還是同步腳本有問題
-## 📖 開發規範
-- 遵循 ODOO 官方 XML 結構標準
-- 使用專案定義的樣式規範
-- 確保組件可重用性和維護性
+## 📖 Template 架構
+
+| 分類 | 路徑 | 說明 |
+|------|------|------|
+| 改良版 | `templates/improved/` | 你的改良成品，可直接組裝 |
+| 原生版 | `templates/base/` | Odoo 原生 snippet 骨架參考 |
+| 目錄 | `templates/catalogs/` | AI 用的分類目錄索引 |
 
 ## 🔄 版本歷史
-- **v1.0** - 第一版本 ICB 拖曳模板訓練基礎架構
-
-## 🤝 貢獻指南
-歡迎提交 Issue 和 Pull Request 來改善本專案！
-
-## 📝 備註
-- 本地開發檔案不會同步到 GitHub（透過 .gitignore 設定）
-- 僅核心開發檔案會進行版本控制
+- **v2.0** - 架構重整：templates 分類、sources 單一來源、路徑統一
+- **v1.0** - 第一版 ICB 拖曳模板訓練基礎架構

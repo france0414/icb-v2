@@ -1,11 +1,14 @@
-# 忽略個別頁面檔案
+# 忽略客戶素材區
+clientinfo/
 
-
-# 忽略 clientInfo 資料夾（使用者本地參考素材區）
-clientInfo/
-
-# 忽略 outputs 資料夾（使用者本地參考素材區）
+# 忽略產出資料夾
 outputs/
+
+# 忽略歸檔區
+_archived/
+
+# 忽略實驗草稿區
+playground/
 
 # 忽略 webInfo 資料夾
 webInfo/
@@ -19,13 +22,14 @@ preview/
 # 忽略 VS Code 設定
 .vscode/
 
-# 忽略 pen 資料夾
-pen/
-
 # 可以加入其他不需要版本控制的檔案
 *.tmp
 *.log
 *.cache
+.DS_Store
 
 # 不要上傳環境配置檔案
 .env
+
+# Node modules
+node_modules/

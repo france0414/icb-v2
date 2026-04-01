@@ -3,11 +3,14 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SOURCE_PATH = REPO_ROOT / "scripts" / "icb_skill_source.json"
+SOURCE_PATH = REPO_ROOT / "sources" / "skill" / "icb_skill.source.json"
 GEMINI_SKILL_PATH = REPO_ROOT / ".agent" / "skills" / "icb_page_generator" / "SKILL.md"
 COPILOT_SKILL_PATH = REPO_ROOT / ".agents" / "skills" / "icb_page_generator" / "SKILL.md"
 OPENCODE_CONFIG_PATH = REPO_ROOT / "opencode.json"
 CLAUDE_COMMANDS_DIR = REPO_ROOT / ".claude" / "commands"
+CLAUDE_MD_PATH = REPO_ROOT / "CLAUDE.md"
+START_MARKER = "<!-- ICB_SKILL_INSTRUCTIONS_START -->"
+END_MARKER = "<!-- ICB_SKILL_INSTRUCTIONS_END -->"
 
 
 def load_source() -> dict:
@@ -32,7 +35,7 @@ def render_skill(source: dict) -> str:
         "",
         f"# {source['title']}",
         "",
-        "此檔由 scripts/sync_icb_skill.py 自動產生，請優先修改 scripts/icb_skill_source.json。",
+        "此檔由 scripts/sync_icb_skill.py 自動產生，請優先修改 sources/skill/icb_skill.source.json。",
         "",
         "> [!NOTE]",
         "> `.agent/skills/icb_page_generator/SKILL.md`、`.agents/skills/icb_page_generator/SKILL.md` 與 OpenCode instructions 應維持語意一致。",
@@ -104,6 +107,34 @@ def update_claude_commands(source: dict) -> None:
         (CLAUDE_COMMANDS_DIR / file_name).write_text(content, encoding="utf-8", newline="\n")
 
 
+def update_claude_md(source: dict) -> None:
+    instructions = source.get("claude_instructions", [])
+    if not instructions:
+        return
+
+    content = CLAUDE_MD_PATH.read_text(encoding="utf-8") if CLAUDE_MD_PATH.exists() else ""
+
+    lines = ["", START_MARKER, "## Odoo AI Development Rules (Auto-synced)", ""]
+    for idx, inst in enumerate(instructions, 1):
+        lines.append(f"{idx}. {inst}")
+    lines.extend(["", END_MARKER])
+
+    inject_block = "\n".join(lines)
+
+    if START_MARKER in content and END_MARKER in content:
+        import re
+        content = re.sub(
+            f"{START_MARKER}.*?{END_MARKER}",
+            inject_block,
+            content,
+            flags=re.DOTALL
+        )
+    else:
+        content = content.rstrip() + "\n" + inject_block + "\n"
+
+    CLAUDE_MD_PATH.write_text(content, encoding="utf-8", newline="\n")
+
+
 def main() -> None:
     source = load_source()
     rendered_skill = render_skill(source)
@@ -113,7 +144,8 @@ def main() -> None:
 
     update_opencode(source)
     update_claude_commands(source)
-    print("Synchronized ICB skill entry points.")
+    update_claude_md(source)
+    print("Synchronized ICB skill entry points & CLAUDE.md.")
 
 
 if __name__ == "__main__":

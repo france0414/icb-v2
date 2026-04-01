@@ -5,36 +5,36 @@
     {
       "name": "home-1",
       "category": "home",
-      "xml": "templates/home-1.xml",
-      "scss": "templates/home-1.scss",
+      "xml": "templates/improved/home-recipes/home-1.xml",
+      "scss": "templates/improved/home-recipes/home-1.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "home-2",
       "category": "home",
-      "xml": "templates/home-2.xml",
-      "scss": "templates/home-2.scss",
+      "xml": "templates/improved/home-recipes/home-2.xml",
+      "scss": "templates/improved/home-recipes/home-2.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "home-3",
       "category": "home",
-      "xml": "templates/home-3.xml",
-      "scss": "templates/home-3.scss",
+      "xml": "templates/improved/home-recipes/home-3.xml",
+      "scss": "templates/improved/home-recipes/home-3.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "home-4",
       "category": "home",
-      "xml": "templates/home-4.xml",
-      "scss": "templates/home-4.scss",
+      "xml": "templates/improved/home-recipes/home-4.xml",
+      "scss": "templates/improved/home-recipes/home-4.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
       "name": "banner",
       "category": "banner",
-      "xml": "templates/banner.xml",
-      "scss": "templates/banner.scss",
+      "xml": "templates/improved/banners/banner.xml",
+      "scss": "templates/improved/banners/banner.scss",
       "rules": ["snippet_catalog"]
     },
     {
@@ -52,8 +52,8 @@
     {
       "name": "content-sections",
       "category": "content",
-      "xml": "templates/content-sections.xml",
-      "scss": "templates/content-sections.scss",
+      "xml": "templates/improved/content-sections/content-sections.xml",
+      "scss": "templates/improved/content-sections/content-sections.scss",
       "rules": ["snippet_catalog", "layout_patterns"]
     },
     {
@@ -109,7 +109,7 @@
     {
       "name": "header-menus",
       "category": "header",
-      "scss": "templates/header-menus.scss",
+      "scss": "templates/improved/headers/header-menus.scss",
       "rules": ["header_footer_rules"],
       "lock_policy": "scss_only",
       "header_variants": ["menu-1", "menu-2", "menu-3", "menu-4", "m-1", "m-2", "m-3", "m-4"]
@@ -174,8 +174,8 @@
     {
       "name": "base-dynamic-products",
       "category": "dynamic",
-      "xml": "templates/base-dynamic-products.xml",
-      "html": "templates/base-dynamic-products.html",
+      "xml": "templates/base/base-dynamic-products.xml",
+      "html": "templates/base/base-dynamic-products.html",
       "rules": ["dynamic_rules", "snippet_catalog"],
       "usage": ["page", "create"],
       "output_mode": "section_only",
@@ -198,8 +198,8 @@
     {
       "name": "base-dynamic-news",
       "category": "dynamic",
-      "xml": "templates/base-dynamic-news.xml",
-      "html": "templates/base-dynamic-news.html",
+      "xml": "templates/base/base-dynamic-news.xml",
+      "html": "templates/base/base-dynamic-news.html",
       "rules": ["dynamic_rules", "snippet_catalog"],
       "usage": ["page", "create"],
       "output_mode": "section_only",

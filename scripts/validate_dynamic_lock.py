@@ -6,8 +6,8 @@ import xml.etree.ElementTree as ET
 
 
 BASE_TEMPLATES = [
-    "templates/base-dynamic-products.xml",
-    "templates/base-dynamic-news.xml",
+    "templates/base/base-dynamic-products.xml",
+    "templates/base/base-dynamic-news.xml",
 ]
 
 

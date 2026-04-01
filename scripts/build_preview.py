@@ -7,7 +7,7 @@ Odoo Local Preview Builder
 此腳本會：
 1. 讀取指定的 Odoo XML 檔案
 2. 去掉 QWeb 語法（<t t-call>, <t t-set> 等），只保留 HTML 結構
-3. 編譯 docs/user_custom_rules.scss → preview/custom.css
+3. 編譯 docs/design/user_custom_rules.scss → preview/custom.css
 4. 產出 preview/index.html，引入：
    - 測試機的完整 Odoo CSS (遠端)
    - 局部自訂 CSS (本地編譯)
