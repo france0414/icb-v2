@@ -13,7 +13,7 @@ description: 呼叫歷史開發過的優良區塊與版面配置
 /block                      → 列出所有可用區塊分類
 /block zigzag               → 呼叫交錯磚塊
 /block video-banner         → 呼叫影片 Banner
-/block static-cards         → 呼叫靜態卡片 (basd-Static-Snippet.xml)
+/block static-cards         → 呼叫靜態卡片 (base-Static-Snippet.xml)
 /block carousel             → 呼叫輪播版型 (Static-Snippet-carousel.xml)
 /block tab-effect           → 呼叫出血頁籤切換 (customized-Static-Snippet.xml)
 ```
@@ -28,7 +28,7 @@ description: 呼叫歷史開發過的優良區塊與版面配置
 ### 2. 查找公版結構 (templates/)
 
 若使用者需求與某個公版結構接近，到 `templates/` 讀取對應 XML 骨架：
-- **靜態版型** → `templates/base/basd-Static-Snippet.xml`, `templates/improved/carousels/customized-Static-Snippet.xml`
+- **靜態版型** → `templates/base/base-Static-Snippet.xml`, `templates/improved/carousels/customized-Static-Snippet.xml`
 - **靜態輪播** → `templates/improved/carousels/Static-Snippet-carousel.xml`, `templates/improved/carousels/customized-static-carousel.xml`
 - **動態產品** → `templates/base/base-dynamic-products.xml`, `templates/improved/dynamic/products/customized-dynamic-products.xml`, `templates/improved/dynamic/products/customized-dynamic-products-js.xml`
 - **動態新聞** → `templates/base/base-dynamic-news.xml`, `templates/improved/dynamic/news/customized-dynamic-news.xml`

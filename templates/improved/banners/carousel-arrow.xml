@@ -192,6 +192,150 @@
           <div class="dynamic_snippet_template"/>
         </div>
       </section>
+
+      <!-- ========== 靜態輪播 s_static_carousel ========== -->
+      <section class="s_title pt64 pb0 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h2 style="text-align: center;">靜態輪播箭頭 (s_static_carousel)</h2>
+          <p style="text-align: center;">直接在 section.s_static_carousel 上疊加 s_custom_arrow* 即可控制箭頭位置</p>
+        </div>
+      </section>
+
+      <!-- arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowTop</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowTop" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowTop">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowTop">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowBottom -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowBottom</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowBottom" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowBottom">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowBottom">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowBottom"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowBottom"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowLeft -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowLeft</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowLeft" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowLeft">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowLeft">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowLeft"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowLeft"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowRight -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowRight</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowRight" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowRight">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowRight">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowRight"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowRight"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowRight arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowRight&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowRight s_custom_arrowTop" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowRight arrowTop">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowRightTop">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowRightTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowRightTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowNoLine -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowNoLine</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowNoLine" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowNoLine">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowNoLine">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowNoLine"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowNoLine"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowNoSeparate arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowNoSeparate&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowNoSeparate s_custom_arrowTop" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowNoSeparate arrowTop">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowNoSepTop">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowNoSepTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowNoSepTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrowL arrowTop -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt56" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>arrowL&amp;nbsp;arrowTop</p></div>
+      </section>
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt32 pb32 s_custom_arrowL s_custom_arrowTop" data-name="Static Carousel" style="background-image: none;" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-custom-name="arrowL arrowTop">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1" data-interval="10000" data-ride="carousel" id="sscArrowLTop">
+            <div class="content oe_unremovable"/>
+            <div class="carousel-inner">
+              <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;"><div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1"/></div>
+            </div>
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#sscArrowLTop"><span class="carousel-control-prev-icon"/><span class="sr-only o_default_snippet_text">Previous</span></a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#sscArrowLTop"><span class="carousel-control-next-icon"/><span class="sr-only o_default_snippet_text">Next</span></a>
+          </div>
+        </div>
+      </section>
     </div>
   </t>
 </t>

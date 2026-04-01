@@ -47,6 +47,7 @@
       "name": "carousel-arrow",
       "category": "component",
       "xml": "templates/improved/banners/carousel-arrow.xml",
+      "description": "箭頭位置樣式展示，適用 s_dynamic_snippet_carousel、s_dynamic_snippet_products、s_carousel_wrapper",
       "rules": ["snippet_catalog"]
     },
     {
@@ -128,9 +129,9 @@
       "rules": ["snippet_catalog"]
     },
     {
-      "name": "basd-Static-Snippet",
+      "name": "base-Static-Snippet",
       "category": "static",
-      "xml": "templates/base/basd-Static-Snippet.xml",
+      "xml": "templates/base/base-Static-Snippet.xml",
       "rules": ["snippet_catalog"]
     },
     {
