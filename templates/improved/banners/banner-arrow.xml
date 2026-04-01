@@ -154,6 +154,17 @@
           </div>
         </div>
       </section>
+      <!-- ========== 大輪播箭頭形狀 s_carousel_wrapper ========== -->
+      <section class="s_title pt64 pb0 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+        <div class="s_allow_columns container">
+          <h2 style="text-align: center;">大輪播箭頭形狀 (s_carousel_wrapper)</h2>
+          <p style="text-align: center;">首頁 Hero 輪播幾乎都用 <code>s_carousel_wrapper</code>；箭頭形狀由 <code>div.s_carousel</code> 上的 class 決定，共四種變體</p>
+        </div>
+      </section>
+      <!-- 1. 正方形框箭頭 (預設) -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>正方形框箭頭（預設）— <code>s_carousel_default</code></p></div>
+      </section>
       <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
         <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330965912" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
@@ -224,6 +235,10 @@
             <span class="sr-only o_default_snippet_text">Next</span>
           </a>
         </div>
+      </section>
+      <!-- 2. 高窄長條箭頭 (bordered) -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>高窄長條箭頭 — <code>s_carousel_bordered</code>（height × 1.6、width × 0.8、no border-radius）</p></div>
       </section>
       <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
         <div class="s_carousel carousel slide s_carousel_bordered" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330971755" style="background-image: none;">
@@ -296,6 +311,10 @@
           </a>
         </div>
       </section>
+      <!-- 3. 箱形箭頭 (boxed，Odoo 內建) -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>箱形箭頭 — <code>s_carousel_boxed</code>（Odoo 內建，無自訂 SCSS 覆寫）</p></div>
+      </section>
       <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
         <div class="s_carousel carousel slide s_carousel_boxed" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330969824" style="background-image: none;">
           <ol class="carousel-indicators o_we_no_overlay">
@@ -366,6 +385,10 @@
             <span class="sr-only o_default_snippet_text">Next</span>
           </a>
         </div>
+      </section>
+      <!-- 4. 圓形箭頭 (rounded) -->
+      <section class="s_text_block o_colored_level o_cc o_cc4 pb8 pt40" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container"><p>圓形箭頭 — <code>s_carousel_rounded</code>（border-radius: 50%）</p></div>
       </section>
       <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
         <div class="s_carousel carousel slide s_carousel_rounded" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1734330982745" style="background-image: none;">
