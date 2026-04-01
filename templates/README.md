@@ -37,7 +37,7 @@ templates/
 |------|------|---------|
 | `base-dynamic-products.xml` + `.html` | 動態產品 Snippet 基底 | Odoo `s_dynamic_snippet_products` 內部結構由後端渲染決定 |
 | `base-dynamic-news.xml` + `.html` | 動態新聞/部落格 Snippet 基底 | 同上，`s_dynamic_snippet` 結構 |
-| `basd-Static-Snippet.xml` | 靜態卡片模板完整範例 | 含多種 Odoo 官方 static template class 變體 |
+| `base-Static-Snippet.xml` | 靜態卡片模板完整範例 | 含多種 Odoo 官方 static template class 變體 |
 
 **如何使用 base 鎖定結構：**
 ```xml

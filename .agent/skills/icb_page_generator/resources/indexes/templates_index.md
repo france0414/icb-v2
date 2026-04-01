@@ -22,7 +22,7 @@ This index maps each template to its source files and rule references.
 | header-menus | header | - | templates/improved/headers/header-menus.scss | - | - | header_footer_rules | lock: scss_only; variants: menu-1/2/3/4, m-1/2/3/4 |
 | btn-style | button | - | templates/improved/buttons/btn-style.scss | - | - | button_styles |
 | customized-Static-Snippet | static | templates/improved/carousels/customized-Static-Snippet.xml | templates/improved/carousels/customized-Static-Snippet.scss | - | - | snippet_catalog |
-| basd-Static-Snippet | static | templates/base/basd-Static-Snippet.xml | - | - | - | snippet_catalog |
+| base-Static-Snippet | static | templates/base/base-Static-Snippet.xml | - | - | - | snippet_catalog |
 | Static-Snippet-carousel | static | templates/improved/carousels/Static-Snippet-carousel.xml | templates/improved/carousels/Static-Snippet-carousel.scss | - | - | snippet_catalog |
 | customized-static-carousel | static | templates/improved/carousels/customized-static-carousel.xml | templates/improved/carousels/customized-static-carousel.scss | - | - | snippet_catalog |
 | customized-dynamic-products | dynamic | templates/improved/dynamic/products/customized-dynamic-products.xml | templates/improved/dynamic/products/customized-dynamic-products.scss | - | - | dynamic_rules, snippet_catalog |
