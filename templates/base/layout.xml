@@ -1,0 +1,38 @@
+<section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level" data-name="Vertical Layout" style="background-image: none;">
+  <div class="container-fluid">
+    <div class="oe_structure oe_structure_not_nest oe_empty"></div>
+  </div>
+</section>
+
+<section class="s_column_layout o_auto_scroll o_colored_level" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;">
+  <div class="col-wrapper container">
+    <div class="row d-flex align-items-stretch">
+      <div class="col-lg-4 s_col_no_bgcolor col-left">
+        <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty"></div>
+      </div>
+      <div class="col-lg-8 col-right o_colored_level">
+        <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s_collapse_layout pt32 pb32 o_colored_level" data-preview-height="200px" data-snippet="s_collapse_layout" data-name="Collapse Layout" style="background-image: none;">
+  <div class="container-fluid">
+    <div class="s_collapse_height_wrap" style="height: auto;" id="collapseLayoutPreview">
+      <div class="s_collapse_content_wrap">
+        <div class="s_collapse_content oe_structure oe_structure_not_nest oe_empty"></div>
+      </div>
+      <div class="s_collapse_btn_wrap justify-content-center d-flex w-100 pt24 pb24 hide">
+        <div class="s_collapse_btn" data-content-wrap="collapseLayoutPreview">
+          <div class="btn btn-primary o_not-animable s_collapse_btn_expand">
+            <span class="o_default_snippet_text">More</span>
+          </div>
+          <div class="btn btn-primary o_not-animable s_collapse_btn_reduce">
+            <span class="o_default_snippet_text">Close</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

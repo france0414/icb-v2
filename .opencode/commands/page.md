@@ -13,6 +13,6 @@
 2. 讀取專案配色：`docs/design/PROJECT_THEME.css`
 3. 判斷頁面類型：完整首頁樣板(配方) / 靜態頁面 / 動態列表 / 靜態導航
 4. 若為完整樣板，讀取 `resources/page_templates.md` 依照配方組裝。若含客製區塊讀取 `resources/custom_blocks.md`。
-5. 若為一般頁面，從 `resources/snippet_catalog.md` 選擇 Snippet 組合。
+5. 若為一般頁面，從 `resources/snippet_rules.md` 選擇 Snippet 組合。
 6. 檢查是否需要特殊按鈕風格（→ `resources/button_styles.md`）
 7. 輸出 XML + SCSS（圖片使用 `https://picsum.photos/`）

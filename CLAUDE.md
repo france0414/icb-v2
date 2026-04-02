@@ -9,6 +9,10 @@
 
 
 
+
+
+
+
 <!-- ICB_SKILL_INSTRUCTIONS_START -->
 ## Odoo AI Development Rules (Auto-synced)
 
@@ -29,11 +33,12 @@
 15. - block.md → 呼叫已整理的客製化歷史區塊
 16. /page 為套版模式，允許依配方快速組裝；/create 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。
 17. 深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。
-18. AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。
-19. 抓站轉化（/create 外部網址）：嚴禁將轉化的草稿直接放入 templates/，且必須分離 XML/SCSS，必定遵守 QWeb 外框與動態 Snippet 規則，產出在 outputs/ 沙盒中。
-20. /create 抓站規則：請優先呼叫本地的 Fetch 或 Browser MCP (如 Playwright, Google Chrome DevTools MCP) 抓回 HTML。目前暫時不啟用 Firecrawl。
-21. 本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。
-22. 抽出 SCSS：從 XML 提取 SCSS 獨立成檔案時，絕對必須將 HTML 跳脫字元（如 &amp;, &gt;）還原（如 &, >），避免 SCSS 編譯錯誤。
-23. 若需求屬於 Header、Footer、Blog、Shop 或其他 Odoo 系統自動生成頁面，預設只能輸出 SCSS，不可直接輸出 XML。
+18. 模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。
+19. AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。
+20. 抓站轉化（/create 外部網址）：嚴禁將轉化的草稿直接放入 templates/，且必須分離 XML/SCSS，必定遵守 QWeb 外框與動態 Snippet 規則，產出在 outputs/ 沙盒中。
+21. /create 抓站規則：請優先呼叫本地的 Fetch 或 Browser MCP (如 Playwright, Google Chrome DevTools MCP) 抓回 HTML。目前暫時不啟用 Firecrawl。
+22. 本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。
+23. 抽出 SCSS：從 XML 提取 SCSS 獨立成檔案時，絕對必須將 HTML 跳脫字元（如 &amp;, &gt;）還原（如 &, >），避免 SCSS 編譯錯誤。
+24. 若需求屬於 Header、Footer、Blog、Shop 或其他 Odoo 系統自動生成頁面，預設只能輸出 SCSS，不可直接輸出 XML。
 
 <!-- ICB_SKILL_INSTRUCTIONS_END -->

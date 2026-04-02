@@ -28,7 +28,7 @@ description: 生成 Odoo 15 頁面（靜態 / 動態 / 整頁樣板）
 
 判斷頁面類型：
 - **完整首頁/Landing Page** → 讀取 `.agent/skills/icb_page_generator/resources/page_templates.md`
-- **單一靜態頁面** → 參考 `.agent/skills/icb_page_generator/resources/snippet_catalog.md`
+- **單一靜態頁面** → 參考 `.agent/skills/icb_page_generator/resources/snippet_rules.md`
 - **動態列表** → 讀取 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`
 - **靜態導航** → 使用靜態 Snippet，禁止動態
 

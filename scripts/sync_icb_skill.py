@@ -30,11 +30,20 @@ def render_skill(source: dict) -> str:
     lines = [
         "---",
         f"name: {source['skill_name']}",
-        f"description: {source['description']}",
-        "---",
-        "",
-        f"# {source['title']}",
-        "",
+        f"description: {source['description']}"
+    ]
+
+    if "license" in source:
+        lines.append(f"license: {source['license']}")
+    if "compatibility" in source:
+        lines.append(f"compatibility: {source['compatibility']}")
+    if "metadata" in source:
+        lines.append("metadata:")
+        for key, value in source["metadata"].items():
+            lines.append(f"  {key}: {value}")
+
+    lines.extend(["---", "", f"# {source['title']}", ""])
+    lines.extend([
         "此檔由 scripts/sync_icb_skill.py 自動產生，請優先修改 sources/skill/icb_skill.source.json。",
         "",
         "> [!NOTE]",
@@ -43,7 +52,7 @@ def render_skill(source: dict) -> str:
         "",
         "## 統一讀取順序",
         ""
-    ]
+    ])
 
     for index, item in enumerate(read_order, start=1):
         lines.append(f"{index}. {item}")

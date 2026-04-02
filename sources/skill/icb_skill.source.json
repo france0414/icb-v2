@@ -18,12 +18,19 @@
   "skill_name": "icb_page_generator",
   "title": "Odoo Page Generator",
   "description": "Odoo 15 網頁開發的統一知識入口。當使用者要求生成頁面、加入 Snippet、動態產品或部落格區塊、按鈕風格、互動 JS 元件，或詢問 Odoo 15 前端規範時，使用此 skill。",
+  "license": "MIT",
+  "compatibility": "opencode",
+  "metadata": {
+    "audience": "maintainers, developers",
+    "workflow": "odoo-web-building"
+  },
   "read_order": [
     "先讀 {repo_posix}/AGENTS.md",
     "再讀 {repo_posix}/TODO.md，確認目前尚未完成的知識庫工作",
     "讀 {repo_posix}/docs/design/PROJECT_THEME.css 了解專案配色",
     "若使用者提供參考文字、圖片或文件，優先從 {repo_posix}/clientInfo/ 讀取；公版結構參考從 {repo_posix}/templates/ 讀取",
-    "依需求讀取 resources/ 內的對應文件"
+    "依需求讀取 resources/ 內的對應文件",
+    "需要模板索引或快速定位模板時，讀 {repo_posix}/.agent/skills/icb_page_generator/resources/indexes/templates_index.json"
   ],
   "core_rules": [
     "XML 結構：所有頁面都必須由 <t t-name=\"...\"><t t-call=\"website.layout\">...</t></t> 包覆",
@@ -35,7 +42,7 @@
     "Snippet：必須有 data-snippet 和 data-name 屬性",
     "Snippet 來源：乾淨 snippets 來源必須是 Odoo 15 官方原始 XML。",
     "Snippet 例外標註：若有例外（非 Odoo 15 官方原始 XML），產出檔案的檔頭必須標註：exception: <reason> | source: <url/path>",
-    "自訂命名：s_custom_PascalCase 必須搭配 data-custom-name=\"PascalCase\"",
+    "自訂命名：s_custom_PascalCase 必須搭配 data-custom-name=\"PascalCase\"，僅用於可編輯的自訂區塊（section/snippet）；系統頁面/系統區塊不可改",
     "Icon 規範：主要使用 Font Awesome v4（例如 `fa fa-star`）",
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
     "樣式原則：新寫樣式一律放 SCSS，禁止在 XML 內寫 <style>；style=\"\" 僅在 Odoo 系統元件本身必須或既有結構已依賴時可保留/最小使用",
@@ -54,7 +61,7 @@
   "knowledge_map": [
     [
       "選擇 Snippet / 了解嵌套規則",
-      ".agent/skills/icb_page_generator/resources/snippet_catalog.md"
+      ".agent/skills/icb_page_generator/resources/snippet_rules.md"
     ],
     [
       "生成動態產品 / 部落格區塊",
@@ -95,6 +102,10 @@
     [
       "Blog / Shop 系統頁面 SCSS 覆寫",
       ".agent/skills/icb_page_generator/resources/system_pages_scss.md"
+    ],
+    [
+      "模板索引與快速定位",
+      ".agent/skills/icb_page_generator/resources/indexes/templates_index.json"
     ]
   ],
   "pending_rules": [
@@ -135,7 +146,7 @@
     "若需求屬於 Odoo 系統自動生成頁面，先確認是否只能覆寫樣式，不能直接改 HTML/XML"
   ],
   "resource_files": [
-    "snippet_catalog.md",
+    "snippet_rules.md",
     "dynamic_rules.md",
     "button_styles.md",
     "component_library.md",
@@ -145,7 +156,8 @@
     "page_templates.md",
     "header_footer_rules.md",
     "form_rules.md",
-    "system_pages_scss.md"
+    "system_pages_scss.md",
+    "indexes/templates_index.json"
   ],
   "opencode_instructions": [
     "此專案的 Odoo skill 採用統一知識來源：AGENTS.md + TODO.md + .agent/skills/icb_page_generator/resources/。",
@@ -165,6 +177,7 @@
     "- block.md → 呼叫已整理的客製化歷史區塊",
     "/page 為套版模式，允許依配方快速組裝；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
+    "模板索引在 .agent/skills/icb_page_generator/resources/indexes/templates_index.json，用於快速定位模板。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
     "/create 抓站規則：請優先呼叫 Fetch 或 Browser MCP（如 Playwright, Google Chrome DevTools MCP）直接在本地抓回 HTML。目前暫停使用外部付費抓站 API。",
@@ -191,6 +204,7 @@
     "- block.md → 呼叫已整理的客製化歷史區塊",
     "/page 為套版模式，允許依配方快速組裝；/create 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。",
+    "模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。",
     "抓站轉化（/create 外部網址）：嚴禁將轉化的草稿直接放入 templates/，且必須分離 XML/SCSS，必定遵守 QWeb 外框與動態 Snippet 規則，產出在 outputs/ 沙盒中。",
     "/create 抓站規則：請優先呼叫本地的 Fetch 或 Browser MCP (如 Playwright, Google Chrome DevTools MCP) 抓回 HTML。目前暫時不啟用 Firecrawl。",
@@ -205,7 +219,7 @@
     },
     {
       "file": "page.md",
-      "content": "# page (套版模式)\n\n依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。若需全新設計改用 `create`。\n\n## Steps\n\n1. 讀 ` .agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css`\n3. 依需求讀 `resources/page_templates.md` / `resources/snippet_catalog.md`\n4. 需要動態區塊時，依 `resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構\n5. 輸出到 `outputs/`（XML + SCSS）\n"
+      "content": "# page (套版模式)\n\n依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。若需全新設計改用 `create`。\n\n## Steps\n\n1. 讀 ` .agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css`\n3. 依需求讀 `resources/page_templates.md` / `resources/snippet_rules.md`\n4. 需要動態區塊時，依 `resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構\n5. 輸出到 `outputs/`（XML + SCSS）\n"
     },
     {
       "file": "create.md",

@@ -41,6 +41,8 @@
 - [x] 建立草稿沙盒原則（抓站結果只落在 `outputs/`，不自動寫入 `templates/`）
 - [x] 建立 Promotion 保守機制（僅在使用者明確要求時才晉升公版/元件化）
 - [ ] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
+- [ ] 實作 `templates/catalogs/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
+
 
 ---
 
@@ -54,7 +56,18 @@
 
 ---
 
+---
+ 
+## 討論共識快照（2026-04-02）
+
+1. **中介層 (Mediator) 策略**：
+   確認將 `templates_index.json` 作為 Skill (意圖分析) 與 Template (落地骨架) 之間的橋樑。
+   - **Skill (大腦)**：負責提取需求的「結構特徵」（例如：`has_carousel: true`, `column_count: 3`）。
+   - **Mediator (中介層)**：負責將這些特徵硬性對應到最合適的模板路徑（SSOT 映射）。
+   - **目的**：解決「AI 知道怎麼分析需求，卻不知道該對上哪個模板」的斷層，確保 `/create` 的精準度與結構標準化。
+
 ## 討論共識快照（2026-04-01）
+
 
 1. **大一統 `/create` 哲學（Odoo 承重牆）**：
    正式廢除 `/clone`。外站網址抓取只是 `/create` 的一種輸入方式。AI 嚴禁 1:1 照抄 DOM，而是必須「借鑑視覺」，將其轉譯為符合 Odoo 承重牆（Bootstrap Grid、QWeb 架構、Dynamic Snippet locked 特性）的全新架構。
