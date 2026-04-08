@@ -1,4 +1,5 @@
 # AI 知識衝突防護指南
+<!-- AI Conflict Prevention Guide — ICB Odoo 15 WebBuilder -->
 
 > [!IMPORTANT]
 > 本文件是 AI 協作的「防護牆」。所有進入本專案的 AI（Copilot、ChatGPT、Gemini、Claude、OpenCode）都必須在開始任何 Odoo 頁面任務前讀取此文件，確保輸出完全符合本專案的規格，而非任何主流框架的預設慣例。
