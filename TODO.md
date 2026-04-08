@@ -42,6 +42,7 @@
 - [x] 建立 Promotion 保守機制（僅在使用者明確要求時才晉升公版/元件化）
 - [ ] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
 - [ ] 實作 `templates/catalogs/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
+- [x] 建立 AI 知識衝突防護指南（`resources/ai_conflict_prevention.md`）：LLM 誤用範例、可控工作流封裝方法、自動 context 修正規則、各模型角色職責矩陣、SKILL SSOT 同步機制
 
 
 ---
@@ -58,6 +59,18 @@
 
 ---
  
+## 討論共識快照（2026-04-08）
+
+1. **AI 知識衝突防護（`ai_conflict_prevention.md`）**：
+   建立了三大支柱文件，確保所有 AI 模型（Copilot、Claude、Gemini、OpenCode）在進入本專案後能自動對齊本地規格：
+   - **誤用防護清單**：8 類主流 LLM 常見錯誤（Bootstrap 5 語法、`<button>` 元素、SCSS 通靈發明等）+ 本專案正確做法對照表。
+   - **可控工作流封裝**：強制決策流程樹、Task Contract 七項確認清單、三層防護架構（System → Retrieval → Task）。
+   - **自動 Context 修正**：七個雷達偵測指標（自我修正觸發點）+ 衝突優先序（本專案規格 > Odoo 15 > Bootstrap 4.5 > LLM 通用知識）。
+   - **角色職責矩陣**：Copilot、Claude、Gemini、OpenCode 各自的「能做 / 不做」定義，以及所有 AI 共同職責（開局讀取、知識庫查詢、輸出隔離、同步規則）。
+   - **SKILL SSOT 同步機制**：已透過 `sources/skill/icb_skill.source.json` + `scripts/sync_icb_skill.py` 自動發布到所有模型入口。
+
+---
+
 ## 討論共識快照（2026-04-02）
 
 1. **中介層 (Mediator) 策略**：
