@@ -51,6 +51,7 @@ metadata:
 22. **抓取轉化原則 (Scraping Sandbox)：** 當使用者在 `/create` 提供外部參考網址或截圖時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id="scss-code">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call="website.layout"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。
 23. **Menu-01~04 SCSS 來源：** 統一在 templates/improved/headers/header-menus.scss，依 MENU-1~MENU-4 的 START/END 區塊擷取；當使用者要求 /page menu-0X 時，只輸出對應 SCSS 片段（含 START/END 註解）。
 24. **/create 結構優先：** 無論是根據靈感還是外部網址還原版面，解析出 DOM/CSS 的呈現邏輯後，能用 Odoo/Bootstrap 既有結構（row/col/容器）還原左右/層次者，優先用結構取代 CSS，避免多寫 SCSS；只有結構無法達成時才補 SCSS。
+25. **AI 知識衝突防護：** 當 LLM 通用知識（Bootstrap 5、FA v5/v6、React/Vue 組件模式等）與本專案規格衝突時，優先順序為：本專案規格（AGENTS.md + SKILL.md）> 本專案知識庫（resources/）> 本專案模板（templates/）> Odoo 15 官方文件 > Bootstrap 4.5 官方文件 > LLM 通用訓練知識。遇衝突必須自我修正後才生成代碼，詳見 .agent/skills/icb_page_generator/resources/ai_conflict_prevention.md。
 
 ## 依需求讀取的知識庫
 
@@ -70,6 +71,7 @@ metadata:
 | 聯絡表單佈局與 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/form_rules.md` |
 | Blog / Shop 系統頁面 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/system_pages_scss.md` |
 | 模板索引與快速定位 | `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` |
+| 防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則 | `.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md` |
 
 ## 尚未補齊但必須遵守的規則
 
@@ -112,5 +114,6 @@ metadata:
 ├── header_footer_rules.md
 ├── form_rules.md
 ├── system_pages_scss.md
-└── indexes/templates_index.json
+├── indexes/templates_index.json
+└── ai_conflict_prevention.md
 ```
