@@ -36,7 +36,7 @@ metadata:
 7. **Snippet：** 必須有 data-snippet 和 data-name 屬性
 8. **Snippet 來源：** 乾淨 snippets 來源必須是 Odoo 15 官方原始 XML。
 9. **Snippet 例外標註：** 若有例外（非 Odoo 15 官方原始 XML），產出檔案的檔頭必須標註：exception: <reason> | source: <url/path>
-10. **自訂命名：** s_custom_PascalCase 必須搭配 data-custom-name="PascalCase"，僅用於可編輯的自訂區塊（section/snippet）；系統頁面/系統區塊不可改
+10. **自訂命名：** s_custom_PascalCase 必須搭配 data-custom-name="PascalCase"，僅用於可編輯的自訂區塊（section/snippet）；系統頁面/系統區塊不可改。完整規範詳見 .agent/skills/icb_page_generator/resources/data_custom_name_spec.md
 11. **Icon 規範：** 主要使用 Font Awesome v4（例如 `fa fa-star`）
 12. **圖片：** 使用 https://picsum.photos/[width]/[height] 作為佔位圖
 13. **樣式原則：** 新寫樣式一律放 SCSS，禁止在 XML 內寫 <style>；style="" 僅在 Odoo 系統元件本身必須或既有結構已依賴時可保留/最小使用
@@ -71,6 +71,7 @@ metadata:
 | 聯絡表單佈局與 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/form_rules.md` |
 | Blog / Shop 系統頁面 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/system_pages_scss.md` |
 | 模板索引與快速定位 | `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` |
+| data-custom-name 屬性規範（元素限制 / Token 格式 / 同步規則） | `.agent/skills/icb_page_generator/resources/data_custom_name_spec.md` |
 | 防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則 | `.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md` |
 
 ## 尚未補齊但必須遵守的規則
