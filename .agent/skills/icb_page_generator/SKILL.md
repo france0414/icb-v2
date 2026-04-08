@@ -55,6 +55,7 @@ metadata:
 26. **o_colored_level 規則：** o_colored_level 是 Odoo 主題色階標記，讓使用者切換 o_cc1~o_cc5。主要 section、row、col、card 通常要加；純排版 div 或固定白底小元件不需加。詳見 snippet_rules.md。
 27. **s_text 容器規則：** div.s_text (data-snippet='s_text') 是 Odoo 標準文字容器，在編輯器中可拖拉調整高度，內部可使用 Bootstrap row/col 做多欄排版。適合在已有 row/col 骨架內再增加靈活高度控制，或在 Accordion card-body 內實現圖文混排。詳見 snippet_rules.md。
 28. **按鈕規範：** 按鈕一律用 <a> 不用 <button>。不自訂 class 名稱，只使用系統組合：btn + [btn-primary|btn-secondary|btn-fill-primary|btn-outline-*] + [btn-sm|btn-lg] + [rounded-circle|flat]。詳見 button_styles.md。
+25. **AI 知識衝突防護：** 當 LLM 通用知識（Bootstrap 5、FA v5/v6、React/Vue 組件模式等）與本專案規格衝突時，優先順序為：本專案規格（AGENTS.md + SKILL.md）> 本專案知識庫（resources/）> 本專案模板（templates/）> Odoo 15 官方文件 > Bootstrap 4.5 官方文件 > LLM 通用訓練知識。遇衝突必須自我修正後才生成代碼，詳見 .agent/skills/icb_page_generator/resources/ai_conflict_prevention.md。
 
 ## 依需求讀取的知識庫
 
@@ -75,6 +76,8 @@ metadata:
 | Blog / Shop 系統頁面 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/system_pages_scss.md` |
 | 了解 Skill 開發流程、角色分工、自動化部署（CI/CD） | `.agent/skills/icb_page_generator/resources/skill_devops_process.md` |
 | 模板索引與快速定位 | `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` |
+| 防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則 | `.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md` |
+| 了解 data-custom-name 屬性規範與使用規則 | `.agent/skills/icb_page_generator/resources/data_custom_name_spec.md` |
 
 ## 尚未補齊但必須遵守的規則
 
@@ -119,4 +122,6 @@ metadata:
 ├── system_pages_scss.md
 ├── indexes/templates_index.json
 └── skill_devops_process.md
+├── ai_conflict_prevention.md
+└── data_custom_name_spec.md
 ```
