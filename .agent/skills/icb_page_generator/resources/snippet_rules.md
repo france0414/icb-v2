@@ -12,7 +12,7 @@
 >
 > 這些 Snippet 的骨架使用 Odoo 專用 class（如 `o_carousel_product_card`、`o_carousel_product_img_link`），
 > **與 Bootstrap 的 card 結構完全不同**。
-> 生成時**必須先讀取 `templates/` 目錄下的對應 XML** 取得正確的骨架結構，不可自行編寫。
+> 生成前**先查 `resources/indexes/templates_index.json` 取得對應 XML 路徑**，再讀取該模板的必要片段；不可自行編寫骨架。
 
 ---
 
@@ -32,13 +32,38 @@
 <a id="nesting-hierarchy"></a>
 
 ```
-#wrap (oe_structure oe_empty)
- └── section [data-snippet="xxx"]          ← 頂層 Snippet (Layout)
-      └── .container / .container-fluid    ← 容器
-           └── .row                        ← 列
-                └── .col-lg-*              ← 欄
-                     └── Content           ← 內容
+section [data-snippet="xxx"]          ← 頂層 Snippet (Layout)
+ └── .container / .container-fluid    ← 容器
+      └── .row                        ← 列
+           └── .col-lg-*              ← 欄
+                └── Content           ← 內容
 ```
+
+### 區塊層級判斷（獨立區塊 vs 內嵌內容）
+
+- **結構/版面類 Snippet**：通常有 `<section data-snippet="...">`，可獨立成區塊，內部可再放內容。
+- **內容/插入類 Snippet**：多數沒有 `<section>` 外殼，只能插入到可獨立區塊內（如容器/欄位）。
+- **例外**：少數有 `<section>` 的 snippet 仍被系統視為「不可獨立」，必須依附在可獨立區塊內。
+- **常見特徵**：插入型 snippet 通常不含 `o_colored_level`；即使有 `<section>` 也未必代表可獨立。
+
+**原則**：是否可獨立，最終以 Odoo 編輯器行為與官方 snippet 規則為準。
+
+### Layout 容器（用來包住 section）
+
+以下為 **Layout 層級** 的容器，用來承接/包住一般 `section.o_colored_level` 的內容：
+
+- `s_vertical_layout`
+  - `container`/`container-fluid` 內含 `oe_structure`（可插入多個 section）
+- `s_column_layout`
+  - 左右欄位各自含 `oe_structure`，用來承接內部 section
+- `s_collapse_layout`
+  - 可收合的大範圍容器，內含 `s_collapse_content` 的 `oe_structure` 用於承接多個 section
+
+**補充：**
+- `s_collapse_layout` 是「版面容器」(layout)
+- `s_collapse` 是「內容型」收合區塊（通常放在可編輯容器內）
+
+**重點：** 一般 `section.o_colored_level` 多為平行存在，若需要「包住多個 section」或「欄位內再放 section」，請使用上述 Layout 容器。
 
 ### 可編輯性控制 Class
 
@@ -229,6 +254,14 @@
 | `s_blog_post_big_picture` | 部落格大圖 |
 | `s_blog_post_card` | 部落格卡片 |
 
+### 輪播 ID 規則（避免同頁衝突）
+- 靜態/動態輪播的 `id` 必須在同一頁唯一
+- 若模板內有固定 ID，輸出到頁面前必須改成唯一值
+- 同步更新所有關聯屬性：
+  - `data-target="#..."`（含 `type="button"` 的控制元件）
+  - `href="#..."`
+  - `aria-controls="..."`
+
 ---
 
 ## 5. 插入內容 (Inner Content)
@@ -282,6 +315,7 @@
 - **禁止：** 名稱內不可有空格、`-`、`_`
 - **多個名稱：** 空格分隔（如 `data-custom-name="NewsCards ScaleL"`）
 - **對應 Class：** `s_custom_YourName`（如 `s_custom_HeroNavigator`）
+- **套用位置：** 僅用於可編輯的自訂區塊（`<section>` 或 snippet）；系統頁面/系統區塊不可改
 
 ---
 
@@ -303,6 +337,17 @@ Odoo 原生支援任何 `<section>` 或外層容器套用背景圖或影片。
 ```
 *   `oe_img_bg` 觸發 Odoo 背景設定介面。
 *   `o_bg_img_center` 確保圖中置中。
+
+### 1-1. 固定視差背景 (Parallax Fixed)
+當設為固定視差背景時，Odoo 會在 `<section>` 內部新增以下同層元素：
+
+- `.s_parallax_bg.oe_img_bg.o_bg_img_center`（背景圖容器）
+- `.o_we_bg_filter`（濾色遮罩）
+
+且 `<section>` 會改為類似以下 class：
+`parallax s_parallax_is_fixed s_parallax_no_overflow_hidden`
+
+**重點：** 以上元素與 `.container` 同層，不在 `.container` 內。
 
 ### 2. 背景影片 (Background Video)
 若要套用影片，Odoo 會在 `<section>` 的第一層（內容之前）插入 `<div class="o_we_bg_filter">` 和 `o_bg_video_iframe` (YouTube/Vimeo) 或 `<video>`。

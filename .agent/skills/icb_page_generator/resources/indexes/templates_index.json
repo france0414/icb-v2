@@ -118,7 +118,16 @@
       "name": "btn-style",
       "category": "button",
       "scss": "templates/improved/buttons/btn-style.scss",
-      "rules": ["button_styles"]
+      "rules": ["button_styles"],
+      "style_keys": [
+        "s_custom_btn01",
+        "s_custom_btn021",
+        "s_custom_btn02",
+        "s_custom_btn03",
+        "s_custom_btn04",
+        "s_custom_btn06"
+      ],
+      "style_key_usage": "global_only"
     },
     {
       "name": "customized-Static-Snippet",

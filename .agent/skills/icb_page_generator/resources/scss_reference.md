@@ -68,6 +68,12 @@ AI 在生成 Odoo 程式碼時，**絕對不要手寫獨立的 Inline CSS 或另
 *   `borderHover` 主要針對產品輪播卡片的 hover 框線。
 *   `arrowRight` 影響動態/靜態輪播的箭頭位置。
 
+> [!IMPORTANT]
+> **自訂命名與 class 對應（只適用可編輯區塊）**
+> - `data-custom-name="Foo"` 會對應 `s_custom_Foo`
+> - 這類自訂 class **只用在可編輯的自訂區塊**（`<section>` / snippet）
+> - 系統頁面/系統區塊不可改，禁止強塞 `data-custom-name` 或 `s_custom_*`
+
 ## 4. 輪播箭頭徹底魔改 (Carousel Arrows)
 適用範圍：動態輪播 (`.s_dynamic`) / 靜態輪播 (`.s_static_carousel`) / 內建輪播 (`.s_carousel`)。
 
