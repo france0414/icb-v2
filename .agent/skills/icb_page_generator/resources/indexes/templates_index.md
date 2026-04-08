@@ -10,7 +10,7 @@ This index maps each template to its source files and rule references.
 | home-4 | home | templates/improved/home-recipes/home-4.xml | templates/improved/home-recipes/home-4.scss | - | - | snippet_catalog, layout_patterns |
 | banner | banner | templates/improved/banners/banner.xml | templates/improved/banners/banner.scss | - | - | snippet_catalog |
 | banner-arrow | component | templates/improved/banners/banner-arrow.xml | - | - | - | snippet_catalog |
-| carousel-arrow | component | templates/improved/banners/carousel-arrow.xml | - | - | - | snippet_catalog |
+| carousel-arrow | component | templates/improved/banners/carousel-arrow.xml | - | - | - | snippet_catalog | 箭頭位置樣式展示，適用 s_dynamic_snippet_carousel、s_dynamic_snippet_products、s_carousel_wrapper |
 | content-sections | content | templates/improved/content-sections/content-sections.xml | templates/improved/content-sections/content-sections.scss | - | - | snippet_catalog, layout_patterns |
 | content-sections-2 | content | templates/improved/content-sections/content-sections-2.xml | templates/improved/content-sections/content-sections-2.scss | - | - | snippet_catalog, layout_patterns |
 | content-sections-3 | content | templates/improved/content-sections/content-sections-3.xml | templates/improved/content-sections/content-sections-3.scss | - | - | snippet_catalog, layout_patterns |
@@ -22,7 +22,7 @@ This index maps each template to its source files and rule references.
 | header-menus | header | - | templates/improved/headers/header-menus.scss | - | - | header_footer_rules | lock: scss_only; variants: menu-1/2/3/4, m-1/2/3/4 |
 | btn-style | button | - | templates/improved/buttons/btn-style.scss | - | - | button_styles |
 | customized-Static-Snippet | static | templates/improved/carousels/customized-Static-Snippet.xml | templates/improved/carousels/customized-Static-Snippet.scss | - | - | snippet_catalog |
-| basd-Static-Snippet | static | templates/base/basd-Static-Snippet.xml | - | - | - | snippet_catalog |
+| base-Static-Snippet | static | templates/base/base-Static-Snippet.xml | - | - | - | snippet_catalog |
 | Static-Snippet-carousel | static | templates/improved/carousels/Static-Snippet-carousel.xml | templates/improved/carousels/Static-Snippet-carousel.scss | - | - | snippet_catalog |
 | customized-static-carousel | static | templates/improved/carousels/customized-static-carousel.xml | templates/improved/carousels/customized-static-carousel.scss | - | - | snippet_catalog |
 | customized-dynamic-products | dynamic | templates/improved/dynamic/products/customized-dynamic-products.xml | templates/improved/dynamic/products/customized-dynamic-products.scss | - | - | dynamic_rules, snippet_catalog |

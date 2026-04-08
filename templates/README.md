@@ -37,7 +37,7 @@ templates/
 |------|------|---------|
 | `base-dynamic-products.xml` + `.html` | 動態產品 Snippet 基底 | Odoo `s_dynamic_snippet_products` 內部結構由後端渲染決定 |
 | `base-dynamic-news.xml` + `.html` | 動態新聞/部落格 Snippet 基底 | 同上，`s_dynamic_snippet` 結構 |
-| `basd-Static-Snippet.xml` | 靜態卡片模板完整範例 | 含多種 Odoo 官方 static template class 變體 |
+| `base-Static-Snippet.xml` | 靜態卡片模板完整範例 | 含多種 Odoo 官方 static template class 變體 |
 
 **如何使用 base 鎖定結構：**
 ```xml
@@ -96,7 +96,7 @@ view templates/improved/content-sections/content-sections.xml [L655, L720]
 → 讀 `.agent/skills/icb_page_generator/resources/custom_blocks.md`，找到 XML 行號，精準讀取
 
 ### 我要選擇哪個 Snippet
-→ 讀 `.agent/skills/icb_page_generator/resources/snippet_catalog.md`
+→ 讀 `.agent/skills/icb_page_generator/resources/snippet_rules.md`
 
 ### 我要查某個 SCSS 變數或 mixin
 → 讀 `.agent/skills/icb_page_generator/resources/scss_reference.md`

@@ -18,6 +18,7 @@
     "- block.md → 呼叫已整理的客製化歷史區塊",
     "/page 為套版模式，允許依配方快速組裝；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
+    "模板索引在 .agent/skills/icb_page_generator/resources/indexes/templates_index.json，用於快速定位模板。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
     "/create 抓站規則：請優先呼叫 Fetch 或 Browser MCP（如 Playwright, Google Chrome DevTools MCP）直接在本地抓回 HTML。目前暫停使用外部付費抓站 API。",
