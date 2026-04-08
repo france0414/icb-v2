@@ -44,6 +44,15 @@
 - [ ] 實作 `templates/catalogs/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
 - [x] 建立 AI 知識衝突防護指南（`resources/ai_conflict_prevention.md`）：LLM 誤用範例、可控工作流封裝方法、自動 context 修正規則、各模型角色職責矩陣、SKILL SSOT 同步機制
 
+---
+
+## Phase 7：Skill 知識庫與自動化流程 ✅ 已完成
+
+- [x] 建立 `skill_devops_process.md`：Skill 編寫角色分工表、DevOps 自動部署流程圖（純文字）、腳本組織建議、GitHub Actions 配置建議
+- [x] 補充 `snippet_rules.md`：新增「Snippet 三大類型」分類表（排版型/基本型/內容型）、`o_colored_level` 正式定義與使用規則、`s_text` 容器說明與使用時機
+- [x] 更新 `icb_skill.source.json`：新增 3 條 core_rules（Snippet 三類型 + o_colored_level、s_text、按鈕規範）、新增 knowledge_map 條目、新增 resource_files 條目
+- [x] 執行 `sync_icb_skill.py` 同步至 Gemini/Copilot/OpenCode/Claude 所有入口
+
 
 ---
 
