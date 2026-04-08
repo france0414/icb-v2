@@ -18,6 +18,9 @@
 
 ## 快速目錄
 
+- [Snippet 三大類型](#snippet-types)
+- [o_colored_level 說明](#o-colored-level)
+- [s_text 內容容器說明](#s-text)
 - [嵌套規則 (Nesting Hierarchy)](#nesting-hierarchy)
 - [1. 基本 (Structure)](#structure)
 - [2. 排版元件 (Layout)](#layout)
@@ -27,24 +30,195 @@
 - [6. 全域工具 Class (Utility Classes)](#utility-classes)
 - [Backgrounds (背景圖片與影片)](#backgrounds)
 
+---
+
+## Snippet 三大類型
+
+<a id="snippet-types"></a>
+
+Odoo 的 Snippet 依用途分為三種類型，AI 生成時必須先辨別類型，再決定結構：
+
+| 類型 | 說明 | 是否自帶 `<section>` | 是否含 `o_colored_level` | 使用方式 |
+|------|------|---------------------|--------------------------|---------|
+| **排版型 (Layout)** | 頁面主要骨架區塊，可獨立存在 | ✅ 必有 | ✅ 通常有 | 獨立使用，作為頁面大區塊 |
+| **基本型 (Structure/Base)** | 可獨立的標準內容區塊（如 Text Block、Banner、Card 列） | ✅ 通常有 | ✅ 通常有 | 獨立使用，作為頁面主要段落 |
+| **內容型 (Inner Content)** | 小型元件，插入已存在的 section/col 內部使用 | ❌ 多數無 | ❌ 通常無 | 必須放在排版型或基本型 Snippet 內部 |
+
+### 判斷口訣
+
+```
+有 section + 有 o_colored_level → 排版型或基本型 → 可獨立使用
+無 section 或 無 o_colored_level → 內容型 → 必須放在父容器內
+```
+
+> **注意**：少數例外（有 `<section>` 但仍需依附父層），以 Odoo 編輯器實際行為為準。
+
+---
+
+## `o_colored_level` 說明
+
+<a id="o-colored-level"></a>
+
+### 定義與用途
+
+`o_colored_level` 是 Odoo 的**主題色階標記 class**。凡加上此 class 的元素，Odoo 後台 UI 都可以讓使用者點擊切換主題配色（`o_cc1`~`o_cc5`）。
+
+| 功能 | 說明 |
+|------|------|
+| 主題色切換 | 加上此 class 後，使用者可在編輯器中點選切換 `o_cc1`~`o_cc5` 背景色 |
+| 識別獨立可著色區塊 | 代表此區塊是設計上「可獨立換膚」的單元 |
+| 繼承色階 | 子元素可繼承父層 `o_colored_level` 的色彩系統 |
+
+### 使用規則
+
+```
+✅ 適合加 o_colored_level 的位置：
+   - 主要 section（頁面大區塊）
+   - row（需要整行換色時）
+   - col（需要單欄換色時）
+   - card / 卡片容器（需要個別卡片換色時）
+
+❌ 不需要加 o_colored_level 的位置：
+   - 純排版用的 div（如 .container、.row 作為結構用時）
+   - 固定白底/透明且不需要色彩切換的小型元件
+   - 純文字段落（直接繼承父層即可）
+```
+
+### 範例
+
+```xml
+<!-- 主區塊：頁面段落，加 o_colored_level 讓使用者可切換背景色 -->
+<section class="s_features o_colored_level pt32 pb32" data-snippet="s_features" data-name="Features">
+    <div class="container">
+        <div class="row o_colored_level">
+            <!-- 子欄位也加 o_colored_level，支援欄位獨立換色 -->
+            <div class="col-md-4 o_colored_level">
+                <p>特色 A</p>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <p>特色 B</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 內容型插入區塊：不加 o_colored_level，繼承父層即可 -->
+<div class="s_hr" data-snippet="s_hr">
+    <hr/>
+</div>
+```
+
+### `o_colored_level` 與 section 的關係
+
+- **有 `o_colored_level` → 通常是排版型或基本型 Snippet → 主要區塊**
+- **無 `o_colored_level` → 通常是內容型 Snippet → 插入型小元件**
+- 參考：`templates/base/base-Static-Snippet.xml` 可看到 section、row、col、card 各層都帶 `o_colored_level`
+
+---
+
+## `s_text` 內容容器說明
+
+<a id="s-text"></a>
+
+### 定義與用途
+
+`div.s_text`（`data-snippet="s_text"` / `data-name="Text"`）是 Odoo 的**標準文字容器 snippet**，具有以下特性：
+
+- 在 Odoo 編輯器中，使用者可以**直接拖拉調整高度**
+- 支援在內部放置 Bootstrap `.row` / `.col-*` 進行多欄排版
+- 常作為「在已有 row/col 骨架內，再插入更多可調整內容」的解決方案
+
+### 使用時機
+
+```
+✅ 適合使用 s_text 的情況：
+   - 在現有 row/col 骨架內，需要「高度可調整的內容塊」
+   - 在 Accordion（收折面板）等限制排版的容器內，需要自由插入圖文
+   - 需要讓設計師可拖拉調整版面高度
+   - 在 col 內需要再切分更細緻的結構
+
+❌ 不適合使用 s_text 的情況：
+   - 取代主 section 骨架（s_text 不是頁面主區塊）
+   - 在已有充足排版控制的結構中再多加一層（避免過度嵌套）
+```
+
+### 基本結構
+
+```xml
+<div class="s_text" data-snippet="s_text" data-name="Text">
+    <!-- 內部可放任何 Bootstrap 排版結構 -->
+    <p>一般文字內容</p>
+</div>
+```
+
+### 進階用法：在 col 內插入多欄排版
+
+```xml
+<!-- 在 row/col 內部，若需要更細緻的結構控制，用 s_text 包住 -->
+<div class="row">
+    <div class="col-md-8">
+        <div class="s_text" data-snippet="s_text" data-name="Text">
+            <!-- 在 s_text 內可再用 row/col 進行子排版 -->
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://picsum.photos/400/300" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6">
+                    <h3>子標題</h3>
+                    <p>說明文字，使用者可在編輯器拖拉調整高度</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="s_text" data-snippet="s_text" data-name="Text">
+            <p>側欄內容</p>
+        </div>
+    </div>
+</div>
+```
+
+### 在 Accordion 內實現圖文排版（特殊用法）
+
+```xml
+<!-- Accordion 的 card-body 預設只適合純文字。
+     加上 s_text 後，內部就可以自由使用 row/col 做多欄圖文混排。 -->
+<div class="collapse" id="collapseExample">
+    <div class="card-body">
+        <div class="s_text" data-snippet="s_text" data-name="Text">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="https://picsum.photos/400/300" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-lg-8">
+                    <p>在 Accordion 內實現圖文混排！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+---
+
 ## 嵌套規則 (Nesting Hierarchy)
 
 <a id="nesting-hierarchy"></a>
 
 ```
-section [data-snippet="xxx"]          ← 頂層 Snippet (Layout)
+section [data-snippet="xxx"]          ← 頂層 Snippet（排版型/基本型）
  └── .container / .container-fluid    ← 容器
       └── .row                        ← 列
            └── .col-lg-*              ← 欄
-                └── Content           ← 內容
+                └── div.s_text        ← 可選：靈活高度文字容器
+                     └── Content      ← 最終內容
 ```
 
 ### 區塊層級判斷（獨立區塊 vs 內嵌內容）
 
-- **結構/版面類 Snippet**：通常有 `<section data-snippet="...">`，可獨立成區塊，內部可再放內容。
-- **內容/插入類 Snippet**：多數沒有 `<section>` 外殼，只能插入到可獨立區塊內（如容器/欄位）。
+- **排版型/基本型 Snippet**：通常有 `<section data-snippet="...">` + `o_colored_level`，可獨立成區塊，內部可再放內容。
+- **內容型 Snippet**：多數沒有 `<section>` 外殼，只能插入到可獨立區塊內（如容器/欄位）。通常不含 `o_colored_level`。
 - **例外**：少數有 `<section>` 的 snippet 仍被系統視為「不可獨立」，必須依附在可獨立區塊內。
-- **常見特徵**：插入型 snippet 通常不含 `o_colored_level`；即使有 `<section>` 也未必代表可獨立。
 
 **原則**：是否可獨立，最終以 Odoo 編輯器行為與官方 snippet 規則為準。
 
@@ -105,25 +279,8 @@ section [data-snippet="xxx"]          ← 頂層 Snippet (Layout)
 ```
 
 **突破限制：在手風琴 (Accordion) 內部實現圖文網格排版：**
-```xml
-<!-- Odoo 的 Accordion (.card-body) 預設只適合放純文字。
-     只要在內部強制包上 `<div class="s_text" data-name="Text">`，
-     就能讓使用者/設計師在裡面自由使用 Bootstrap 的 `.row` 和 `.col-**` 來做多欄位、放圖片的進階排版！ -->
-<div class="collapse" id="...">
-    <div class="card-body">
-        <div class="s_text" data-name="Text">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="https://picsum.photos/400/300" class="img-fluid" alt="..."/>
-                </div>
-                <div class="col-lg-8">
-                    <p>這裡就可以放複雜的圖文混排了！</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-```
+
+→ 請參考文件頂部的 [`s_text` 內容容器說明](#s-text) 章節，內含完整範例。
 
 ---
 
