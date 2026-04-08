@@ -96,7 +96,7 @@ view templates/improved/content-sections/content-sections.xml [L655, L720]
 → 讀 `.agent/skills/icb_page_generator/resources/custom_blocks.md`，找到 XML 行號，精準讀取
 
 ### 我要選擇哪個 Snippet
-→ 讀 `.agent/skills/icb_page_generator/resources/snippet_catalog.md`
+→ 讀 `.agent/skills/icb_page_generator/resources/snippet_rules.md`
 
 ### 我要查某個 SCSS 變數或 mixin
 → 讀 `.agent/skills/icb_page_generator/resources/scss_reference.md`

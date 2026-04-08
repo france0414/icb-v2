@@ -155,6 +155,12 @@ AI 生成按鈕樣式時，必須理解以下組合：
 ## 3. 預設風格庫（6 種）
 
 以下為可直接套用的預設風格，選擇一種後全站統一使用。
+下方的 **Class** 只是「變體代號 / 參考名稱」，
+**當作全域風格時不需要在 XML 套用這個 class**。
+只有在少數情境需要「局部脫離全域」時，才考慮另寫對應的局部覆蓋 class。
+
+**Style Keys (一致化代號):**
+`s_custom_btn01`, `s_custom_btn021`, `s_custom_btn02`, `s_custom_btn03`, `s_custom_btn04`, `s_custom_btn06`
 完整的 SCSS 與預覽展示在 `templates/improved/buttons/btn-style.scss` 中。
 
 > [!NOTE]
@@ -164,7 +170,7 @@ AI 生成按鈕樣式時，必須理解以下組合：
 
 ### 3.1 右下角斜切 (Skew)
 
-**Class:** `s_custom_btn01`  
+**Variant / Style Key:** `s_custom_btn01`  
 **效果:** 按鈕右下角呈現斜切遮罩
 
 ```scss
@@ -179,7 +185,7 @@ AI 生成按鈕樣式時，必須理解以下組合：
 
 ### 3.2 一般箭頭 (Arrow)
 
-**Class:** `s_custom_btn021`  
+**Variant / Style Key:** `s_custom_btn021`  
 **效果:** FontAwesome 箭頭 + Hover 晃動動畫
 
 ```scss
@@ -206,7 +212,7 @@ header, section {
 
 ### 3.3 細箭頭 (Thin Arrow)
 
-**Class:** `s_custom_btn02`  
+**Variant / Style Key:** `s_custom_btn02`  
 **效果:** CSS 繪製細長箭頭 + Hover 拉伸
 
 ```scss
@@ -236,9 +242,9 @@ header, section {
 
 ### 3.4 圓點放大 (Dot Zoom)
 
-**Class:** `s_custom_btn03`  
+**Variant / Style Key:** `s_custom_btn03`  
 **效果:** 左側圓點 Hover 時放大填滿背景  
-**注意:** padding-left 至少 36px
+**注意:** padding-left 至少 36px，且此變體作為全域風格時 **不需要在 XML 加 class**
 
 ```scss
 #wrapwrap .btn[class*='primary'], 
@@ -268,7 +274,7 @@ header, section {
 
 ### 3.5 閃光效果 (Flash)
 
-**Class:** `s_custom_btn04`  
+**Variant / Style Key:** `s_custom_btn04`  
 **效果:** Hover 時光影快速掃過
 
 ```scss
@@ -301,7 +307,7 @@ header, section {
 
 ### 3.6 傾斜填滿 (Hover Skew Fill)
 
-**Class:** `s_custom_btn06`  
+**Variant / Style Key:** `s_custom_btn06`  
 **效果:** Hover 時背景色斜切填滿
 
 ```scss
