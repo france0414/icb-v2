@@ -72,6 +72,7 @@ metadata:
 | Blog / Shop 系統頁面 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/system_pages_scss.md` |
 | 模板索引與快速定位 | `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` |
 | 防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則 | `.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md` |
+| 了解 data-custom-name 屬性規範與使用規則 | `.agent/skills/icb_page_generator/resources/data_custom_name_spec.md` |
 
 ## 尚未補齊但必須遵守的規則
 
@@ -115,5 +116,6 @@ metadata:
 ├── form_rules.md
 ├── system_pages_scss.md
 ├── indexes/templates_index.json
-└── ai_conflict_prevention.md
+├── ai_conflict_prevention.md
+└── data_custom_name_spec.md
 ```
