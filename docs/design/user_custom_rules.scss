@@ -1644,7 +1644,8 @@ body.editor_started {
 }
 
 .s_dynamic,
-.s_static_carousel {
+.s_static_carousel,
+.s_carousel_wrapper {
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -1660,6 +1661,7 @@ body.editor_started {
 .s_gallery_lightbox,
 .s_carousel,
 .s_static_carousel,
+.s_carousel_wrapper,
 .s_dynamic_snippet_carousel,
 .s_dynamic_snippet_products,
 .s_carousel.s_carousel_default {
@@ -1766,6 +1768,7 @@ body.editor_started {
 }
 
 section[class*='s_custom_arrow'].s_static_carousel [class*='carousel-control-'],
+section[class*='s_custom_arrow'].s_carousel_wrapper [class*='carousel-control-'],
 section[class*='s_custom_arrow'].s_dynamic [class*='carousel-control-'] {
     width: unset !important;
 }
@@ -1960,6 +1963,7 @@ section[class*='s_custom_arrow'].s_dynamic [class*='carousel-control-'] {
 .s_gallery_lightbox,
 .s_carousel,
 .s_static_carousel,
+.s_carousel_wrapper,
 .s_dynamic_snippet_carousel,
 .s_dynamic_snippet_products,
 .s_carousel.s_carousel_default {
@@ -2010,6 +2014,7 @@ section[class*='s_custom_arrow'].s_dynamic [class*='carousel-control-'] {
     &.s_image_gallery.o_slideshow.s_image_gallery_indicators_arrows_rounded .carousel,
     .s_carousel,
     &.s_static_carousel,
+    &.s_carousel_wrapper,
     &.s_dynamic_snippet_carousel,
     &.s_dynamic_snippet_products,
     &.s_carousel.s_carousel_default {
