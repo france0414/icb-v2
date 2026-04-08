@@ -42,7 +42,7 @@
     "Snippet：必須有 data-snippet 和 data-name 屬性",
     "Snippet 來源：乾淨 snippets 來源必須是 Odoo 15 官方原始 XML。",
     "Snippet 例外標註：若有例外（非 Odoo 15 官方原始 XML），產出檔案的檔頭必須標註：exception: <reason> | source: <url/path>",
-    "自訂命名：s_custom_PascalCase 必須搭配 data-custom-name=\"PascalCase\"，僅用於可編輯的自訂區塊（section/snippet）；系統頁面/系統區塊不可改",
+    "自訂命名：s_custom_PascalCase 必須搭配 data-custom-name=\"PascalCase\"，僅用於可編輯的自訂區塊（section/snippet）；系統頁面/系統區塊不可改。完整規範詳見 .agent/skills/icb_page_generator/resources/data_custom_name_spec.md",
     "Icon 規範：主要使用 Font Awesome v4（例如 `fa fa-star`）",
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
     "樣式原則：新寫樣式一律放 SCSS，禁止在 XML 內寫 <style>；style=\"\" 僅在 Odoo 系統元件本身必須或既有結構已依賴時可保留/最小使用",
@@ -54,7 +54,8 @@
     "公版與客製 SCSS 提取原則：當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/improved/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `templates/improved/banners/banner.xml` 的樣式，就去讀 `templates/improved/banners/banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS",
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 docs/design/user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 .agent/skills/icb_page_generator/resources/scss_reference.md",
-    "抓取轉化原則 (Scraping Sandbox)：當使用者在 `/create` 提供外部參考網址或截圖時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。",
+    "抓取轉化原則 (Scraping Sandbox)：當使用者在 `/create` 提供外部參考網址或截圖時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。"
+    "AI 知識衝突防護：當 LLM 通用知識（Bootstrap 5、FA v5/v6、React/Vue 組件模式等）與本專案規格衝突時，優先順序為：本專案規格（AGENTS.md + SKILL.md）> 本專案知識庫（resources/）> 本專案模板（templates/）> Odoo 15 官方文件 > Bootstrap 4.5 官方文件 > LLM 通用訓練知識。遇衝突必須自我修正後才生成代碼，詳見 .agent/skills/icb_page_generator/resources/ai_conflict_prevention.md。"
     "Menu-01~04 SCSS 來源：統一在 templates/improved/headers/header-menus.scss，依 MENU-1~MENU-4 的 START/END 區塊擷取；當使用者要求 /page menu-0X 時，只輸出對應 SCSS 片段（含 START/END 註解）。"
     ,"/create 結構優先：無論是根據靈感還是外部網址還原版面，解析出 DOM/CSS 的呈現邏輯後，能用 Odoo/Bootstrap 既有結構（row/col/容器）還原左右/層次者，優先用結構取代 CSS，避免多寫 SCSS；只有結構無法達成時才補 SCSS。"
     ,"Snippet 三類型識別：Snippet 分「排版型」(有 section + o_colored_level，可獨立)、「基本型」(有 section + o_colored_level，可獨立)、「內容型」(無 section，無 o_colored_level，必須放入父容器)。詳見 snippet_rules.md。"
@@ -114,6 +115,10 @@
     [
       "模板索引與快速定位",
       ".agent/skills/icb_page_generator/resources/indexes/templates_index.json"
+    ],
+    [
+      "data-custom-name 屬性規範（元素限制 / Token 格式 / 同步規則）",
+      ".agent/skills/icb_page_generator/resources/data_custom_name_spec.md"
     ],
     [
       "防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則",
