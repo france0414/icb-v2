@@ -40,7 +40,7 @@
     {
       "name": "banner-arrow",
       "category": "component",
-      "xml": "templates/improved/banners/banner-arrow.xml",
+      "xml": "templates/base/banner-arrow.xml",
       "rules": ["snippet_catalog"]
     },
     {
