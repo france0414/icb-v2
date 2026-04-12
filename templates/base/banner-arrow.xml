@@ -1,3 +1,6 @@
+<!-- [BASE] banner-arrow.xml — 基礎型通用 Banner 樣板，已歸屬 base 級別，供全域引用。
+     包含 s_image_gallery (o_slideshow 輪播 / o_masonry 靜態磚塊) 與 s_carousel_wrapper，
+     支援 Template Class 控制左右導覽按鈕樣式。 -->
 
       <section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_colored_level pt56" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
         <div class="container">
