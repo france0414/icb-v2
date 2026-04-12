@@ -296,6 +296,56 @@ section [data-snippet="xxx"]          ← 頂層 Snippet（排版型/基本型�
 | Cover | `s_cover` | 全螢幕滿版背景 + 遮罩 |
 | Carousel | `s_carousel` | 輪播圖（需唯一 ID） |
 
+#### `s_carousel_wrapper` / `s_carousel` 骨架與 Template Class
+
+> **基礎模板：** `templates/base/banner-arrow.xml`
+
+`s_carousel` 外層由 `section.s_carousel_wrapper` 包覆，內層 `.s_carousel` 透過 Template Class 控制外觀：
+
+| Template Class | 說明 |
+|---------------|------|
+| `s_carousel_default` | 預設全寬背景輪播（無邊框） |
+| `s_carousel_bordered` | 帶邊框的輪播 |
+| `s_carousel_boxed` | 方塊風格輪播 |
+| `s_carousel_rounded` | 圓角風格輪播 |
+
+**骨架結構：**
+```xml
+<section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+  <div class="s_carousel carousel slide s_carousel_default" id="唯一ID" data-ride="carousel" data-interval="10000" data-pause="false">
+    <ol class="carousel-indicators o_we_no_overlay">
+      <li data-slide-to="0" class="active" data-target="#唯一ID"/>
+      <!-- 更多 indicator -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item pt152 pb152 o_colored_level oe_img_bg o_bg_img_center active" data-name="Slide">
+        <div class="container oe_unremovable">
+          <div class="row content">
+            <div class="carousel-content col-lg-6 o_colored_level">
+              <!-- 文字內容 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" href="#唯一ID">
+      <span class="carousel-control-prev-icon"/>
+      <span class="sr-only o_default_snippet_text">Previous</span>
+    </a>
+    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" href="#唯一ID">
+      <span class="carousel-control-next-icon"/>
+      <span class="sr-only o_default_snippet_text">Next</span>
+    </a>
+  </div>
+</section>
+```
+
+**規則：**
+- `id`、`data-target`、`href` 必須同頁唯一（同 [輪播 ID 規則](#static)）
+- 每個 `carousel-item` 自帶 `oe_img_bg o_bg_img_center o_colored_level`，背景圖透過 `style="background-image: url(...);"` 設定
+- 控制按鈕含 `o_not_editable o_we_no_overlay`，不可省略
+- AI 生成前**必須讀取** `templates/base/banner-arrow.xml` 的完整骨架，禁止自行編寫
+
 ### 文字 & 標題
 
 | Snippet | `data-snippet` | 說明 |
@@ -318,6 +368,65 @@ section [data-snippet="xxx"]          ← 頂層 Snippet（排版型/基本型�
 | Numbers | `s_numbers` | 數據統計 |
 | Image Gallery | `s_image_gallery` | 相片牆 |
 | Images Wall | `s_images_wall` | 瀑布式圖片牆（多圖） |
+
+#### `s_image_gallery` 輪播模式 (o_slideshow) 箭頭指示器 Template Class
+
+> **基礎模板：** `templates/base/banner-arrow.xml`
+
+當 `s_image_gallery` 搭配 `o_slideshow` class 使用時，成為 **輪播模式**，可透過 Template Class 控制左右導覽按鈕樣式：
+
+| 指示器 Template Class | 說明 |
+|----------------------|------|
+| `s_image_gallery_indicators_rounded` | 圓角縮圖指示器（基礎款） |
+| `s_image_gallery_indicators_arrows_boxed` | 方塊箭頭指示器 |
+| `s_image_gallery_indicators_arrows_rounded` | 圓角箭頭指示器 |
+
+**輪播模式的 section 完整 class 組合：**
+```
+s_image_gallery o_slideshow s_image_gallery_show_indicators [指示器 Template Class] o_colored_level
+```
+
+**骨架結構（輪播模式）：**
+```xml
+<section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_colored_level pt56"
+         data-vcss="001" data-columns="3"
+         style="height: 500px; overflow: hidden; background-image: none;"
+         data-snippet="s_image_gallery" data-name="Image Gallery">
+  <div class="container">
+    <div id="唯一ID" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img img-fluid d-block" src="..." data-name="Image" data-index="0" loading="lazy"/>
+        </div>
+        <!-- 更多 carousel-item -->
+      </div>
+      <ul class="carousel-indicators o_we_no_overlay">
+        <li class="o_indicators_left text-center d-none active" aria-label="Previous" title="Previous"/>
+        <li data-target="#唯一ID" data-slide-to="0" style="background-image: url(...)"/>
+        <!-- 更多 indicator -->
+        <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next"/>
+      </ul>
+      <a class="carousel-control-prev o_we_no_overlay o_not_editable" href="#唯一ID" data-slide="prev">
+        <span class="fa fa-chevron-left fa-2x text-white"/>
+        <span class="sr-only o_default_snippet_text">Previous</span>
+      </a>
+      <a class="carousel-control-next o_we_no_overlay o_not_editable" href="#唯一ID" data-slide="next">
+        <span class="fa fa-chevron-right fa-2x text-white"/>
+        <span class="sr-only o_default_snippet_text">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+```
+
+**與靜態 `o_masonry` 模式的差異：**
+- `o_slideshow`：輪播模式，有 `.carousel` / `.carousel-item` / `.carousel-indicators` / `.carousel-control-*`
+- `o_masonry`（同檔也有範例）：磚塊靜態排列，用 `.row` + `.o_masonry_col.col-lg-*`，無輪播控制元件
+
+**規則：**
+- 輪播 ID 必須同頁唯一（同 [輪播 ID 規則](#static)）
+- 箭頭按鈕使用 `fa fa-chevron-left` / `fa fa-chevron-right`（Font Awesome v4）
+- AI 生成前**必須讀取** `templates/base/banner-arrow.xml` 的完整骨架，禁止自行編寫
 | Masonry Block | `s_masonry_block` | Masonry 拼貼網格（結構較複雜，建議從既有模板/實例複製） |
 | Showcase | `s_showcase` | 展示區（圖文組合） |
 | Parallax | `s_parallax` | 視差背景效果區塊 |
