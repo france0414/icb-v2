@@ -1,0 +1,74 @@
+<section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="Title">
+  <div class="s_allow_columns container">
+    <h4><strong>Base Timeline - Alternate (Center Line)</strong></h4>
+  </div>
+</section>
+
+<section class="s_timeline pt24 pb48 o_colored_level s_custom_timeLineBase s_custom_timelineLineCenter s_custom_timelineModeAlternate" data-snippet="s_timeline" data-name="Timeline" style="background-image: none;" data-custom-name="timeLineBase timelineLineCenter timelineModeAlternate">
+  <div class="s_timeline_line o_container_small">
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2019</b></span></div>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Alternate row content A.</p></div></div>
+      </div>
+      <div class="s_timeline_content"/>
+    </div>
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2022</b></span></div>
+      <div class="s_timeline_content"/>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Alternate row content B.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="Title">
+  <div class="s_allow_columns container">
+    <h4><strong>Base Timeline - Left Side (Left Line)</strong></h4>
+  </div>
+</section>
+
+<section class="s_timeline pt24 pb48 o_colored_level s_custom_timeLineBase s_custom_timelineLineLeft s_custom_timelineModeLeft" data-snippet="s_timeline" data-name="Timeline" style="background-image: none;" data-custom-name="timeLineBase timelineLineLeft timelineModeLeft">
+  <div class="s_timeline_line o_container_small">
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2017</b></span></div>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Left-side row content A.</p></div></div>
+      </div>
+      <div class="s_timeline_content"/>
+    </div>
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2020</b></span></div>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Left-side row content B.</p></div></div>
+      </div>
+      <div class="s_timeline_content"/>
+    </div>
+  </div>
+</section>
+
+<section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="Title">
+  <div class="s_allow_columns container">
+    <h4><strong>Base Timeline - Right Side (Right Line)</strong></h4>
+  </div>
+</section>
+
+<section class="s_timeline pt24 pb48 o_colored_level s_custom_timeLineBase s_custom_timelineLineRight s_custom_timelineModeRight" data-snippet="s_timeline" data-name="Timeline" style="background-image: none;" data-custom-name="timeLineBase timelineLineRight timelineModeRight">
+  <div class="s_timeline_line o_container_small">
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2015</b></span></div>
+      <div class="s_timeline_content"/>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Right-side row content A.</p></div></div>
+      </div>
+    </div>
+    <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+      <div class="s_timeline_date"><span class="bg-white"><b class="o_default_snippet_text">2018</b></span></div>
+      <div class="s_timeline_content"/>
+      <div class="s_timeline_content d-flex">
+        <div class="s_timeline_card s_card card w-100" data-name="Card" data-snippet="s_card"><div class="card-body"><p>Right-side row content B.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>

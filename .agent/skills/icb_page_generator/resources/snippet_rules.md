@@ -1,4 +1,4 @@
-# Odoo 14 Snippet 完整清單與嵌套規則
+# Odoo 15s Snippet 完整清單與嵌套規則
 
 > [!IMPORTANT]
 > 此文件為所有 Snippet 的分類索引。AI 產出代碼時必須從此清單中選擇 Snippet，不可自行發明。

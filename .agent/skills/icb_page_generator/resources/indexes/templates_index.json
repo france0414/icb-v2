@@ -7,119 +7,176 @@
       "category": "home",
       "xml": "templates/improved/home-recipes/home-1.xml",
       "scss": "templates/improved/home-recipes/home-1.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "home-2",
       "category": "home",
       "xml": "templates/improved/home-recipes/home-2.xml",
       "scss": "templates/improved/home-recipes/home-2.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "home-3",
       "category": "home",
       "xml": "templates/improved/home-recipes/home-3.xml",
       "scss": "templates/improved/home-recipes/home-3.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "home-4",
       "category": "home",
       "xml": "templates/improved/home-recipes/home-4.xml",
       "scss": "templates/improved/home-recipes/home-4.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "banner",
       "category": "banner",
       "xml": "templates/improved/banners/banner.xml",
       "scss": "templates/improved/banners/banner.scss",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "banner-arrow",
       "category": "component",
       "xml": "templates/base/banner-arrow.xml",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "carousel-arrow",
       "category": "component",
-      "xml": "templates/improved/banners/carousel-arrow.xml",
       "description": "箭頭位置樣式展示，適用 s_dynamic_snippet_carousel、s_dynamic_snippet_products、s_carousel_wrapper",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "content-sections",
       "category": "content",
       "xml": "templates/improved/content-sections/content-sections.xml",
       "scss": "templates/improved/content-sections/content-sections.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "content-sections-2",
       "category": "content",
       "xml": "templates/improved/content-sections/content-sections-2.xml",
       "scss": "templates/improved/content-sections/content-sections-2.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "content-sections-3",
       "category": "content",
       "xml": "templates/improved/content-sections/content-sections-3.xml",
       "scss": "templates/improved/content-sections/content-sections-3.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "content-sections-js",
       "category": "content",
       "xml": "templates/improved/content-sections/content-sections-js.xml",
       "scss": "templates/improved/content-sections/content-sections-js.scss",
-      "rules": ["snippet_catalog", "layout_patterns"]
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
     },
     {
       "name": "time-line",
       "category": "content",
       "xml": "templates/improved/timelines/time-line.xml",
       "scss": "templates/improved/timelines/time-line.scss",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "form-contact",
       "category": "form",
       "xml": "templates/improved/forms/form-contact.xml",
-      "rules": ["form_rules", "snippet_catalog"]
+      "rules": [
+        "form_rules",
+        "snippet_catalog"
+      ]
     },
     {
       "name": "footerwcalltoaction-1",
       "category": "footer",
       "xml": "templates/improved/footers/footerwcalltoaction-1.xml",
-      "rules": ["header_footer_rules"],
+      "rules": [
+        "header_footer_rules"
+      ],
       "lock_policy": "xpath_required",
-      "footer_variants": ["footer-1", "ft-1"]
+      "footer_variants": [
+        "footer-1",
+        "ft-1"
+      ]
     },
     {
       "name": "footerwcalltoaction-2",
       "category": "footer",
       "xml": "templates/improved/footers/footerwcalltoaction-2.xml",
-      "rules": ["header_footer_rules"],
+      "rules": [
+        "header_footer_rules"
+      ],
       "lock_policy": "xpath_required",
-      "footer_variants": ["footer-2", "ft-2"]
+      "footer_variants": [
+        "footer-2",
+        "ft-2"
+      ]
     },
     {
       "name": "header-menus",
       "category": "header",
       "scss": "templates/improved/headers/header-menus.scss",
-      "rules": ["header_footer_rules"],
+      "rules": [
+        "header_footer_rules"
+      ],
       "lock_policy": "scss_only",
-      "header_variants": ["menu-1", "menu-2", "menu-3", "menu-4", "m-1", "m-2", "m-3", "m-4"]
+      "header_variants": [
+        "menu-1",
+        "menu-2",
+        "menu-3",
+        "menu-4",
+        "m-1",
+        "m-2",
+        "m-3",
+        "m-4"
+      ]
     },
     {
       "name": "btn-style",
       "category": "button",
       "scss": "templates/improved/buttons/btn-style.scss",
-      "rules": ["button_styles"],
+      "rules": [
+        "button_styles"
+      ],
       "style_keys": [
         "s_custom_btn01",
         "s_custom_btn021",
@@ -135,34 +192,52 @@
       "category": "static",
       "xml": "templates/improved/carousels/customized-Static-Snippet.xml",
       "scss": "templates/improved/carousels/customized-Static-Snippet.scss",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "base-Static-Snippet",
       "category": "static",
       "xml": "templates/base/base-Static-Snippet.xml",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
-      "name": "Static-Snippet-carousel",
-      "category": "static",
-      "xml": "templates/improved/carousels/Static-Snippet-carousel.xml",
-      "scss": "templates/improved/carousels/Static-Snippet-carousel.scss",
-      "rules": ["snippet_catalog"]
+      "name": "base-time-line",
+      "category": "timeline",
+      "xml": "templates/base/base-time-line.xml",
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ],
+      "usage": [
+        "page",
+        "create"
+      ],
+      "output_mode": "section_only",
+      "structure_locked": false,
+      "notes": "Base timeline reference includes three layout modes: alternate-center, left-single, right-single."
     },
     {
       "name": "customized-static-carousel",
       "category": "static",
       "xml": "templates/improved/carousels/customized-static-carousel.xml",
       "scss": "templates/improved/carousels/customized-static-carousel.scss",
-      "rules": ["snippet_catalog"]
+      "rules": [
+        "snippet_catalog"
+      ]
     },
     {
       "name": "customized-dynamic-products",
       "category": "dynamic",
       "xml": "templates/improved/dynamic/products/customized-dynamic-products.xml",
       "scss": "templates/improved/dynamic/products/customized-dynamic-products.scss",
-      "rules": ["dynamic_rules", "snippet_catalog"]
+      "rules": [
+        "dynamic_rules",
+        "snippet_catalog"
+      ]
     },
     {
       "name": "customized-dynamic-products-js",
@@ -170,24 +245,35 @@
       "xml": "templates/improved/dynamic/products/customized-dynamic-products-js.xml",
       "scss": "templates/improved/dynamic/products/customized-dynamic-products-js.scss",
       "js": "templates/improved/dynamic/products/customized-dynamic-products-js.js",
-      "html": "templates/improved/dynamic/products/customized-dynamic-products-js.html",
-      "rules": ["dynamic_rules", "snippet_catalog"]
+      "rules": [
+        "dynamic_rules",
+        "snippet_catalog"
+      ]
     },
     {
       "name": "customized-dynamic-news",
       "category": "dynamic",
       "xml": "templates/improved/dynamic/news/customized-dynamic-news.xml",
       "scss": "templates/improved/dynamic/news/customized-dynamic-news.scss",
-      "html": "templates/improved/dynamic/news/customized-dynamic-news.html",
-      "rules": ["dynamic_rules", "snippet_catalog"]
+      "html": "_archived/html-snapshots/customized-dynamic-news.html",
+      "rules": [
+        "dynamic_rules",
+        "snippet_catalog"
+      ]
     },
     {
       "name": "base-dynamic-products",
       "category": "dynamic",
       "xml": "templates/base/base-dynamic-products.xml",
-      "html": "templates/base/base-dynamic-products.html",
-      "rules": ["dynamic_rules", "snippet_catalog"],
-      "usage": ["page", "create"],
+      "html": "_archived/html-snapshots/base-dynamic-products.html",
+      "rules": [
+        "dynamic_rules",
+        "snippet_catalog"
+      ],
+      "usage": [
+        "page",
+        "create"
+      ],
       "output_mode": "section_only",
       "structure_locked": true,
       "lock_policy": "structure_locked",
@@ -209,9 +295,15 @@
       "name": "base-dynamic-news",
       "category": "dynamic",
       "xml": "templates/base/base-dynamic-news.xml",
-      "html": "templates/base/base-dynamic-news.html",
-      "rules": ["dynamic_rules", "snippet_catalog"],
-      "usage": ["page", "create"],
+      "html": "_archived/html-snapshots/base-dynamic-news.html",
+      "rules": [
+        "dynamic_rules",
+        "snippet_catalog"
+      ],
+      "usage": [
+        "page",
+        "create"
+      ],
       "output_mode": "section_only",
       "structure_locked": true,
       "lock_policy": "structure_locked",

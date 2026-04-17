@@ -38,6 +38,7 @@ Rules:
 - 圖片使用 `https://picsum.photos/` 作為來源
 - 佈局容器：每個 `<section>` 內的核心框架必須明確選擇使用 `.container` (寬度置中) 或 `.container-fluid` (滿版)，不可遺漏或隨意自創網格外殼。
 - 樣式原則：新寫的樣式一律放 SCSS，禁止在 XML 內寫 `<style>`；`style=""` 僅在 Odoo 系統元件本身必須或既有結構已依賴時可保留/最小使用
+- 🚨 **樣式三層優先順序：先套用 `docs/design/user_custom_rules.scss` 等既有可重用 class，再使用 Bootstrap 4.5 原生 grid/utility（container/row/col、spacing、flex 等），最後才用 SCSS 補齊缺口；能用前兩層解決就不要新寫 SCSS。**
 - 🚨 **極度重要：若 `docs/design/user_custom_rules.scss` 已有客製樣式（如 `.s_custom_titleUnderLine`, `.s_custom_scaleL`, 輪播箭頭定位等），AI 只需要在 XML 套用對應的 class（並設定 `data-custom-name`）即可，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。** (詳見 `.agent/skills/icb_page_generator/resources/scss_reference.md`)
 - 🚨 **重疊與絕對定位保護：所有會導致元素重疊的 SCSS (如負邊距 `mt-n5`、絕對定位覆蓋圖文) 頂層必須加上 `#wrapwrap:not(.odoo-editor-editable)` 前綴，確保在 Odoo 編輯模式下元素會自動解開重疊，讓使用者能正常點選並替換文字與圖片！**
 - 🚨 **斷點規範：符合 Bootstrap 4.5 的斷點，請使用 Bootstrap 4.5 的斷點寫法（含 `media-breakpoint-up/down` mixin）。若需額外斷點，請使用 `docs/design/user_custom_rules.scss` 內的自訂 RWD 斷點變數與 mixin（`//--自訂RWD 斷點變數 開始--//` 區塊）。**

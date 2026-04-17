@@ -1,6 +1,4 @@
-<t t-name="website.customized-dynamic-products">
-  <t t-call="website.layout">
-    <div id="wrap" class="oe_structure oe_empty">
+
       <section class="s_column_layout o_colored_level pt80 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb0 o_cc o_cc1 o_auto_screen_height s_custom_upperNext s_custom_hasArrowL s_custom_fullContainer" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" data-scroll-background-ratio="1" data-custom-name="upperNext hasArrowL fullContainer" data-original-title="" title="" aria-describedby="tooltip788295" style="background-image: none;">
         <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1839-c4b41a2f/preview_bg.jpg&quot;); background-position: 44.8% 100%; background-color: rgb(18, 18, 18) !important;" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
         <div class="col-wrapper container-fluid">
@@ -26,7 +24,7 @@
             </div>
             <div class="col-right o_colored_level col-lg-10">
               <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
-                <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 pb0 s_product_product_borderless_1 o_cc o_cc1 dingL s_custom_titleUp s_custom_nameHoverUnderLine s_custom_arrowRight s_custom_arrowL s_custom_arrowNoSeparate s_custom_arrowNoGap s_custom_noGap s_custom_fullContainer s_custom_scaleL s_custom_default o_dynamic_empty" data-name="Products" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="100000" data-custom-name="titleUp nameHoverUnderLine arrowRight arrowL arrowNoSeparate arrowNoGap noGap fullContainer scaleL default" style="background-image: none; background-color: rgba(255, 0, 0, 0) !important;">
+                <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 pb0 s_product_product_borderless_1 o_cc o_cc1 s_custom_titleUp s_custom_nameHoverUnderLine s_custom_arrowRight s_custom_arrowL s_custom_arrowNoSeparate s_custom_arrowNoGap s_custom_noGap s_custom_fullContainer s_custom_scaleL s_custom_default o_dynamic_empty" data-name="Products" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="100000" data-custom-name="titleUp nameHoverUnderLine arrowRight arrowL arrowNoSeparate arrowNoGap noGap fullContainer scaleL default" style="background-image: none; background-color: rgba(255, 0, 0, 0) !important;">
                   <div class="o_not_editable container-fluid">
                     <div class="css_non_editable_mode_hidden">
                       <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
@@ -72,7 +70,7 @@
             </div>
             <div class="col-right o_colored_level col-lg-7">
               <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
-                <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic pt32 pb32 o_colored_level s_product_product_borderless_1 s_custom_interlaceCarousel s_custom_arrowTop s_custom_arrowRight s_custom_scaleS o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="6" data-carousel-interval="5000" data-custom-name="interlace-Carousel arrowTop arrowRight scaleS" data-force-minimum-max-limit-to16="1">
+                <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic pt32 pb32 o_colored_level s_product_product_borderless_1 s_custom_interlaceCarousel s_custom_arrowTop s_custom_arrowRight s_custom_scaleS o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="6" data-carousel-interval="5000" data-custom-name="interlaceCarousel arrowTop arrowRight scaleS" data-force-minimum-max-limit-to16="1">
                   <div class="o_not_editable container">
                     <div class="css_non_editable_mode_hidden">
                       <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
@@ -85,6 +83,3 @@
           </div>
         </div>
       </section>
-    </div>
-  </t>
-</t>

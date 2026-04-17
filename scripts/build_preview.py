@@ -39,7 +39,7 @@ PREVIEW_TEMPLATE = """\
     <!-- 1. Odoo 測試機完整 CSS (Bootstrap 4 + 原生樣式) -->
     <link rel="stylesheet" href="{odoo_css_url}">
 
-    <!-- 2. FontAwesome 4 (Odoo 14 使用的版本) -->
+    <!-- 2. FontAwesome 4 (Odoo 15 使用的版本) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- 3. 本地編譯的自訂 SCSS → CSS -->

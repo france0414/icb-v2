@@ -1,4 +1,4 @@
-# Odoo 14 版面設計模式 (Layout Patterns)
+# Odoo 15 版面設計模式 (Layout Patterns)
 
 > 此文件提供常見設計模式的組合策略，幫助 AI 選擇最佳 Snippet 組合。
 

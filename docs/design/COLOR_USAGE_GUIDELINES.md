@@ -328,7 +328,7 @@ a {
 
 - `docs/design/PROJECT_THEME.css` - 專案色彩定義
 - `docs/design/user_custom_rules.scss` - 自訂 RWD 斷點與 mixin
-- Odoo 14 官方文件 - WebBuilder 規範
+- Odoo 15 官方文件 - WebBuilder 規範
 
 ---
 

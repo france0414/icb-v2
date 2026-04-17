@@ -197,8 +197,8 @@ git commit -m "docs: move phase details to roadmap"
 - Dynamic Products：`templates/base/base-dynamic-products.xml` 為鎖定結構，不可額外添加 inner 結構
 - Dynamic News：`templates/base/base-dynamic-news.xml` 為鎖定結構，不可額外添加 inner 結構
 - 動態資料的 HTML 結構可作為樣式參考（用於對應渲染後的 class）：
-  - `templates/base/base-dynamic-products.html`
-  - `templates/base/base-dynamic-news.html`
+  - `_archived/html-snapshots/base-dynamic-products.html`
+  - `_archived/html-snapshots/base-dynamic-news.html`
 
 ### 落地順序（先做這三類）
 1. Header/Footer schema v1（先把不可做/可做寫清楚）✅

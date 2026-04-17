@@ -84,6 +84,7 @@
 | Large Banner | `website_sale.dynamic_filter_template_product_product_banner` | `s_product_product_banner` |
 | Image Only | `website_sale.dynamic_filter_template_product_product_mini_image` | `s_product_product_mini_image` |
 | Image w/ Name | `website_sale.dynamic_filter_template_product_product_mini_name` | `s_product_product_mini_name` |
+| Image w/ Price | `website_sale.dynamic_filter_template_product_product_mini_price` | `s_product_product_mini_price` |
 
 ### Blogs / News
 | Style | TEMPLATE_KEY | TEMPLATE_CLASS |
@@ -125,3 +126,11 @@
 - **禁止包多餘 div**：只能用既有 snippet 結構。
 - **允許的父層**：若需多欄，只能放在 `s_text_block` 或 `s_column_layout` 內。
 - **樣式覆寫**：需改視覺效果請寫 SCSS，不要改 XML 結構。
+
+---
+
+## 6) Dynamic Matrix 對照檔
+
+- News：`./dynamic_news_matrix.md`
+- Products：`./dynamic_products_matrix.md`
+- 流程：先套 base 固定骨架，再依 matrix 套 `data-template-key` / `data-filter-id` / `records` / `class` / `data-custom-name`。

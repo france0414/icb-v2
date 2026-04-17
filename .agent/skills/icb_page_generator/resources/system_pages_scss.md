@@ -1,4 +1,4 @@
-# Odoo 14 系統頁面 (Blog / Shop) 開發規範
+# Odoo 15 系統頁面 (Blog / Shop) 開發規範
 
 在 Odoo 中，像「部落格文章列表 (Blog List)」、「部落格內頁 (Blog Post)」、「商品列表 (Shop)」這類頁面，其 HTML 結構是由系統的核心模組與 Controller 在後端動態生成的。
 

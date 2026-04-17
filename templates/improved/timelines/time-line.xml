@@ -1,14 +1,4 @@
-<t t-name="website.time-line">
-  <t t-call="website.layout">
-    <div id="wrap" class="oe_structure oe_empty">
-      <section class="s_text_block o_colored_level pb0 pt32 bg-black-15" data-snippet="s_text_block" data-name="標題">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>time line-01</strong>
-          </h4>
-        </div>
-      </section>
-      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb4 s_custom_timeLine01 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine01">
+ <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb4 s_custom_timeLine01 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine01">
         <div class="container">
           <div class="oe_structure oe_structure_not_nest oe_empty">
             <section class="s_text_block o_colored_level pb24 pt24" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
@@ -242,13 +232,9 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block o_colored_level pb0 pt32 bg-black-15" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>time line-03</strong>
-          </h4>
-        </div>
-      </section>
+
+
+
       <section class="s_timeline pt24 pb48 o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden s_custom_timeLine03" data-snippet="s_timeline" data-name="Timeline" style="background-image: none; position: relative;" data-scroll-background-ratio="1" data-custom-name="timeLine03" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/03&quot;,&quot;colors&quot;:{&quot;c1&quot;:&quot;rgba(8, 82, 148, 0.36)&quot;,&quot;c2&quot;:&quot;rgba(57, 132, 198, 0.32)&quot;},&quot;flip&quot;:[]}">
         <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4258-0e342565/preview_hor.jpg&quot;);" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="950"/>
         <div class="o_we_bg_filter bg-black-25"/>
@@ -354,13 +340,7 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block o_colored_level pt32 pb0 bg-black-15" data-snippet="s_text_block" data-name="標題">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>time line-04</strong>
-          </h4>
-        </div>
-      </section>
+   
       <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level s_custom_timeLine04 pb0 pt0" data-name="Vertical Layout" style="background-image: none;" data-custom-name="timeLine04">
         <div class="o_container_small">
           <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
@@ -490,13 +470,7 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block o_colored_level pt32 bg-black-15 pb16" data-snippet="s_text_block" data-name="標題">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>time line-05</strong>
-          </h4>
-        </div>
-      </section>
+
       <section class="s_timeline pt24 pb48 o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden s_custom_timeLine05" data-snippet="s_timeline" data-name="Timeline" style="position: relative; background-image: none;" data-scroll-background-ratio="1" data-custom-name="timeLine05">
         <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4254-0e342565/preview_hor.jpg&quot;);" data-original-id="4214" data-original-src="/web/image/4214-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="950"/>
         <div class="o_we_bg_filter bg-black-15"/>
@@ -561,16 +535,7 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>
-              <font class="text-o-color-5">time line-06</font>
-            </strong>
-          </h4>
-          <p>垂直排版: 設定漸層背景色 (50%/50%)<br/>內容-文字區塊，要選對應的背景色</p>
-        </div>
-      </section>
+ 
       <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt48 pb40 s_custom_timeLine06" data-name="Vertical Layout" style="background-image: linear-gradient(90deg, rgb(245, 245, 245) 0%, rgb(245, 245, 245) 50%, rgb(53, 151, 156) 50%, rgb(53, 151, 156) 100%);" data-custom-name="timeLine06">
         <div class="container">
           <div class="oe_structure oe_structure_not_nest oe_empty">
@@ -667,18 +632,7 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>
-              <font class="text-o-color-5">time line-07</font>
-            </strong>
-          </h4>
-          <p>
-            <br/>
-          </p>
-        </div>
-      </section>
+
       <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level s_custom_timeline07" data-name="Vertical Layout" style="background-image: none;" data-custom-name="time-line-07">
         <div class="container-fluid">
           <div class="oe_structure oe_structure_not_nest oe_empty">
@@ -793,18 +747,7 @@
           </div>
         </div>
       </section>
-      <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
-        <div class="s_allow_columns container">
-          <h4>
-            <strong>
-              <font class="text-o-color-5">time line-08</font>
-            </strong>
-          </h4>
-          <p>
-            <br/>
-          </p>
-        </div>
-      </section>
+
       <section data-snippet="s_vertical_layout" class="s_vertical_layout pt32 pb32 o_colored_level s_custom_timeline08" data-name="Vertical Layout" style="background-image: none;" data-custom-name="time-line-08">
         <div class="container-fluid">
           <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
@@ -919,6 +862,3 @@
           </div>
         </div>
       </section>
-    </div>
-  </t>
-</t>
