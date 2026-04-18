@@ -89,7 +89,7 @@
     {
       "name": "form-contact",
       "category": "form",
-      "xml": "templates/improved/forms/form-contact.xml",
+      "xml": "templates/base/base-form-contact.xml",
       "rules": [
         "form_rules",
         "snippet_catalog"

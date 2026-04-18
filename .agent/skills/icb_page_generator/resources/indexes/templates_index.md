@@ -16,7 +16,7 @@ This index maps each template to its source files and rule references.
 | content-sections-3 | content | templates/improved/content-sections/content-sections-3.xml | templates/improved/content-sections/content-sections-3.scss | - | - | snippet_catalog, layout_patterns |
 | content-sections-js | content | templates/improved/content-sections/content-sections-js.xml | templates/improved/content-sections/content-sections-js.scss | - | - | snippet_catalog, layout_patterns |
 | time-line | content | templates/improved/timelines/time-line.xml | templates/improved/timelines/time-line.scss | - | - | snippet_catalog |
-| form-contact | form | templates/improved/forms/form-contact.xml | - | - | - | form_rules, snippet_catalog |
+| form-contact | form | templates/base/base-form-contact.xml | - | - | - | form_rules, snippet_catalog |
 | footerwcalltoaction-1 | footer | templates/improved/footers/footerwcalltoaction-1.xml | - | - | - | header_footer_rules | lock: xpath_required; variants: footer-1, ft-1 |
 | footerwcalltoaction-2 | footer | templates/improved/footers/footerwcalltoaction-2.xml | - | - | - | header_footer_rules | lock: xpath_required; variants: footer-2, ft-2 |
 | header-menus | header | - | templates/improved/headers/header-menus.scss | - | - | header_footer_rules | lock: scss_only; variants: menu-1/2/3/4, m-1/2/3/4 |
