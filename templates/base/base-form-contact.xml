@@ -1,5 +1,5 @@
-  <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
-        <div class="container s_allow_columns">
+<section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+  <div class="container s_allow_columns">
           <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form" data-name="Form">
             <div class="container">
               <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true" data-privacy-checkbox="use" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-model_name="mail.mail">
@@ -11,9 +11,7 @@
                       </label>
                       <div class="col-sm">
                         <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
-                        <div class="s_website_form_field_description small form-text text-muted">
-            單獨的電子郵件地址用逗號區分.
-        </div>
+                        <div class="s_website_form_field_description small form-text text-muted">單獨的電子郵件地址用逗號區分.</div>
                       </div>
                     </div>
                   </div>
@@ -99,6 +97,5 @@
               </form>
             </div>
           </section>
-         
-        </div>
-      </section>
+  </div>
+</section>
