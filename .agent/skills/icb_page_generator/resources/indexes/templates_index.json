@@ -3,40 +3,10 @@
   "generated_from": "templates/",
   "items": [
     {
-      "name": "home-1",
+      "name": "home-recipes",
       "category": "home",
-      "xml": "templates/improved/home-recipes/home-1.xml",
-      "scss": "templates/improved/home-recipes/home-1.scss",
-      "rules": [
-        "snippet_catalog",
-        "layout_patterns"
-      ]
-    },
-    {
-      "name": "home-2",
-      "category": "home",
-      "xml": "templates/improved/home-recipes/home-2.xml",
-      "scss": "templates/improved/home-recipes/home-2.scss",
-      "rules": [
-        "snippet_catalog",
-        "layout_patterns"
-      ]
-    },
-    {
-      "name": "home-3",
-      "category": "home",
-      "xml": "templates/improved/home-recipes/home-3.xml",
-      "scss": "templates/improved/home-recipes/home-3.scss",
-      "rules": [
-        "snippet_catalog",
-        "layout_patterns"
-      ]
-    },
-    {
-      "name": "home-4",
-      "category": "home",
-      "xml": "templates/improved/home-recipes/home-4.xml",
-      "scss": "templates/improved/home-recipes/home-4.scss",
+      "md": ".agent/skills/icb_page_generator/resources/home_recipes.md",
+      "note": "home-1~4 配方索引，含各區塊 data-snippet / s_custom_* / data-* 屬性，直接組裝用",
       "rules": [
         "snippet_catalog",
         "layout_patterns"

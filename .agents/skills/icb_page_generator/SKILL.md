@@ -45,7 +45,7 @@ metadata:
 16. **主題色保留規則：** 當需要沿用 o_cc 類別的字體/按鈕配色但想換背景色時，請保留 o_cc (如 o_cc3) 並使用 XML 行內 style 覆寫背景色/漸層（如 text-block 範例），避免移到 SCSS 影響後台可調性。
 17. **間距：** 使用 Bootstrap 4 的 pt/pb 規則，優先採用 8 的倍數
 18. **AI 雙模式任務與 templates/ 定位：** `templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。1.【套版模式 `/page`】允許從 `templates/` 和 `.agent/skills/icb_page_generator/resources/page_templates.md` 配方直接組裝，替換文案圖片即可。2.【創作模式 `/create`】不論使用者提供「純文字描述」或「外部範例圖文/網址」，皆為創作模式。AI 必須重新設計 section 順序與視覺重心，以設計靈感為首，但骨架必須嚴格遵守 Odoo 原則（Bootstrap Grid、QWeb 外框、動態鎖定區塊）。先出文字骨架確認後才生成 XML+SCSS。3.【元件晉升保守策略】創作或抓站轉化出來的新畫面，預設只產出「當下專案草稿 (位於 outputs/)」，不自動拆成公版元件、不寫入 templates/；僅在明確要求「晉升公版」時才寫入。
-19. **templates/ Token 節省規則：** 不可直接讀取整份大型 XML 檔（如 content-sections.xml、home-*.xml）。正確流程：先讀 `templates/README.md` 了解目錄結構，再查 `custom_blocks.md` 或 `page_templates.md` 取得 XML 檔名與行號範圍，最後用 view_range 精準讀取所需片段。`templates/base/` 為鎖定結構（禁止修改內部 DOM），`templates/improved/` 為元件積木庫。
+19. **templates/ Token 節省規則：** 不可直接讀取整份大型 XML 檔（如 content-sections.xml）。正確流程：先讀 `templates/README.md` 了解目錄結構，再查 `custom_blocks.md` 或 `page_templates.md` 取得 XML 檔名與行號範圍，最後用 view_range 精準讀取所需片段。`templates/base/` 為鎖定結構（禁止修改內部 DOM），`templates/improved/` 為元件積木庫。首頁配方改讀 `resources/home_recipes.md`，不再有 home-*.xml 範本檔。
 20. **公版與客製 SCSS 提取原則：** 當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/improved/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `templates/improved/banners/banner.xml` 的樣式，就去讀 `templates/improved/banners/banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS
 21. **輸出位置：** 產出檔案放在 outputs/，檔名必須包含日期與時間
 22. **重用全域樣式：** 若 docs/design/user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 .agent/skills/icb_page_generator/resources/scss_reference.md
@@ -71,7 +71,8 @@ metadata:
 | 設計版面配置 | `.agent/skills/icb_page_generator/resources/layout_patterns.md` |
 | 查詢 SCSS 變數 / Mixin / 斷點 | `.agent/skills/icb_page_generator/resources/scss_reference.md` |
 | 呼叫歷史客製化區塊 | `.agent/skills/icb_page_generator/resources/custom_blocks.md` |
-| 套用首頁樣板配方 (Home 1~4) | `.agent/skills/icb_page_generator/resources/page_templates.md` |
+| 套用首頁樣板配方 (Home 1~4)，查詢各區塊 data-snippet / s_custom_* / data-* 屬性 | `.agent/skills/icb_page_generator/resources/home_recipes.md` |
+| 了解首頁配方索引與使用方式 | `.agent/skills/icb_page_generator/resources/page_templates.md` |
 | Header SCSS 覆寫 / Footer XML+SCSS 生成 | `.agent/skills/icb_page_generator/resources/header_footer_rules.md` |
 | 聯絡表單佈局與 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/form_rules.md` |
 | Blog / Shop 系統頁面 SCSS 覆寫 | `.agent/skills/icb_page_generator/resources/system_pages_scss.md` |
@@ -100,6 +101,7 @@ metadata:
 | `/btn` | 套用或建立按鈕風格 |
 | `/js` | 加入互動 JS 元件 |
 | `/block` | 呼叫已整理的客製化歷史區塊 |
+| `/page-home` | 首頁套版模式（自動帶入 pageName 專屬結構，參考 home-recipes 1–4 配方） |
 
 ## 輸出原則
 
@@ -119,6 +121,7 @@ metadata:
 ├── custom_blocks.md
 ├── scss_reference.md
 ├── page_templates.md
+├── home_recipes.md
 ├── header_footer_rules.md
 ├── form_rules.md
 ├── system_pages_scss.md

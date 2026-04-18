@@ -8,6 +8,7 @@ GEMINI_SKILL_PATH = REPO_ROOT / ".agent" / "skills" / "icb_page_generator" / "SK
 COPILOT_SKILL_PATH = REPO_ROOT / ".agents" / "skills" / "icb_page_generator" / "SKILL.md"
 OPENCODE_CONFIG_PATH = REPO_ROOT / "opencode.json"
 CLAUDE_COMMANDS_DIR = REPO_ROOT / ".claude" / "commands"
+OPENCODE_COMMANDS_DIR = REPO_ROOT / ".opencode" / "commands"
 CLAUDE_MD_PATH = REPO_ROOT / "CLAUDE.md"
 START_MARKER = "<!-- ICB_SKILL_INSTRUCTIONS_START -->"
 END_MARKER = "<!-- ICB_SKILL_INSTRUCTIONS_END -->"
@@ -116,6 +117,18 @@ def update_claude_commands(source: dict) -> None:
         (CLAUDE_COMMANDS_DIR / file_name).write_text(content, encoding="utf-8", newline="\n")
 
 
+def update_opencode_commands(source: dict) -> None:
+    commands = source.get("opencode_commands")
+    if not commands:
+        return
+
+    OPENCODE_COMMANDS_DIR.mkdir(parents=True, exist_ok=True)
+    for command in commands:
+        file_name = command["file"]
+        content = command["content"].rstrip("\n") + "\n"
+        (OPENCODE_COMMANDS_DIR / file_name).write_text(content, encoding="utf-8", newline="\n")
+
+
 def update_claude_md(source: dict) -> None:
     instructions = source.get("claude_instructions", [])
     if not instructions:
@@ -153,6 +166,7 @@ def main() -> None:
 
     update_opencode(source)
     update_claude_commands(source)
+    update_opencode_commands(source)
     update_claude_md(source)
     print("Synchronized ICB skill entry points & CLAUDE.md.")
 

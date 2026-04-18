@@ -51,7 +51,7 @@
     "主題色保留規則：當需要沿用 o_cc 類別的字體/按鈕配色但想換背景色時，請保留 o_cc (如 o_cc3) 並使用 XML 行內 style 覆寫背景色/漸層（如 text-block 範例），避免移到 SCSS 影響後台可調性。",
     "間距：使用 Bootstrap 4 的 pt/pb 規則，優先採用 8 的倍數",
     "AI 雙模式任務與 templates/ 定位：`templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。1.【套版模式 `/page`】允許從 `templates/` 和 `.agent/skills/icb_page_generator/resources/page_templates.md` 配方直接組裝，替換文案圖片即可。2.【創作模式 `/create`】不論使用者提供「純文字描述」或「外部範例圖文/網址」，皆為創作模式。AI 必須重新設計 section 順序與視覺重心，以設計靈感為首，但骨架必須嚴格遵守 Odoo 原則（Bootstrap Grid、QWeb 外框、動態鎖定區塊）。先出文字骨架確認後才生成 XML+SCSS。3.【元件晉升保守策略】創作或抓站轉化出來的新畫面，預設只產出「當下專案草稿 (位於 outputs/)」，不自動拆成公版元件、不寫入 templates/；僅在明確要求「晉升公版」時才寫入。",
-    "templates/ Token 節省規則：不可直接讀取整份大型 XML 檔（如 content-sections.xml、home-*.xml）。正確流程：先讀 `templates/README.md` 了解目錄結構，再查 `custom_blocks.md` 或 `page_templates.md` 取得 XML 檔名與行號範圍，最後用 view_range 精準讀取所需片段。`templates/base/` 為鎖定結構（禁止修改內部 DOM），`templates/improved/` 為元件積木庫。",
+    "templates/ Token 節省規則：不可直接讀取整份大型 XML 檔（如 content-sections.xml）。正確流程：先讀 `templates/README.md` 了解目錄結構，再查 `custom_blocks.md` 或 `page_templates.md` 取得 XML 檔名與行號範圍，最後用 view_range 精準讀取所需片段。`templates/base/` 為鎖定結構（禁止修改內部 DOM），`templates/improved/` 為元件積木庫。首頁配方改讀 `resources/home_recipes.md`，不再有 home-*.xml 範本檔。",
     "公版與客製 SCSS 提取原則：當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/improved/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `templates/improved/banners/banner.xml` 的樣式，就去讀 `templates/improved/banners/banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS",
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 docs/design/user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 .agent/skills/icb_page_generator/resources/scss_reference.md",
@@ -94,7 +94,11 @@
       ".agent/skills/icb_page_generator/resources/custom_blocks.md"
     ],
     [
-      "套用首頁樣板配方 (Home 1~4)",
+      "套用首頁樣板配方 (Home 1~4)，查詢各區塊 data-snippet / s_custom_* / data-* 屬性",
+      ".agent/skills/icb_page_generator/resources/home_recipes.md"
+    ],
+    [
+      "了解首頁配方索引與使用方式",
       ".agent/skills/icb_page_generator/resources/page_templates.md"
     ],
     [
@@ -160,6 +164,10 @@
     [
       "/block",
       "呼叫已整理的客製化歷史區塊"
+    ],
+    [
+      "/page-home",
+      "首頁套版模式（自動帶入 pageName 專屬結構，參考 home-recipes 1–4 配方）"
     ]
   ],
   "output_principles": [
@@ -176,6 +184,7 @@
     "custom_blocks.md",
     "scss_reference.md",
     "page_templates.md",
+    "home_recipes.md",
     "header_footer_rules.md",
     "form_rules.md",
     "system_pages_scss.md",
@@ -193,12 +202,13 @@
     "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientInfo/ 讀取；公版結構參考從 templates/ 讀取。",
     "所有 Odoo 相關指令在 .opencode/commands/ 目錄中：",
     "- page.md → 套版模式快速生成頁面",
+    "- page-home.md → 首頁套版模式（含 pageName 專屬結構，讀 home_recipes.md 配方）",
     "- create.md → 創作模式（先文字骨架，確認後才生成 XML+SCSS。支援純文字或外部網址輸入）",
     "- dynamic.md → 加入動態區塊",
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
-    "/page 為套版模式，允許依配方快速組裝；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
+    "/page 為套版模式，允許依配方快速組裝；/page-home 為首頁專用，必須加 pageName；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引在 .agent/skills/icb_page_generator/resources/indexes/templates_index.json，用於快速定位模板。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
@@ -226,7 +236,9 @@
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
+    "- page-home.md → 首頁套版模式（含 pageName 專屬結構，參考 home-recipes 1–4 配方）",
     "/page 為套版模式，允許依配方快速組裝；/create 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
+    "/page-home 為首頁專用套版模式，必須在 website.layout 內加入 <t t-set=\"pageName\" t-value=\"'homepage'\"/>，勿遺漏。",
     "深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。",
@@ -265,6 +277,40 @@
     {
       "file": "block.md",
       "content": "# block\n\n呼叫已整理的客製化歷史區塊。\n\n## Steps\n\n1. 讀 `resources/custom_blocks.md`\n2. 依既有規格組裝並輸出到 `outputs/`\n"
+    },
+    {
+      "file": "page-home.md",
+      "content": "# page-home (首頁套版模式)\n\n專為首頁設計的快速生成指令。讀取配方索引後直接組裝 XML + SCSS。\n\n## Steps\n\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css`\n3. 讀 `.agent/skills/icb_page_generator/resources/home_recipes.md` 取得目標配方的區塊清單\n4. 依需求讀 `.agent/skills/icb_page_generator/resources/snippet_rules.md`\n5. 需要動態區塊時，依 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構\n6. 輸出到 `outputs/`（XML + SCSS，檔名含日期時間）\n\n## 使用方式\n\n```\n/page-home [版型編號 1-4] [需求描述]\n```\n\n- 指定版型編號（1–4）→ 以 `home_recipes.md` 對應配方為區塊骨架，替換內容與色彩\n- 不指定版型 → 根據需求描述從 4 個配方中選最適合的\n\n## 首頁必備區塊順序（預設）\n\n1. Hero / Banner（Carousel 或靜態大圖）\n2. 服務亮點 / 特色介紹\n3. 產品 / 案例展示\n4. CTA 行動呼籲\n5. 頁腳前置區（品牌資訊、聯絡方式）\n\n## 首頁專屬 XML 結構注意事項\n\n首頁的 `t-call=\"website.layout\"` 內**必須**加入：\n\n```xml\n<t t-call=\"website.layout\">\n  <t t-set=\"pageName\" t-value=\"'homepage'\"/>\n  ...\n</t>\n```\n\n`pageName` 設為 `'homepage'` 是首頁特有的識別標記，其他頁面類型不需要此行，**切勿遺漏**。\n"
+    }
+  ],
+  "opencode_commands": [
+    {
+      "file": "page.md",
+      "content": "# page（🏷️ 套版模式）\n\n依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。若需全新設計改用 /create。\n\n## Hard Rules\n\n- 執行 `/page` 時，禁止使用 Superpowers skills 或其他外部技能流程；只允許使用本專案 ICB 規則與資源。\n- 本專案禁止使用 git worktree；不得建立 `.worktrees/` 或任何 worktree 目錄。\n\n## Steps\n\n1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`\n2. 讀取專案配色：`docs/design/PROJECT_THEME.css`\n3. 判斷頁面類型：完整首頁樣板(配方) / 靜態頁面 / 動態列表 / 靜態導航\n4. 若為完整樣板，讀取 `resources/page_templates.md` 依照配方組裝。若含客製區塊讀取 `resources/custom_blocks.md`。\n5. 若為一般頁面，從 `resources/snippet_rules.md` 選擇 Snippet 組合。\n6. 檢查是否需要特殊按鈕風格（→ `resources/button_styles.md`）\n7. 輸出 XML + SCSS（圖片使用 `https://picsum.photos/`）\n"
+    },
+    {
+      "file": "page-home.md",
+      "content": "# page-home（首頁套版模式）\n\n專為首頁設計的快速生成指令。讀取 home_recipes.md 配方後直接組裝 XML + SCSS。\n\n## Hard Rules\n\n- 首頁 XML 必須在 `website.layout` 內加入 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，**切勿遺漏**。\n- 本專案禁止使用 git worktree；不得建立 `.worktrees/` 或任何 worktree 目錄。\n- home_recipes.md 為 AI 配方參考，不得直接複製輸出，須替換內容與配色。\n\n## Steps\n\n1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`\n2. 讀取專案配色：`docs/design/PROJECT_THEME.css`\n3. 讀取配方：`.agent/skills/icb_page_generator/resources/home_recipes.md`\n   - 指定版型編號（1–4）→ 以對應配方為區塊骨架\n   - 不指定 → 根據需求自動選擇\n4. 依需求讀取 `resources/snippet_rules.md`\n5. 需要動態區塊時，依 `resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構\n6. 輸出 XML + SCSS 到 `outputs/`（檔名含日期時間）\n"
+    },
+    {
+      "file": "create.md",
+      "content": "# create\n\n創作全新頁面。無論使用者輸入為**純文字描述**或**外部網址/截圖**，AI 均須解析輸入並設計排版，同時轉換為符合 Odoo「承重牆規則」的架構。與 /page（套版模式）不同，此指令要求 AI 放下原有版塊，自行創作。\n\n## Steps\n\n### Phase A：規劃骨架（先輸出，等待確認）\n1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`\n2. 讀取專案配色：`docs/design/PROJECT_THEME.css`\n3. 解析輸入類型：\n   - **若是純文字**：讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md` 盤點可用積木（僅作語法參考）。\n   - **若是外部網址/截圖**：嚴禁直接複製原碼。必須先抓取網頁，翻譯為 Bootstrap 4 Grid (`.container`, `.row`, `.col-*`)，整理設計概念。\n4. 輸出文字骨架：每個 section 的類型、佈局對應、設計概念。\n5. ⛔ Phase A 嚴禁輸出 XML 或 SCSS 程式碼。\n\n### 🚦 Gate：等待使用者確認或調整\n\n### Phase B：生成 XML + SCSS（確認後才執行）\n6. 靜態區塊自由創作 XML；動態區塊必須對接原生 `s_dynamic_snippet`，嚴禁寫死前端假卡片結構。\n7. 從 XML 提取對應的獨立 SCSS 樣式；若有重疊層級，務必加 `#wrapwrap:not(.odoo-editor-editable)` 前綴。\n8. 沙盒原則：產出 **強迫** 寫入 `outputs/`（含日期檔名），除非明確要求，**嚴禁** 寫入 `templates/`。\n\n## 禁止事項\n- ❌ Phase A 輸出程式碼\n- ❌ 未經 Bootstrap 與 Odoo QWeb 翻譯即輸出原代碼\n- ❌ 動態區塊自創 HTML 面板\n"
+    },
+    {
+      "file": "dynamic.md",
+      "content": "# dynamic\n\n快速加入動態產品或動態消息區塊。\n\n## Steps\n\n1. 讀取 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`\n2. 確認使用者要生成的是 **動態產品 (Products)** 還是 **動態消息/部落格 (Blogs)**。\n\n### 👉 動態產品 (Products) 參數表\n| 模板名稱 (Template) | Template Key (部分) |\n|---|---|\n| Borderless Card 1 | `...borderless_1` |\n| Centered Product | `...centered` |\n| Classic Card | `...add_to_cart` |\n| Horizontal Card | `...horizontal_card` |\n\n*可選附掛類別 (Custom Classes)*: `scaleL`, `scaleS`, `nameHoverUnderLine`, `imgNoMargin`, `arrowRight`, `titleHoverFull`\n\n### 👉 動態消息/部落格 (Blogs) 參數表\n| 模板名稱 (Template) | Template Key (部分) |\n|---|---|\n| Card Layout | `...blog_post_card` |\n| Big Picture | `...blog_post_big_picture` |\n| Horizontal | `...blog_post_horizontal` |\n| List Layout | `...blog_post_list` |\n\n*可選附掛類別 (Custom Classes)*: `cardRadius`, `borderHover`, `hoverUnderLine`, `titleLine`, `picTop`, `picBottom`, `dateTop`\n\n3. 根據上面挑選的參數，依照嚴格的 XML 結構指引輸出代碼。\n"
+    },
+    {
+      "file": "btn.md",
+      "content": "# btn\n\n套用或創建 Odoo 按鈕風格。\n\n## 用法\n- `btn` 或 `btn --help` → 顯示選單\n- `btn flash` 或 `btn 5` → 直接輸出\n- `btn 我要箭頭` → 關鍵字配對\n- `btn https://...` → 分析仿製\n- `btn flash 顏色改 #FF5500` → 指定風格 + 自訂色\n\n## 6 套命名庫\n| # | 名稱 | 中文 | 效果 |\n|---|------|------|------|\n| 1 | `skew` | 斜切 | 右下角缺角遮罩 |\n| 2 | `arrow` | 普通箭頭 | FA 箭頭 + 彈跳 |\n| 3 | `thin-arrow` | 細箭頭 | CSS 折線箭頭 |\n| 4 | `dot` | 圓點放大 | 圓點膨脹填滿 |\n| 5 | `flash` | 閃光 | 光影掃過 |\n| 6 | `skew-fill` | 傾斜填滿 | 背景斜向展開 |\n\n## Steps\n1. 判斷輸入：選單 / 名字+數字 / 關鍵字 / 網址\n2. 確認顏色偏好（預設 o_cc 變數；可改固定色）\n3. 讀 `button_styles.md` 輸出完整 SCSS（含開頭結尾標記）\n4. 若是新風格，詢問是否命名並存入庫\n"
+    },
+    {
+      "file": "js.md",
+      "content": "# js\n\n從元件庫中選擇並插入互動 JS 元件。\n\n## Steps\n\n1. 讀取 `.agent/skills/icb_page_generator/resources/component_library.md`\n2. 參考以下菜單選擇適合的互動元件：\n\n| # | 元件名稱 | Custom Class | 效果描述 |\n|---|----------|--------------|----------|\n| 1 | Full Image Hover 1 | `fullImgHoevr1` | Hover 切換大圖，左側導航按鈕 |\n| 2 | Full Image Hover 2 | `fullImgHoevr2` | Hover 滑入顯示背景大圖 |\n| 3 | Exhibition Updates | `exhibitionUpdates` | 右側固定滑入新聞面板 |\n| 4 | Product Right Scroll | `productRightScroll` | 水平滾動產品卡片列 |\n| 5 | Interactive Map | `mapEffect` | 地圖互動標記點 |\n| 6 | Sticky Background | `stickyBG` | 內文固定 + 背景圖 Fix |\n| 7 | Full Hover Background | `fullHoverBackground` | Icon 觸發背景圖切換 |\n| 8 | Worldwide Scroll | `worldwide` | 上圖下文卡片水平捲軸 |\n| 9 | Worldwide RWD Collapse | `worldwideRWDcollapse` | 桌機捲軸 / RWD 收合 |\n\n3. 輸出三個區塊：XML 結構 + JavaScript（包在 `s_embed_code` + `s_custom_noRemove`）+ SCSS\n"
+    },
+    {
+      "file": "block.md",
+      "content": "# /block\n\n從客製化區塊知識庫中提取設計師常用的版面與特效結構。\n\n## 1. 讀取區塊知識庫\n**MUST** 讀取 `.agent/skills/icb_page_generator/resources/layout_patterns.md`\n**MUST** 讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md`\n\n## 2. 11 款客製化區塊菜單\n| # | 行銷分類 | 區塊名稱 | 版面與效果說明 |\n|---|----------|----------|----------------|\n| 1 | 全域導購 | `Global Pre-Footer CTA` | 視差滾動背景 + 半透明濾鏡的行動呼叫區塊 |\n| 2 | 敘事時間 | `History Time Line` | 企業歷史沿革時間軸 |\n| 3 | 敘事流程 | `Flowchart` | Icon 步驟引導與弓型連線流程圖 |\n| 4 | 內容排版 | `Content Sections` | 非對稱圖文，透過 SCSS 重疊上下區塊創造破格層次 |\n| 5 | 內容排版 | `Three Chains` | 三段式連續區塊，中間帶有滿版穿插背景 |\n| 6 | 靜態卡片 | `Static Snippet Cards` | 字壓圖 (`titleUpperBg`) 與水平滑動 (`RWDscroll`) |\n| 7 | 進階互動 | `Bleeding Tabs` | 左側圓點清單頁籤，右側滿版圖片淡入淡出切換 |\n| 8 | 內容排版 | `Icon Card Horizontal` | 左側 Icon (1:1對齊) + 右側文字的水平卡片清單 |\n| 9 | 內容排版 | `Leaning Overflow` | 左右分鏡，帶有傾斜有色背景塊的視覺排版 |\n| 10 | 視覺清單 | `Fix BG List` | 視差滾動背景搭配固定重疊的文字區塊 |\n| 11 | 數據呈現 | `Counter After Color` | 動態數字跑馬燈，後綴符號與品牌主題色自動連動 |\n\n## 3. 選擇與輸出規範\n根據使用者輸入選擇適合的區塊，輸出正確 `data-snippet` 與 `data-custom-name` 的 XML + SCSS。\n"
     }
   ]
 }
