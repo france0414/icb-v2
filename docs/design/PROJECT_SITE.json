@@ -1,0 +1,9 @@
+{
+  "liveUrl": "https://demo-ashun.gtmc.app",
+  "assetBundles": {
+    "common_css": "/web/assets/2763-48376d6/1/web.assets_common.min.css",
+    "frontend_css": "/web/assets/2786-1a8d176/1/web.assets_frontend.min.css"
+  },
+  "assetsCheckedAt": "2026-04-19",
+  "note": "asset hash 會隨 Odoo 更新變動。若預覽樣式異常，重新 curl 首頁抓 <link rel=stylesheet> 的 href 更新這裡。切換專案時只需改 liveUrl 與 assetBundles。"
+}

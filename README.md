@@ -93,9 +93,11 @@ icb-v2/
 開啟 AI 終端機工具，輸入指令：
 
 ```bash
-/page 首頁                    # 用現成模板配方快速組裝首頁
-/create 關於我們               # AI 自由設計新版面（純文字靈感）
-/create https://example.com   # AI 自動抓站，並轉譯為 Odoo 相容草稿
+/page 首頁                    # 用現成模板配方快速組裝頁面
+/page-home 1                  # 首頁套版模式（帶 pageName + Footer，配方 1~4）
+/create 關於我們               # 創作模式（三階段：brief → 骨架 → XML+SCSS）
+/create https://example.com   # 同上，AI 會自動抓站轉為 Odoo 相容草稿
+/create-home B2B 軸承歐美風     # 首頁創作模式（同三階段 + pageName + 獨立 Footer）
 /dynamic                      # 快速加入動態產品/新聞區塊
 /btn                          # 套用按鈕風格
 /js                           # 加入互動 JS 元件

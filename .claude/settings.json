@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/build_preview.py *)",
+      "Bash(python3 scripts/build_preview.py *)"
+    ]
+  },
+  "mcp": {
+    "servers": {
+      "playwright": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["@playwright/mcp@latest"]
+      }
+    }
+  }
+}
+

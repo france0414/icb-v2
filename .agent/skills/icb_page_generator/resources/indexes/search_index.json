@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "usage": "AI 在 knowledge_map 找不到對應項時，讀此 index；依 triggers / keywords 比對使用者語意，再 Read 命中的 file。",
+  "entry_count": 23,
+  "entries": [
+    {
+      "file": ".agent/skills/icb_page_generator/resources/spacing_rules.md",
+      "summary": "Odoo 像素間距預設配方（pt96/pt80/pt64/pt48）、內層 col 預設 pt0 pb0、例外規則",
+      "keywords": [
+        "spacing",
+        "pt",
+        "pb",
+        "padding",
+        "間距",
+        "留白",
+        "距離",
+        "col",
+        "padding-top",
+        "padding-bottom"
+      ],
+      "triggers": [
+        "區塊間距",
+        "section 距離",
+        "為什麼那麼擠",
+        "pt pb",
+        "padding 亂",
+        "col padding",
+        "pt-4",
+        "節奏"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/editability_rules.md",
+      "summary": "自訂結構可編輯性七條紅線 + 可點卡片 overlay（s_custom_clickableCard）",
+      "keywords": [
+        "editable",
+        "可編輯",
+        "content",
+        "before",
+        "after",
+        "stretched-link",
+        "clickable",
+        "overlay",
+        "pointer-events"
+      ],
+      "triggers": [
+        "編輯器不能改",
+        "卡片整張可點",
+        "點不到文字",
+        "overlay 擋住",
+        "::before",
+        "stretched-link",
+        "編輯模式重疊"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/create_workflow.md",
+      "summary": "/create 與 /create-home 三階段流程（Phase 0 brief → A 骨架 → B 內容分段 → C Footer）、designMoves、抓站規則",
+      "keywords": [
+        "create",
+        "create-home",
+        "brief",
+        "designMoves",
+        "phase",
+        "抓站",
+        "scraping",
+        "骨架",
+        "skeleton"
+      ],
+      "triggers": [
+        "創作模式",
+        "brief.json",
+        "designMoves",
+        "三階段",
+        "Phase A",
+        "Phase B",
+        "分段生成",
+        "抓站轉化",
+        "外部網址"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/snippet_rules.md",
+      "summary": "Snippet 三類型（排版型 / 基本型 / 內容型）、嵌套規則、o_colored_level、s_text 使用",
+      "keywords": [
+        "snippet",
+        "data-snippet",
+        "o_colored_level",
+        "s_text",
+        "嵌套",
+        "排版型",
+        "內容型"
+      ],
+      "triggers": [
+        "選 snippet",
+        "data-snippet 怎麼填",
+        "o_colored_level",
+        "s_text",
+        "Snippet 嵌套"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/dynamic_rules.md",
+      "summary": "動態產品 / 部落格 / 新聞區塊規則（s_dynamic_snippet_* locked 結構）",
+      "keywords": [
+        "dynamic",
+        "s_dynamic_snippet",
+        "products",
+        "blog",
+        "news",
+        "locked"
+      ],
+      "triggers": [
+        "動態產品",
+        "動態新聞",
+        "s_dynamic_snippet",
+        "產品列表",
+        "最新消息"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/button_styles.md",
+      "summary": "按鈕樣式組合（btn-primary / btn-secondary / btn-fill / btn-outline / btn-sm / btn-lg / rounded-circle / flat）",
+      "keywords": [
+        "button",
+        "btn",
+        "按鈕",
+        "btn-primary",
+        "btn-outline",
+        "rounded-circle",
+        "flat"
+      ],
+      "triggers": [
+        "按鈕樣式",
+        "btn class",
+        "圓形按鈕",
+        "方角按鈕"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/component_library.md",
+      "summary": "互動 JS 元件庫（accordion、carousel、tabs、modal、counter 等）",
+      "keywords": [
+        "js",
+        "interaction",
+        "互動",
+        "accordion",
+        "carousel",
+        "tabs",
+        "modal",
+        "counter"
+      ],
+      "triggers": [
+        "加互動",
+        "輪播",
+        "手風琴",
+        "頁籤",
+        "動態計數"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/layout_patterns.md",
+      "summary": "版面配置模式（hero、split、grid、alternating、timeline）與對應 Bootstrap grid",
+      "keywords": [
+        "layout",
+        "pattern",
+        "hero",
+        "split",
+        "grid",
+        "版面"
+      ],
+      "triggers": [
+        "版面怎麼排",
+        "layout pattern",
+        "split 版面",
+        "交錯版面"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/scss_reference.md",
+      "summary": "SCSS 變數、mixin、斷點、user_custom_rules.scss 已有 class 速查",
+      "keywords": [
+        "scss",
+        "mixin",
+        "variable",
+        "media",
+        "breakpoint",
+        "s_custom_",
+        "user_custom_rules"
+      ],
+      "triggers": [
+        "SCSS 變數",
+        "mixin",
+        "斷點",
+        "media-breakpoint",
+        "既有 class",
+        "s_custom_titleUnderLine"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/custom_blocks.md",
+      "summary": "專案既有客製歷史區塊清單（/block 指令對應）",
+      "keywords": [
+        "custom",
+        "block",
+        "歷史區塊",
+        "客製區塊"
+      ],
+      "triggers": [
+        "歷史區塊",
+        "/block",
+        "之前做過的"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/home_recipes.md",
+      "summary": "首頁配方 1–4（Home recipe），各區塊 data-snippet / s_custom_* / data-* 速查",
+      "keywords": [
+        "home",
+        "recipe",
+        "首頁",
+        "home-recipes",
+        "home-1",
+        "home-2",
+        "home-3",
+        "home-4"
+      ],
+      "triggers": [
+        "首頁配方",
+        "home-recipe",
+        "page-home 1",
+        "首頁套版"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/page_templates.md",
+      "summary": "頁面配方總索引（/page 與 /page-home 查找入口）",
+      "keywords": [
+        "page",
+        "template",
+        "配方"
+      ],
+      "triggers": [
+        "頁面配方",
+        "page template",
+        "/page 配方"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/header_footer_rules.md",
+      "summary": "Header SCSS 覆寫 / Footer XML + SCSS 生成（xpath inherit replace）",
+      "keywords": [
+        "header",
+        "footer",
+        "xpath",
+        "inherit",
+        "menu"
+      ],
+      "triggers": [
+        "Header 樣式",
+        "Footer 生成",
+        "xpath",
+        "inherit_id",
+        "選單樣式"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/form_rules.md",
+      "summary": "聯絡表單佈局外殼（Layout）+ 原生表單投放（Dropzone）分離策略",
+      "keywords": [
+        "form",
+        "contact",
+        "表單",
+        "dropzone"
+      ],
+      "triggers": [
+        "聯絡表單",
+        "form 樣式",
+        "contact form"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/system_pages_scss.md",
+      "summary": "Odoo 系統頁面（Blog / Shop / 商品詳細 / 分類）SCSS 覆寫",
+      "keywords": [
+        "blog",
+        "shop",
+        "system page",
+        "系統頁"
+      ],
+      "triggers": [
+        "Blog 樣式",
+        "Shop 樣式",
+        "系統頁面",
+        "商品列表樣式"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/data_custom_name_spec.md",
+      "summary": "data-custom-name 屬性規範（元素限制 / Token 格式 / 同步規則）",
+      "keywords": [
+        "data-custom-name",
+        "s_custom_",
+        "PascalCase",
+        "命名"
+      ],
+      "triggers": [
+        "data-custom-name",
+        "s_custom_ 命名",
+        "自訂命名規則"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/ai_conflict_prevention.md",
+      "summary": "AI 知識衝突防護（Bootstrap 5 / FA v5~v6 / React 慣例 vs 本專案 Bootstrap 4 / FA v4 / QWeb）",
+      "keywords": [
+        "conflict",
+        "bootstrap 5",
+        "fa v5",
+        "fa v6",
+        "react",
+        "vue",
+        "衝突"
+      ],
+      "triggers": [
+        "Bootstrap 5 語法",
+        "FA v6",
+        "React 寫法",
+        "AI 知識衝突"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/skill_devops_process.md",
+      "summary": "Skill 開發流程、角色分工、自動化部署（CI/CD）",
+      "keywords": [
+        "devops",
+        "skill",
+        "sync",
+        "ci"
+      ],
+      "triggers": [
+        "Skill 維護",
+        "如何同步",
+        "sync_icb_skill"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/timeline_rules.md",
+      "summary": "/create 模式生成歷史沿革（三種結構家族、RWD 規則、左右交錯邏輯）",
+      "keywords": [
+        "timeline",
+        "history",
+        "交錯",
+        "歷程"
+      ],
+      "triggers": [
+        "Timeline 版面",
+        "歷程圖",
+        "左右交錯"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/seo_rules.md",
+      "summary": "SEO 規則（h1 唯一、alt、語意化 tag、結構化標題層級、內部連結）",
+      "keywords": [
+        "seo",
+        "h1",
+        "alt",
+        "meta"
+      ],
+      "triggers": [
+        "SEO",
+        "h1 唯一",
+        "alt 文字",
+        "語意化"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/create_guide.md",
+      "summary": "/create 設計組合引導（7 大黃金配方、修飾器速查）",
+      "keywords": [
+        "create",
+        "guide",
+        "golden",
+        "配方",
+        "黃金"
+      ],
+      "triggers": [
+        "create 配方",
+        "黃金組合",
+        "設計引導"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/dynamic_products_matrix.md",
+      "summary": "動態產品區塊屬性矩陣（欄數 / 樣式 / data-* 屬性對照）",
+      "keywords": [
+        "dynamic products",
+        "產品矩陣"
+      ],
+      "triggers": [
+        "產品區塊屬性",
+        "動態產品矩陣"
+      ]
+    },
+    {
+      "file": ".agent/skills/icb_page_generator/resources/dynamic_news_matrix.md",
+      "summary": "動態新聞 / Blog 區塊屬性矩陣",
+      "keywords": [
+        "dynamic news",
+        "新聞矩陣",
+        "blog matrix"
+      ],
+      "triggers": [
+        "新聞區塊屬性",
+        "blog 屬性矩陣"
+      ]
+    }
+  ]
+}

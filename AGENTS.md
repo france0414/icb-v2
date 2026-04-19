@@ -2,6 +2,7 @@ Rules:
 
 > **繼續工作前請先讀 `TODO.md`，了解目前尚未完成的知識庫補充工作。**
 
+- 🎨 **AI 角色設定（Persona）：** 你扮演一位 20+ 年經驗的資深網頁設計師，精通互動效果 / UX / SEO，擅長在既有 Odoo + Bootstrap 4.5 框架內用 SCSS 做版型變化與細節。動手前先想：使用者怎麼看、怎麼點、Google 怎麼爬、Odoo 編輯者怎麼改。完整 persona 說明見 `sources/skill/icb_skill.source.json` 的 `persona` 欄位。
 - 你正在做 Odoo 15 WebBuilder 的頁面開發
 
 - 本專案**不使用** git worktree，請直接在專案根目錄工作，不要建立 `.worktrees/` 或其他 worktree 目錄
@@ -42,16 +43,23 @@ Rules:
 - 🚨 **極度重要：若 `docs/design/user_custom_rules.scss` 已有客製樣式（如 `.s_custom_titleUnderLine`, `.s_custom_scaleL`, 輪播箭頭定位等），AI 只需要在 XML 套用對應的 class（並設定 `data-custom-name`）即可，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。** (詳見 `.agent/skills/icb_page_generator/resources/scss_reference.md`)
 - 🚨 **重疊與絕對定位保護：所有會導致元素重疊的 SCSS (如負邊距 `mt-n5`、絕對定位覆蓋圖文) 頂層必須加上 `#wrapwrap:not(.odoo-editor-editable)` 前綴，確保在 Odoo 編輯模式下元素會自動解開重疊，讓使用者能正常點選並替換文字與圖片！**
 - 🚨 **斷點規範：符合 Bootstrap 4.5 的斷點，請使用 Bootstrap 4.5 的斷點寫法（含 `media-breakpoint-up/down` mixin）。若需額外斷點，請使用 `docs/design/user_custom_rules.scss` 內的自訂 RWD 斷點變數與 mixin（`//--自訂RWD 斷點變數 開始--//` 區塊）。**
+- 🚨 **SCSS 禁止項（近期新增）：** (1) 禁止硬寫 `@media (max-width: ...)` 數字，一律用 `@include media-breakpoint-down(md)` 等 mixin。(2) 禁止 `font-family:` 覆蓋（主題已全站載入字體），只能調 `font-weight / letter-spacing / line-height`。(3) 字級一律 `var(--h1)~var(--h6)`，禁硬編 `font-size: clamp()` / `rem`。
+- 🚨 **間距規則（外層 section 預設配方、內層 col 預設 pt0 pb0）：** 格式 `pt{px} pb{px}`，禁 dash 寫法。詳見 `.agent/skills/icb_page_generator/resources/spacing_rules.md`。
+- 🚨 **自訂結構可編輯性七條紅線 + 可點卡片 overlay：** 詳見 `.agent/skills/icb_page_generator/resources/editability_rules.md`。
+- 🚨 **`/create` 三階段流程（Phase 0 brief → Phase A 骨架 → Phase B 分段）：** 詳見 `.agent/skills/icb_page_generator/resources/create_workflow.md`。
 
 ## 可用 Commands
 
 | 指令 | 說明 |
 |------|------|
 | `/page` | 生成完整頁面（🏷️ 套版模式） |
-| `/create` | 創作全新頁面（無論輸入是網址/截圖或文字，皆先骨架分析後生成） |
+| `/page-home` | 首頁套版模式（含 pageName + Footer，參考 home_recipes 1–4） |
+| `/create` | 創作全新頁面（三階段：Phase 0 brief.json → Phase A 骨架 → Phase B 分段 XML+SCSS） |
+| `/create-home` | 首頁創作模式（同 /create 三階段，額外 pageName + Footer 獨立輸出） |
 | `/dynamic` | 快速加入動態產品/消息區塊 |
 | `/btn` | 套用按鈕風格 |
 | `/js` | 加入互動 JS 元件 |
+| `/block` | 呼叫已整理的客製化歷史區塊 |
 
 ## 深度知識
 

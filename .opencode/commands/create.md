@@ -1,31 +1,28 @@
-# create
+# create（🎨 創作模式 / 三階段）
 
-創作全新頁面。無論使用者輸入為**純文字描述**或**外部網址/截圖**，AI 均須解析輸入並設計排版，同時轉換為符合 Odoo「承重牆規則」的架構。與 /page（套版模式）不同，此指令要求 AI 放下原有版塊，自行創作。
+創作全新頁面。三階段流程：Phase 0 內容解析 → Phase A 文字骨架 → Phase B 分段 XML+SCSS。輸入可為純文字或外部網址/截圖。
 
-## Steps
+## Hard Rules
+- ❌ 本專案禁止 git worktree；不得建立 `.worktrees/`。
+- ❌ 未經 Bootstrap 4 Grid + Odoo QWeb 翻譯不得輸出原代碼。
+- ❌ 動態區塊禁止自創 HTML 假卡片，必須對接 s_dynamic_snippet*。
+- ❌ 標題字級禁止硬編 clamp/rem/px，一律用 var(--h1)~var(--h6)。
 
-### Phase A：規劃骨架（先輸出，等待確認）
-1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`
-2. 讀取專案配色：`docs/design/PROJECT_COLORS.json`（主色、各 o_cc 背景/文字色、usage 說明、note 特殊規則）
-3. 讀取設計組合引導：`.agent/skills/icb_page_generator/resources/create_guide.md`
-   - 依「設計意圖 → 分類快速對照表」定位每個 section 應參考哪個模板分類
-   - 依「黃金組合配方」決定 Sticky/Tab/Parallax/計數器/JS 區塊的結構
-   - Phase A 骨架描述每個 section 時，必須列出：Snippet、修飾器(s_custom_*)、配方編號、欄寬比、特效類型
-4. 解析輸入類型：
-   - **若是純文字**：讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md` 盤點可用積木（僅作語法參考）。
-   - **若是外部網址/截圖**：嚴禁直接複製原碼。必須先抓取網頁，翻譯為 Bootstrap 4 Grid (`.container`, `.row`, `.col-*`)，整理設計概念。
-5. 輸出文字骨架：每個 section 的類型、佈局對應、設計概念（格式參照 `create_guide.md` 第七節口訣）。
-   - 每個 section 必須標明標題層級（H1/H2/H3），遵守 `resources/seo_rules.md`：全頁唯一 H1、Section → H2、子項目 → H3
-6. ⛔ Phase A 嚴禁輸出 XML 或 SCSS 程式碼。
+## Phase 0：內容解析（中介層）
+1. 讀 `.agent/skills/icb_page_generator/SKILL.md`、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`
+2. 解析輸入（純文字 / 抓站 HTML），抽出 business / keyAssets / mustHaves / excluded / visualDirection
+3. 輸出 `outputs/<日期時間>_brief.json`
+4. 🚦 **停下等使用者確認**
 
-### 🚦 Gate：等待使用者確認或調整
+## Phase A：文字骨架
+5. 從 brief 推導版面，每個區塊選擇必須引用 brief 欄位說明理由
+6. 列出 section 類型、Bootstrap Grid 對應、間距（pt-*/pb-*）、Snippet 類型
+7. 🚦 **停下等使用者確認**
 
-### Phase B：生成 XML + SCSS（確認後才執行）
-6. 靜態區塊自由創作 XML；動態區塊必須對接原生 `s_dynamic_snippet`，嚴禁寫死前端假卡片結構。
-7. 從 XML 提取對應的獨立 SCSS 樣式；若有重疊層級，務必加 `#wrapwrap:not(.odoo-editor-editable)` 前綴。
-8. 沙盒原則：產出 **強迫** 寫入 `outputs/`（含日期檔名），除非明確要求，**嚴禁** 寫入 `templates/`。
-
-## 禁止事項
-- ❌ Phase A 輸出程式碼
-- ❌ 未經 Bootstrap 與 Odoo QWeb 翻譯即輸出原代碼
-- ❌ 動態區塊自創 HTML 面板
+## Phase B：分段生成 XML + SCSS
+8. 拆 2–3 段，每段寫完 preview 確認再下一段；骨架先行、文案後填
+9. 每個 section 明確 pt-*/pb-* 間距（8 倍數，含斷點變體）
+10. 標題字級 var(--h1)~var(--h6)；既有 user_custom_rules.scss 的 class 優先套用
+11. 重疊/絕對定位 SCSS 必加 `#wrapwrap:not(.odoo-editor-editable)` 守護
+12. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink + ::before overlay
+13. 沙盒原則：**強制**寫入 `outputs/`，嚴禁寫入 `templates/`

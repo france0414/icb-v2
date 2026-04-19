@@ -14,6 +14,7 @@ Odoo Local Preview Builder
 5. 自動開啟瀏覽器預覽
 """
 
+import json
 import re
 import subprocess
 import sys
@@ -24,9 +25,33 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 PREVIEW_DIR = REPO_ROOT / "preview"
 SCSS_SOURCE = PREVIEW_DIR / "_preview_entry.scss"  # Bootstrap mixin shim + @import user_custom_rules
 CUSTOM_CSS_OUTPUT = PREVIEW_DIR / "custom.css"
+PROJECT_SITE_JSON = REPO_ROOT / "docs" / "design" / "PROJECT_SITE.json"
 
-# 測試機的完整 Odoo CSS（包含 Bootstrap 4 + 所有原生樣式）
-ODOO_CSS_URL = "https://demo-design.gtmc.app/web/assets/4486-0aa6846/1/web.assets_frontend.min.css"
+# Fallback：若未建立 PROJECT_SITE.json，使用 Odoo 原廠預設站（舊行為）
+FALLBACK_CSS_URLS = [
+    "https://demo-design.gtmc.app/web/assets/4486-0aa6846/1/web.assets_frontend.min.css",
+]
+
+
+def load_odoo_css_urls() -> list[str]:
+    """讀 docs/design/PROJECT_SITE.json 組出 CSS URL 清單；找不到則 fallback。"""
+    if not PROJECT_SITE_JSON.exists():
+        print(f"ℹ️  未找到 {PROJECT_SITE_JSON.name}，使用 fallback（demo-design 原廠站）")
+        return FALLBACK_CSS_URLS
+
+    try:
+        cfg = json.loads(PROJECT_SITE_JSON.read_text(encoding="utf-8"))
+        base = cfg["liveUrl"].rstrip("/")
+        bundles = cfg.get("assetBundles", {})
+        urls = [base + path for key, path in bundles.items() if key.endswith("_css")]
+        if not urls:
+            print(f"⚠️  {PROJECT_SITE_JSON.name} 沒有 *_css bundle，fallback")
+            return FALLBACK_CSS_URLS
+        print(f"🌐 預覽 CSS 來源：{base}（{len(urls)} 個 bundle）")
+        return urls
+    except Exception as e:
+        print(f"⚠️  讀取 {PROJECT_SITE_JSON.name} 失敗：{e}，fallback")
+        return FALLBACK_CSS_URLS
 
 PREVIEW_TEMPLATE = """\
 <!DOCTYPE html>
@@ -37,7 +62,7 @@ PREVIEW_TEMPLATE = """\
     <title>Odoo Preview — {title}</title>
 
     <!-- 1. Odoo 測試機完整 CSS (Bootstrap 4 + 原生樣式) -->
-    <link rel="stylesheet" href="{odoo_css_url}">
+{odoo_css_links}
 
     <!-- 2. FontAwesome 4 (Odoo 15 使用的版本) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -122,6 +147,61 @@ def strip_qweb(xml_content: str) -> str:
     return content.strip()
 
 
+# ==========================================================
+# Odoo-aware lint：抓常見錯誤，加速除錯循環
+# 規則只警告不阻擋，呼叫端自行決定是否修正
+# ==========================================================
+VOID_TAGS = {"area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"}
+ODOO_SELF_CLOSE_OK = {"t","xpath","attribute","field","record","data"}
+
+def lint_odoo_xml(xml_text: str, xml_path: Path, scss_text: str = "") -> list[str]:
+    """回傳警告訊息清單。針對 Odoo 專案的常見錯誤。"""
+    warnings: list[str] = []
+
+    # 1) 自閉合非 void / 非 QWeb 標籤 → HTML5 會誤解為 opening tag
+    for m in re.finditer(r'<([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?/>', xml_text):
+        tag = m.group(1).lower()
+        if tag in VOID_TAGS or tag in ODOO_SELF_CLOSE_OK:
+            continue
+        line = xml_text[:m.start()].count("\n") + 1
+        warnings.append(f"L{line}: <{tag}/> 自閉合非 void 標籤，瀏覽器會吞掉後續 DOM，改 <{tag}></{tag}>")
+
+    # 2) s_dynamic_snippet_* 內禁止手刻卡片
+    for m in re.finditer(r'<section[^>]*class="[^"]*s_dynamic_snippet_[^"]*"[^>]*>([\s\S]*?)</section>', xml_text):
+        body = m.group(1)
+        if re.search(r'<div[^>]*class="[^"]*\bcard\b', body) or re.search(r'<div[^>]*class="[^"]*o_carousel_product_card', body):
+            line = xml_text[:m.start()].count("\n") + 1
+            warnings.append(f"L{line}: s_dynamic_snippet_* 內出現手刻卡片標記，dynamic snippet 是 locked 結構由 Odoo runtime 渲染，不可預置假卡片")
+
+    # 3) 首頁必須有 pageName='homepage'
+    name = xml_path.stem.lower()
+    if "home" in name and 't-call="website.layout"' in xml_text:
+        if not re.search(r"""pageName["']?\s*t-value\s*=\s*["']\s*'homepage'""", xml_text) \
+           and not re.search(r"""t-set\s*=\s*["']pageName["']\s+t-value\s*=\s*["']'homepage'""", xml_text):
+            warnings.append("首頁範本缺少 <t t-set=\"pageName\" t-value=\"'homepage'\"/>（首頁專屬必加）")
+
+    # 4) Footer 必須用 xpath inherit，不可裸 <div id="footer">
+    if "footer" in name:
+        if '<div id="footer"' in xml_text and 'inherit_id="website.layout"' not in xml_text:
+            warnings.append("Footer 缺少 xpath 繼承外框，應包在 <data inherit_id=\"website.layout\"><xpath expr=\"//div[@id='footer']\" position=\"replace\"> 內")
+
+    # 5) stretched-link 反模式（應用 s_custom_cardLink::before 替代）
+    if re.search(r'class="[^"]*\bstretched-link\b', xml_text):
+        warnings.append("偵測到 stretched-link：本專案改用 s_custom_clickableCard + s_custom_cardLink::before overlay，避免編輯器無法點選內文")
+
+    # 6) SCSS 啟發式：:hover 有 transform: scale 但同層 selector 無 overflow: hidden
+    if scss_text:
+        for m in re.finditer(r'([^\{\}]+?)\{\s*[^}]*?:hover[^}]*?transform\s*:\s*scale', scss_text):
+            sel = m.group(1).strip().splitlines()[-1]
+            # 粗略檢查：該 selector（去掉 :hover）是否有 overflow: hidden
+            base_sel = re.sub(r':hover.*$', '', sel).strip()
+            if base_sel and f"overflow: hidden" not in scss_text and f"overflow:hidden" not in scss_text:
+                warnings.append(f"SCSS: '{base_sel[:60]}' 有 hover scale 但未見 overflow: hidden，hover 可能超出卡片範圍")
+                break  # 提一次就好
+
+    return warnings
+
+
 def build_preview(xml_path: Path, page_css: str = "") -> Path:
     """從 XML 檔案建立預覽 HTML"""
     PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
@@ -131,13 +211,29 @@ def build_preview(xml_path: Path, page_css: str = "") -> Path:
 
     # 2. 讀取 XML 並清理
     raw_xml = xml_path.read_text(encoding="utf-8")
+
+    # 2.5 Odoo-aware lint
+    scss_sibling = xml_path.with_suffix(".scss")
+    scss_text = scss_sibling.read_text(encoding="utf-8") if scss_sibling.exists() else ""
+    lint_warnings = lint_odoo_xml(raw_xml, xml_path, scss_text)
+    if lint_warnings:
+        print(f"🔎 Odoo-aware lint：{len(lint_warnings)} 個警告")
+        for w in lint_warnings:
+            print(f"   ⚠️  {w}")
+    else:
+        print("🔎 Odoo-aware lint：通過")
+
     clean_html = strip_qweb(raw_xml)
 
     # 3. 產出預覽 HTML
     title = xml_path.stem
+    css_urls = load_odoo_css_urls()
+    odoo_css_links = "\n".join(
+        f'    <link rel="stylesheet" href="{u}">' for u in css_urls
+    )
     preview_html = PREVIEW_TEMPLATE.format(
         title=title,
-        odoo_css_url=ODOO_CSS_URL,
+        odoo_css_links=odoo_css_links,
         page_css=page_css,
         content=clean_html,
     )
@@ -148,10 +244,28 @@ def build_preview(xml_path: Path, page_css: str = "") -> Path:
     return output_path
 
 
+def compile_page_scss(scss_path: Path) -> str:
+    """編譯單一 SCSS 檔為 CSS 字串，優先用 libsass（無需外部 sass CLI）。"""
+    try:
+        import sass as libsass  # libsass
+    except ImportError:
+        print("⚠️  未安裝 libsass（pip install libsass），跳過 SCSS 編譯")
+        return ""
+
+    try:
+        css = libsass.compile(filename=str(scss_path), output_style="compressed")
+        print(f"🎨 頁面 SCSS 已編譯: {scss_path.name}")
+        return css
+    except libsass.CompileError as e:
+        print(f"⚠️  SCSS 編譯錯誤:\n{str(e)[:400]}")
+        return ""
+
+
 def main() -> None:
     if len(sys.argv) < 2:
         print("用法: python scripts/build_preview.py <XML 檔案路徑> [額外 SCSS 檔案路徑]")
         print("範例: python scripts/build_preview.py outputs/2026-03-09_homepage.xml")
+        print("若未指定 SCSS，自動抓同名 .scss（如 outputs/xxx.xml → outputs/xxx.scss）")
         sys.exit(1)
 
     xml_path = Path(sys.argv[1])
@@ -159,43 +273,19 @@ def main() -> None:
         print(f"❌ 找不到檔案: {xml_path}")
         sys.exit(1)
 
-    # 如果有提供額外的 SCSS 檔案（頁面專屬樣式），讀入作為 <style> 嵌入
+    # 取得 SCSS 檔：優先用第 2 個 argv，其次自動抓同名同目錄 .scss
     page_css = ""
+    scss_path: Path | None = None
     if len(sys.argv) >= 3:
         scss_path = Path(sys.argv[2]).resolve()
-        if scss_path.exists():
-            # 建立臨時 wrapper，先載入 Bootstrap mixin shim 再 import 頁面 SCSS
-            shim_path = PREVIEW_DIR / "_bs4_shim.scss"
-            wrapper_path = PREVIEW_DIR / "_page_temp.scss"
-            
-            # 寫入 shim（如果尚不存在）
-            if not shim_path.exists():
-                shim_content = (PREVIEW_DIR / "_preview_entry.scss").read_text(encoding="utf-8")
-                # 只取 shim 的 mixin 定義部分（去掉最後的 @import）
-                shim_only = shim_content.split("// Import the actual")[0]
-                shim_path.write_text(shim_only, encoding="utf-8")
-            
-            # 建立 wrapper：先載入 shim，再載入頁面 SCSS
-            scss_posix = scss_path.as_posix()
-            wrapper_path.write_text(
-                f'@import "bs4_shim";\n@import "{scss_posix}";\n',
-                encoding="utf-8"
-            )
-            
-            result = subprocess.run(
-                f'sass --no-source-map --style=compressed "{wrapper_path}"',
-                capture_output=True,
-                text=True,
-                shell=True,
-                encoding="utf-8",
-                errors="replace",
-            )
-            if result.returncode == 0:
-                page_css = result.stdout
-                print(f"🎨 頁面專屬樣式已編譯: {scss_path.name}")
-            else:
-                err_msg = (result.stderr or "")[:300]
-                print(f"⚠️  頁面 SCSS 編譯失敗:\n{err_msg}")
+    else:
+        sibling = xml_path.with_suffix(".scss")
+        if sibling.exists():
+            scss_path = sibling.resolve()
+            print(f"🔍 自動偵測到同名 SCSS: {sibling.name}")
+
+    if scss_path and scss_path.exists():
+        page_css = compile_page_scss(scss_path)
 
     output_path = build_preview(xml_path, page_css)
 

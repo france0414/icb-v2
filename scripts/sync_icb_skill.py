@@ -168,7 +168,25 @@ def main() -> None:
     update_claude_commands(source)
     update_opencode_commands(source)
     update_claude_md(source)
+    build_search_index()
     print("Synchronized ICB skill entry points & CLAUDE.md.")
+
+
+def build_search_index() -> None:
+    import subprocess, sys
+    script = REPO_ROOT / "scripts" / "build_search_index.py"
+    if not script.exists():
+        return
+    result = subprocess.run(
+        [sys.executable, str(script)],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        print("[WARN] build_search_index.py failed:")
+        print(result.stderr)
+    elif result.stdout.strip():
+        print(result.stdout.strip())
 
 
 if __name__ == "__main__":

@@ -5,11 +5,14 @@
 ## Steps
 
 1. 讀 `.agent/skills/icb_page_generator/SKILL.md`
-2. 讀 `docs/design/PROJECT_THEME.css`
-3. 讀 `.agent/skills/icb_page_generator/resources/home_recipes.md` 取得目標配方的區塊清單
+2. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`
+3. 讀 `.agent/skills/icb_page_generator/resources/home_recipes.md` 取得目標配方
 4. 依需求讀 `.agent/skills/icb_page_generator/resources/snippet_rules.md`
-5. 需要動態區塊時，依 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構
-6. 輸出到 `outputs/`（XML + SCSS，檔名含日期時間）
+5. 需要動態區塊時依 `resources/dynamic_rules.md`，遵守 `templates/base/base-dynamic-*.xml` locked 結構
+6. **可點卡片**：產品分類/應用卡保留原 <a>，父層加 position-relative s_custom_clickableCard、既有 <a> 加 s_custom_cardLink；SCSS 用 #wrapwrap:not(.odoo-editor-editable) .s_custom_cardLink::before { inset:0; position:absolute; } overlay；禁用 stretched-link
+7. **Footer 獨立輸出**：另產 `outputs/<時間>_footer.xml` + `.scss`，用 `<data inherit_id="website.layout"><xpath expr="//div[@id='footer']" position="replace">` 包覆，依專案客製
+8. 每個 section 明確 pt-*/pb-* 間距（含斷點變體），標題字級用 var(--h1)~var(--h6)，禁止硬編 clamp/rem
+9. 輸出到 `outputs/`（XML + SCSS，檔名含日期時間）
 
 ## 使用方式
 
@@ -17,26 +20,6 @@
 /page-home [版型編號 1-4] [需求描述]
 ```
 
-- 指定版型編號（1–4）→ 以 `home_recipes.md` 對應配方為區塊骨架，替換內容與色彩
-- 不指定版型 → 根據需求描述從 4 個配方中選最適合的
+## 首頁專屬
 
-## 首頁必備區塊順序（預設）
-
-1. Hero / Banner（Carousel 或靜態大圖）
-2. 服務亮點 / 特色介紹
-3. 產品 / 案例展示
-4. CTA 行動呼籲
-5. 頁腳前置區（品牌資訊、聯絡方式）
-
-## 首頁專屬 XML 結構注意事項
-
-首頁的 `t-call="website.layout"` 內**必須**加入：
-
-```xml
-<t t-call="website.layout">
-  <t t-set="pageName" t-value="'homepage'"/>
-  ...
-</t>
-```
-
-`pageName` 設為 `'homepage'` 是首頁特有的識別標記，其他頁面類型不需要此行，**切勿遺漏**。
+`<t t-call="website.layout">` 內必加 `<t t-set="pageName" t-value="'homepage'"/>`，切勿遺漏。
