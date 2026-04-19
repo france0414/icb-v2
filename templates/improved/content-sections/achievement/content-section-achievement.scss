@@ -1,0 +1,212 @@
+// ----- achievement SCSS -----
+//  -------------------------------------            Counter color 開始開            -------------------------------------  //
+.s_custom_counterPrimary {
+
+  .counter-before,
+  .counter-after {
+    //font-size: clamp(16px, 2vw, 20px);
+    //font-weight: bold;
+  }
+}
+
+.s_custom_counterPrimary {
+
+  .counter-before,
+  .counter-after {
+    color: $primary;
+  }
+}
+
+.s_custom_counterSecondary {
+
+  .counter-before,
+  .counter-after {
+    color: $secondary;
+  }
+}
+
+//  -------------------------------------             Counter color 結束              -------------------------------------  //
+
+//  -------------------------------------                  色塊交錯 -文字介紹 + 特點數字      開始                 -------------------------------------  //
+.s_custom_textUnderFeature {
+  .img-area {
+    * {
+      height: 100%;
+      z-index: 1;
+
+      @include media-breakpoint-down(md) {
+        height: unset;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .description-area,
+  .counter-area {
+    padding-right: calc((100vw - #{$wrap-size}) / 2);
+    padding-left: var(--container-pd-x);
+
+    @include wrap {
+      padding-right: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .description-area .s_custom_backgroundColor {
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+  }
+
+  .counter-area {
+    .col-lg-4 {
+      @include media-breakpoint-down(sm) {
+        flex: 1 0 50%;
+      }
+
+      @include mobile-s {
+        flex: 1 0 100%;
+      }
+    }
+  }
+
+  .sub-title-area {
+    padding-left: calc((100vw - $wrap-size) / 2);
+
+    @include wrap {
+      padding-left: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+
+    [style*='width'] {
+      @include media-breakpoint-down(md) {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+#wrapwrap:not(.odoo-editor-editable) {
+  .s_custom_backgroundColor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30%;
+    right: 0;
+
+    .row {
+      height: 100% !important;
+    }
+  }
+
+  .counter-area .s_custom_backgroundColor {
+    @include media-breakpoint-up(lg) {
+      opacity: 0;
+    }
+  }
+
+  .sub-title-area .s_hr {
+    margin-right: calc(var(--container-pd-x) * -2);
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+  }
+}
+
+//  -------------------------------------                  色塊交錯 -文字介紹 + 特點數字       結束                -------------------------------------  //
+
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 開始           -------------------------------------  //
+// 變數
+$insertBelowSpace: 180px;
+
+.s_custom_insertBelow {
+
+  .img-area,
+  .counter-area {
+    margin-bottom: calc(#{$insertBelowSpace} * -1);
+    z-index: 2;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .counter-area {
+    display: flex;
+    align-items: flex-end;
+
+    >div {
+      width: 100%;
+      padding-bottom: #{$insertBelowSpace};
+
+      @include media-breakpoint-down(md) {
+        padding-bottom: 0;
+      }
+    }
+
+    .s_text_block .col-lg-4 {
+      @include media-breakpoint-down(md) {
+        flex: 0 0 33.33%;
+      }
+
+      @include media-breakpoint-down(xs) {
+        flex: 0 0 100%;
+      }
+    }
+
+    +.description-area {
+      padding-top: #{$insertBelowSpace};
+      position: relative;
+      z-index: 1;
+
+      @include media-breakpoint-down(md) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .img-area p {
+    margin-bottom: 0;
+  }
+
+  .counter-area {
+    padding-right: calc((100vw - #{$wrap-size}) / 2);
+    padding-left: var(--container-pd-x);
+
+    @include wrap {
+      padding-right: var(--container-pd-x);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+//  -------------------------------------            色塊交錯 -文字介紹 + 特點數字2 結束           -------------------------------------  //
+
+//  -------------------------------------             Counter 前/後符號 顏色 開始          -------------------------------------  //
+.s_custom_counterAfterColor .counter-after,
+.s_custom_counterBeforeColor .counter-before {
+    color: var(--o-color-1);
+}
+
+//  -------------------------------------             Counter 前/後符號 顏色 結束          -------------------------------------  //
+

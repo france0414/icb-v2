@@ -20,10 +20,11 @@ metadata:
 
 1. 先讀 ./AGENTS.md
 2. 再讀 ./TODO.md，確認目前尚未完成的知識庫工作
-3. 讀 ./docs/design/PROJECT_THEME.css 了解專案配色
+3. 讀 ./docs/design/PROJECT_COLORS.json 了解專案配色（主色、各 o_cc 用途、note 特殊規則）
 4. 若使用者提供參考文字、圖片或文件，優先從 ./clientInfo/ 讀取；公版結構參考從 ./templates/ 讀取
 5. 依需求讀取 resources/ 內的對應文件
 6. 需要模板索引或快速定位模板時，讀 ./.agent/skills/icb_page_generator/resources/indexes/templates_index.json
+7. 生成任何頁面前，必須遵守 resources/seo_rules.md 的 H 標籤層級規則（每頁唯一 H1、Section → H2、子項目 → H3）
 
 ## 核心規則
 
@@ -81,6 +82,7 @@ metadata:
 | data-custom-name 屬性規範（元素限制 / Token 格式 / 同步規則） | `.agent/skills/icb_page_generator/resources/data_custom_name_spec.md` |
 | 防範 AI 知識衝突 / 各模型角色職責 / 自動 context 修正規則 | `.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md` |
 | 了解 data-custom-name 屬性規範與使用規則 | `.agent/skills/icb_page_generator/resources/data_custom_name_spec.md` |
+| /create 模式生成歷史沿革（三種結構家族、RWD 規則、左右交錯邏輯） | `.agent/skills/icb_page_generator/resources/timeline_rules.md` |
 
 ## 尚未補齊但必須遵守的規則
 
@@ -126,5 +128,6 @@ metadata:
 ├── form_rules.md
 ├── system_pages_scss.md
 ├── indexes/templates_index.json
-└── skill_devops_process.md
+├── skill_devops_process.md
+└── timeline_rules.md
 ```

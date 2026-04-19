@@ -1,0 +1,283 @@
+// ----- gallery-showcase SCSS -----
+//  -------------------------------------                  文字介紹 + 圖片輪播2       開始                 -------------------------------------  //
+.s_custom_textmultiCarousel {
+  >div>.row>div:not(.description) {
+    @include laptop-m {
+      flex-grow: 1;
+      max-width: unset;
+    }
+  }
+
+  .description {
+    padding-left: calc((100vw - $wrap-size) / 2);
+    padding-right: var(--container-pd-x);
+
+    @include wrap {
+      padding-left: var(--container-pd-x);
+    }
+
+    @include laptop-m {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    ~div::before {
+      content: "";
+      width: 2px;
+      height: 80%;
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+
+      @include media-breakpoint-down(md) {
+        width: 80%;
+        height: 2px;
+        right: 50%;
+        top: calc(100% - 2px);
+        transform: translateX(50%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+      }
+    }
+  }
+}
+
+//  -------------------------------------                  文字介紹 + 圖片輪播2        結束                -------------------------------------  //
+
+//  -------------------------------------                  單元相簿 (搭配點擊視窗+圖片輪播)      開始                 -------------------------------------  //
+$brickAlbum_aspectRatio: 16/7;
+
+.s_custom_brickAlbum {
+    .static_snippet_template>.row {
+        gap: 30px 0;
+
+        @include media-breakpoint-down(sm) {
+            gap: 20px 0;
+        }
+    }
+
+    .static_snippet_template>.row>div:not([class*=col-lg-6]) {
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 calc((100% / 12 * 6) - (2 * 15px)) !important;
+            max-width: calc((100% / 12 * 6) - (2 * 15px)) !important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 calc((100% / 12 * 12) - (2 * 15px)) !important;
+            max-width: calc((100% / 12 * 12) - (2 * 15px)) !important;
+        }
+    }
+
+    .o_carousel_product_card_img_top {
+        aspect-ratio: $brickAlbum_aspectRatio;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .o_carousel_product_img_link {
+        display: inline !important;
+        overflow: unset !important;
+    }
+}
+
+body:not(.editor_started) .s_custom_brickAlbum {
+    .o_carousel_product_card {
+        display: block;
+        background-color: inherit;
+        position: relative;
+
+        &:hover::before {
+            opacity: .4;
+        }
+
+        &::before {
+            content: "";
+            background-color: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            opacity: .8;
+            pointer-events: none;
+            @include transition;
+        }
+    }
+
+    .o_carousel_product_card_body {
+        padding: 24px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        pointer-events: none;
+
+        .card-title {
+            margin: 0 !important;
+        }
+    }
+}
+
+//  -------------------------------------                  單元相簿 (搭配點擊視窗+圖片輪播)       結束                -------------------------------------  //
+//  -------------------------------------             動態區塊 - 客製JS捲軸 開始          -------------------------------------  //  
+$showItem: 5; // 顯示幾個產品
+$proListAspectRatio: 1; // ※※※  放入產品 SCSS 之後請移除此行，箭頭的高度才會抓到正確的圖片比例  ※※※
+// 捲軸 - 捲動幅度
+:root {
+  --scroll-distance: 38vw;
+}
+@include laptop {
+  :root {
+    --scroll-distance: 50vw;
+  }
+}
+@include media-breakpoint-down(md) {
+  :root {
+    --scroll-distance: 80vw;
+  }
+}
+@include media-breakpoint-down(xs) {
+  :root {
+    --scroll-distance: 55vw;
+  }
+}
+@include mobile-s {
+  :root {
+    --scroll-distance: 68vw;
+  }
+}
+.s_custom_productRightScroll {
+    // 箭頭
+    .carousel-arrow {
+        height: var(--arrowWidth);
+        width: var(--arrowWidth);
+        border: 1px solid var(--arrowColor);
+        border-radius: var(--arrowRadius);
+        background: var(--arrowBg);
+        position: absolute;
+        top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
+        cursor: pointer;
+        z-index: 2;
+        @include transition;
+        @media (max-width: $wrap-size ) {
+            top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
+        }
+        @include media-breakpoint-down(md) {
+            top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
+        }
+        @include mobile-s {
+            top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
+        }
+        &:hover {
+            background-color: var(--arrowBgHover);
+            border-color: var(--arrowColorHover);
+            .fa::before {
+                border-color: var(--arrowColorHover) !important;
+            }
+        }
+        &.carousel-arrow-left {
+            left: calc(var(--container-pd-x) * 2);
+            @include media-breakpoint-down(md) {
+                left: var(--container-pd-x);
+            }
+        }
+        &.carousel-arrow-right {
+            right: calc((100vw - #{$wrap-size}) / 2 + var(--container-pd-x));
+            @include media-breakpoint-down(md) {
+                right: var(--container-pd-x);
+            }
+        }
+        .fa::before {
+            content: "";
+            display: block;
+            width: calc(var(--arrowWidth) * .36);
+            height: calc(var(--arrowWidth) * .36);
+            background-color: unset;
+            border-top: 1px solid var(--arrowColor);
+            border-left: 1px solid var(--arrowColor);
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transition;
+        }
+        .fa-angle-left::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+            margin-left: calc(var(--arrowWidth) * .4 / 4);
+        }
+        .fa-angle-right::before {
+            transform: translate(-50%, -50%) rotate(135deg);
+            margin-left: calc(var(--arrowWidth) * .4 / -4);
+        }
+        &.disabled {
+            opacity: 0;
+        }
+    }
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .container-fluid {
+            // overflow: visible;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+            @media (min-width: $wrap-size ) {
+                margin-left: calc((100% - 1500px) / 2) !important;
+            }
+            @media (max-width: $wrap-size ) {
+                padding-left: var(--container-pd-x);
+            }
+        }
+        .static_snippet_template,
+        .dynamic_snippet_template {
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+                @include transition;
+                >div[class*="col"] {
+                    padding-left: 0 !important;
+                    padding-right: 20px !important;
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+            }
+            .card {
+                padding: 0 !important;
+            }
+            .o_carousel_product_card_body {
+                padding: 0 0 15px;
+            }
+        }
+    }
+}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_productRightScroll {
+    &.s_dynamic_snippet,
+    &.s_static_snippet {
+        .row{
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            >div[class*="col"] {
+                max-width: calc(100vw / #{$showItem} - 15px)  !important;
+                flex: 0 0 calc(100vw / #{$showItem} - 15px)  !important;
+                @media (max-width: $wrap-size ) {
+                    max-width: calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
+                }
+                @include media-breakpoint-down(md) {
+                    max-width: calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
+                }
+                @include mobile-s {
+                    max-width: calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                    flex: 0 0 calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
+                }
+            }
+        }
+    }
+}
+//  -------------------------------------             動態區塊 - 客製JS捲軸 結束          -------------------------------------  //
+

@@ -1,0 +1,353 @@
+<t t-name="website.content-sections-achievement">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <!-- 排版6: parallax + counterPrimary -->
+      <section class="s_column_layout o_colored_level pt64 pb80 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden o_auto_screen_height" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none; background-color: rgb(252, 252, 252) !important;" data-scroll-background-ratio="1" data-original-title="" title="" aria-describedby="tooltip350506">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2664-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-3">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" style="background-image: none;" data-name="Title">
+                  <div class="container s_allow_columns">
+                    <h2 class="o_default_snippet_text">Your Site Title</h2>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-9">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
+                  <div class="container s_allow_columns">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-9">
+                        <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                      </div>
+                      <div class="o_colored_level col-lg-2 offset-lg-1" data-original-title="" title="" aria-describedby="tooltip408428">
+                        <p>
+                          <a href="#" data-require-form="false" class="btn btn-primary" data-original-title="" title="">More</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-12 pt24">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pb0 pt0 s_custom_counterPrimary" data-snippet="s_text_block" style="background-image: none;" data-name="Text" data-custom-name="counterPrimary">
+                  <div class="s_allow_columns container">
+                    <div class="row justify-content-center">
+                      <div class="o_colored_level col-lg-4 col-sm-4 col-6" data-original-title="" title="" aria-describedby="tooltip408428">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="30" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">+</span>
+                        </div>
+                        <p style="text-align: center;">Lorem Ipsum<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 col-sm-4 col-6" data-original-title="" title="" aria-describedby="tooltip408428">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="200" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">+</span>
+                        </div>
+                        <p style="text-align: center;">established fact<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 col-sm-4 col-6" data-original-title="" title="" aria-describedby="tooltip408428">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="45" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">+</span>
+                        </div>
+                        <p style="text-align: center;">simply random<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版16: textUnderFeature -->
+      <section class="s_column_layout o_colored_level o_auto_screen_height s_custom_textUnderFeature s_custom_fullContainer pt56" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-custom-name="text-UnderFeature fullContainer">
+        <div class="col-wrapper container-fluid">
+          <div class="row no-gutters d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-6 pt72 img-area">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_title o_colored_level pt0 pb0 s_custom_fullContainer" data-vcss="001" data-snippet="s_title" style="background-image: none;" data-custom-name="fullContainer" data-name="Title">
+                  <div class="container s_allow_columns">
+                    <p>
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4241-21614d57/preview_bg2.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip736221" loading="lazy" data-original-id="2666" data-original-src="/web/image/2666-48205081/preview_bg2.jpg" data-mimetype="image/jpeg" data-resize-width="983"/>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-6 description-area">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb0 s_custom_backgroundColor s_custom_fullContainer" data-snippet="s_text_block" data-name="Text" data-custom-name="backgroundColor fullContainer" style="background-image: none;">
+                  <div class="s_allow_columns h-100 container">
+                    <div class="row no-gutters">
+                      <div class="col-lg-12 o_colored_level rounded" style="background-color: rgb(242, 242, 242) !important; border-radius: 30px 1px 1px !important;">
+                        <p>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block pb40 o_colored_level pt128" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
+                  <div class="container s_allow_columns">
+                    <p class="h3">
+                      <strong>Great stories have a </strong>
+                      <b class="o_default_snippet_text">personality</b>
+                      <strong>.</strong>
+                    </p>
+                    <p>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                    <p>general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.<br/></p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-6 sub-title-area">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty h-100">
+                <section class="s_text_block o_colored_level pt0 pb0 s_custom_backgroundColor s_custom_fullContainer" data-snippet="s_text_block" data-name="Text" data-custom-name="backgroundColor fullContainer" style="background-image: none;">
+                  <div class="s_allow_columns h-100 container">
+                    <div class="row no-gutters">
+                      <div class="col-lg-12 o_colored_level" style="background-color: rgb(242, 242, 242) !important;">
+                        <p>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0 pb0 h-100" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
+                  <div class="s_allow_columns h-100 container">
+                    <div class="row no-gutters align-items-center h-100">
+                      <div class="o_colored_level pt32 pb16 ml-lg-auto" style="&#10;  width: 300px;&#10;">
+                        <p class="h4">
+                          <strong>General audience in mind</strong>
+                        </p>
+                        <div class="s_hr text-left pt8 pb4" data-snippet="s_hr" data-name="Separator">
+                          <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgb(108, 117, 125) !important;"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-6 counter-area">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section class="s_text_block o_colored_level pt0 pb0 s_custom_backgroundColor s_custom_fullContainer" data-snippet="s_text_block" data-name="Text" data-custom-name="backgroundColor fullContainer" style="background-image: none;">
+                  <div class="s_allow_columns h-100 container">
+                    <div class="row no-gutters">
+                      <div class="col-lg-12 o_colored_level" style="background-color: rgb(242, 242, 242) !important;">
+                        <p>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb16 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-md-4 col-lg-4">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="60" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">+</span>
+                        </div>
+                        <p class="o_default_snippet_text" style="text-align: center;">Great stories&amp;nbsp;
+        </p>
+                      </div>
+                      <div class="o_colored_level col-md-4 col-lg-4">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="73" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">+</span>
+                        </div>
+                        <p class="o_default_snippet_text" style="text-align: center;">Great stories&amp;nbsp;
+        </p>
+                      </div>
+                      <div class="o_colored_level col-md-4 col-lg-4">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="108" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="*" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after">*</span>
+                        </div>
+                        <p class="o_default_snippet_text" style="text-align: center;">Great stories&amp;nbsp;
+        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版19: insertBelow -->
+      <section class="s_column_layout o_colored_level pt72 o_cc o_cc4 pb0 o_auto_screen_height s_custom_insertBelow s_custom_fullContainer" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="position: relative; background-image: none;" data-custom-name="insertBelow fullContainer">
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left img-area col-lg-6">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
+                  <div class="s_allow_columns container-fluid">
+                    <p>
+                      <img class="img-fluid o_we_custom_image o_visible" src="/web/image/4272-49dfc4bc/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip734925" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level counter-area col-lg-6 pb0">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pb32 pt32 s_custom_fullContainer" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="fullContainer">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="70" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Country <br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="500" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Global&amp;nbsp;<br/></p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 o_visible">
+                        <div class="s_counting c_counting o_not_editable" data-count-from="0" data-count-to="300" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="" data-snippet="s_counting" data-name="Counting">
+                          <span class="counter-before"/>
+                          <span class="counter display-4 font-weight-normal o_default_snippet_text">0</span>
+                          <span class="counter-after"/>
+                        </div>
+                        <p style="text-align: center;">Customers<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level description-area pb0 col-lg-12 o_cc o_cc1" style="background-color: rgb(247, 247, 247) !important;">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section class="s_text_block o_colored_level pt88 pb96 o_cc o_cc1 s_custom_reverse" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" style="background-color: rgb(247, 247, 247) !important; background-image: none;" data-custom-name="reverse">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level col-lg-6 o_visible">
+                        <h2 style="text-align: center;">Great stories</h2>
+                      </div>
+                      <div class="o_colored_level col-lg-6 o_visible" data-original-title="" title="" aria-describedby="tooltip874454">
+                        <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+                        <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                        <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+                        <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                          <p data-original-title="" title="" aria-describedby="tooltip307250">
+                            <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版21: counterAfterColor -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb56 pt56" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip775194">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title o_colored_level pb0 pt0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p class="o_default_snippet_text h1">Great personality</p>
+                <p class="h5">
+                  <strong>
+                    <font class="text-o-color-1">Consider telling a great story that provides personality.</font>
+                  </strong>
+                  <br/>
+                </p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.&amp;nbsp;Great stories have a personality. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_counterAfterColor" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="counterAfterColor">
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-6">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="70" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>Great stories</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-6">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="18" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>Consider telling</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="o_colored_level col-lg-4 col-md-4 col-sm-12">
+                    <div class="s_counting c_counting o_not_editable text-left" data-count-from="0" data-count-to="25" data-count-timer="1" data-delay-timer="0" data-count-before-text="" data-count-after-text="+" data-snippet="s_counting" data-name="Counting">
+                      <span class="counter-before"/>
+                      <span class="counter o_default_snippet_text font-weight-bold display-3">0</span>
+                      <span class="counter-after">+</span>
+                    </div>
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <p>
+                        <strong>relationship</strong>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <p>
+                  <a class="btn btn-primary" href="#" data-require-form="false">Read more</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

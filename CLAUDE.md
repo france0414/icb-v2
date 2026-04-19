@@ -16,6 +16,7 @@
 
 
 
+
 <!-- ICB_SKILL_INSTRUCTIONS_START -->
 ## Odoo AI Development Rules (Auto-synced)
 
@@ -25,7 +26,7 @@
 4. 請先讀以下兩份文件，了解專案規則與待辦工作：
 5. 1. AGENTS.md（全域規則：XML 結構、輸出規則、可用指令）
 6. 2. TODO.md（目前尚未完成的知識庫補充工作）
-7. 接著讀 docs/design/PROJECT_THEME.css 了解專案配色。
+7. 接著讀 docs/design/PROJECT_COLORS.json 了解專案配色（主色、各 o_cc 背景/文字色、usage、note 特殊規則）。
 8. 若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientInfo/ 讀取；公版結構參考從 templates/ 讀取。
 9. 所有 Odoo 相關快捷指令定義在 .claude/commands/ 目錄中：
 10. - page.md → 套版模式快速生成頁面

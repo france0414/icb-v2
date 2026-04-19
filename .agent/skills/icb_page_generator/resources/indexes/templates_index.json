@@ -3,6 +3,25 @@
   "generated_from": "templates/",
   "items": [
     {
+      "name": "seo-rules",
+      "category": "guide",
+      "md": ".agent/skills/icb_page_generator/resources/seo_rules.md",
+      "note": "H 標籤層級 SEO 規則：全頁唯一 H1（Banner主標）、Section標題→H2、卡片/FAQ子項→H3、禁止跳層；含 Phase A 骨架標記格式",
+      "usage": ["create", "page", "page-home"],
+      "rules": ["snippet_catalog"]
+    },
+    {
+      "name": "create-guide",
+      "category": "guide",
+      "md": ".agent/skills/icb_page_generator/resources/create_guide.md",
+      "note": "/create 專用設計組合引導：設計意圖→分類對照、s_custom_* 修飾器速查、7大黃金配方(sticky/parallax/counting/tab/JS/album/imageText)、欄寬比例、section順序節奏、常見錯誤對照",
+      "usage": ["create"],
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
+    },
+    {
       "name": "home-recipes",
       "category": "home",
       "md": ".agent/skills/icb_page_generator/resources/home_recipes.md",
@@ -38,40 +57,66 @@
       ]
     },
     {
-      "name": "content-sections",
+      "name": "content-section-feature-highlight",
       "category": "content",
-      "xml": "templates/improved/content-sections/content-sections.xml",
-      "scss": "templates/improved/content-sections/content-sections.scss",
+      "description": "icon card grids, service/feature highlights (排版1-2, s_custom_iconCardHorizontal s_custom_1x1)",
+      "xml": "templates/improved/content-sections/feature-highlight/content-section-feature-highlight.xml",
+      "scss": "templates/improved/content-sections/feature-highlight/content-section-feature-highlight.scss",
       "rules": [
         "snippet_catalog",
         "layout_patterns"
       ]
     },
     {
-      "name": "content-sections-2",
+      "name": "content-section-intro-content",
       "category": "content",
-      "xml": "templates/improved/content-sections/content-sections-2.xml",
-      "scss": "templates/improved/content-sections/content-sections-2.scss",
+      "description": "text+image, brand story, intro layouts (排版8,10-13,17-18, s_custom_leaningOverflow, s_custom_pageIntro, s_custom_moreDescription, s_custom_imgFillContent)",
+      "xml": "templates/improved/content-sections/intro-content/content-section-intro-content.xml",
+      "scss": "templates/improved/content-sections/intro-content/content-section-intro-content.scss",
       "rules": [
         "snippet_catalog",
         "layout_patterns"
       ]
     },
     {
-      "name": "content-sections-3",
+      "name": "content-section-solution-industry",
       "category": "content",
-      "xml": "templates/improved/content-sections/content-sections-3.xml",
-      "scss": "templates/improved/content-sections/content-sections-3.scss",
+      "description": "tab navigation, FAQ, hover interactive, maps, filter carousel — 産業應用/解決方案 (排版3,7 + JS-01~09, s_custom_tabEffectContent, s_custom_fullImgHoevr1/2, s_custom_mapEffect, s_custom_worldwide)",
+      "xml": "templates/improved/content-sections/solution-industry/content-section-solution-industry.xml",
+      "scss": "templates/improved/content-sections/solution-industry/content-section-solution-industry.scss",
       "rules": [
         "snippet_catalog",
         "layout_patterns"
       ]
     },
     {
-      "name": "content-sections-js",
+      "name": "content-section-achievement",
       "category": "content",
-      "xml": "templates/improved/content-sections/content-sections-js.xml",
-      "scss": "templates/improved/content-sections/content-sections-js.scss",
+      "description": "s_counting counter sections, combined counter+image layouts (排版6,16,19,21, s_custom_counterPrimary, s_custom_textUnderFeature, s_custom_insertBelow, s_custom_counterAfterColor)",
+      "xml": "templates/improved/content-sections/achievement/content-section-achievement.xml",
+      "scss": "templates/improved/content-sections/achievement/content-section-achievement.scss",
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
+    },
+    {
+      "name": "content-section-visual-parallax",
+      "category": "content",
+      "description": "parallax, full-screen, hover bg color, fixed bg (排版4,5,20,22, s_custom_hoverBgTextEfect, s_custom_scrollItemBgFix, s_custom_fullScreenParallax, s_custom_fixBGList)",
+      "xml": "templates/improved/content-sections/visual-parallax/content-section-visual-parallax.xml",
+      "scss": "templates/improved/content-sections/visual-parallax/content-section-visual-parallax.scss",
+      "rules": [
+        "snippet_catalog",
+        "layout_patterns"
+      ]
+    },
+    {
+      "name": "content-section-gallery-showcase",
+      "category": "content",
+      "description": "multi-image, carousel, album, horizontal scroll gallery (排版9,14,15,23 + JS-04, s_custom_textmultiCarousel, s_custom_brickAlbum, s_custom_productRightScroll)",
+      "xml": "templates/improved/content-sections/gallery-showcase/content-section-gallery-showcase.xml",
+      "scss": "templates/improved/content-sections/gallery-showcase/content-section-gallery-showcase.scss",
       "rules": [
         "snippet_catalog",
         "layout_patterns"

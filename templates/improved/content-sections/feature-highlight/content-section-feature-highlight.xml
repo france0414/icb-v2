@@ -1,0 +1,238 @@
+<t t-name="website.content-sections-feature-highlight">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+
+     <!-- 排版1: iconCardHorizontal 1x1 2-col -->
+     <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb72 pt80" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+              <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="container s_allow_columns">
+                  <p class="h6">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                  </p>
+                </div>
+              </section>
+              <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
+                <div class="s_allow_columns container">
+                  <h2>
+                    <strong>Contrary to popular belief</strong>
+                    <br/>
+                  </h2>
+                </div>
+              </section>
+              <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb32 pt32 s_custom_iconCardHorizontal s_custom_1x1" data-name="Static Snippet" data-staticsnippet-template="horizontal" data-custom-name="iconCardHorizontal 1x1" style="background-image: none;">
+                <div class="container" data-original-title="" title="" aria-describedby="tooltip515079">
+                  <div class="static_snippet_template s_product_product_horizontal">
+                    <div class="row">
+                      <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                        <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                          <div class="row h-100">
+                            <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content o_cc o_cc2">
+                              <img class="img img-fluid mx-auto" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                            </div>
+                            <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                              <div>
+                                <div class="card-title">
+                                  <p class="h4"><font class="text-o-color-1">L</font>ong established fact
+                                  </p>
+                                </div>
+                                <div class="mb-2">
+                                  <p data-original-title="" title="" aria-describedby="tooltip116803">指定 icon 比例 1:1 (正方形/正圓形)<br/><strong>增加</strong>&amp;nbsp;<u>自訂樣式 : 1x1</u><br/></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                        <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                          <div class="row h-100">
+                            <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content rounded o_cc o_cc2" style="border-radius: 150px !important;">
+                              <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                            </div>
+                            <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                              <div>
+                                <div class="card-title">
+                                  <p class="h4"><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></p>
+                                </div>
+                                <div class="mb-2">
+                                  <p data-original-title="" title="" aria-describedby="tooltip116803">Web page editors now use Lorem Ipsum as their default model text,&amp;nbsp;readable content of a page when looking at its layout.<br/></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                        <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                          <div class="row h-100">
+                            <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content rounded o_cc o_cc2" style="border-radius: 150px !important;">
+                              <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                            </div>
+                            <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                              <div>
+                                <div class="card-title">
+                                  <p class="h4"><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></p>
+                                </div>
+                                <div class="mb-2">
+                                  <p data-original-title="" title="" aria-describedby="tooltip116803">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                        <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                          <div class="row h-100">
+                            <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content o_cc o_cc2">
+                              <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                            </div>
+                            <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                              <div>
+                                <div class="card-title">
+                                  <p class="h4"><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></p>
+                                </div>
+                                <div class="mb-2">
+                                  <p data-original-title="" title="" aria-describedby="tooltip116803">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+                <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                  <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip581929">
+                    <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                  </p>
+                </div>
+              </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版2: iconCardHorizontal 1x1 5-col circle -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb72 pt80" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
+              <div class="s_allow_columns o_container_small">
+                <h2 style="text-align: center;">
+                  <strong>Contrary to popular belief</strong>
+                  <br/>
+                </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt8" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns o_container_small">
+                <p style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry&amp;nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry&amp;nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry&amp;nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry&amp;nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry<br/>
+                </p>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb32 pt32 s_custom_iconCardHorizontal s_custom_1x1" data-name="Static Snippet" data-staticsnippet-template="horizontal" data-custom-name="iconCardHorizontal 1x1 " style="background-image: none;">
+              <div class="o_container_small" data-original-title="" title="" aria-describedby="tooltip515079">
+                <div class="static_snippet_template s_product_product_horizontal">
+                  <div class="row justify-content-center">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level pt16 pb16 col-lg-2">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100 justify-content-center">
+                          <div class="position-static o_colored_level overflow-hidden icon-content rounded col-lg-9 o_cc o_cc2" style="border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div>
+                              <div class="card-title">
+                                <p class="h5" style="text-align: center;">Feature 01</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level pt16 pb16 col-lg-2">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100 justify-content-center">
+                          <div class="position-static o_colored_level overflow-hidden icon-content rounded col-lg-9 o_cc o_cc2" style="border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div>
+                              <div class="card-title">
+                                <p class="h5" style="text-align: center;">Feature 02</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level pt16 pb16 col-lg-2">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100 justify-content-center">
+                          <div class="position-static o_colored_level overflow-hidden icon-content rounded col-lg-9 o_cc o_cc2" style="border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div>
+                              <div class="card-title">
+                                <p class="h5" style="text-align: center;">Feature 03</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level pt16 pb16 col-lg-2">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100 justify-content-center">
+                          <div class="position-static o_colored_level overflow-hidden icon-content rounded col-lg-9 o_cc o_cc2" style="border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div>
+                              <div class="card-title">
+                                <p class="h5" style="text-align: center;">Feature 04</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level pt16 pb16 col-lg-2">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100 justify-content-center">
+                          <div class="position-static o_colored_level overflow-hidden icon-content rounded col-lg-9 o_cc o_cc2" style="border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div>
+                              <div class="card-title">
+                                <p class="h5" style="text-align: center;">Feature 05</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+              <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip581929">
+                  <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

@@ -1,0 +1,17 @@
+{
+  "project": "demo-ashun",
+  "updated": "2026-04-19",
+  "source": "https://demo-ashun.gtmc.app",
+  "colors": {
+    "primary": "#E60012",
+    "secondary": "#7A7A7A"
+  },
+  "cc": {
+    "o_cc1": { "bg": "#FFFFFF", "text": "#495057", "headings": "#000000", "usage": "白底、深色文字" },
+    "o_cc2": { "bg": "#EFEFEF", "text": "#495057", "headings": "#000000", "usage": "淺灰底、深色文字" },
+    "o_cc3": { "bg": "#7A7A7A", "text": "#E9ECEF", "headings": "#E9ECEF", "usage": "中灰底、淺色文字" },
+    "o_cc4": { "bg": "#E60012", "text": "#E9ECEF", "headings": "#E9ECEF", "usage": "主色紅底、淺色文字" },
+    "o_cc5": { "bg": "#000000", "text": "#E9ECEF", "headings": "#FFFFFF", "usage": "黑底、淺色文字" }
+  },
+  "note": "此專案 o_cc4=主色紅(CTA)、o_cc3=次色灰，與 Odoo 預設順序相反。生成 XML 時 CTA 區塊用 o_cc4，不要用 o_cc3。"
+}

@@ -1,0 +1,207 @@
+// ----- visual-parallax SCSS -----
+//  -------------------------------------            hover 互動 - hover 背景圖放大+出現描述  開始           -------------------------------------  //
+#wrapwrap:not(.odoo-editor-editable) {
+  .s_custom_hoverBgTextEfect {
+    >.container-fluid>.row {
+      flex-wrap: nowrap;
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
+
+      >.col {
+        @include transition;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          flex-grow: 2;
+
+          @include media-breakpoint-down(md) {
+            flex-grow: 1;
+          }
+
+          .o_we_bg_filter {
+            opacity: .8;
+          }
+
+          .s_card .card-body,
+          .s_card .card-footer {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .s_card {
+
+      .card-body,
+      .card-footer {
+        display: none;
+
+        @include media-breakpoint-down(md) {
+          display: block;
+        }
+      }
+
+      .card-body>p {
+        color: var(--o-color-4);
+        @include clamp-3;
+        max-height: 3.1 * 18px * 1.7;
+      }
+    }
+  }
+}
+
+.s_custom_hoverBgTextEfect {
+  >.container-fluid>.row {
+    min-height: 65vh;
+  }
+
+  .col {
+    @include media-breakpoint-down(md) {
+      flex: 0 0 50%;
+      flex-grow: 1;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .o_we_bg_filter {
+    @include transition;
+  }
+
+  .s_card {
+    border: none;
+  }
+
+  .card-header {
+    background: transparent;
+    border-bottom: none;
+  }
+
+  .card-footer {
+    border-top: none;
+    background: transparent;
+  }
+
+  .card-body {
+    padding-top: 0;
+    padding-bottom: clapm(24px, 3.33vw, 40px);
+    background: transparent !important;
+  }
+}
+
+//  -------------------------------------            hover 互動 - hover 背景圖放大+出現描述 結束           -------------------------------------  //
+
+//  -------------------------------------               圖文交錯-背景fix 開始                -------------------------------------  //
+.s_custom_scrollItemBgFix {
+  @include media-breakpoint-down(xs) {
+    padding-top: 250px !important;
+  }
+
+  .s_parallax_bg {
+    @include media-breakpoint-down(xs) {
+      height: 250px;
+      background-size: 150%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: 100% 30% !important;
+    }
+  }
+
+  .o_we_bg_filter {
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  &:nth-child(even) .s_parallax_bg {
+    @include media-breakpoint-down(xs) {
+      background-position: 0% 30% !important;
+    }
+  }
+}
+
+//  -------------------------------------               圖文交錯-背景fix 刪除                -------------------------------------  //
+
+//  -------------------------------------            全彩-線稿視差效果 開始           -------------------------------------  //
+.s_custom_fullScreenParallax .oe_structure>section {
+  height: 100vh;
+
+  @media(max-width: 991px) {
+    height: unset;
+    min-height: 45vh;
+  }
+}
+
+//  -------------------------------------            全彩-線稿視差效果 結束           -------------------------------------  //
+//  -------------------------------------                  特點+背景圖    開始                  -------------------------------------  //
+$fixBGList_aspectRatio: 16/9; // 背景圖 RWD 顯示比例
+
+.s_custom_fixBGList {
+    >.container>.row {
+        @include media-breakpoint-up(lg) {
+            margin: 0;
+
+            >[class*=col] {
+                padding-right: var(--container-pd-x);
+                padding-left: var(--container-pd-x);
+            }
+        }
+    }
+
+    .s_card,
+    .card-header {
+        border: none;
+    }
+
+    .card-header,
+    .card-body {
+        padding: 0;
+    }
+
+    .s_card,
+    .card-body {
+        color: inherit !important;
+    }
+
+    .s_card {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: unset;
+    }
+
+    .card-body {
+        padding-top: 16px;
+    }
+
+    .oe_img_bg {
+        @include media-breakpoint-down(md) {
+            position: static !important;
+            aspect-ratio: $fixBGList_aspectRatio;
+
+            +.container>.row {
+                margin-left: calc(var(--container-pd-x) * -1);
+                margin-right: calc(var(--container-pd-x) * -1);
+
+                >div {
+                    padding-left: var(--container-pd-x);
+                    padding-right: var(--container-pd-x);
+                }
+            }
+        }
+    }
+}
+
+//  -------------------------------------                  特點+背景圖    結束                  -------------------------------------  //
+

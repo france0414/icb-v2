@@ -1,3 +1,331 @@
+<t t-name="website.content-sections-solution-industry">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <!-- 排版3: tabEffectContent + tabEffect -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level s_custom_tabEffectContent pt56 pb64" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="tabEffectContent" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine s_custom_tabEffectTitle" data-snippet="s_text_block" data-name="Text" data-custom-name="titleUnderLine tabEffectTitle" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div class="row no-gutters flex-column">
+                  <div class="o_colored_level col-lg-4">
+                    <strong>
+                      <font class="text-o-color-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</font>
+                    </strong>
+                    <br/>
+                  </div>
+                  <div class="o_colored_level pt8 col-lg-4">
+                    <h2>
+                      <strong>Title title</strong>
+                      <br/>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_tabs o_colored_level pt48 pb0 s_custom_tabEffect" data-vcss="001" data-snippet="s_tabs" data-name="Tabs" data-custom-name="tabEffect" data-original-title="" title="" aria-describedby="tooltip998711">
+              <div class="container">
+                <div class="s_tabs_main row no-gutters s_col_no_resize s_col_no_bgcolor" data-original-title="" title="" aria-describedby="tooltip719429">
+                  <div class="s_tabs_nav mb-3 col-lg-4" data-original-title="" title="" aria-describedby="tooltip425410">
+                    <ul class="nav nav-pills flex-lg-column flex-wrap" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="nav_tabs_link_1735026269459_566" data-toggle="tab" href="#nav_tabs_content_1735026269459_566" role="tab" aria-controls="nav_tabs_content_1735026269459_566" aria-selected="true" data-original-title="" title="" aria-describedby="tooltip598723">Tab 01</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav_tabs_link_1735026269460_567" data-toggle="tab" href="#nav_tabs_content_1735026269460_567" role="tab" aria-controls="nav_tabs_content_1735026269460_567" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip598723">Tab 02</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav_tabs_link_1735026269460_568" data-toggle="tab" href="#nav_tabs_content_1735026269460_568" role="tab" aria-controls="nav_tabs_content_1735026269460_568" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip598723">Tab 03</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav_tabs_link_1735026269460_569" data-toggle="tab" href="#nav_tabs_content_1735026269460_569" role="tab" aria-controls="nav_tabs_content_1735026269460_569" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip598723">Tab 04</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav_tabs_link_1735026269460_570" data-toggle="tab" href="#nav_tabs_content_1735026269460_570" role="tab" aria-controls="nav_tabs_content_1735026269460_570" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip598723">Tab 05</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav_tabs_link_1735026269460_571" data-toggle="tab" href="#nav_tabs_content_1735026269460_571" role="tab" aria-controls="nav_tabs_content_1735026269460_571" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip598723">Tab 06</a>
+                      </li>
+                    </ul>
+                    <div class="s_text pt40 text-center text-lg-left" data-snippet="s_text" data-name="Text" data-original-title="" title="" aria-describedby="tooltip451732">
+                      <p data-original-title="" title="" aria-describedby="tooltip919749">
+                        <a class="btn btn-primary" href="#" data-require-form="false">Learn more</a>
+                        <br/>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="s_tabs_content tab-content col-lg-8 s_tabs_slide_left" data-original-title="" title="" aria-describedby="tooltip154054">
+                    <div class="tab-pane fade active show" id="nav_tabs_content_1735026269459_566" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269459_566">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2499-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip34180" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 01</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1735026269460_567" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269460_567">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2502-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip592782" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 02</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1735026269460_568" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269460_568">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2500-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 03</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1735026269460_569" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269460_569">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2503-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 04</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1735026269460_570" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269460_570">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2501-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 05</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav_tabs_content_1735026269460_571" role="tabpanel" aria-labelledby="nav_tabs_link_1735026269460_571">
+                      <div class="oe_structure oe_empty" data-editor-message="拖曳區塊到這裡">
+                        <section class="s_media_list o_colored_level pt0 pb0 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_media_list" data-name="Media List" style="background-image: url(&quot;/web/image/2504-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                          <div class="o_we_bg_filter" style="background-image: linear-gradient(0deg, rgba(4, 4, 7, 0.7) 0%, rgba(8, 13, 33, 0.02) 64%) !important;"/>
+                          <div class="container">
+                            <div class="row no-gutters s_nb_column_fixed s_col_no_bgcolor">
+                              <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                                <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_colored_level bg-transparent align-items-center o_cc o_cc4">
+                                  <div class="s_media_list_body col-lg-12">
+                                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                                      <p class="o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                    </div>
+                                    <h3>
+                                      <strong>Section Subtitle 06</strong>
+                                      <br/>
+                                    </h3>
+                                    <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版7: sticky + simpleFAQ -->
+      <section class="s_column_layout o_colored_level pt56 pb80 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-right o_colored_level col-lg-12">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb16" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
+                  <div class="container s_allow_columns">
+                    <h2>Title</h2>
+                    <p class="o_default_snippet_text">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="s_col_no_bgcolor col-left pb16 pt16 col-lg-7">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 90px;">
+                <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" style="background-image: none;" data-name="Title">
+                  <div class="container s_allow_columns">
+                    <p class="o_default_snippet_text">
+                      <img class="img-fluid o_we_custom_image" src="/web/image/4320-391ca0fb/preview_hor.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip997816" loading="lazy" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="857"/>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level pt16 pb16 col-lg-5">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_faq_collapse o_colored_level pb0 pt0 s_faq_collapse_light s_custom_simpleFAQ" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;" data-custom-name="simpleFAQ ">
+                  <div class="container">
+                    <div id="myCollapse1739252144352" class="accordion" role="tablist">
+                      <div class="card" data-name="Item">
+                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text s_faq_collapse_right_icon" data-target="#myCollapseTab1739252144353">Terms of service</a>
+                        <div class="collapse show" data-parent="#myCollapse1739252144352" role="tabpanel" id="myCollapseTab1739252144353">
+                          <div class="card-body">
+                            <ul class="card-text">
+                              <li>Nec euismod lorem elit proin.</li>
+                              <li>Felis a nec eu hendrerit nam.</li>
+                              <li>Condimentum dolor enim.</li>
+                              <li>Pharetra imperdiet hac dignissim cras luctus a.</li>
+                              <li>Nonummy suspendisse adipiscing posuere sollicitudin facilisis curabitur fermentum nam dui ornare.</li>
+                              <li>Nullam ligula orci Non non.</li>
+                              <li>Eleifend orci sollicitudin. Scelerisque.</li>
+                              <li>Ultrices imperdiet fringilla urna vel nonummy.</li>
+                              <li>Nullam aliquet nulla consequat sollicitudin elementum.</li>
+                              <li>Sociis ante euismod inceptos aliquet egestas urna.</li>
+                              <li>Facilisi euismod. Lacinia elementum magna dignissim donec.</li>
+                              <li>Id sollicitudin felis metus pede phasellus.</li>
+                              <li>Velit facilisi, nam lobortis justo, magna lectus.</li>
+                              <li>Penatibus mus.</li>
+                              <li>Lectus a, scelerisque semper lorem ornare.</li>
+                              <li>Conubia cras justo est.</li>
+                              <li>Malesuada. Senectus sit curae; tempus vehicula.</li>
+                              <li>Suspendisse lacinia congue facilisis leo velit lacus. Vel.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" data-name="Item">
+                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text collapsed s_faq_collapse_right_icon" data-target="#myCollapseTab1739252144352">Links to other Websites</a>
+                        <div class="collapse" data-parent="#myCollapse1739252144352" role="tabpanel" id="myCollapseTab1739252144352">
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">Although this Website may be linked to other websites, we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked website, unless specifically stated herein.</p>
+                            <p class="card-text o_default_snippet_text">You should carefully review the legal statements and other conditions of use of any website which you access through a link from this Website. Your linking to any other off-site pages or other websites is at your own risk.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" data-name="Item">
+                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header o_default_snippet_text collapsed s_faq_collapse_right_icon" data-target="#myCollapseTab1739252144354">Use of Cookies</a>
+                        <div class="collapse" data-parent="#myCollapse1739252144352" role="tabpanel" id="myCollapseTab1739252144354">
+                          <div class="card-body">
+                            <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-12">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
+                  <div class="container s_allow_columns">
+                    <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    <p class="o_default_snippet_text">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JS-01: fullImgHoevr1 -->
 <t t-name="website.content-sections-js">
   <t t-call="website.layout">
     <div id="wrap" class="oe_structure oe_empty">
@@ -167,6 +495,8 @@
 </script>
         </div>
       </section>
+
+      <!-- JS-02: fullImgHoevr2 -->
       <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
         <div class="s_allow_columns container">
           <p class="h4">
@@ -389,6 +719,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
         </div>
       </section>
+
+      <!-- JS-03: exhibitionUpdates fixed -->
       <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
         <div class="s_allow_columns container">
           <p class="h4">
@@ -466,306 +798,8 @@ document.addEventListener('DOMContentLoaded', function () {
         </script>
         </div>
       </section>
-      <section class="s_text_block o_colored_level pt32 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
-        <div class="s_allow_columns container">
-          <p class="h4">
-            <strong>
-              <font class="text-o-color-5">排版區塊(含Js) - 04</font>
-            </strong>
-          </p>
-        </div>
-      </section>
-      <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="複製html 按鈕" style="background-image: none;">
-        <div class="s_allow_columns container" style="text-align: right;">
-          <button class="btn btn-primary copy-btn o_default_snippet_text">複製 html</button>
-        </div>
-      </section>
-      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt40 pb48" data-name="Vertical Layout" style="background-image: none;">
-        <div class="container-fluid">
-          <div class="oe_structure oe_structure_not_nest oe_empty">
-            <section class="s_title o_colored_level pt0 pb0" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
-              <div class="container s_allow_columns">
-                <p class="h1">Great stories<br/></p>
-              </div>
-            </section>
-            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
-              <div class="s_allow_columns container">
-                <div class="row">
-                  <div class="o_colored_level col-lg-9">
-                    <p data-original-title="" title="" aria-describedby="tooltip494838">Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.<br/><font style="color: rgb(255, 0, 0); background-color: rgb(255, 255, 0);">建議數量: 最多 6筆</font><strong><br/></strong></p>
-                  </div>
-                  <div class="o_colored_level col-lg-3 d-flex align-items-end justify-content-md-end" data-original-title="" title="" aria-describedby="tooltip656379">
-                    <p>
-                      <a class="btn btn-primary" href="#" data-require-form="false">View more</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level s_custom_productRightScroll" data-name="Static Snippet" style="background-image: none;" data-custom-name="productRightScroll">
-              <div class="container-fluid">
-                <div class="content"/>
-                <div class="static_snippet_template s_product_product_borderless_1">
-                  <div class="row my-4" data-original-title="" title="" aria-describedby="tooltip575479">
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_1" alt="" loading="lazy" data-original-id="219" data-original-src="/web/image/219-23f9fd55/website.s_product_list_default_image_1" data-mimetype="image/jpeg"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">consectetur adipiscing elit</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_4" alt="" loading="lazy" data-original-id="222" data-original-src="/web/image/222-2eb7b431/website.s_product_list_default_image_4" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip125706"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Sed laoreet molestie sapien</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">venenatis risus sed</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="" aria-describedby="popover621776">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_3" alt="" loading="lazy" data-original-id="221" data-original-src="/web/image/221-8cd21896/website.s_product_list_default_image_3" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip731859"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">Integer iaculis enim massa</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-grow-0 flex-shrink-0 col-md-3 o_colored_level">
-                      <div class="o_carousel_product_card w-100 card-s p-3">
-                        <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
-                          <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/website.s_product_list_default_image_2" alt="" loading="lazy" data-original-id="220" data-original-src="/web/image/220-449e82cc/website.s_product_list_default_image_2" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip556672"/>
-                        </a>
-                        <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
-                          <div class="card-title mt-4">
-                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
-                          </div>
-                          <div>
-                            <div class="mt-2">
-                              <p class="o_default_snippet_text">tellus nisi elementum nibh</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 s_custom_noRemove text-center" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
-        <div class="s_embed_code_embedded o_not_editable container">
 
-          <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        if (document.body.classList.contains("editor_started")) return;
-        // 防抖函式，避免頻繁觸發
-        function debounce(fn, delay) {
-            let timer = null;
-            return function (...args) {
-                clearTimeout(timer);
-                timer = setTimeout(() =&gt; fn.apply(this, args), delay);
-            };
-        }
-        // 合併同一容器內多個 .row 的子元素
-        function mergeRows(container) {
-            const rows = Array.from(container.children).filter(child =&gt; child.classList.contains('row'));
-            if (rows.length &gt; 1) {
-                const firstRow = rows[0];
-                for (let i = 1; i &lt; rows.length; i++) {
-                    const currentRow = rows[i];
-                    while (currentRow.firstElementChild) {
-                        firstRow.appendChild(currentRow.firstElementChild);
-                    }
-                    currentRow.remove();
-                }
-            }
-        }
-        // 平滑滾動函式（含緩動）
-        function smoothScrollBy(container, distance, duration = 300) {
-            const start = container.scrollLeft;
-            const startTime = performance.now();
-            function scrollStep(timestamp) {
-                const elapsed = timestamp - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
-                container.scrollLeft = start + distance * ease;
-                if (progress &lt; 1) {
-                    requestAnimationFrame(scrollStep);
-                }
-            }
-            requestAnimationFrame(scrollStep);
-        }
-        let isScrollingLocked = false;
-        const scrollCooldown = 800;
-        // 初始化每個 row 元素的滾動與箭頭行為
-        function initRowElements() {
-            const rowElements = document.querySelectorAll(".s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]&gt;.row");
-            rowElements.forEach((rowElement) =&gt; {
-                rowElement.style.overflowX = "auto";
-                rowElement.style.overflowY = "hidden";
-                rowElement.style.overscrollBehaviorX = "contain";
-                // 檢查箭頭是否已存在，若無才新增
-                let leftArrow = rowElement.parentElement.querySelector('.carousel-arrow-left');
-                let rightArrow = rowElement.parentElement.querySelector('.carousel-arrow-right');
-                if (!leftArrow) {
-                    leftArrow = document.createElement("div");
-                    leftArrow.classList.add("carousel-arrow", "carousel-arrow-left");
-                    leftArrow.innerHTML = '&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;';
-                    rowElement.parentElement.appendChild(leftArrow);
-                }
-                if (!rightArrow) {
-                    rightArrow = document.createElement("div");
-                    rightArrow.classList.add("carousel-arrow", "carousel-arrow-right");
-                    rightArrow.innerHTML = '&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;';
-                    rowElement.parentElement.appendChild(rightArrow);
-                }
-                // 如果沒有橫向卷軸，就隱藏箭頭
-                const isScrollable = rowElement.scrollWidth &gt; rowElement.clientWidth;
-                leftArrow.style.display = isScrollable ? 'block' : 'none';
-                rightArrow.style.display = isScrollable ? 'block' : 'none';
-                // 滾動事件控制箭頭啟用狀態
-                rowElement.addEventListener("scroll", function () {
-                    const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
-                    const currentScrollLeft = rowElement.scrollLeft;
-                    leftArrow.classList.toggle("disabled", currentScrollLeft &lt;= 0);
-                    rightArrow.classList.toggle("disabled", currentScrollLeft &gt;= maxScrollLeft);
-                });
-                // 滑鼠滾輪滾動（含上下頁切換）
-                rowElement.addEventListener(
-                    "wheel",
-                    function (e) {
-                        const maxScrollLeft = rowElement.scrollWidth - rowElement.clientWidth;
-                        const currentScrollLeft = rowElement.scrollLeft;
-                        const atLeftEdge = currentScrollLeft &lt;= 0;
-                        const atRightEdge = currentScrollLeft &gt;= maxScrollLeft;
-                        if ((atLeftEdge &amp;&amp; e.deltaY &lt; 0) || (atRightEdge &amp;&amp; e.deltaY &gt; 0)) {
-                            if (isScrollingLocked) return;
-                            e.preventDefault();
-                            isScrollingLocked = true;
-                            setTimeout(() =&gt; {
-                                isScrollingLocked = false;
-                            }, scrollCooldown);
-                        } else {
-                            e.preventDefault();
-                            smoothScrollBy(rowElement, e.deltaY * 2, 400);
-                        }
-                    },
-                    { passive: false }
-                );
-                // 左箭頭點擊事件
-                leftArrow.addEventListener("click", function () {
-                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
-                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
-                    smoothScrollBy(rowElement, -distance);
-                });
-                // 右箭頭點擊事件
-                rightArrow.addEventListener("click", function () {
-                    const scrollDistance = getComputedStyle(document.documentElement).getPropertyValue('--scroll-distance');
-                    const distance = parseFloat(scrollDistance) * window.innerWidth / 100;
-                    smoothScrollBy(rowElement, distance);
-                });
-            });
-        }
-        // 主流程：合併 row 並初始化
-        function processContainers() {
-            const containers = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
-            containers.forEach(container =&gt; {
-                mergeRows(container);
-            });
-            initRowElements();
-        }
-        // 監聽 .dynamic_snippet_template 內部新增元素
-        function startObserver() {
-            const targets = document.querySelectorAll('.s_custom_productRightScroll &gt;[class*=container]&gt;[class*=_snippet_template]');
-            if (targets.length === 0) {
-                setTimeout(startObserver, 300); // 等待動態生成
-                return;
-            }
-            const debouncedProcess = debounce(processContainers, 200);
-            const observer = new MutationObserver((mutationsList) =&gt; {
-                for (const mutation of mutationsList) {
-                    if (mutation.type === 'childList' &amp;&amp; mutation.addedNodes.length &gt; 0) {
-                        debouncedProcess();
-                        break;
-                    }
-                }
-            });
-            targets.forEach(target =&gt; {
-                observer.observe(target, { childList: true, subtree: false });
-            });
-        }
-        // 頁面載入時先執行一次初始化
-        processContainers();
-        // 啟動監聽器
-        startObserver();
-    });
-</script>
-        </div>
-      </section>
+      <!-- JS-05: mapEffect -->
       <section class="s_text_block o_colored_level pt32 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
           <h4>
@@ -886,6 +920,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
         </div>
       </section>
+
+      <!-- JS-06: stickyBG + customDropdown + anchorArea -->
       <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb0" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
           <h4>
@@ -1121,6 +1157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
         </div>
       </section>
+
+      <!-- JS-07: fullHoverBackground + indexApplication -->
       <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
           <h4>
@@ -1672,6 +1710,8 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       </section>
+
+      <!-- JS-08: worldwide -->
       <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
           <h4>
@@ -1888,6 +1928,8 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       </section>
+
+      <!-- JS-09: worldwideRWDcollapse -->
       <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb32" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
           <h4>
@@ -2103,6 +2145,10 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       </section>
+
+    </div>
+  </t>
+</t>
 
     </div>
   </t>

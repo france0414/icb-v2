@@ -1,8 +1,8 @@
 # 色彩使用規範 (Color Usage Guidelines)
 
-> **版本**：1.0  
-> **最後更新**：2026-03-13  
-> **依據**：`docs/design/PROJECT_THEME.css`
+> **版本**：1.1  
+> **最後更新**：2026-04-19  
+> **依據**：`docs/design/PROJECT_THEME.css`（主色 #E60012 紅色）
 
 ---
 
@@ -19,13 +19,15 @@
 ### 1.2 色彩由背景決定
 **原則**：文字顏色由所在的背景色塊 (`o_ccN`) 自動決定。
 
-| 背景色塊 | 背景色 | 文字顏色 | 標題顏色 |
-|---------|--------|---------|---------|
-| `o_cc1` | 白色 | 深灰 (`#212529`) | 深灰 (`#212529`) |
-| `o_cc2` | 淺灰 | 深灰 (`#212529`) | 主色 (`#35979c`) |
-| `o_cc3` | 主色 | 白色 | 白色 |
-| `o_cc4` | 自訂 | 依設定 | 依設定 |
-| `o_cc5` | 深色 | 白色 | 白色 |
+| 背景色塊 | 背景色 | 文字顏色 | 標題顏色 | 用途 |
+|---------|--------|---------|---------|------|
+| `o_cc1` | 白色 `#FFFFFF` | 深灰 `#495057` | 黑色 `#000000` | 一般內容 |
+| `o_cc2` | 淺灰 `#EFEFEF` | 深灰 `#495057` | 黑色 `#000000` | 區隔段落 |
+| `o_cc3` | 中灰 `#7A7A7A` | 淺色 `#E9ECEF` | 淺色 `#E9ECEF` | 次色區塊 |
+| `o_cc4` | 品牌紅 `#E60012` | 淺色 `#E9ECEF` | 淺色 `#E9ECEF` | **CTA / 強調**（主色）|
+| `o_cc5` | 黑色 `#000000` | 淺色 `#E9ECEF` | 白色 `#FFFFFF` | Footer / Hero |
+
+> ⚠️ **此專案特殊規則**：主色 CTA 用 `o_cc4`（紅色），次色區隔用 `o_cc3`（灰色），與 Odoo 一般慣例相反。
 
 ---
 
@@ -42,8 +44,8 @@
 <!-- 淺灰底 (區隔用) -->
 <section class="o_cc2">...</section>
 
-<!-- 主色底 (強調用) -->
-<section class="o_cc3">...</section>
+<!-- 主色底 (強調用) — 此專案用 o_cc4 紅色 -->
+<section class="o_cc4">...</section>
 
 <!-- 深色底 (Footer/Hero) -->
 <section class="o_cc5">...</section>
@@ -56,9 +58,9 @@
 ```scss
 // ✅ 正確：使用變數
 .my-element {
-  background-color: var(--o-cc1-bg);
-  color: var(--o-cc1-text);
-  border-color: var(--o-cc1-btn-primary);
+  background-color: var(--o-cc1-bg);    /* #FFFFFF */
+  color: var(--o-cc1-text);             /* #495057 */
+  border-color: var(--o-cc1-btn-primary); /* #E60012 */
 }
 
 // ❌ 錯誤：寫死色碼
@@ -336,8 +338,10 @@ a {
 
 以下是一些符合規範的範例檔案：
 
-- `templates/improved/home-recipes/home-1.xml` / `home-1.scss` - 首頁範例
-- `templates/customized-Static-Snippet.xml` - 靜態元件範例
+- `templates/improved/banners/banner.xml` / `banner.scss` — Banner 區塊
+- `templates/improved/content-sections/feature-highlight/` — icon 特色清單
+- `templates/improved/content-sections/achievement/` — 計數器 + 主色背景
+- `templates/base/base-Static-Snippet.xml` — 靜態元件基底
 
 ---
 

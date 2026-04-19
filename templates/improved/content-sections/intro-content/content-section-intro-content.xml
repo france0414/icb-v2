@@ -1,0 +1,313 @@
+<t t-name="website.content-sections-intro-content">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <!-- 排版8: descriptUpperBanner + bannerContent -->
+      <section class="s_column_layout o_colored_level pb72 o_auto_screen_height s_custom_descriptUpperBanner s_custom_fullContainer" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-custom-name="descriptUpperBanner fullContainer" data-original-title="" title="" aria-describedby="tooltip59670">
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch">
+            <div class="o_colored_level col-lg-12">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level o_auto_screen_height pb256 pt176 oe_img_bg o_bg_img_center s_custom_bannerContent" data-snippet="s_text_block" style="background-image: url(&quot;/web/image/4117-21614d57/preview_bg2.jpg&quot;);" data-name="Text" data-custom-name="bannerContent" data-original-id="2666" data-original-src="/web/image/2666-48205081/preview_bg2.jpg" data-mimetype="image/jpeg" data-resize-width="983">
+                  <div class="s_allow_columns container">
+                    <p>
+                      <br/>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="o_colored_level col-lg-12 descriptUpperBg-content">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block pt40 o_colored_level o_cc o_cc1 pb48" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="s_allow_columns o_container_small">
+                    <h2 style="text-align: center;">Title</h2>
+                    <p style="text-align: center;">Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality.</p>
+                    <p style="text-align: center;">Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                  </div>
+                </section>
+                <section class="s_text_image pb32 o_colored_level pt0" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip628331">
+                  <div class="o_container_small">
+                    <div class="row align-items-center">
+                      <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="/web/image/2668-5acd1555/preview_bg.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      </div>
+                      <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <p class="h3 o_default_snippet_text">Section Subtitle</p>
+                        <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                        <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
+                        <p>
+                          <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Discover more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版10: imgFillContent -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 o_cc o_cc1 pb0" data-name="Vertical Layout" data-custom-name="" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_media_list o_colored_level pt0 pb0 s_custom_imgFillContent" data-vcss="001" data-snippet="s_media_list" data-name="Media List" data-original-title="" title="" aria-describedby="tooltip707880" style="background-image: none;" data-custom-name="imgFillContent">
+              <div class="container-fluid">
+                <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                  <div class="col-lg-12 s_media_list_item pb0 pt0" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_colored_level o_cc o_cc2 flex-row-reverse">
+                      <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                        <img src="/web/image/2801-8c5773d9/preview_bg.jpg" class="s_media_list_img h-100 w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip672798" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                      </div>
+                      <div class="s_media_list_body col-lg-6" data-original-title="" title="" aria-describedby="tooltip758346">
+                        <p class="h3 o_default_snippet_text">Media heading</p>
+                        <p class="o_default_snippet_text">Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.</p>
+                        <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Discover</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 s_media_list_item pt0 pb0" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters o_cc o_cc1 o_colored_level align-items-center">
+                      <div class="align-self-stretch s_media_list_img_wrapper col-lg-6">
+                        <img src="/web/image/2800-8c5773d9/preview_bg.jpg" class="s_media_list_img h-100 w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip974664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
+                      </div>
+                      <div class="s_media_list_body col-lg-6">
+                        <p class="h3 o_default_snippet_text">Event heading</p>
+                        <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版11: leaningOverflow -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_custom_leaningOverflow" data-name="Vertical Layout" style="background-image: none;" data-custom-name="leaningOverflow">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc4 oe_img_bg o_bg_img_center" data-snippet="s_text_block" data-name="Text" style="background-image: url(&quot;/web/image/2808-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="o_we_bg_filter bg-black-25"/>
+              <div class="s_allow_columns container">
+                <div class="row align-items-stretch">
+                  <div class="o_colored_level pb80 pt80 col-lg-5" data-original-title="" title="" aria-describedby="tooltip813595">
+                    <p class="h3">Tempus netus luctus potenti<br/></p>
+                    <p class="o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip923723">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip923723">
+                      <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">more</a>
+                    </p>
+                  </div>
+                  <div class="o_colored_level leaning-area offset-lg-1 col-lg-6" style="background-color: rgba(0, 49, 99, 0.84) !important;">
+                    <div class="row h-100 align-content-center justify-content-center">
+                      <div class="o_colored_level col-lg-4 col-md-4 col-sm-6 h-100 d-flex flex-column justify-content-center mb0 leaning-area-item" data-name="小區塊">
+                        <div class="s_text" data-snippet="s_text" data-name="Text">
+                          <p>
+                            <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" data-original-title="" title="" aria-describedby="tooltip455284" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </p>
+                        </div>
+                        <p style="text-align: center;">
+                          <strong>Title 01</strong>
+                        </p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 col-md-4 col-sm-6 h-100 d-flex flex-column justify-content-center mb0 leaning-area-item" data-name="小區塊">
+                        <div class="s_text" data-snippet="s_text" data-name="Text">
+                          <p>
+                            <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" data-original-title="" title="" aria-describedby="tooltip455284" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </p>
+                        </div>
+                        <p style="text-align: center;">
+                          <strong>Title 02</strong>
+                        </p>
+                      </div>
+                      <div class="o_colored_level col-lg-4 col-md-4 col-sm-6 h-100 d-flex flex-column justify-content-center mb0 leaning-area-item" data-name="小區塊">
+                        <div class="s_text" data-snippet="s_text" data-name="Text">
+                          <p>
+                            <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" data-original-title="" title="" aria-describedby="tooltip455284" loading="lazy" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </p>
+                        </div>
+                        <p style="text-align: center;">
+                          <strong>Title 03</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o_colored_level pt80 col-lg-5 pb0 d-block d-md-block d-lg-none " data-original-title="" title="" aria-describedby="tooltip813595">
+                    <p class="mb0">
+                      <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版12: pageIntro + textUnderLeft -->
+      <section class="s_column_layout o_colored_level o_auto_screen_height pb40 s_custom_pageIntro pt48" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-custom-name="pageIntro">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-3">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 59px;">
+                <section class="s_text_image o_colored_level pt0 pb32 s_custom_textUnderLeft" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-custom-name="textUnderLeft">
+                  <div class="container">
+                    <div class="row no-gutters align-items-center">
+                      <div class="o_colored_level col-lg-12 pb0 pt0">
+                        <img src="/web/image/4215-5c67ccff/image_1024.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip839756" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                      </div>
+                      <div class="pt16 pb16 o_colored_level col-lg-12 bg-white-75 shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px 0px !important;">
+                        <p class="mb-0">
+                          <font class="text-o-color-2">Feature title</font>
+                        </p>
+                        <p class="h4">Write one or two paragraphs</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-9">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="s_allow_columns container">
+                    <blockquote class="s_blockquote w-100 mx-auto o_animable blockquote s_blockquote_classic" data-snippet="s_blockquote" data-name="Blockquote">
+                      <i class="s_blockquote_icon fa fa-quote-left rounded text-o-color-1" data-original-title="" title="" aria-describedby="tooltip760499"/>
+                      <div class="s_blockquote_content" style="background-color: rgb(247, 247, 247) !important; background-image: none;">
+                        <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                        <footer class="blockquote-footer">
+                          <span class="s_blockquote_author o_default_snippet_text"><b class="o_default_snippet_text">John DOE</b> • CEO of MyCompany</span>
+                        </footer>
+                      </div>
+                    </blockquote>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p><strong>Great stories have a </strong><b class="o_default_snippet_text">personality</b><strong>.</strong><br/>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p><strong>Great stories have a </strong><b class="o_default_snippet_text">personality</b><strong>.</strong><br/>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p><strong>Great stories have a </strong><b class="o_default_snippet_text">personality</b><strong>.</strong><br/>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版13: moreDescription -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_custom_moreDescription" data-name="Vertical Layout" style="background-image: none;" data-custom-name="more-Description">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_image pt32 o_colored_level pb32" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level pt16 pb16">
+                    <img src="/web/image/4218-e1f2119c/preview_hor.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip671953" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="714"/>
+                  </div>
+                  <div class="col-lg-6 o_colored_level pb0 pt0">
+                    <div class="s_text description pb32 pt8" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                    <div class="s_text description pt32 pb0" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image pt32 o_colored_level pb32" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level pt16 pb16">
+                    <img src="/web/image/4217-e1f2119c/preview_hor.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip671953" data-original-id="4118" data-original-src="/web/image/4118-ab928b4e/preview_hor.jpg" data-mimetype="image/jpeg" data-resize-width="714"/>
+                  </div>
+                  <div class="col-lg-6 o_colored_level pb0 pt0">
+                    <div class="s_text description pb32 pt8" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                    <div class="s_text description pt32 pb0" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_image pt32 o_colored_level pb32" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;">
+              <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-lg-6 o_colored_level pt16 pb16">
+                    <img src="/web/image/4216-894fea61/preview_bg2.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip671953" data-original-id="2666" data-original-src="/web/image/2666-48205081/preview_bg2.jpg" data-mimetype="image/jpeg" data-resize-width="714"/>
+                  </div>
+                  <div class="col-lg-6 o_colored_level pb0 pt0">
+                    <div class="s_text description pb32 pt8" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                    <div class="s_text description pt32 pb0" data-snippet="s_text" data-name="Text">
+                      <p class="h3 o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>.</p>
+                      <p>Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版17: 2-col large text o_cc4 -->
+      <section class="s_text_block o_colored_level pt88 o_cc o_cc4 pb80" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip369159">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-5 o_visible">
+              <h2 style="text-align: center;">Great stories</h2>
+            </div>
+            <div class="o_colored_level col-lg-7 o_visible" data-original-title="" title="" aria-describedby="tooltip874454">
+              <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+              <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+              <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+              <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                <p data-original-title="" title="" aria-describedby="tooltip307250">
+                  <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版18: s_custom_reverse -->
+      <section class="s_text_block o_colored_level pt88 pb96 o_cc o_cc1 s_custom_reverse" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" style="background-color: rgb(247, 247, 247) !important; background-image: none;" data-custom-name="reverse">
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="o_colored_level col-lg-6 o_visible">
+              <h2 style="text-align: center;">Great stories</h2>
+            </div>
+            <div class="o_colored_level col-lg-6 o_visible" data-original-title="" title="" aria-describedby="tooltip874454">
+              <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling a great story that provides personality.</p>
+              <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+              <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.<br/></p>
+              <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                <p data-original-title="" title="" aria-describedby="tooltip307250">
+                  <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

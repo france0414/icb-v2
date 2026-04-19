@@ -6,12 +6,17 @@
 
 ### Phase A：規劃骨架（先輸出，等待確認）
 1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`
-2. 讀取專案配色：`docs/design/PROJECT_THEME.css`
-3. 解析輸入類型：
+2. 讀取專案配色：`docs/design/PROJECT_COLORS.json`（主色、各 o_cc 背景/文字色、usage 說明、note 特殊規則）
+3. 讀取設計組合引導：`.agent/skills/icb_page_generator/resources/create_guide.md`
+   - 依「設計意圖 → 分類快速對照表」定位每個 section 應參考哪個模板分類
+   - 依「黃金組合配方」決定 Sticky/Tab/Parallax/計數器/JS 區塊的結構
+   - Phase A 骨架描述每個 section 時，必須列出：Snippet、修飾器(s_custom_*)、配方編號、欄寬比、特效類型
+4. 解析輸入類型：
    - **若是純文字**：讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md` 盤點可用積木（僅作語法參考）。
    - **若是外部網址/截圖**：嚴禁直接複製原碼。必須先抓取網頁，翻譯為 Bootstrap 4 Grid (`.container`, `.row`, `.col-*`)，整理設計概念。
-4. 輸出文字骨架：每個 section 的類型、佈局對應、設計概念。
-5. ⛔ Phase A 嚴禁輸出 XML 或 SCSS 程式碼。
+5. 輸出文字骨架：每個 section 的類型、佈局對應、設計概念（格式參照 `create_guide.md` 第七節口訣）。
+   - 每個 section 必須標明標題層級（H1/H2/H3），遵守 `resources/seo_rules.md`：全頁唯一 H1、Section → H2、子項目 → H3
+6. ⛔ Phase A 嚴禁輸出 XML 或 SCSS 程式碼。
 
 ### 🚦 Gate：等待使用者確認或調整
 

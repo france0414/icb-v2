@@ -1,0 +1,137 @@
+//  -------------------------------------                   icon 特色清單 開始                       -------------------------------------  //
+.s_custom_iconCardHorizontal {
+  .o_carousel_product_card {
+    padding: 0 !important;
+    border-color: transparent !important;
+    background-color: unset !important;
+
+    &:hover {
+      border-color: transparent !important;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    >.row {
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 10px 30px;
+      margin: 0;
+
+      @include media-breakpoint-down(md) {
+        gap: 10px 0;
+      }
+
+      >div.icon-content {
+        padding: 10px !important;
+      }
+
+      >.o_carousel_product_card_body {
+        padding-top: 0;
+        // padding-right: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        // @include media-breakpoint-down(md) {
+        //   padding-right: 0 !important;
+        // }
+        @include media-breakpoint-down(sm) {
+          text-align: left;
+        }
+
+        &.col-lg-1 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(8.33333333% - 30px);
+            max-width: calc(8.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-2 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(16.66666667% - 30px);
+            max-width: calc(16.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-3 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(25% - 30px);
+            max-width: calc(25% - 30px);
+          }
+        }
+
+        &.col-lg-4 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(33.33333333% - 30px);
+            max-width: calc(33.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-5 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(41.66666667% - 30px);
+            max-width: calc(41.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-6 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(50% - 30px);
+            max-width: calc(50% - 30px);
+          }
+        }
+
+        &.col-lg-7 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(58.33333333% - 30px);
+            max-width: calc(58.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-8 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(66.66666667% - 30px);
+            max-width: calc(66.66666667% - 30px);
+          }
+        }
+
+        &.col-lg-9 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(75% - 30px);
+            max-width: calc(75% - 30px);
+          }
+        }
+
+        &.col-lg-10 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(83.33333333% - 30px);
+            max-width: calc(83.33333333% - 30px);
+          }
+        }
+
+        &.col-lg-11 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(91.66666667% - 30px);
+            max-width: calc(91.66666667% - 30px);
+          }
+        }
+      }
+    }
+  }
+
+  .card-title>* {
+    margin-bottom: 0;
+  }
+}
+
+//  icon 特色清單 -- icon 比例 1:1
+.s_custom_iconCardHorizontal.s_custom_1x1 .o_carousel_product_card>.row>.icon-content {
+  aspect-ratio: 1/1;
+
+  @media(max-width: 991px) {
+    flex: 0 0 130px;
+  }
+}
+
+//  -------------------------------------                   icon 特色清單 結束                      -------------------------------------  //

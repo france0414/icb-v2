@@ -1,0 +1,250 @@
+<t t-name="website.content-sections-visual-parallax">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <!-- 排版4: fullContainer + hoverBgTextEfect -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt88 pb0 s_custom_fullContainer" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="fullContainer" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: center;">
+                  <strong>Contrary to popular belief</strong>
+                  <br/>
+                </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p class="h6" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                </p>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb24 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+              <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip581929">
+                  <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                </p>
+              </div>
+            </section>
+            <section class="s_color_blocks_2 s_custom_hoverBgTextEfect" data-snippet="s_color_blocks_2" data-name="Big Boxes" data-custom-name="hoverBgTextEfect">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col text-center o_colored_level pt32 pb32 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2564-c4b41a2f/preview_bg.jpg&quot;);" data-original-title="" title="" aria-describedby="tooltip612319" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                      <p class="card-header o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip739894">
+                        <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      </p>
+                      <h3 class="card-header">
+                        <font class="text-white">A color block</font>
+                        <br/>
+                      </h3>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <font class="text-white">Color blocks are a simple and effective way to present and highlight your content. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</font>
+                          <br/>
+                        </p>
+                      </div>
+                      <div class="card-footer"><a href="#" class="btn btn-primary" data-original-title="" title="">More Details</a>&amp;nbsp;<br/></div>
+                    </div>
+                  </div>
+                  <div class="col text-center o_colored_level pt32 pb32 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2566-c4b41a2f/preview_bg.jpg&quot;);" data-original-title="" title="" aria-describedby="tooltip612319" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                      <p class="card-header o_default_snippet_text">
+                        <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      </p>
+                      <h3 class="card-header">
+                        <font class="text-white">A color block</font>
+                        <br/>
+                      </h3>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <font class="text-white">Color blocks are a simple and effective way to present and highlight your content. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</font>
+                          <br/>
+                        </p>
+                      </div>
+                      <div class="card-footer"><a href="#" class="btn btn-primary" data-original-title="" title="" aria-describedby="popover335127">More Details</a>&amp;nbsp;<br/></div>
+                    </div>
+                  </div>
+                  <div class="col text-center o_colored_level pt32 pb32 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2563-c4b41a2f/preview_bg.jpg&quot;);" data-original-title="" title="" aria-describedby="tooltip612319" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                      <p class="card-header o_default_snippet_text">
+                        <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      </p>
+                      <h3 class="card-header">
+                        <font class="text-white">A color block</font>
+                        <br/>
+                      </h3>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <font class="text-white">Color blocks are a simple and effective way to present and highlight your content. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</font>
+                          <br/>
+                        </p>
+                      </div>
+                      <div class="card-footer"><a href="#" class="btn btn-primary" data-original-title="" title="">More Details</a>&amp;nbsp;<br/></div>
+                    </div>
+                  </div>
+                  <div class="col text-center o_colored_level pt32 pb32 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2567-c4b41a2f/preview_bg.jpg&quot;);" data-original-title="" title="" aria-describedby="tooltip612319" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                      <p class="card-header o_default_snippet_text">
+                        <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      </p>
+                      <h3 class="card-header">
+                        <font class="text-white">A color block</font>
+                        <br/>
+                      </h3>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <font class="text-white">Color blocks are a simple and effective way to present and highlight your content. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</font>
+                          <br/>
+                        </p>
+                      </div>
+                      <div class="card-footer"><a href="#" class="btn btn-primary" data-original-title="" title="">More Details</a>&amp;nbsp;<br/></div>
+                    </div>
+                  </div>
+                  <div class="col text-center o_colored_level pt32 pb32 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2565-5c67ccff/image_1024.jpg&quot;);" data-original-title="" title="" aria-describedby="tooltip612319" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                      <p class="card-header">
+                        <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip960903" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                      </p>
+                      <h3 class="card-header">
+                        <font class="text-white">A color block</font>
+                        <br/>
+                      </h3>
+                      <div class="card-body">
+                        <p class="card-text">
+                          <font class="text-white">Color blocks are a simple and effective way to present and highlight your content. Choose an image or a color for the background. You can even resize and duplicate the blocks to create your own layout. Add images or icons to customize the blocks.</font>
+                          <br/>
+                        </p>
+                      </div>
+                      <div class="card-footer"><a href="#" class="btn btn-primary" data-original-title="" title="">More Details</a>&amp;nbsp;<br/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版5: scrollItemBgFix -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0" data-name="Vertical Layout" style="background-color: rgb(250, 250, 250) !important; background-image: none;" data-custom-name="">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt0 pb0 s_custom_scrollItemBgFix" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-scroll-background-ratio="1" data-custom-name="scrollItemBgFix">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2645-c4b41a2f/preview_bg.jpg&quot;); background-position: 100% 50%;" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+              <div class="o_we_bg_filter" style="background-image: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgba(227, 227, 227, 0.88) 42%, rgba(227, 227, 227, 0.6) 50%, rgba(33, 33, 33, 0.41) 100%) !important;"/>
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-6 col-md-6 col-sm-6 pt88 pb88">
+                    <h2>
+                      <strong>Title</strong>
+                    </h2>
+                    <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt0 pb0 s_custom_scrollItemBgFix" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-scroll-background-ratio="1" data-custom-name="scrollItemBgFix">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/2646-c4b41a2f/preview_bg.jpg&quot;); background-position: 0% 50%;" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+              <div class="o_we_bg_filter" style="background-image: linear-gradient(125deg, rgba(69, 69, 69, 0.23) 0%, rgba(255, 255, 255, 0.52) 67%, rgba(255, 255, 255, 0.53) 98%) !important;"/>
+              <div class="s_allow_columns container">
+                <div class="row">
+                  <div class="o_colored_level col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-sm-6 offset-sm-6 pt88 pb88">
+                    <h2>
+                      <strong>Title</strong>
+                      <br/>
+                    </h2>
+                    <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版20: fullScreenParallax -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt0 pb0 s_parallax_no_overflow_hidden s_custom_fullScreenParallax" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip733584" data-scroll-background-ratio="0" data-custom-name="fullScreenParallax" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_parallax parallax s_parallax_is_fixed o_colored_level o_auto_screen_height" data-scroll-background-ratio="1" data-fade-method="none" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4277-808964a2/fullbg.jpg&quot;); background-position: 50% 50%;" data-original-id="4275" data-original-src="/web/image/4275-c7d976c5/fullbg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+              <div class="oe_structure oe_empty"/>
+              <div class="fade_color"/>
+            </section>
+            <section class="s_text_block o_colored_level pt88 pb80 s_parallax_no_overflow_hidden o_cc o_cc3 parallax s_parallax_is_fixed o_auto_screen_height" data-snippet="s_text_block" data-name="Text" data-original-title="" title="" aria-describedby="tooltip369159" data-scroll-background-ratio="1" style="background-image: none;">
+              <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4279-33cbbbb2/fullbg-line.png&quot;);" data-original-id="4276" data-original-src="/web/image/4276-3860ebdf/fullbg-line.png" data-mimetype="image/png" data-resize-width="1920"/>
+              <div class="s_allow_columns container">
+                <div class="row" data-original-title="" title="" aria-describedby="tooltip35924">
+                  <div class="o_colored_level col-lg-5" data-original-title="" title="" aria-describedby="tooltip874454">
+                    <p class="h1" data-original-title="" title="" aria-describedby="tooltip600502">Consider telling 01</p>
+                    <p><br/>Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                    <p>If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.<br/></p>
+                    <div class="s_text pt24" data-snippet="s_text" data-name="Text">
+                      <p data-original-title="" title="" aria-describedby="tooltip307250">
+                        <a href="#" data-require-form="false" class="btn btn-secondary" data-original-title="" title="">Read more</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- 排版22: fixBGList -->
+      <section class="s_column_layout o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb48 pt0 s_custom_fixBGList o_auto_screen_height" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-scroll-background-ratio="1" data-custom-name="fixBG-List">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4296-c4b41a2f/preview_bg.jpg&quot;);" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-right o_colored_level col-lg-6 offset-lg-6 o_cc o_cc4 pt48 pb24">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_title o_colored_level pt0 pb8" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none;">
+                  <div class="container s_allow_columns">
+                    <h2 class="o_default_snippet_text">Your Site Title</h2>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
+                  <div class="s_allow_columns container">
+                    <div class="row">
+                      <div class="o_colored_level pb24 pt24 col-lg-12">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h4">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip169462" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                            <font style="color: rgb(255, 156, 0);">Lorem Ipsum is simply</font>
+                            <br/>
+                          </p>
+                          <div class="card-body">
+                            <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words<br/></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 o_colored_level pt24 pb24">
+                        <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                          <p class="card-header h4"><img class="img-fluid o_we_custom_image" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>Lorem Ipsum is simply<br/></p>
+                          <div class="card-body">
+                            <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words<br/></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 o_colored_level pt24">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words<br/></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

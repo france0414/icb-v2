@@ -11,7 +11,7 @@
 ## Steps
 
 1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`
-2. 讀取專案配色：`docs/design/PROJECT_THEME.css`
+2. 讀取專案配色：`docs/design/PROJECT_COLORS.json`（主色、各 o_cc 背景/文字色、usage 說明、note 特殊規則）
 3. 讀取配方：`.agent/skills/icb_page_generator/resources/home_recipes.md`
    - 指定版型編號（1–4）→ 以對應配方為區塊骨架
    - 不指定 → 根據需求自動選擇

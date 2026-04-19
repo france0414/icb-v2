@@ -1,3 +1,276 @@
+// ----- solution-industry SCSS -----
+//  -------------------------------          出血-頁籤切換效果 開始            -------------------------------------  //
+@keyframes tabEffectContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tabEffectContent2 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.s_custom_tabEffectContent>[class*='container'] {
+  min-height: 55vh;
+}
+
+.s_custom_tabEffect {
+  position: static;
+
+  >.container {
+    position: static;
+  }
+
+  .s_tabs_main {
+    color: var(--o-color-1);
+    padding: 36px;
+    background-color: rgb(243, 243, 243);
+
+    @include media-breakpoint-down(md) {
+      padding: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px;
+    }
+  }
+
+  &.s_tabs .nav-pills {
+    padding-right: 30px;
+
+    @include media-breakpoint-down(md) {
+      max-height: 22vh;
+      overflow-y: auto;
+    }
+
+    .nav-item {
+      padding-right: 20px;
+      border-left: none !important;
+
+      @include media-breakpoint-down(md) {
+        flex: 0 0 50%;
+        padding-right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 100%;
+      }
+    }
+
+    .nav-link {
+      color: var(--o-color-1) !important;
+      font-weight: bold;
+      padding-left: 24px;
+      padding-right: 0;
+      background-color: unset !important;
+      border-top: none;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+
+      &.active,
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+
+        &::after {
+          flex-grow: 1;
+          min-width: 40px;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        background-color: var(--o-color-1);
+        @include transition;
+      }
+
+      &::before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 18px;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+      }
+
+      &::after {
+        flex-grow: 0;
+        height: 1px;
+        margin-right: -45px;
+        z-index: 0;
+        position: relative;
+        top: 14px;
+
+        @include media-breakpoint-down(md) {
+          content: none;
+        }
+      }
+
+      &:not(.active) {
+        color: color-mix(in srgb, var(--o-color-1) 30%, #848484 95%) !important;
+        background-color: unset;
+
+        &:hover {
+          color: var(--o-color-1) !important;
+          background-color: unset;
+        }
+      }
+    }
+  }
+
+  .s_tabs_content {
+    .s_media_list_img_wrapper {
+      @include media-breakpoint-down(md) {
+        position: static;
+      }
+    }
+  }
+}
+
+#wrapwrap:not(.odoo-editor-editable) .s_custom_tabEffect {
+
+  .tab-pane,
+  .tab-pane *:not(.s_media_list_body) {
+    height: 100%;
+    max-height: 72vh;
+
+    @include media-breakpoint-down(md) {
+      max-height: unset;
+      height: auto;
+    }
+  }
+
+  .tab-pane.fade {
+    transform: translateX(0);
+    animation: tabEffectContent2 0.8s ease-in-out;
+
+    &.show {
+      animation: tabEffectContent 1s ease-in-out;
+    }
+  }
+
+  .s_tabs_content {
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    right: 0;
+    max-width: unset;
+    width: calc((1550px - var(--container-pd-x) * 2) * .66667 + (100% - (1550px - var(--container-pd-x) * 2)) / 2);
+    padding: 0;
+
+    @media (max-width:$wrap-size) {
+      width: calc((100% - var(--container-pd-x) * 2) * .66667 + var(--container-pd-x));
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      position: static;
+      padding: 0;
+    }
+  }
+
+  .s_media_list_body {
+    position: absolute;
+    padding: 30px 6%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-down(md) {
+      min-height: 40vh;
+      position: relative;
+      top: auto;
+      transform: none;
+      z-index: 1;
+    }
+  }
+}
+
+//  -------------------------------          出血-頁籤切換效果 結束            -------------------------------------  //
+
+//  -------------------------------------                FAQ simple 開始              -------------------------------------  //
+.s_custom_simpleFAQ.s_faq_collapse {
+  .accordion>.card {
+    .card-header {
+      position: relative;
+
+      &::before {
+        content: "" !important;
+        --base-width: 2px;
+        width: 24px;
+        aspect-ratio: 1;
+        border: 6px solid var(--o-color-1);
+        background: conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 180deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin-left: 0;
+      }
+
+      &.collapsed::before {
+        background:
+          conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 90deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+      }
+
+      &.s_faq_collapse_right_icon::before {
+        right: 10px;
+        left: auto !important;
+      }
+    }
+  }
+
+  &.s_faq_collapse_big {
+    .accordion>.card .card-header {
+      padding-left: 60px;
+
+      &::before {
+        --b: 2px;
+        border-width: 10px;
+        width: 40px;
+        background:
+          conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 180deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+      }
+
+      &.collapsed {
+        &::before {
+          background:
+            conic-gradient(from 90deg at var(--base-width) var(--base-width), var(--o-color-1) 90deg, #fff 0) calc(100% + var(--base-width)/2) calc(100% + var(--base-width)/2)/ calc(50% + var(--base-width)) calc(50% + var(--base-width));
+          top: 20px;
+        }
+      }
+    }
+
+    .accordion>.card .card-header.s_faq_collapse_right_icon {
+      padding-right: 60px;
+      padding-left: 1em;
+
+      &::before {
+        right: 10px;
+      }
+    }
+  }
+
+  &.s_custom_borderRadius .accordion>.card .card-header::before {
+    border-radius: 50%;
+  }
+}
+
+//  -------------------------------------              FAQ simple 結束              -------------------------------------  //
+
 // ----------  fullImgHoevr1  開始  -------//
 body.editor_started {
   .s_custom_fullImgHoevr1 {
@@ -713,165 +986,6 @@ body:not(.editor_started) {
     }
 }
 //  -------------------------------------             首頁-精選最新消息 結束          -------------------------------------  //
-
-//  -------------------------------------             動態區塊 - 客製JS捲軸 開始          -------------------------------------  //  
-$showItem: 5; // 顯示幾個產品
-$proListAspectRatio: 1; // ※※※  放入產品 SCSS 之後請移除此行，箭頭的高度才會抓到正確的圖片比例  ※※※
-// 捲軸 - 捲動幅度
-:root {
-  --scroll-distance: 38vw;
-}
-@include laptop {
-  :root {
-    --scroll-distance: 50vw;
-  }
-}
-@include media-breakpoint-down(md) {
-  :root {
-    --scroll-distance: 80vw;
-  }
-}
-@include media-breakpoint-down(xs) {
-  :root {
-    --scroll-distance: 55vw;
-  }
-}
-@include mobile-s {
-  :root {
-    --scroll-distance: 68vw;
-  }
-}
-.s_custom_productRightScroll {
-    // 箭頭
-    .carousel-arrow {
-        height: var(--arrowWidth);
-        width: var(--arrowWidth);
-        border: 1px solid var(--arrowColor);
-        border-radius: var(--arrowRadius);
-        background: var(--arrowBg);
-        position: absolute;
-        top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
-        cursor: pointer;
-        z-index: 2;
-        @include transition;
-        @media (max-width: $wrap-size ) {
-            top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
-        }
-        @include media-breakpoint-down(md) {
-            top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
-        }
-        @include mobile-s {
-            top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
-        }
-        &:hover {
-            background-color: var(--arrowBgHover);
-            border-color: var(--arrowColorHover);
-            .fa::before {
-                border-color: var(--arrowColorHover) !important;
-            }
-        }
-        &.carousel-arrow-left {
-            left: calc(var(--container-pd-x) * 2);
-            @include media-breakpoint-down(md) {
-                left: var(--container-pd-x);
-            }
-        }
-        &.carousel-arrow-right {
-            right: calc((100vw - #{$wrap-size}) / 2 + var(--container-pd-x));
-            @include media-breakpoint-down(md) {
-                right: var(--container-pd-x);
-            }
-        }
-        .fa::before {
-            content: "";
-            display: block;
-            width: calc(var(--arrowWidth) * .36);
-            height: calc(var(--arrowWidth) * .36);
-            background-color: unset;
-            border-top: 1px solid var(--arrowColor);
-            border-left: 1px solid var(--arrowColor);
-            border-right: none;
-            border-bottom: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            @include transition;
-        }
-        .fa-angle-left::before {
-            transform: translate(-50%, -50%) rotate(-45deg);
-            margin-left: calc(var(--arrowWidth) * .4 / 4);
-        }
-        .fa-angle-right::before {
-            transform: translate(-50%, -50%) rotate(135deg);
-            margin-left: calc(var(--arrowWidth) * .4 / -4);
-        }
-        &.disabled {
-            opacity: 0;
-        }
-    }
-    &.s_dynamic_snippet,
-    &.s_static_snippet {
-        .container-fluid {
-            // overflow: visible;
-            width: auto;
-            padding-left: 0;
-            padding-right: 0;
-            @media (min-width: $wrap-size ) {
-                margin-left: calc((100% - 1500px) / 2) !important;
-            }
-            @media (max-width: $wrap-size ) {
-                padding-left: var(--container-pd-x);
-            }
-        }
-        .static_snippet_template,
-        .dynamic_snippet_template {
-            .row {
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                margin-bottom: 0 !important;
-                @include transition;
-                >div[class*="col"] {
-                    padding-left: 0 !important;
-                    padding-right: 20px !important;
-                    margin-left: 0 !important;
-                    margin-right: 0 !important;
-                }
-            }
-            .card {
-                padding: 0 !important;
-            }
-            .o_carousel_product_card_body {
-                padding: 0 0 15px;
-            }
-        }
-    }
-}
-#wrapwrap:not(.odoo-editor-editable) .s_custom_productRightScroll {
-    &.s_dynamic_snippet,
-    &.s_static_snippet {
-        .row{
-            flex-wrap: nowrap;
-            scroll-snap-type: x mandatory;
-            >div[class*="col"] {
-                max-width: calc(100vw / #{$showItem} - 15px)  !important;
-                flex: 0 0 calc(100vw / #{$showItem} - 15px)  !important;
-                @media (max-width: $wrap-size ) {
-                    max-width: calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
-                    flex: 0 0 calc(100vw / (#{$showItem} - 1.4) - 15px)  !important;
-                }
-                @include media-breakpoint-down(md) {
-                    max-width: calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
-                    flex: 0 0 calc(100vw / (#{$showItem} - 2.8) - 15px)  !important;
-                }
-                @include mobile-s {
-                    max-width: calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
-                    flex: 0 0 calc(100vw / (#{$showItem} - 3.4) - 15px)  !important;
-                }
-            }
-        }
-    }
-}
-//  -------------------------------------             動態區塊 - 客製JS捲軸 結束          -------------------------------------  //
 
 //  -------------------------------------             JS 互動地圖 開始          -------------------------------------  //
 .s_custom_mapEffect {
@@ -1767,3 +1881,4 @@ body:not(.editor_started) {
      }
  }
  //  -------------------------------------                  上圖下文:下方文字x卷軸 (RWD收合)       結束                -------------------------------------  //
+

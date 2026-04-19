@@ -8,67 +8,60 @@
 
    Layer 1 — SCSS 調色盤 Map（編譯期）
    ─────────────────────────────────────
-   在 primary_variables.scss（addons/website/static/src/scss/primary_variables.scss）中，
-   每個 palette 是一個 Sass Map，鍵名為 'o-color-1' ~ 'o-color-5'：
+   在 primary_variables.scss 中，每個 palette 是一個 Sass Map：
 
        $o-color-palettes: (
          'my-palette': (
-           'o-color-1': #35979c,   ← 品牌主色 (Primary)
-           'o-color-2': #42476d,   ← 品牌次色 (Secondary)
-           'o-color-3': #EDEDED,   ← 中性淺色 (Light Neutral)
+           'o-color-1': #E60012,   ← 品牌主色 (Primary) — 紅色
+           'o-color-2': #7A7A7A,   ← 品牌次色 (Secondary) — 中灰
+           'o-color-3': #EFEFEF,   ← 中性淺色 (Light Neutral)
            'o-color-4': #FFFFFF,   ← 中性白色 (White)
-           'o-color-5': #383E45,   ← 中性深色 (Dark Text)
+           'o-color-5': #000000,   ← 中性深色 (Black)
          ),
        );
 
    Layer 2 — CSS 自訂屬性（執行期，由 SCSS 編譯輸出）
    ─────────────────────────────────────────────────
-   編譯後，Odoo 會在 :root 輸出對應的 CSS 變數：
-       --o-color-1: #35979c;
-       --o-color-2: #42476d;
-       ... 等
+   編譯後，Odoo 會在 :root 輸出對應的 CSS 變數。
 
-   Layer 3 — 色塊主題 o_cc1~o_cc5（區塊背景色系，由 SCSS 自動生成）
-   ────────────────────────────────────────────────────────────────
-   Odoo 根據 5 個基礎色自動計算每個 o_cc 的 bg / text / headings / btn / link 色。
-   預設規則（可被 palette 覆寫）：
-       o_cc1 → 白底  (o-color-4)
-       o_cc2 → 淺灰底 (o-color-3)
-       o_cc3 → 主色底 (o-color-1)
-       o_cc4 → 次色底 (o-color-2)
-       o_cc5 → 深色底 (o-color-5)
+   Layer 3 — 色塊主題 o_cc1~o_cc5（此專案實際對應）
+   ────────────────────────────────────────────────
+       o_cc1 → 白底   (#FFFFFF)
+       o_cc2 → 淺灰底 (#EFEFEF)
+       o_cc3 → 中灰底 (#7A7A7A) ← 次色底（非主色）
+       o_cc4 → 紅色底 (#E60012) ← 主色底（CTA/強調）
+       o_cc5 → 黑底   (#000000)
+
+   ⚠️ 注意：此專案 o_cc3 = 次色(灰)、o_cc4 = 主色(紅)，與 Odoo 預設順序不同！
 
    【AI 撰寫規則】
    ✅ SCSS 中一律使用 var() 變數，不寫死色碼：
        color: var(--o-color-1);
-       background-color: var(--o-cc2-bg);
+       background-color: var(--o-cc4-bg);
 
-   ✅ XML 中的 section 背景色使用 o_cc 類別，不用 style="background-color":
-       <section class="o_cc3 o_colored_level">
+   ✅ XML 中的 section 背景色使用 o_cc 類別：
+       <section class="o_cc4 o_colored_level">  ← 紅色底（主色 CTA）
+       <section class="o_cc3 o_colored_level">  ← 灰色底（次色區隔）
 
    ❌ 禁止：
-       color: #35979c;            ← 寫死色碼
-       background: $primary;      ← Bootstrap 變數（Odoo 15 以後不保證可用）
+       color: #E60012;            ← 寫死色碼
+       background: $primary;      ← Bootstrap 變數
 
-   【本專案配色】
-   以下 :root 值是從瀏覽器 F12 > Computed Styles 擷取的實際渲染值，
-   供 AI 了解本專案目前的色彩配置。
-   ⚠️  這些 CSS 變數在 Odoo 的前台頁面已由 Odoo SCSS 系統自動寫入，
-       AI 無需手動在 user_custom_rules.scss 重複定義 :root 覆寫。
+   【來源】
+   以下 :root 值從 https://demo-ashun.gtmc.app 瀏覽器 F12 > Console 擷取
+   最後更新：2026-04-19
 */
 
 :root {
    /* =========================================
-       1. Base Brand Colors（核心品牌色 — 本專案）
-       由 Odoo 後台 Website > 主題 > 色彩 設定，
-       SCSS 調色盤鍵名：'o-color-1' ~ 'o-color-5'
+       1. Base Brand Colors（核心品牌色）
        ========================================= */
-   --primary: #35979c;
-   /* 主色 = o-color-1：藍綠色 */
-   --secondary: #42476d;
-   /* 次色 = o-color-2：深藍色 */
+   --primary: #E60012;
+   /* 主色 = o-color-1：品牌紅色 */
+   --secondary: #7A7A7A;
+   /* 次色 = o-color-2：中性灰色 */
 
-   /* Functional Colors（由 Odoo / Bootstrap 主題繼承，一般不需覆寫） */
+   /* Functional Colors（由 Odoo / Bootstrap 主題繼承） */
    --success: #28a745;
    --info: #17a2b8;
    --warning: #ffc107;
@@ -78,68 +71,67 @@
 
    /* =========================================
        Odoo o-color-1~5 執行期 CSS 變數
-       對應 SCSS palette 'o-color-1' ~ 'o-color-5'
        ========================================= */
-   --o-color-1: #35979c;
-   --o-color-2: #42476d;
-   --o-color-3: #EDEDED;
+   --o-color-1: #E60012;
+   --o-color-2: #7A7A7A;
+   --o-color-3: #EFEFEF;
    --o-color-4: #FFFFFF;
-   --o-color-5: #383E45;
+   --o-color-5: #000000;
 
    /* =========================================
        2. Odoo Color Combinations（色塊主題）
-       對應 HTML section 上的 class：o_cc1 ~ o_cc5
-       搭配 o_colored_level 可讓子元素繼承配色
        ========================================= */
 
-   /* [o_cc1] White Background（預設白底）
+   /* [o_cc1] White Background（白底）
        用法：<section class="o_cc1 o_colored_level"> */
    --o-cc1-bg: #FFFFFF;
-   --o-cc1-text: #212529;
-   --o-cc1-headings: #212529;
-   --o-cc1-btn-primary: #35979c;
-   --o-cc1-btn-primary-border: #42476d;
-   --o-cc1-btn-secondary: #42476d;
-   --o-cc1-btn-secondary-border: #35979c;
-   --o-cc1-link: #276e72;
+   --o-cc1-text: #495057;
+   --o-cc1-headings: #000000;
+   --o-cc1-btn-primary: #E60012;
+   --o-cc1-btn-primary-border: #E60012;
+   --o-cc1-btn-secondary: #7A7A7A;
+   --o-cc1-btn-secondary-border: #7A7A7A;
+   --o-cc1-link: #E60012;
 
-   /* [o_cc2] Light Gray Background（淺灰底 — 區隔用）
+   /* [o_cc2] Light Gray Background（淺灰底）
        用法：<section class="o_cc2 o_colored_level"> */
-   --o-cc2-bg: #EDEDED;
-   --o-cc2-text: #212529;
-   --o-cc2-headings: #35979c;
-   --o-cc2-btn-primary: #35979c;
-   --o-cc2-btn-primary-border: #35979c;
-   --o-cc2-btn-secondary: #42476d;
-   --o-cc2-btn-secondary-border: #42476d;
+   --o-cc2-bg: #EFEFEF;
+   --o-cc2-text: #495057;
+   --o-cc2-headings: #000000;
+   --o-cc2-btn-primary: #E60012;
+   --o-cc2-btn-primary-border: #E60012;
+   --o-cc2-btn-secondary: #7A7A7A;
+   --o-cc2-btn-secondary-border: #7A7A7A;
 
-   /* [o_cc3] Primary Background（主色底 — 強調/CTA 區塊）
+   /* [o_cc3] Gray Background（中灰底 — 次色，區隔用）
+       ⚠️ 此專案 o_cc3 = 次色灰，非主色！
        用法：<section class="o_cc3 o_colored_level"> */
-   --o-cc3-bg: #35979c;
-   --o-cc3-text: #FFFFFF;
-   --o-cc3-headings: #FFFFFF;
-   --o-cc3-btn-primary: #35979c;
-   --o-cc3-btn-primary-border: #35979c;
-   --o-cc3-btn-secondary: #EDEDED;
-   --o-cc3-btn-secondary-border: #EDEDED;
-   --o-cc3-link: #57c1c6;
+   --o-cc3-bg: #7A7A7A;
+   --o-cc3-text: #E9ECEF;
+   --o-cc3-headings: #E9ECEF;
+   --o-cc3-btn-primary: #E60012;
+   --o-cc3-btn-primary-border: #E60012;
+   --o-cc3-btn-secondary: #EFEFEF;
+   --o-cc3-btn-secondary-border: #EFEFEF;
 
-   /* [o_cc4] Custom Dark/Light（自訂 — 特殊區塊）
+   /* [o_cc4] Red Background（主色紅底 — CTA / 強調區塊）
+       ⚠️ 此專案 o_cc4 = 主色紅（一般 Odoo 專案是 o_cc3）
        用法：<section class="o_cc4 o_colored_level"> */
-   --o-cc4-text: #FFFFFF;
-   --o-cc4-headings: #FFFFFF;
-   --o-cc4-btn-primary: #383E45;
-   --o-cc4-btn-primary-border: #42476d;
-   --o-cc4-btn-secondary: #42476d;
-   --o-cc4-btn-secondary-border: #383E45;
+   --o-cc4-bg: #E60012;
+   --o-cc4-text: #E9ECEF;
+   --o-cc4-headings: #E9ECEF;
+   --o-cc4-btn-primary: #000000;
+   --o-cc4-btn-primary-border: #000000;
+   --o-cc4-btn-secondary: #EFEFEF;
+   --o-cc4-btn-secondary-border: #EFEFEF;
 
-   /* [o_cc5] Dark Background（深色底 — Footer / Hero Banner）
+   /* [o_cc5] Black Background（黑底 — Footer / Hero）
        用法：<section class="o_cc5 o_colored_level"> */
-   --o-cc5-bg: #383E45;
-   --o-cc5-text: #FFFFFF;
+   --o-cc5-bg: #000000;
+   --o-cc5-text: #E9ECEF;
    --o-cc5-headings: #FFFFFF;
-   --o-cc5-btn-primary: #35979c;
-   --o-cc5-btn-secondary-border: #EDEDED;
+   --o-cc5-btn-primary: #E60012;
+   --o-cc5-btn-secondary-border: #EFEFEF;
 
    /* =========================================
        3. Grays & Opacities（通用灰階）
@@ -156,23 +148,34 @@
 
 /*
    ============================================================
-   色彩節奏建議（Color Rhythm — 供 AI 排版參考）
+   色彩節奏建議（Color Rhythm）
    ============================================================
-   交替背景色創造視覺節奏（從上到下）：
+   此專案色彩節奏（從上到下）：
 
-   o_cc1 (白)  →  o_cc2 (灰)  →  o_cc1 (白)  →  o_cc3 (主色 CTA)  →  o_cc5 (深)
+   o_cc1 (白) → o_cc2 (淺灰) → o_cc1 (白) → o_cc4 (紅色 CTA) → o_cc5 (黑)
+
+   ⚠️ 此專案特殊對應（與 Odoo 預設不同）：
+   - 主色 CTA 區塊 → 用 o_cc4（紅色）
+   - 次色區隔區塊 → 用 o_cc3（灰色）
 
    常用組合：
-   - Hero Banner / 全螢幕圖片   → o_cc5（深色底）或 o_cc1（白底）
+   - Hero Banner / 全螢幕圖片   → o_cc5（黑底）或 o_cc1（白底）
    - 特色介紹 / 圖標卡片        → o_cc2（淺灰底）
-   - 行動呼籲 (CTA) 區塊        → o_cc3（主色底）
-   - Footer                     → o_cc5（深色底）
+   - 行動呼籲 (CTA) 區塊        → o_cc4（紅色底）← 此專案專用
+   - Footer                     → o_cc5（黑底）
 
    ============================================================
    如何更新本檔案
    ============================================================
-   1. 在 Odoo 後台調整主題色後，用瀏覽器 F12 > Elements > Computed
-      搜尋 --o-color-1 取得新的色碼
-   2. 將 :root 區段的對應值替換即可
-   3. AI 端不需改 user_custom_rules.scss，只更新此檔案供 AI 讀取參考
+   1. 開啟 https://demo-ashun.gtmc.app，按 F12 → Console
+   2. 貼入以下指令取得最新值：
+
+   const s = getComputedStyle(document.documentElement);
+   ['--o-color-1','--o-color-2','--o-color-3','--o-color-4','--o-color-5',
+    '--primary','--secondary','--o-cc1-bg','--o-cc2-bg','--o-cc3-bg','--o-cc4-bg','--o-cc5-bg',
+    '--o-cc1-text','--o-cc2-text','--o-cc3-text','--o-cc4-text','--o-cc5-text',
+    '--o-cc1-headings','--o-cc2-headings','--o-cc3-headings','--o-cc4-headings','--o-cc5-headings'
+   ].map(v => `${v}: ${s.getPropertyValue(v).trim()}`).join('\n')
+
+   3. 將輸出值更新回此檔案的 :root 區段
 */
