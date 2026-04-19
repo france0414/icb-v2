@@ -132,6 +132,10 @@
     [
       "了解 data-custom-name 屬性規範與使用規則",
       ".agent/skills/icb_page_generator/resources/data_custom_name_spec.md"
+    ],
+    [
+      "/create 模式生成歷史沿革（三種結構家族、RWD 規則、左右交錯邏輯）",
+      ".agent/skills/icb_page_generator/resources/timeline_rules.md"
     ]
   ],
   "pending_rules": [
@@ -189,7 +193,8 @@
     "form_rules.md",
     "system_pages_scss.md",
     "indexes/templates_index.json",
-    "skill_devops_process.md"
+    "skill_devops_process.md",
+    "timeline_rules.md"
   ],
   "opencode_instructions": [
     "此專案的 Odoo skill 採用統一知識來源：AGENTS.md + TODO.md + .agent/skills/icb_page_generator/resources/。",
