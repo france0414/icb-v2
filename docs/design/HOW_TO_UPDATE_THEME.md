@@ -46,7 +46,19 @@ allow pasting
 
 ```javascript
 const s = getComputedStyle(document.documentElement);
-['--o-color-1','--o-color-2','--o-color-3','--o-color-4','--o-color-5','--primary','--secondary','--o-cc1-bg','--o-cc2-bg','--o-cc3-bg','--o-cc4-bg','--o-cc5-bg','--o-cc1-text','--o-cc2-text','--o-cc3-text','--o-cc4-text','--o-cc5-text','--o-cc1-headings','--o-cc2-headings','--o-cc3-headings','--o-cc4-headings','--o-cc5-headings'].map(v=>`${v}: ${s.getPropertyValue(v).trim()}`).join('\n')
+[
+  '--o-color-1','--o-color-2','--o-color-3','--o-color-4','--o-color-5',
+  '--primary','--secondary',
+  '--o-cc1-bg','--o-cc2-bg','--o-cc3-bg','--o-cc4-bg','--o-cc5-bg',
+  '--o-cc1-text','--o-cc2-text','--o-cc3-text','--o-cc4-text','--o-cc5-text',
+  '--o-cc1-headings','--o-cc2-headings','--o-cc3-headings','--o-cc4-headings','--o-cc5-headings',
+  '--o-cc1-btn-primary','--o-cc1-btn-primary-border','--o-cc1-btn-secondary','--o-cc1-btn-secondary-border',
+  '--o-cc2-btn-primary','--o-cc2-btn-primary-border','--o-cc2-btn-secondary','--o-cc2-btn-secondary-border',
+  '--o-cc3-btn-primary','--o-cc3-btn-primary-border','--o-cc3-btn-secondary','--o-cc3-btn-secondary-border',
+  '--o-cc4-btn-primary','--o-cc4-btn-primary-border','--o-cc4-btn-secondary','--o-cc4-btn-secondary-border',
+  '--o-cc5-btn-primary','--o-cc5-btn-primary-border','--o-cc5-btn-secondary','--o-cc5-btn-secondary-border',
+  '--o-cc1-link','--o-cc2-link','--o-cc3-link','--o-cc4-link','--o-cc5-link'
+].map(v => `${v}: ${s.getPropertyValue(v).trim()}`).join('\n')
 ```
 
 ---
@@ -59,6 +71,8 @@ const s = getComputedStyle(document.documentElement);
 --o-color-1: #E60012
 --o-color-2: #7A7A7A
 --o-color-3: #EFEFEF
+--o-cc1-btn-primary: #E60012
+--o-cc1-btn-secondary: #7A7A7A
 ...
 ```
 
@@ -91,3 +105,6 @@ A：確認有先輸入 `allow pasting` 並按 Enter，再貼入指令。
 
 **Q：我用 Safari / Firefox 可以嗎？**  
 A：可以，但建議使用 Chrome 或 Edge，步驟一致。Safari 可能不需要輸入 `allow pasting`。
+
+**Q：有些變數是空白，正常嗎？**  
+A：正常。某些專案不一定定義所有 `--o-cc*-btn-*` 或 `--o-cc*-link`，空白可一併貼給開發。

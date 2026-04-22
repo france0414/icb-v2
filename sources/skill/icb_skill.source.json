@@ -29,7 +29,7 @@
     "先讀 {repo_posix}/AGENTS.md",
     "再讀 {repo_posix}/TODO.md，確認目前尚未完成的知識庫工作",
     "讀 {repo_posix}/docs/design/PROJECT_THEME.css 了解專案配色",
-    "若使用者提供參考文字、圖片或文件，優先從 {repo_posix}/clientInfo/ 讀取；公版結構參考從 {repo_posix}/templates/ 讀取",
+    "若使用者提供參考文字、圖片或文件，優先從 {repo_posix}/clientinfo/ 讀取；公版結構參考從 {repo_posix}/templates/ 讀取",
     "依需求讀取 resources/ 內的對應文件",
     "需要模板索引或快速定位模板時，讀 {repo_posix}/.agent/skills/icb_page_generator/resources/indexes/templates_index.json",
     "若使用者語意在 knowledge_map 找不到明確對應項，先讀 {repo_posix}/.agent/skills/icb_page_generator/resources/indexes/search_index.json（L2 關鍵字索引），依 triggers / keywords 比對後再 Read 命中的 file；命中 0 筆再主動詢問使用者"
@@ -44,7 +44,7 @@
     "Snippet：必須有 data-snippet 和 data-name 屬性",
     "Snippet 來源：乾淨 snippets 來源必須是 Odoo 15 官方原始 XML。",
     "Snippet 例外標註：若有例外（非 Odoo 15 官方原始 XML），產出檔案的檔頭必須標註：exception: <reason> | source: <url/path>",
-    "自訂命名分兩層：(1) section 層（snippet 等級）用 s_custom_PascalCase + data-custom-name=\"PascalCase\"，僅限可編輯自訂區塊的 <section>，系統頁面/系統區塊不可改。(2) section 內的 div / span / li / 按鈕等內層元素不加 s_custom_ 前綴，直接用簡潔自訂 class 名即可（例：<div class=\"maskCard maskCard1\">、<span class=\"strengthNum\">、<ul class=\"contactList\">），避免 s_custom_ 滿場飛。SCSS 選擇器用 `.s_custom_sectionName .innerClass { ... }` 作用域隔離。完整規範詳見 .agent/skills/icb_page_generator/resources/data_custom_name_spec.md",
+    "自訂命名分兩層：(1) section 層（snippet 等級）用 s_custom_PascalCase + data-custom-name=\"PascalCase\"，僅限可編輯自訂區塊的 <section>，系統頁面/系統區塊不可改。(2) section 內的 div / p / li / 按鈕等內層元素不加 s_custom_ 前綴，直接用簡潔自訂 class 名即可（例：<div class=\"maskCard maskCard1\">、<p class=\"strengthNum\">、<ul class=\"contactList\">），避免 s_custom_ 滿場飛。SCSS 選擇器用 `.s_custom_sectionName .innerClass { ... }` 作用域隔離。完整規範詳見 .agent/skills/icb_page_generator/resources/data_custom_name_spec.md",
     "自訂 RWD mixin：除 Bootstrap 4.5 內建 media-breakpoint-up/down(sm|md|lg|xl) 外，user_custom_rules.scss 已定義四個專案自訂 mixin 可直接 @include：mobile-xs（≤375px）、mobile-s（≤450px）、laptop-m（≤1365px）、laptop（≤1439px）。用法：`@include laptop { ... }`。優先用 Bootstrap mixin，需介於斷點之間或筆電/手機小尺寸細節時才用自訂 mixin。另有全域 container 覆寫 ($wrap-size: 1550px) 與 $container_small (1200px) 兩個 wrap / wrap-small mixin 可參考。",
     "Icon 規範：主要使用 Font Awesome v4（例如 `fa fa-star`）",
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
@@ -59,6 +59,7 @@
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 docs/design/user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 .agent/skills/icb_page_generator/resources/scss_reference.md",
     "抓取轉化原則 (Scraping Sandbox)：當使用者在 `/create` 提供外部參考網址或截圖時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。",
+    "1:1 strict 模式：若使用者明確要求 1:1 還原 AI 生成頁面，必須以『版型/間距/字級/按鈕/互動位置』最高相似度輸出，並保留 Odoo 可編輯性；若遇框架限制無法完全一致，需附差異摘要。",
     "AI 知識衝突防護：當 LLM 通用知識（Bootstrap 5、FA v5/v6、React/Vue 組件模式等）與本專案規格衝突時，優先順序為：本專案規格（AGENTS.md + SKILL.md）> 本專案知識庫（resources/）> 本專案模板（templates/）> Odoo 15 官方文件 > Bootstrap 4.5 官方文件 > LLM 通用訓練知識。遇衝突必須自我修正後才生成代碼，詳見 .agent/skills/icb_page_generator/resources/ai_conflict_prevention.md。",
     "Menu-01~04 SCSS 來源：統一在 templates/improved/headers/header-menus.scss，依 MENU-1~MENU-4 的 START/END 區塊擷取；當使用者要求 /page menu-0X 時，只輸出對應 SCSS 片段（含 START/END 註解）。"
     ,"/create 結構優先：無論是根據靈感還是外部網址還原版面，解析出 DOM/CSS 的呈現邏輯後，能用 Odoo/Bootstrap 既有結構（row/col/容器）還原左右/層次者，優先用結構取代 CSS，避免多寫 SCSS；只有結構無法達成時才補 SCSS。"
@@ -66,12 +67,16 @@
     ,"o_colored_level 規則：o_colored_level 是 Odoo 主題色階標記，讓使用者切換 o_cc1~o_cc5。主要 section、row、col、card 通常要加；純排版 div 或固定白底小元件不需加。詳見 snippet_rules.md。"
     ,"s_text 容器規則：div.s_text (data-snippet='s_text') 是 Odoo 標準文字容器，在編輯器中可拖拉調整高度，內部可使用 Bootstrap row/col 做多欄排版。適合在已有 row/col 骨架內再增加靈活高度控制，或在 Accordion card-body 內實現圖文混排。詳見 snippet_rules.md。"
     ,"按鈕規範：按鈕一律用 <a> 不用 <button>。不自訂 class 名稱，只使用系統組合：btn + [btn-primary|btn-secondary|btn-fill-primary|btn-outline-*] + [btn-sm|btn-lg] + [rounded-circle|flat]。詳見 button_styles.md。"
-    ,"字體大小統一：user_custom_rules.scss 已定義 var(--h1)~var(--h6) 與對應 class（.h1 / .h2 ... / p.h1 / p.h2 ...）。使用規則：(1) 真正標題用 <h1>~<h6>（SEO 層級正確），字級自動綁定 var(--hX)。(2) 需要『大字但不想佔用 hX 語意』時（例：slogan、引文、卡片副標、數字強調）用 <p class=\"h2\"> 或 <span class=\"h3\"> — p.hX / .hX 只改視覺大小不改 HTML 語意，對 SEO 友善。(3) 輸出 SCSS 嚴禁自己寫 font-size: clamp(...)、硬編 rem/px 覆蓋 h1~h6 或 .h1~.h6；若需特殊字級，用 var(--hX) 搭 font-weight/letter-spacing 調整。(4) 一頁只能有一個 <h1>，其他大字用 p.h1 / .h1。"
+    ,"字體大小統一：user_custom_rules.scss 已定義 var(--h1)~var(--h6) 與對應 class（.h1 / .h2 ... / p.h1 / p.h2 ...）。使用規則：(1) 真正標題用 <h1>~<h6>（SEO 層級正確），字級自動綁定 var(--hX)。(2) 需要『大字但不想佔用 hX 語意』時（例：slogan、引文、卡片副標、數字強調）用 <p class=\"h2\"> 或 <strong class=\"h3\"> — p.hX / .hX 只改視覺大小不改 HTML 語意，對 SEO 友善。(3) 系統會清除 span，請避免依賴 <span> 作為可編輯文字容器。(4) 輸出 SCSS 嚴禁自己寫 font-size: clamp(...)、硬編 rem/px 覆蓋 h1~h6 或 .h1~.h6；若需特殊字級，用 var(--hX) 搭 font-weight/letter-spacing 調整。(5) 一頁只能有一個 <h1>，其他大字用 p.h1 / .h1。"
     ,"字體家族禁止覆蓋：專案主題已全站載入字體（font-family），SCSS 嚴禁再寫 font-family: ... 覆蓋（不論是 #wrapwrap、body、h1~h6、或自訂 class）。需要視覺層次只能調 font-weight (300/400/500)、letter-spacing、line-height、font-style；真的有特殊需求（例：某個品牌區用 monospace）必須在 brief.json 明確指定才允許，且只能加在最小範圍 class 上。"
     ,"媒體查詢一律用 Bootstrap mixin：SCSS 的 RWD 斷點禁止硬寫 @media (max-width: 991.98px) / @media (min-width: 768px) 這類數字，必須使用 Bootstrap 4.5 提供的 mixin：media-breakpoint-down(sm|md|lg|xl)（對應 max-width: 575.98 / 767.98 / 991.98 / 1199.98）、media-breakpoint-up(sm|md|lg|xl)、media-breakpoint-between(md, lg)。寫法範例 `@include media-breakpoint-down(md) { ... }`。若專案自訂斷點（docs/design/user_custom_rules.scss //自訂RWD 斷點變數）才用對應 mixin。例外：只有 @media (hover: hover) / (prefers-reduced-motion) 這類非尺寸的 media feature 才允許直接寫 @media。"
     ,"區塊間距（外層 section pt/pb 預設配方、內層 col 預設 pt0 pb0）：詳見 .agent/skills/icb_page_generator/resources/spacing_rules.md。規則摘要：Hero→pt96 pb96、一般 section→pt80 pb80、次要→pt64 pb64、緊湊→pt48 pb48、Footer→pt96 pb48；col 不加 pt/pb；禁止 Bootstrap pt-4/pt-5 dash 寫法；偏離預設需 XML 註解寫理由。"
     ,"自訂結構可編輯性（七條紅線 + 可點卡片 overlay）：詳見 .agent/skills/icb_page_generator/resources/editability_rules.md。摘要：文字在真實 HTML 元素、圖片不 SCSS hard-code、::before/::after 只做裝飾、wrapper 最多兩層、overlay 加 #wrapwrap:not(.odoo-editor-editable) 守護、pointer-events 不擋內容、需拖拉高度用 s_text；可點卡片用 s_custom_clickableCard + s_custom_cardLink::before，禁止 stretched-link。"
     ,"/create 流程（Phase 0 brief.json → Phase A 文字骨架 → Phase B 頁面內容分段 XML+SCSS → Phase C Footer 獨立輸出，僅 /create-home）與 designMoves 規範：詳見 .agent/skills/icb_page_generator/resources/create_workflow.md。摘要：(1) Phase B 只處理 <div id='wrap'> 內 sections，依數量拆 1~3 段（≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）。(2) Footer 是獨立 xpath 檔，不屬於 Phase B 任何一段。(3) 每階段停下等確認；brief.json 必含 3–5 個具名 designMoves、Phase A 至少採用 2 個。(4) /create-home 需 pageName='homepage' + Footer 獨立輸出；一般 /create 不輸出 Footer。(5) 抓站草稿放 outputs/、分離 xml/scss、對接動態 snippet。"
+    ,"Layout-first 對稿模式：內頁 /create 可切換 Layout-first（只做結構骨架），圖片位置用灰色色塊占位、不放彩圖；若未指定則維持一般 /create 正常流程。"
+    ,"產品/Blog 區塊策略：在 Layout-first 或使用者未要求 dynamic 時，預設用一般 section + row/col 的靜態結構（sheet 方式）；只有明確要求動態資料時才切 s_dynamic_snippet*。"
+    ,"Hero 版型規則：背景主視覺內層必用 row/col 總和 12，可用 3:9、4:8、5:7、6:6 等比例；同一輪播需維持一致高度策略避免 CLS；小螢幕看不到的裝飾元素可直接隱藏，不強制保留。"
+    ,"輪播效果來源規則：若需求涉及輪播/slider 視覺效果，優先對照 `templates/base/base-Static-Snippet.xml` 內既有對應結構後再生成，避免自創不相容輪播骨架。"
   ],
   "knowledge_map": [
     [
@@ -89,6 +94,18 @@
     [
       "/create 三階段流程、brief.json schema、designMoves、抓站規則",
       ".agent/skills/icb_page_generator/resources/create_workflow.md"
+    ],
+    [
+      "/create 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）",
+      ".agent/skills/icb_page_generator/resources/create_external_validation_checklist.md"
+    ],
+    [
+      "design-director 代理分工契約（觸發條件/輸入輸出/fallback）",
+      ".agent/skills/icb_page_generator/resources/design_director_contract.md"
+    ],
+    [
+      "design-director 驗證案例（2 觸發 + 2 不觸發）",
+      ".agent/skills/icb_page_generator/resources/design_director_validation.md"
     ],
     [
       "選擇 Snippet / 了解嵌套規則",
@@ -223,7 +240,10 @@
     "system_pages_scss.md",
     "indexes/templates_index.json",
     "skill_devops_process.md",
-    "timeline_rules.md"
+    "design_director_contract.md",
+    "design_director_validation.md",
+    "timeline_rules.md",
+    "create_external_validation_checklist.md"
   ],
   "opencode_instructions": [
     "此專案的 Odoo skill 採用統一知識來源：AGENTS.md + TODO.md + .agent/skills/icb_page_generator/resources/。",
@@ -233,16 +253,22 @@
     "1. AGENTS.md（全域規則：XML 結構、輸出規則、可用指令）",
     "2. TODO.md（目前尚未完成的知識庫補充工作）",
     "接著讀 docs/design/PROJECT_THEME.css 了解專案配色。",
-    "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientInfo/ 讀取；公版結構參考從 templates/ 讀取。",
+    "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientinfo/ 讀取；公版結構參考從 templates/ 讀取。",
     "所有 Odoo 相關指令在 .opencode/commands/ 目錄中：",
     "- page.md → 套版模式快速生成頁面",
     "- page-home.md → 首頁套版模式（含 pageName 專屬結構，讀 home_recipes.md 配方）",
     "- create.md → 創作模式（先文字骨架，確認後才生成 XML+SCSS。支援純文字或外部網址輸入）",
+    "- create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 分段 XML+SCSS，含 pageName + Footer 獨立輸出）",
     "- dynamic.md → 加入動態區塊",
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
-    "/page 為套版模式，允許依配方快速組裝；/page-home 為首頁專用，必須加 pageName；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
+    "- stitch-pg.md → 一鍵執行 AI 生成頁面轉換 + preview（可直接給 clientinfo 資料夾路徑）",
+    "design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。",
+    "內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。",
+    "產品/Blog 區塊：若未明確要求 dynamic，預設使用一般靜態 sheet + row/col；明確要求動態資料才使用 s_dynamic_snippet*。",
+    "首頁內容排序偏好：解決方案後可放關於我們，再放 Blog；全站主要 CTA 置於 Pre-Footer/Footer 共用區。",
+    "/page 為套版模式，允許依配方快速組裝；/page-home 為首頁專用，必須加 pageName；/create 與 /create-home 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引在 .agent/skills/icb_page_generator/resources/indexes/templates_index.json，用於快速定位模板。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
@@ -262,7 +288,7 @@
     "1. AGENTS.md（全域規則：XML 結構、輸出規則、可用指令）",
     "2. TODO.md（目前尚未完成的知識庫補充工作）",
     "接著讀 docs/design/PROJECT_THEME.css 了解專案配色。",
-    "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientInfo/ 讀取；公版結構參考從 templates/ 讀取。",
+    "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientinfo/ 讀取；公版結構參考從 templates/ 讀取。",
     "所有 Odoo 相關快捷指令定義在 .claude/commands/ 目錄中：",
     "- page.md → 套版模式快速生成頁面",
     "- create.md → 創作模式（先文字骨架，確認後才生成 HTML/XML+SCSS。支援純文字或外部網址輸入）",
@@ -270,8 +296,14 @@
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
+    "- stitch-pg.md → 一鍵執行 AI 生成頁面轉換 + preview（可直接給 clientinfo 資料夾路徑）",
     "- page-home.md → 首頁套版模式（含 pageName 專屬結構，參考 home-recipes 1–4 配方）",
-    "/page 為套版模式，允許依配方快速組裝；/create 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
+    "- create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 分段 XML+SCSS，含 pageName + Footer 獨立輸出）",
+    "/page 為套版模式，允許依配方快速組裝；/create 與 /create-home 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
+    "design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。",
+    "內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。",
+    "產品/Blog 區塊：若未明確要求 dynamic，預設使用一般靜態 sheet + row/col；明確要求動態資料才使用 s_dynamic_snippet*。",
+    "首頁內容排序偏好：解決方案後可放關於我們，再放 Blog；全站主要 CTA 置於 Pre-Footer/Footer 共用區。",
     "/page-home 為首頁專用套版模式，必須在 website.layout 內加入 <t t-set=\"pageName\" t-value=\"'homepage'\"/>，勿遺漏。",
     "深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。",
@@ -294,11 +326,11 @@
     },
     {
       "file": "create.md",
-      "content": "# create (創作模式)\n\n設計新版面。三階段流程：Phase 0 內容解析 → Phase A 文字骨架 → Phase B 分段生成。輸入可為純文字或外部網址。\n\n## Steps\n\n0. **Terse prompt 偵測**：輸入少於 20 字或僅有抽象形容詞（「歐美簡約」「工業風」）而無具體指示時，先 Agent 呼叫 `design-director` 子代理反問 3 題並擴寫 brief。具體輸入則跳過此步。\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. **Phase 0 — 內容解析（中介層）**：若 Step 0 已產 brief 則跳過；否則解析輸入抽出 business/keyAssets/mustHaves/excluded/visualDirection，輸出 `outputs/<日期時間>_brief.json`，停下等使用者確認\n3. **Phase A — 文字骨架**：從 brief 推導版面（不再套 home_recipes），每個區塊選擇必須引用 brief 欄位理由；列出 Bootstrap Grid 對應與 Snippet 類型，停下等確認\n4. **Phase B — 分段生成 XML + SCSS**：拆 2–3 段，每段寫完立即 preview 確認再下一段；骨架先行、文案後填\n5. 動態內容（產品/新聞）必須對接 `s_dynamic_snippet*`，不可手刻假卡片\n6. 每個 section 必須明確使用 pt-*/pb-* 間距 utility；標題字級用 var(--h1)~var(--h6)，禁止硬編 clamp/rem\n7. 嚴禁覆蓋既有 `templates/`，產出統一存放 `outputs/`\n\n## brief.json 格式\n\n```json\n{\n  \"business\": { \"type\": \"\", \"industry\": \"\", \"market\": \"\", \"tone\": [] },\n  \"keyAssets\": { \"productCategories\": [], \"trustSignals\": [], \"applications\": [] },\n  \"mustHaves\": [],\n  \"excluded\": [],\n  \"visualDirection\": { \"palette\": \"\", \"typography\": \"\", \"imagery\": \"\" }\n}\n```\n"
+      "content": "# create (創作模式)\n\n設計新版面。三階段流程：Phase 0 內容解析 → Phase A 文字骨架 → Phase B 分段生成。輸入可為純文字或外部網址。\n\n## Steps\n\n0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅有抽象形容詞（「歐美簡約」「工業風」）而無具體指示時，優先呼叫 `design-director` 子代理反問 3 題並擴寫 brief；若環境不支援 subagent，改由主流程直接反問同一組 3 題後再產 brief。具體輸入則跳過此步。\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. **Phase 0 — 內容解析（中介層）**：若 Step 0 已產 brief 則跳過；否則解析輸入抽出 business/keyAssets/mustHaves/excluded/visualDirection，輸出 `outputs/<日期時間>_brief.json`，停下等使用者確認\n3. **Phase A — 文字骨架**：從 brief 推導版面（不再套 home_recipes），每個區塊選擇必須引用 brief 欄位理由；列出 Bootstrap Grid 對應與 Snippet 類型，停下等確認\n4. **Phase B — 分段生成 XML + SCSS**：拆 2–3 段，每段寫完立即 preview 確認再下一段；骨架先行、文案後填\n5. 產品/Blog 區塊預設可先用靜態 sheet + row/col；僅在明確要求動態資料時才對接 `s_dynamic_snippet*`\n6. 每個 section 必須明確使用 pt-*/pb-* 間距 utility；標題字級用 var(--h1)~var(--h6)，禁止硬編 clamp/rem\n7. 嚴禁覆蓋既有 `templates/`，產出統一存放 `outputs/`\n\n## brief.json 格式\n\n```json\n{\n  \"business\": { \"type\": \"\", \"industry\": \"\", \"market\": \"\", \"tone\": [] },\n  \"keyAssets\": { \"productCategories\": [], \"trustSignals\": [], \"applications\": [] },\n  \"mustHaves\": [],\n  \"excluded\": [],\n  \"visualDirection\": { \"palette\": \"\", \"typography\": \"\", \"imagery\": \"\" }\n}\n```\n"
     },
     {
       "file": "create-home.md",
-      "content": "# create-home (首頁創作模式)\n\n設計全新首頁。結合 /create 三階段流程 + /page-home 首頁專屬規範。\n\n## Steps\n\n0. **Terse prompt 偵測**：若使用者輸入少於 20 字或只有抽象形容詞（「歐美簡約」「高級感」「現代」）而無具體版面指示，**必須先 Agent 呼叫 `design-director` 子代理**反問 3 個關鍵決策，取得擴寫過的 brief.json 後才繼續。具體輸入則跳過此步。\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`（字體大小變數、客製 class）\n3. `home_recipes.md` 僅作靈感參考，非強制套用\n4. **Phase 0 — 內容解析**：若 Step 0 已由 design-director 產 brief，則跳過；否則輸出 `outputs/<日期時間>_brief.json`，停下等確認\n5. **Phase A — 文字骨架**：從 brief 推導版面；每個區塊選擇必須引用 brief 欄位理由；首頁必備 Hero → 服務亮點 → 產品/案例 → 關於我們 → 最新消息；列出 Bootstrap Grid 對應與 Snippet；停下等確認\n6. **Phase B — 分段生成頁面內容 XML + SCSS**（只處理 `<div id='wrap'>` 內 sections，不含 Footer；依 section 數量拆 1~3 段：≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）：\n   - 首頁專屬：`<t t-call=\"website.layout\">` 內必加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n   - 每個 section 明確使用 pt-*/pb-* 間距 utility（含斷點變體），8 的倍數\n   - 標題字級一律 var(--h1)~var(--h6)，禁止硬編 clamp/rem\n   - 可點卡片：父層 position-relative s_custom_clickableCard、既有 <a> 加 s_custom_cardLink，SCSS 用 ::before overlay 並加 `#wrapwrap:not(.odoo-editor-editable)` 守護\n   - 動態區塊對接 s_dynamic_snippet*，遵守 templates/base/base-dynamic-*.xml locked 結構\n   - 每段 preview 確認後再下一段\n7. **Footer 獨立輸出**（首頁必做）：另產 `outputs/<時間>_footer.xml` + `.scss`，使用 `<data inherit_id=\"website.layout\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆，依專案內容客製欄位\n8. 產出後執行預覽：`PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<產出檔>.xml`\n\n## 使用方式\n\n```\n/create-home [需求描述 或 參考網址]\n```\n\n## 與其他指令的差異\n\n| 指令 | 是否 Phase 0 brief | 是否文字骨架 | pageName |\n|---|---|---|---|\n| `/page` | 否 | 否 | 否 |\n| `/page-home` | 否 | 否 | ✅ |\n| `/create` | ✅ | ✅ | 否 |\n| `/create-home` | ✅ | ✅ | ✅ |\n"
+      "content": "# create-home (首頁創作模式)\n\n設計全新首頁。結合 /create 三階段流程 + /page-home 首頁專屬規範。\n\n## Steps\n\n0. **Terse prompt 偵測（experimental）**：若使用者輸入少於 20 字或只有抽象形容詞（「歐美簡約」「高級感」「現代」）而無具體版面指示，優先呼叫 `design-director` 子代理反問 3 個關鍵決策；若環境不支援 subagent，改由主流程直接反問同一組 3 題。取得擴寫過的 brief.json 後才繼續。具體輸入則跳過此步。\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`（字體大小變數、客製 class）\n3. `home_recipes.md` 僅作靈感參考，非強制套用\n4. **Phase 0 — 內容解析**：若 Step 0 已由 design-director 或 fallback 產 brief，則跳過；否則輸出 `outputs/<日期時間>_brief.json`，停下等確認\n5. **Phase A — 文字骨架**：從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog；列出 Bootstrap Grid 對應與 Snippet；停下等確認\n6. **Phase B — 分段生成頁面內容 XML + SCSS**（只處理 `<div id='wrap'>` 內 sections，不含 Footer；依 section 數量拆 1~3 段：≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）：\n   - 首頁專屬：`<t t-call=\"website.layout\">` 內必加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n   - 每個 section 明確使用 pt-*/pb-* 間距 utility（含斷點變體），8 的倍數\n   - 標題字級一律 var(--h1)~var(--h6)，禁止硬編 clamp/rem\n   - 可點卡片：父層 position-relative s_custom_clickableCard、既有 <a> 加 s_custom_cardLink，SCSS 用 ::before overlay 並加 `#wrapwrap:not(.odoo-editor-editable)` 守護\n   - 產品/Blog 區塊若未明確要求動態資料，預設用靜態 sheet + row/col\n   - 每段 preview 確認後再下一段\n7. **Footer 獨立輸出**（首頁必做）：另產 `outputs/<時間>_footer.xml` + `.scss`，使用 `<data inherit_id=\"website.layout\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆，依專案內容客製欄位\n8. 產出後執行預覽：`PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<產出檔>.xml`\n\n## 使用方式\n\n```\n/create-home [需求描述 或 參考網址]\n```\n\n## 與其他指令的差異\n\n| 指令 | 是否 Phase 0 brief | 是否文字骨架 | pageName |\n|---|---|---|---|\n| `/page` | 否 | 否 | 否 |\n| `/page-home` | 否 | 否 | ✅ |\n| `/create` | ✅ | ✅ | 否 |\n| `/create-home` | ✅ | ✅ | ✅ |\n"
     },
     {
       "file": "dynamic.md",
@@ -317,6 +349,10 @@
       "content": "# block\n\n呼叫已整理的客製化歷史區塊。\n\n## Steps\n\n1. 讀 `resources/custom_blocks.md`\n2. 依既有規格組裝並輸出到 `outputs/`\n"
     },
     {
+      "file": "stitch-pg.md",
+      "content": "# stitch-pg\n\n一鍵執行：AI 生成頁面（Stitch/其他）轉換 + 產出 preview。\n\n## 用法\n\n```\n/stitch-pg clientinfo/<專案資料夾>\n```\n\n或：\n\n```\n/stitch-pg clientinfo/<專案資料夾>/code.html\n```\n\n## 動作\n\n1. 執行 `scripts/auto_convert_preview.py`\n2. 自動轉換出：`outputs/<name>.xml`\n3. 自動輸出報告：`outputs/<name>.report.md`\n4. 自動輸出位移對應：`outputs/<name>.mapping.scss`\n5. 自動產出 strict final baseline：`outputs/<timestamp>_<name>_strict_final.xml/.scss`\n6. 建立預覽：`preview/index.html`\n"
+    },
+    {
       "file": "page-home.md",
       "content": "# page-home (首頁套版模式)\n\n專為首頁設計的快速生成指令。讀取配方索引後直接組裝 XML + SCSS。\n\n## Steps\n\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`\n2. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`\n3. 讀 `.agent/skills/icb_page_generator/resources/home_recipes.md` 取得目標配方\n4. 依需求讀 `.agent/skills/icb_page_generator/resources/snippet_rules.md`\n5. 需要動態區塊時依 `resources/dynamic_rules.md`，遵守 `templates/base/base-dynamic-*.xml` locked 結構\n6. **可點卡片**：產品分類/應用卡保留原 <a>，父層加 position-relative s_custom_clickableCard、既有 <a> 加 s_custom_cardLink；SCSS 用 #wrapwrap:not(.odoo-editor-editable) .s_custom_cardLink::before { inset:0; position:absolute; } overlay；禁用 stretched-link\n7. **Footer 獨立輸出**：另產 `outputs/<時間>_footer.xml` + `.scss`，用 `<data inherit_id=\"website.layout\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆，依專案客製\n8. 每個 section 明確 pt-*/pb-* 間距（含斷點變體），標題字級用 var(--h1)~var(--h6)，禁止硬編 clamp/rem\n9. 輸出到 `outputs/`（XML + SCSS，檔名含日期時間）\n\n## 使用方式\n\n```\n/page-home [版型編號 1-4] [需求描述]\n```\n\n## 首頁專屬\n\n`<t t-call=\"website.layout\">` 內必加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，切勿遺漏。\n"
     }
@@ -332,11 +368,11 @@
     },
     {
       "file": "create.md",
-      "content": "# create（🎨 創作模式 / 三階段）\n\n創作全新頁面。三階段流程：Phase 0 內容解析 → Phase A 文字骨架 → Phase B 分段 XML+SCSS。輸入可為純文字或外部網址/截圖。\n\n## Hard Rules\n- ❌ 本專案禁止 git worktree；不得建立 `.worktrees/`。\n- ❌ 未經 Bootstrap 4 Grid + Odoo QWeb 翻譯不得輸出原代碼。\n- ❌ 動態區塊禁止自創 HTML 假卡片，必須對接 s_dynamic_snippet*。\n- ❌ 標題字級禁止硬編 clamp/rem/px，一律用 var(--h1)~var(--h6)。\n\n## Phase 0：內容解析（中介層）\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. 解析輸入（純文字 / 抓站 HTML），抽出 business / keyAssets / mustHaves / excluded / visualDirection\n3. 輸出 `outputs/<日期時間>_brief.json`\n4. 🚦 **停下等使用者確認**\n\n## Phase A：文字骨架\n5. 從 brief 推導版面，每個區塊選擇必須引用 brief 欄位說明理由\n6. 列出 section 類型、Bootstrap Grid 對應、間距（pt-*/pb-*）、Snippet 類型\n7. 🚦 **停下等使用者確認**\n\n## Phase B：分段生成 XML + SCSS\n8. 拆 2–3 段，每段寫完 preview 確認再下一段；骨架先行、文案後填\n9. 每個 section 明確 pt-*/pb-* 間距（8 倍數，含斷點變體）\n10. 標題字級 var(--h1)~var(--h6)；既有 user_custom_rules.scss 的 class 優先套用\n11. 重疊/絕對定位 SCSS 必加 `#wrapwrap:not(.odoo-editor-editable)` 守護\n12. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink + ::before overlay\n13. 沙盒原則：**強制**寫入 `outputs/`，嚴禁寫入 `templates/`\n"
+      "content": "# create（🎨 創作模式 / 三階段）\n\n創作全新頁面。三階段流程：Phase 0 內容解析 → Phase A 文字骨架 → Phase B 分段 XML+SCSS。輸入可為純文字或外部網址/截圖。\n\n## Hard Rules\n- ❌ 本專案禁止 git worktree；不得建立 `.worktrees/`。\n- ❌ 未經 Bootstrap 4 Grid + Odoo QWeb 翻譯不得輸出原代碼。\n- ❌ 標題字級禁止硬編 clamp/rem/px，一律用 var(--h1)~var(--h6)。\n\n## Phase 0：內容解析（中介層）\n0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。\n1. 讀 `.agent/skills/icb_page_generator/SKILL.md`、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. 解析輸入（純文字 / 抓站 HTML），抽出 business / keyAssets / mustHaves / excluded / visualDirection\n3. 輸出 `outputs/<日期時間>_brief.json`\n4. 🚦 **停下等使用者確認**\n\n## Phase A：文字骨架\n5. 若使用者明確指定 Layout-first，先做灰色色塊占位對稿版；未指定則維持一般骨架流程\n6. 從 brief 推導版面，每個區塊選擇必須引用 brief 欄位說明理由\n7. 列出 section 類型、Bootstrap Grid 對應、間距（pt-*/pb-*）、Snippet 類型\n8. 🚦 **停下等使用者確認**\n\n## Phase B：分段生成 XML + SCSS\n9. 拆 2–3 段，每段寫完 preview 確認再下一段；骨架先行、文案後填\n10. 每個 section 明確 pt-*/pb-* 間距（8 倍數，含斷點變體）\n11. 標題字級 var(--h1)~var(--h6)；既有 user_custom_rules.scss 的 class 優先套用\n12. 重疊/絕對定位 SCSS 必加 `#wrapwrap:not(.odoo-editor-editable)` 守護\n13. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink + ::before overlay\n14. 產品/Blog 區塊預設可先用靜態 sheet + row/col；僅在明確要求動態資料時才對接 `s_dynamic_snippet*`\n15. 沙盒原則：**強制**寫入 `outputs/`，嚴禁寫入 `templates/`\n"
     },
     {
       "file": "create-home.md",
-      "content": "# create-home（🎨 首頁創作模式 / 三階段）\n\n設計全新首頁。結合 /create 三階段 + /page-home 首頁專屬規範。\n\n## Hard Rules\n- 首頁 XML 必須在 `website.layout` 內加入 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，切勿遺漏。\n- Footer 必須**獨立輸出**（Odoo footer 為獨立 xpath 繼承區）。\n- 禁止 git worktree；禁止硬編字級；禁止 stretched-link / 手刻假卡片。\n\n## Steps\n\n### Phase 0：內容解析\n1. 讀 Skill 主檔、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. `home_recipes.md` 僅作靈感參考，非強制套用\n3. 輸出 `outputs/<日期時間>_brief.json`，停下等確認\n\n### Phase A：文字骨架\n4. 從 brief 推導版面；首頁必備 Hero → 服務亮點 → 產品/案例 → 關於我們 → 最新消息\n5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；停下等確認\n\n### Phase B：分段生成頁面內容（只處理 `<div id='wrap'>` 內 sections，不含 Footer）\n   - section ≤ 4：一次到位\n   - section 5–7：拆 B1 上半頁 / B2 下半頁\n   - section ≥ 8：拆 B1 / B2 / B3（每段 2–3 個 section）\n6. `<t t-call=\"website.layout\">` 內加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n7. 外層 section 用 pt/pb 預設配方（pt96/pt80/pt64/pt48），內層 col 預設 pt0 pb0；詳見 resources/spacing_rules.md\n8. 標題字級 var(--h1)~var(--h6)，禁止硬編 clamp/rem；禁止 font-family 覆蓋；媒體查詢用 Bootstrap mixin\n9. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink，SCSS 用 #wrapwrap:not(.odoo-editor-editable) ::before overlay\n10. 動態區塊對接 s_dynamic_snippet*，遵守 base-dynamic-*.xml locked 結構\n11. 每段 preview 確認再下一段\n\n### Phase C：Footer 獨立輸出（首頁專屬，不屬於 Phase B 任一段）\n12. 另產 `outputs/<時間>_footer.xml` + `.scss`\n13. 用 `<data inherit_id=\"website.layout\" name=\"...\" active=\"False\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆\n14. 依專案內容客製欄位（不照抄公版選單）\n\n### 預覽\n15. `PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<產出檔>.xml`\n"
+      "content": "# create-home（🎨 首頁創作模式 / 三階段）\n\n設計全新首頁。結合 /create 三階段 + /page-home 首頁專屬規範。\n\n## Hard Rules\n- 首頁 XML 必須在 `website.layout` 內加入 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，切勿遺漏。\n- Footer 必須**獨立輸出**（Odoo footer 為獨立 xpath 繼承區）。\n- 禁止 git worktree；禁止硬編字級；禁止 stretched-link / 手刻假卡片。\n\n## Steps\n\n### Phase 0：內容解析\n0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。\n1. 讀 Skill 主檔、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. `home_recipes.md` 僅作靈感參考，非強制套用\n3. 輸出 `outputs/<日期時間>_brief.json`，停下等確認\n\n### Phase A：文字骨架\n4. 從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog\n5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；停下等確認\n\n### Phase B：分段生成頁面內容（只處理 `<div id='wrap'>` 內 sections，不含 Footer）\n   - section ≤ 4：一次到位\n   - section 5–7：拆 B1 上半頁 / B2 下半頁\n   - section ≥ 8：拆 B1 / B2 / B3（每段 2–3 個 section）\n6. `<t t-call=\"website.layout\">` 內加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n7. 外層 section 用 pt/pb 預設配方（pt96/pt80/pt64/pt48），內層 col 預設 pt0 pb0；詳見 resources/spacing_rules.md\n8. 標題字級 var(--h1)~var(--h6)，禁止硬編 clamp/rem；禁止 font-family 覆蓋；媒體查詢用 Bootstrap mixin\n9. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink，SCSS 用 #wrapwrap:not(.odoo-editor-editable) ::before overlay\n10. 產品/Blog 區塊若未明確要求動態資料，預設用靜態 sheet + row/col\n11. 每段 preview 確認再下一段\n\n### Phase C：Footer 獨立輸出（首頁專屬，不屬於 Phase B 任一段）\n12. 另產 `outputs/<時間>_footer.xml` + `.scss`\n13. 用 `<data inherit_id=\"website.layout\" name=\"...\" active=\"False\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆\n14. 依專案內容客製欄位（不照抄公版選單）\n\n### 預覽\n15. `PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<產出檔>.xml`\n"
     },
     {
       "file": "dynamic.md",
@@ -353,6 +389,10 @@
     {
       "file": "block.md",
       "content": "# /block\n\n從客製化區塊知識庫中提取設計師常用的版面與特效結構。\n\n## 1. 讀取區塊知識庫\n**MUST** 讀取 `.agent/skills/icb_page_generator/resources/layout_patterns.md`\n**MUST** 讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md`\n\n## 2. 11 款客製化區塊菜單\n| # | 行銷分類 | 區塊名稱 | 版面與效果說明 |\n|---|----------|----------|----------------|\n| 1 | 全域導購 | `Global Pre-Footer CTA` | 視差滾動背景 + 半透明濾鏡的行動呼叫區塊 |\n| 2 | 敘事時間 | `History Time Line` | 企業歷史沿革時間軸 |\n| 3 | 敘事流程 | `Flowchart` | Icon 步驟引導與弓型連線流程圖 |\n| 4 | 內容排版 | `Content Sections` | 非對稱圖文，透過 SCSS 重疊上下區塊創造破格層次 |\n| 5 | 內容排版 | `Three Chains` | 三段式連續區塊，中間帶有滿版穿插背景 |\n| 6 | 靜態卡片 | `Static Snippet Cards` | 字壓圖 (`titleUpperBg`) 與水平滑動 (`RWDscroll`) |\n| 7 | 進階互動 | `Bleeding Tabs` | 左側圓點清單頁籤，右側滿版圖片淡入淡出切換 |\n| 8 | 內容排版 | `Icon Card Horizontal` | 左側 Icon (1:1對齊) + 右側文字的水平卡片清單 |\n| 9 | 內容排版 | `Leaning Overflow` | 左右分鏡，帶有傾斜有色背景塊的視覺排版 |\n| 10 | 視覺清單 | `Fix BG List` | 視差滾動背景搭配固定重疊的文字區塊 |\n| 11 | 數據呈現 | `Counter After Color` | 動態數字跑馬燈，後綴符號與品牌主題色自動連動 |\n\n## 3. 選擇與輸出規範\n根據使用者輸入選擇適合的區塊，輸出正確 `data-snippet` 與 `data-custom-name` 的 XML + SCSS。\n"
+    },
+    {
+      "file": "stitch-pg.md",
+      "content": "# stitch-pg\n\n一鍵執行：AI 生成頁面（Stitch/其他）轉換 + 產出 preview。\n\n## 用法\n\n```\n/stitch-pg clientinfo/<專案資料夾>\n```\n\n或：\n\n```\n/stitch-pg clientinfo/<專案資料夾>/code.html\n```\n\n## 動作\n\n1. 執行 `scripts/auto_convert_preview.py`\n2. 自動轉換出：`outputs/<name>.xml`\n3. 自動輸出報告：`outputs/<name>.report.md`\n4. 自動輸出位移對應：`outputs/<name>.mapping.scss`\n5. 自動產出 strict final baseline：`outputs/<timestamp>_<name>_strict_final.xml/.scss`\n6. 建立預覽：`preview/index.html`\n"
     }
   ]
 }

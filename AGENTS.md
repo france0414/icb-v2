@@ -34,7 +34,7 @@ Rules:
   2. **【創作模式 `/create`】** 不論使用者是提供「純文字描述」還是「參考範例網址/截圖」，皆為創作模式。AI 必須重新設計 section 順序與視覺重心，以設計靈感為首，但骨架必須符合 Odoo 的「承重牆規則」（Bootstrap Grid QWeb 外框、對位 class、動態鎖定區塊）。先出文字骨架確認後，才生成 XML+SCSS。
   3. **【元件晉升保守策略】** 創作或抓站轉化出來的新畫面，預設只產出「當下專案可用草稿 (放在 outputs/)」，不自動拆成公版元件、不自動寫入 `templates/`；只有在使用者明確要求「晉升公版/元件化」時才執行。
   4. **SCSS 提取絕對原則**：為組件補給 SCSS 時，主來源**絕對是** `templates/` 內該組件同檔名的 `.scss` 檔案。嚴禁憑空通靈發明 CSS！
-- `clientInfo/` 為客戶提供的素材區（文字、圖片、PPT 等）
+- `clientinfo/` 為客戶提供的素材區（文字、圖片、PPT 等）
 - Icon 規範：主要使用 **Font Awesome v4**（例如 `fa fa-star`）
 - 圖片使用 `https://picsum.photos/` 作為來源
 - 佈局容器：每個 `<section>` 內的核心框架必須明確選擇使用 `.container` (寬度置中) 或 `.container-fluid` (滿版)，不可遺漏或隨意自創網格外殼。
@@ -67,7 +67,7 @@ Rules:
 → `.agent/skills/icb_page_generator/SKILL.md`
 
 補充：
-- 若使用者有參考資料要提供給 AI，放在 `clientInfo/`；公版結構參考放在 `templates/`
+- 若使用者有參考資料要提供給 AI，放在 `clientinfo/`；公版結構參考放在 `templates/`
 - 若 AI 要輸出新生成的 XML、SCSS 或其他交付檔，統一放在 `outputs/`
 
 ## Skill 同步流程

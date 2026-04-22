@@ -12,11 +12,11 @@
 
        $o-color-palettes: (
          'my-palette': (
-           'o-color-1': #E60012,   ← 品牌主色 (Primary) — 紅色
-           'o-color-2': #7A7A7A,   ← 品牌次色 (Secondary) — 中灰
-           'o-color-3': #EFEFEF,   ← 中性淺色 (Light Neutral)
-           'o-color-4': #FFFFFF,   ← 中性白色 (White)
-           'o-color-5': #000000,   ← 中性深色 (Black)
+            'o-color-1': #9E6A61,   ← 品牌主色 (Primary)
+            'o-color-2': #8C716C,   ← 品牌次色 (Secondary)
+            'o-color-3': #EEEEEE,   ← 中性淺色 (Light Neutral)
+            'o-color-4': #FFFFFF,   ← 中性白色 (White)
+            'o-color-5': #1A1A1A,   ← 中性深色 (Dark)
          ),
        );
 
@@ -28,11 +28,11 @@
    ────────────────────────────────────────────────
        o_cc1 → 白底   (#FFFFFF)
        o_cc2 → 淺灰底 (#EFEFEF)
-       o_cc3 → 中灰底 (#7A7A7A) ← 次色底（非主色）
-       o_cc4 → 紅色底 (#E60012) ← 主色底（CTA/強調）
-       o_cc5 → 黑底   (#000000)
+        o_cc3 → 次色底 (#8C716C) ← 次色區隔
+        o_cc4 → 主色底 (#9E6A61) ← CTA/強調
+        o_cc5 → 深色底 (#1A1A1A)
 
-   ⚠️ 注意：此專案 o_cc3 = 次色(灰)、o_cc4 = 主色(紅)，與 Odoo 預設順序不同！
+   ⚠️ 注意：此專案 o_cc3 = 次色、o_cc4 = 主色，與 Odoo 預設順序可能不同！
 
    【AI 撰寫規則】
    ✅ SCSS 中一律使用 var() 變數，不寫死色碼：
@@ -40,26 +40,26 @@
        background-color: var(--o-cc4-bg);
 
    ✅ XML 中的 section 背景色使用 o_cc 類別：
-       <section class="o_cc4 o_colored_level">  ← 紅色底（主色 CTA）
-       <section class="o_cc3 o_colored_level">  ← 灰色底（次色區隔）
+        <section class="o_cc4 o_colored_level">  ← 主色底（CTA）
+        <section class="o_cc3 o_colored_level">  ← 次色底（區隔）
 
    ❌ 禁止：
-       color: #E60012;            ← 寫死色碼
+        color: #9E6A61;            ← 寫死色碼
        background: $primary;      ← Bootstrap 變數
 
    【來源】
    以下 :root 值從 https://demo-ashun.gtmc.app 瀏覽器 F12 > Console 擷取
-   最後更新：2026-04-19
+   最後更新：2026-04-21
 */
 
 :root {
    /* =========================================
        1. Base Brand Colors（核心品牌色）
        ========================================= */
-   --primary: #E60012;
-   /* 主色 = o-color-1：品牌紅色 */
-   --secondary: #7A7A7A;
-   /* 次色 = o-color-2：中性灰色 */
+   --primary: #9E6A61;
+   /* 主色 = o-color-1 */
+   --secondary: #8C716C;
+   /* 次色 = o-color-2 */
 
    /* Functional Colors（由 Odoo / Bootstrap 主題繼承） */
    --success: #28a745;
@@ -72,11 +72,11 @@
    /* =========================================
        Odoo o-color-1~5 執行期 CSS 變數
        ========================================= */
-   --o-color-1: #E60012;
-   --o-color-2: #7A7A7A;
-   --o-color-3: #EFEFEF;
+   --o-color-1: #9E6A61;
+   --o-color-2: #8C716C;
+   --o-color-3: #EEEEEE;
    --o-color-4: #FFFFFF;
-   --o-color-5: #000000;
+   --o-color-5: #1A1A1A;
 
    /* =========================================
        2. Odoo Color Combinations（色塊主題）
@@ -85,53 +85,59 @@
    /* [o_cc1] White Background（白底）
        用法：<section class="o_cc1 o_colored_level"> */
    --o-cc1-bg: #FFFFFF;
-   --o-cc1-text: #495057;
-   --o-cc1-headings: #000000;
-   --o-cc1-btn-primary: #E60012;
-   --o-cc1-btn-primary-border: #E60012;
-   --o-cc1-btn-secondary: #7A7A7A;
-   --o-cc1-btn-secondary-border: #7A7A7A;
-   --o-cc1-link: #E60012;
+   --o-cc1-text: #212529;
+   --o-cc1-headings: #1A1A1A;
+   --o-cc1-btn-primary: #9E6A61;
+   --o-cc1-btn-primary-border: #778779;
+   --o-cc1-btn-secondary: #F2F2F2;
+   --o-cc1-btn-secondary-border: #F2F2F2;
+   --o-cc1-link: #1A1A1A;
 
    /* [o_cc2] Light Gray Background（淺灰底）
        用法：<section class="o_cc2 o_colored_level"> */
    --o-cc2-bg: #EFEFEF;
-   --o-cc2-text: #495057;
-   --o-cc2-headings: #000000;
-   --o-cc2-btn-primary: #E60012;
-   --o-cc2-btn-primary-border: #E60012;
-   --o-cc2-btn-secondary: #7A7A7A;
-   --o-cc2-btn-secondary-border: #7A7A7A;
+   --o-cc2-text: #1A1A1A;
+   --o-cc2-headings: #1A1A1A;
+   --o-cc2-btn-primary: #9E6A61;
+   --o-cc2-btn-primary-border: #778779;
+   --o-cc2-btn-secondary: #8C716C;
+   --o-cc2-btn-secondary-border: #8C716C;
+   --o-cc2-link: #FFFFFF;
 
    /* [o_cc3] Gray Background（中灰底 — 次色，區隔用）
        ⚠️ 此專案 o_cc3 = 次色灰，非主色！
        用法：<section class="o_cc3 o_colored_level"> */
-   --o-cc3-bg: #7A7A7A;
-   --o-cc3-text: #E9ECEF;
-   --o-cc3-headings: #E9ECEF;
-   --o-cc3-btn-primary: #E60012;
-   --o-cc3-btn-primary-border: #E60012;
-   --o-cc3-btn-secondary: #EFEFEF;
-   --o-cc3-btn-secondary-border: #EFEFEF;
+   --o-cc3-bg: #8C716C;
+   --o-cc3-text: #FFFFFF;
+   --o-cc3-headings: #FFFFFF;
+   --o-cc3-btn-primary: #9E6A61;
+   --o-cc3-btn-primary-border: #9E6A61;
+   --o-cc3-btn-secondary: #FFFFFF;
+   --o-cc3-btn-secondary-border: #FFFFFF;
+   --o-cc3-link: #1A1A1A;
 
    /* [o_cc4] Red Background（主色紅底 — CTA / 強調區塊）
        ⚠️ 此專案 o_cc4 = 主色紅（一般 Odoo 專案是 o_cc3）
        用法：<section class="o_cc4 o_colored_level"> */
-   --o-cc4-bg: #E60012;
-   --o-cc4-text: #E9ECEF;
-   --o-cc4-headings: #E9ECEF;
-   --o-cc4-btn-primary: #000000;
-   --o-cc4-btn-primary-border: #000000;
-   --o-cc4-btn-secondary: #EFEFEF;
-   --o-cc4-btn-secondary-border: #EFEFEF;
+   --o-cc4-bg: #9E6A61;
+   --o-cc4-text: #FFFFFF;
+   --o-cc4-headings: #FFFFFF;
+   --o-cc4-btn-primary: #8C716C;
+   --o-cc4-btn-primary-border: #CAE1A3;
+   --o-cc4-btn-secondary: #EEEEEE;
+   --o-cc4-btn-secondary-border: #EEEEEE;
+   --o-cc4-link: #FFFFFF;
 
    /* [o_cc5] Black Background（黑底 — Footer / Hero）
        用法：<section class="o_cc5 o_colored_level"> */
-   --o-cc5-bg: #000000;
-   --o-cc5-text: #E9ECEF;
+   --o-cc5-bg: #1A1A1A;
+   --o-cc5-text: #FFFFFF;
    --o-cc5-headings: #FFFFFF;
-   --o-cc5-btn-primary: #E60012;
-   --o-cc5-btn-secondary-border: #EFEFEF;
+   --o-cc5-btn-primary: #9E6A61;
+   --o-cc5-btn-primary-border: #CAE1A3;
+   --o-cc5-btn-secondary: #EEEEEE;
+   --o-cc5-btn-secondary-border: #EEEEEE;
+   --o-cc5-link: #FFFFFF;
 
    /* =========================================
        3. Grays & Opacities（通用灰階）
@@ -152,7 +158,7 @@
    ============================================================
    此專案色彩節奏（從上到下）：
 
-   o_cc1 (白) → o_cc2 (淺灰) → o_cc1 (白) → o_cc4 (紅色 CTA) → o_cc5 (黑)
+   o_cc1 (白) → o_cc2 (淺灰) → o_cc1 (白) → o_cc4 (品牌主色) → o_cc5 (深色)
 
    ⚠️ 此專案特殊對應（與 Odoo 預設不同）：
    - 主色 CTA 區塊 → 用 o_cc4（紅色）
@@ -170,12 +176,18 @@
    1. 開啟 https://demo-ashun.gtmc.app，按 F12 → Console
    2. 貼入以下指令取得最新值：
 
-   const s = getComputedStyle(document.documentElement);
-   ['--o-color-1','--o-color-2','--o-color-3','--o-color-4','--o-color-5',
-    '--primary','--secondary','--o-cc1-bg','--o-cc2-bg','--o-cc3-bg','--o-cc4-bg','--o-cc5-bg',
-    '--o-cc1-text','--o-cc2-text','--o-cc3-text','--o-cc4-text','--o-cc5-text',
-    '--o-cc1-headings','--o-cc2-headings','--o-cc3-headings','--o-cc4-headings','--o-cc5-headings'
-   ].map(v => `${v}: ${s.getPropertyValue(v).trim()}`).join('\n')
+    const s = getComputedStyle(document.documentElement);
+    ['--o-color-1','--o-color-2','--o-color-3','--o-color-4','--o-color-5',
+     '--primary','--secondary','--o-cc1-bg','--o-cc2-bg','--o-cc3-bg','--o-cc4-bg','--o-cc5-bg',
+     '--o-cc1-text','--o-cc2-text','--o-cc3-text','--o-cc4-text','--o-cc5-text',
+     '--o-cc1-headings','--o-cc2-headings','--o-cc3-headings','--o-cc4-headings','--o-cc5-headings',
+     '--o-cc1-btn-primary','--o-cc1-btn-primary-border','--o-cc1-btn-secondary','--o-cc1-btn-secondary-border',
+     '--o-cc2-btn-primary','--o-cc2-btn-primary-border','--o-cc2-btn-secondary','--o-cc2-btn-secondary-border',
+     '--o-cc3-btn-primary','--o-cc3-btn-primary-border','--o-cc3-btn-secondary','--o-cc3-btn-secondary-border',
+     '--o-cc4-btn-primary','--o-cc4-btn-primary-border','--o-cc4-btn-secondary','--o-cc4-btn-secondary-border',
+     '--o-cc5-btn-primary','--o-cc5-btn-primary-border','--o-cc5-btn-secondary','--o-cc5-btn-secondary-border',
+     '--o-cc1-link','--o-cc2-link','--o-cc3-link','--o-cc4-link','--o-cc5-link'
+    ].map(v => `${v}: ${s.getPropertyValue(v).trim()}`).join('\n')
 
    3. 將輸出值更新回此檔案的 :root 區段
 */

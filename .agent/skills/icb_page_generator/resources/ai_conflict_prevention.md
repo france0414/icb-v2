@@ -192,7 +192,7 @@ Layer 3 — 任務限制（Task Contract）
 |------|------|
 | ✅ 主要負責 | 快速原型生成、頁面排版、知識庫查詢與補充 |
 | ✅ 可做 | 執行所有 `/page`、`/create`、`/btn`、`/js`、`/dynamic`、`/block` 指令 |
-| ✅ 可做 | 讀取並分析 `clientInfo/` 素材 |
+| ✅ 可做 | 讀取並分析 `clientinfo/` 素材 |
 | ❌ 不做 | 直接手改 `.agent/skills/icb_page_generator/SKILL.md` |
 
 ### OpenCode

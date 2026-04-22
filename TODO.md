@@ -23,10 +23,16 @@
 
 ## Phase 6：待辦
 
-- [ ] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
-- [ ] 實作 `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
+- [x] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
+- [x] 實作 `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
 - 其餘已完成，詳見 `docs/roadmap/phases.md`
 
 ## Phase 7：Skill 知識庫與自動化流程 ✅ 已完成
 
 - 已完成，詳見 `docs/roadmap/phases.md`
+
+---
+
+## Conversion 實務補充（持續更新）
+
+- [x] 新增本次對稿補充規則彙整：`docs/conversion/user-supplements/2026-04-22-ai-build-conversion-notes.md`

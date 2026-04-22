@@ -1,6 +1,180 @@
 {
   "version": "1.0",
   "generated_from": "templates/",
+  "mediator": {
+    "purpose": "Map analyzed structure features to concrete template names (SSOT bridge between Skill analysis and template retrieval).",
+    "feature_flags": [
+      "page_type",
+      "is_homepage",
+      "has_hero",
+      "has_carousel",
+      "has_timeline",
+      "has_contact_form",
+      "needs_dynamic_products",
+      "needs_dynamic_news",
+      "needs_header_style",
+      "needs_footer",
+      "visual_family"
+    ],
+    "mapping_rules": [
+      {
+        "id": "home-page-recipes",
+        "when": {
+          "page_type": "page",
+          "is_homepage": true
+        },
+        "select": [
+          "home-recipes"
+        ],
+        "reason": "Homepage assembly should start from home recipes."
+      },
+      {
+        "id": "default-inner-banner",
+        "when": {
+          "page_type": "page",
+          "is_homepage": false,
+          "has_hero": true
+        },
+        "select": [
+          "banner"
+        ],
+        "reason": "Inner pages with hero should anchor on the standard banner family."
+      },
+      {
+        "id": "feature-highlight-grid",
+        "when": {
+          "visual_family": "features"
+        },
+        "select": [
+          "content-section-feature-highlight"
+        ],
+        "reason": "Feature cards and service highlights map to icon/card grid family."
+      },
+      {
+        "id": "intro-brand-story",
+        "when": {
+          "visual_family": "intro"
+        },
+        "select": [
+          "content-section-intro-content"
+        ],
+        "reason": "Intro and brand-story narratives map to text-image intro family."
+      },
+      {
+        "id": "industry-solutions",
+        "when": {
+          "visual_family": "solutions"
+        },
+        "select": [
+          "content-section-solution-industry"
+        ],
+        "reason": "Tabs/FAQ/industry solution interaction maps to solution-industry family."
+      },
+      {
+        "id": "achievement-counter",
+        "when": {
+          "visual_family": "achievement"
+        },
+        "select": [
+          "content-section-achievement"
+        ],
+        "reason": "Milestones and KPI counters map to achievement family."
+      },
+      {
+        "id": "visual-parallax",
+        "when": {
+          "visual_family": "visual"
+        },
+        "select": [
+          "content-section-visual-parallax"
+        ],
+        "reason": "Parallax and full-bleed visual storytelling maps to visual-parallax family."
+      },
+      {
+        "id": "gallery-showcase",
+        "when": {
+          "visual_family": "gallery"
+        },
+        "select": [
+          "content-section-gallery-showcase"
+        ],
+        "reason": "Gallery-heavy showcase layouts map to gallery-showcase family."
+      },
+      {
+        "id": "static-carousel",
+        "when": {
+          "has_carousel": true,
+          "needs_dynamic_products": false,
+          "needs_dynamic_news": false
+        },
+        "select": [
+          "base-Static-Snippet"
+        ],
+        "reason": "Carousel interactions should align with base static snippet structure first."
+      },
+      {
+        "id": "timeline-layout",
+        "when": {
+          "has_timeline": true
+        },
+        "select": [
+          "base-time-line"
+        ],
+        "reason": "Timeline requirement maps to timeline base structure."
+      },
+      {
+        "id": "contact-form",
+        "when": {
+          "has_contact_form": true
+        },
+        "select": [
+          "form-contact"
+        ],
+        "reason": "Contact form requirement maps to locked form contact structure."
+      },
+      {
+        "id": "dynamic-products",
+        "when": {
+          "needs_dynamic_products": true
+        },
+        "select": [
+          "base-dynamic-products"
+        ],
+        "reason": "Dynamic product requirement must use locked dynamic products base."
+      },
+      {
+        "id": "dynamic-news",
+        "when": {
+          "needs_dynamic_news": true
+        },
+        "select": [
+          "base-dynamic-news"
+        ],
+        "reason": "Dynamic blog/news requirement must use locked dynamic news base."
+      },
+      {
+        "id": "header-style-overrides",
+        "when": {
+          "needs_header_style": true
+        },
+        "select": [
+          "header-menus"
+        ],
+        "reason": "Header customization is SCSS-only and maps to header menus style source."
+      },
+      {
+        "id": "footer-with-xpath",
+        "when": {
+          "needs_footer": true
+        },
+        "select": [
+          "footerwcalltoaction-1",
+          "footerwcalltoaction-2"
+        ],
+        "reason": "Footer output must be XPath-based and selected from approved footer variants."
+      }
+    ]
+  },
   "items": [
     {
       "name": "seo-rules",

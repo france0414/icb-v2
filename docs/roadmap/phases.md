@@ -35,8 +35,8 @@
 - [x] 建立抓站轉化 Free-First 規則（`/create` 預設先用 Playwright，非必要不啟用付費服務）
 - [x] 建立草稿沙盒原則（抓站結果只落在 `outputs/`，不自動寫入 `templates/`）
 - [x] 建立 Promotion 保守機制（僅在使用者明確要求時才晉升公版/元件化）
-- [ ] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
-- [ ] 實作 `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
+- [x] 補一份 `/create` 外部網址自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
+- [x] 實作 `.agent/skills/icb_page_generator/resources/indexes/templates_index.json` 中介層，對應「結構分析特徵 (Skill)」與「落地模板 (Template)」
 - [x] 建立 AI 知識衝突防護指南（`.agent/skills/icb_page_generator/resources/ai_conflict_prevention.md`）：LLM 誤用範例、可控工作流封裝方法、自動 context 修正規則、各模型角色職責矩陣、SKILL SSOT 同步機制
 
 ---
