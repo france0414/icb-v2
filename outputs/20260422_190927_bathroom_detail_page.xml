@@ -1,0 +1,190 @@
+<t t-name="website.bathroom-space">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section data-snippet="s_text_block" class="s_text_block o_colored_level s_custom_BathroomDetailHero pt40 pb56" data-name="Text" data-custom-name="BathroomDetailHero" style="background-image: none;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 o_colored_level">
+              <div class="s_text" data-snippet="s_text" data-name="Text">
+                <p class="h6 text-uppercase detailEyebrow mb-2">應用場域</p>
+                <h1 class="mb-3">衛浴空間</h1>
+                <p class="mb-0 detailLead">衛浴空間不僅是住宅中水壓變動最頻繁、濕氣最重的區域，更是洗去一天疲憊的重要生活空間。益全憑藉著豐富的製造經驗，為您提供卓越的技術與結構強韌的軟管。從隱蔽的給水系統到每日觸摸的淋浴設備，我們深知每一條軟管的穩定性，都直接關係到居住的安全與舒適度。</p>
+              </div>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0 o_colored_level">
+              <img src="https://picsum.photos/seed/yc-bathroom-hero/980/740" class="img-fluid rounded" alt="衛浴空間主視覺" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s_vertical_layout s_custom_BathroomContentShell" data-snippet="s_vertical_layout" data-name="Vertical Layout" data-custom-name="BathroomContentShell">
+        <div class="container-fluid px-0">
+          <div class="oe_structure">
+            <section class="s_text_block o_colored_level pt8 pb8 s_custom_BathroomBreadcrumb" data-snippet="s_text_block" data-name="Text" data-custom-name="BathroomBreadcrumb" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <div data-snippet="s_breadcrumb" class="s_breadcrumb d-flex" data-tmp="addon_gtmc_website.s_breadcrumb_templates_customized" data-name="Breadcrumb" is-render-title="true" data-breadcrumb-template="custom">
+                  <ol class="bm-tpl-holder py-0 px-0 breadcrumb my-2 bg-transparent">
+                    <li class="breadcrumb-item o_not_editable"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item custom-item"><a href="/">Categories</a></li>
+                    <li class="breadcrumb-item active current-page">bathroom-spaceV2</li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb64 s_custom_BathroomIntro" data-name="Text" data-custom-name="BathroomIntro">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h2 class="mb-3">衛浴環境的特殊需求</h2>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="detailIconCard h-100">
+                      <p class="h5 mb-2"><i class="fa fa-random mr-2"/>給水系統的靈活連接</p>
+                      <p class="mb-0">衛浴安裝往往需要配合複雜的空間動線，益全提供客製化的長度選擇，解決您的配管難題。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="detailIconCard h-100">
+                      <p class="h5 mb-2"><i class="fa fa-shower mr-2"/>優化淋浴操作體驗</p>
+                      <p class="mb-0">防纏繞設計確保使用過程中軟管不打結。外層平滑易清潔，搭配多樣化的外觀選擇，能完美契合各式鍍鉻衛浴龍頭。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="detailIconCard h-100">
+                      <p class="h5 mb-2"><i class="fa fa-shield mr-2"/>強化防護與有效抗壓</p>
+                      <p class="mb-0">不鏽鋼編織軟管採用結構性強的白鐵材質，能有效防止內管爆裂並抵禦害蟲破壞，確保長效耐用。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb48 s_custom_BathroomCategoryTitle" data-name="Text" data-custom-name="BathroomCategoryTitle">
+              <div class="container">
+                <div class="s_text" data-snippet="s_text" data-name="Text">
+                  <h2 class="mb-2">衛浴空間的產品分類</h2>
+                  <p class="mb-0">水龍頭、馬桶、熱水器、淋浴/抽拉式、洗衣機。</p>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt64 pb40 s_custom_BathroomCategoryItem" data-name="Text" data-custom-name="BathroomCategoryItem">
+              <div class="container">
+                <div class="row align-items-center categoryRow">
+                  <div class="col-lg-5 mb-4 mb-lg-0"><img src="https://picsum.photos/seed/yc-faucet-detail/1000/700" class="img-fluid rounded" alt="水龍頭" loading="lazy"/></div>
+                  <div class="col-lg-7">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h3 class="mb-2 itemTitle"><i class="fa fa-tint mr-2"/>水龍頭</h3>
+                      <p class="mb-2">水龍頭軟管隱藏於檯面下，連接三角凡而與龍頭底部。由於頻繁開關水易產生瞬間壓力，益全針對此特性優化了結構設計：</p>
+                    </div>
+                    <ul class="mb-0 categoryList">
+                      <li>①具備承受開關水的「水錘壓力」設計，確保在高頻率使用下，軟管維持穩定不變形。</li>
+                      <li>②因應檯面下方的狹窄空間，提供易彎曲且結構不變形的軟管，大幅降低施工難度。</li>
+                      <li>③安全材質保障：產品有通過CUPC、NSF、CSA認證，讓您在使用上能更加安心。</li>
+                    </ul>
+                    <p class="mt-3 mb-0">以下是適合安裝在衛浴空間水龍頭的相關產品：</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb40 s_custom_BathroomCategoryItem" data-name="Text" data-custom-name="BathroomCategoryItem">
+              <div class="container">
+                <div class="row align-items-center categoryRow">
+                  <div class="col-lg-7 order-2 order-lg-1 mt-4 mt-lg-0">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h3 class="mb-2 itemTitle"><i class="fa fa-building-o mr-2"/>馬桶</h3>
+                      <p class="mb-2">馬桶軟管負責將牆面給水孔引導至水箱，對於維護廁所的乾爽與安全至關重要。</p>
+                    </div>
+                    <ul class="mb-0 categoryList">
+                      <li>①穩定不滲漏：採用精密加工的接頭與高品質密封墊片，確保長期受壓下依然滴水不漏，杜絕滲漏引發的霉味與裝潢受損。</li>
+                      <li>②多元規格對接：提供多種標準接頭尺寸，能完美對接各類品牌水箱進水閥。</li>
+                    </ul>
+                    <p class="mt-3 mb-0">以下是適合安裝在馬桶的相關產品：</p>
+                  </div>
+                  <div class="col-lg-5 order-1 order-lg-2"><img src="https://picsum.photos/seed/yc-toilet-detail/1000/700" class="img-fluid rounded" alt="馬桶" loading="lazy"/></div>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb40 s_custom_BathroomCategoryItem" data-name="Text" data-custom-name="BathroomCategoryItem">
+              <div class="container">
+                <div class="row align-items-center categoryRow">
+                  <div class="col-lg-5 mb-4 mb-lg-0"><img src="https://picsum.photos/seed/yc-heater-detail/1000/700" class="img-fluid rounded" alt="熱水器" loading="lazy"/></div>
+                  <div class="col-lg-7">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h3 class="mb-2 itemTitle"><i class="fa fa-fire mr-2"/>熱水器</h3>
+                      <p class="mb-2">熱水器連接管需同時面對「高溫」與「高壓」的嚴苛挑戰，是居家供水系統中最需重視安全的一環：</p>
+                    </div>
+                    <ul class="mb-0 categoryList">
+                      <li>①益全的軟管外層採用不鏽鋼絲編織，有效防止因熱脹冷縮導致的管體疲勞，確保使用上的安全性，是電熱水器與瓦斯熱水器的理想首選。</li>
+                      <li>②大流量設計確保熱水供應充足且順暢，提升沐浴時的恆溫舒適感。</li>
+                    </ul>
+                    <p class="mt-3 mb-0">以下是適合安裝在衛浴空間熱水器的相關產品：</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb40 s_custom_BathroomCategoryItem" data-name="Text" data-custom-name="BathroomCategoryItem">
+              <div class="container">
+                <div class="row align-items-center categoryRow">
+                  <div class="col-lg-7 order-2 order-lg-1 mt-4 mt-lg-0">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h3 class="mb-2 itemTitle"><i class="fa fa-shower mr-2"/>淋浴/抽拉式</h3>
+                      <p class="mb-2">淋浴軟管、抽拉式龍頭軟管不僅是配件，更是影響使用體驗與整體衛浴質感的關鍵。益全結合材料選擇與結構設計，著重於抗纏繞性能、耐用性與外觀一致性，適用於多元衛浴風格。</p>
+                    </div>
+                    <ul class="mb-0 categoryList">
+                      <li>①益全製造的淋浴軟管提供 PVC 與 Santoprene 兩種內管材質，滿足多樣化市場與應用條件。</li>
+                      <li>②採用雙扣式不鏽鋼結構，有效降低纏繞與打結問題，確保彎折後的管徑不變形，使用過程順暢自如。</li>
+                      <li>③提供多種表面處理配色，與各式衛浴龍頭搭配，提升衛浴空間的一致性與質感。</li>
+                    </ul>
+                    <p class="mt-3 mb-0">以下是適合安裝在淋浴設備的相關產品：</p>
+                  </div>
+                  <div class="col-lg-5 order-1 order-lg-2"><img src="https://picsum.photos/seed/yc-shower-detail/1000/700" class="img-fluid rounded" alt="淋浴抽拉式" loading="lazy"/></div>
+                </div>
+              </div>
+            </section>
+
+            <section data-snippet="s_text_block" class="s_text_block o_colored_level pt48 pb64 s_custom_BathroomCategoryItem" data-name="Text" data-custom-name="BathroomCategoryItem">
+              <div class="container">
+                <div class="row align-items-center categoryRow mb-0">
+                  <div class="col-lg-5 mb-4 mb-lg-0"><img src="https://picsum.photos/seed/yc-washer-detail/1000/700" class="img-fluid rounded" alt="洗衣機" loading="lazy"/></div>
+                  <div class="col-lg-7">
+                    <div class="s_text" data-snippet="s_text" data-name="Text">
+                      <h3 class="mb-2 itemTitle"><i class="fa fa-refresh mr-2"/>洗衣機</h3>
+                      <p class="mb-2">無論洗衣機安置在衛浴空間或陽台，提供穩定的給水與不同流量的選擇，是確保洗衣效率與居家安全的關鍵。益全提供多元的配置選擇，滿足不同機型與安裝環境的需求：</p>
+                    </div>
+                    <ul class="mb-0 categoryList">
+                      <li>①可配合客戶需求提供管徑客製化服務，確保在要求的流量下，給水仍維持順暢，有效縮短注水等待時間。</li>
+                      <li>②益全提供多種內管材質與外層編織選擇，並可依客戶喜好搭配外層顏色，讓軟管能與洗衣機及生活空間達成視覺與使用上的和諧。</li>
+                    </ul>
+                    <p class="mt-3 mb-0">以下是適合安裝在洗衣機的相關產品：</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="s_call_to_action pt48 pb24 o_colored_level s_parallax_no_overflow_hidden o_cc o_cc4" data-snippet="s_call_to_action" data-name="Custom Call to Action" style="position: relative; background-image: none;" data-scroll-background-ratio="0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 pb16 o_colored_level">
+              <h3 class="o_default_snippet_text"><strong class="o_default_snippet_text">針對衛浴環境的特殊需求，益全提供全方位的軟管解決方案。</strong></h3>
+              <h5 class="o_default_snippet_text mb-0">每一條軟管的穩定性，都直接關係到居住的安全與舒適度。</h5>
+            </div>
+            <div class="col-lg-3 pt8 o_colored_level">
+              <p class="text-lg-right"><a class="mb-2 btn btn-fill-custom text-o-color-4 bg-o-color-2 rounded-circle btn-lg o_default_snippet_text" href="/contactus" data-require-form="false" style="border-width: 1px; border-style: solid;">聯絡我們</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
