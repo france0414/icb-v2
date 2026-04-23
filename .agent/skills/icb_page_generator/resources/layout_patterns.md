@@ -18,10 +18,19 @@
 
 ### B. 色彩節奏 (Color Rhythm)
 
-交替背景色創造視覺節奏：
+交替背景色創造視覺節奏（此專案實際對應）：
 ```
-o_cc1 (白) → o_cc2 (灰) → o_cc1 (白) → o_cc3 (主色) → o_cc1 (白) → o_cc5 (深)
+o_cc1 (白) → o_cc2 (淺灰) → o_cc1 (白) → o_cc4 (主色藍，CTA) → o_cc5 (深藍灰)
 ```
+
+⚠️ 此專案色彩特殊對應（與 Odoo 預設不同，AI 必須遵守）：
+| Class | 背景色 | 用途 |
+|-------|--------|------|
+| `o_cc1` | #FFFFFF 白 | 主要內容區、預設底色 |
+| `o_cc2` | #F6F6F6 淺灰 | 交替區塊、特色卡片 |
+| `o_cc3` | #BA9767 金 | **次色**，區隔區塊（非主色！） |
+| `o_cc4` | #2173AB 藍 | **主色**，CTA / 強調區塊（非次色！） |
+| `o_cc5` | #383E45 深藍灰 | Footer / Hero 深色底 |
 
 ### C. 經典組合模式
 
@@ -31,6 +40,16 @@ o_cc1 (白) → o_cc2 (灰) → o_cc1 (白) → o_cc3 (主色) → o_cc1 (白) �
 | **產品展示** | `s_static_carousel` + `s_product_product_centered` + `s_custom_nameHoverUnderLine` |
 | **水平特色** | `s_static_snippet` + `s_product_product_horizontal` + `s_custom_reverse`（交替行） |
 | **上下交疊** | `s_column_layout` + `s_custom_upperNext` + 下一個 section 自動上移 |
+
+### D. 色彩使用快速查表
+
+| 需求 | 使用 class | 色碼 |
+|------|-----------|------|
+| 一般白底內容區 | `o_cc1 o_colored_level` | #FFFFFF |
+| 交替灰底（特色/卡片）| `o_cc2 o_colored_level` | #F6F6F6 |
+| 次色金底（區隔/強調帶）| `o_cc3 o_colored_level` | #BA9767 |
+| 主色藍底（CTA/行動呼籲）| `o_cc4 o_colored_level` | #2173AB |
+| 深色底（Footer/Hero 深色）| `o_cc5 o_colored_level` | #383E45 |
 
 ---
 

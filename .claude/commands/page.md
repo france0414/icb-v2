@@ -4,8 +4,39 @@
 
 ## Steps
 
-1. 讀 ` .agent/skills/icb_page_generator/SKILL.md`
-2. 讀 `docs/design/PROJECT_THEME.css`
-3. 依需求讀 `resources/page_templates.md` / `resources/snippet_rules.md`
-4. 需要動態區塊時，依 `resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構
-5. 輸出到 `outputs/`（XML + SCSS）
+1. 讀 `.agent/skills/icb_page_generator/SKILL.md`
+2. 讀 `docs/design/PROJECT_THEME.css`（配色，務必以此為準）
+3. 讀 `resources/page_templates.md`，依下方決策樹選定配方
+4. 依需求讀 `resources/snippet_rules.md`（Snippet 骨架細節）
+5. 需要動態區塊時，讀 `resources/dynamic_rules.md`，並遵守 `templates/base/base-dynamic-*.xml` 的 locked 結構
+6. 輸出到 `outputs/`（XML + SCSS）
+
+## 配方快速決策
+
+先判斷使用者要做的頁面類型，直接套對應配方：
+
+| 使用者說的 | 對應配方 | 核心 Snippet 組合 |
+|-----------|---------|-----------------|
+| 服務介紹、解決方案（單一） | **SP-01** | s_cover → s_text_block → s_features → s_call_to_action |
+| 多項服務、左右交錯介紹 | **SP-02** | s_cover → s_text_image ↔ s_image_text（交替）→ s_call_to_action |
+| 關於我們、公司介紹（完整）| **AB-01** | s_cover → s_text_block → s_numbers → s_three_columns → s_references → s_call_to_action |
+| 關於我們（精簡版） | **AB-02** | s_title → s_text_image → s_features → s_numbers → s_call_to_action |
+| 聯絡我們（含表單） | **CT-01** | s_title → row(聯絡資訊 + s_website_form) → s_map |
+| 聯絡我們（多據點） | **CT-02** | s_cover → 據點列表 → s_map → s_website_form |
+| 新聞列表、媒體報導 | **NL-01** | s_title → s_static_snippet(s_blog_post_card) → s_call_to_action |
+| 產品列表、型錄 | **NL-02** | s_cover → s_static_snippet(s_product_product_borderless_1) → s_call_to_action |
+| 首頁 | **home-1~4** | 讀 `resources/home_recipes.md` |
+
+## 色彩節奏（此專案專用）
+
+```
+Hero → o_cc1(白) → o_cc2(淺灰) → o_cc1(白) → o_cc4(主色藍 CTA)
+```
+
+⚠️ 此專案 o_cc4 = 主色藍（CTA），o_cc3 = 次色金（區隔），與 Odoo 預設不同。
+
+## 輸出規格
+
+- XML：QWeb 外框（`<t t-name><t t-call="website.layout">`）
+- SCSS：獨立 .scss 檔
+- 檔名：`outputs/YYYYMMDD_HHMM_<頁面名>.xml` + `.scss`
