@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -)",
+      "Bash(PYTHONIOENCODING=utf-8 python \"C:/Users/gt/Desktop/deom/icb-v2/scripts/update_project_site_assets.py\" \"https://demo-france0414.gtmc.app\")",
+      "Bash(PYTHONIOENCODING=utf-8 python \"C:/Users/gt/Desktop/deom/icb-v2/scripts/build_preview.py\" \"C:/Users/gt/Desktop/deom/icb-v2/outputs/2026-04-30_1602_sanhao_rehab_solution_b2.xml\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:192.168.1.233)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__stitch__create_project",
+      "mcp__stitch__create_design_system",
+      "mcp__stitch__update_design_system",
+      "mcp__stitch__generate_screen_from_text",
+      "mcp__stitch__edit_screens",
+      "WebFetch(domain:stitch.withgoogle.com)",
+      "Bash(python \"C:/Users/gt/Desktop/deom/icb-v2/scripts/sync_icb_skill.py\")",
+      "WebFetch(domain:demo-france0414.gtmc.app)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "Bash(python -m http.server 8765 --directory \"C:/Users/gt/Desktop/deom/icb-v2/outputs\")"
+    ]
+  }
+}

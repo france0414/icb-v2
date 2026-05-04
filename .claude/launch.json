@@ -1,0 +1,40 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "skill-eval-viewer",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        ".agents/skills/skill-creator/eval-viewer/generate_review.py",
+        ".",
+        "--port",
+        "3117"
+      ],
+      "port": 3117
+    },
+    {
+      "name": "homepage-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4173",
+        "--directory",
+        "preview"
+      ],
+      "port": 4173
+    },
+    {
+      "name": "outputs-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "--directory",
+        "C:/Users/gt/Desktop/deom/icb-v2/outputs"
+      ],
+      "port": 8765,
+      "autoPort": true
+    }
+  ]
+}

@@ -4,13 +4,14 @@
 
 ## Steps
 
-0. **Terse prompt 偵測（experimental）**：若使用者輸入少於 20 字或只有抽象形容詞（「歐美簡約」「高級感」「現代」）而無具體版面指示，優先呼叫 `design-director` 子代理反問 3 個關鍵決策；若環境不支援 subagent，改由主流程直接反問同一組 3 題。取得擴寫過的 brief.json 後才繼續。具體輸入則跳過此步。
-1. 讀 `.agent/skills/icb_page_generator/SKILL.md`
-2. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`（字體大小變數、客製 class）
-3. `home_recipes.md` 僅作靈感參考，非強制套用
-4. **Phase 0 — 內容解析**：若 Step 0 已由 design-director 或 fallback 產 brief，則跳過；否則輸出 `outputs/<日期時間>_brief.json`，停下等確認
-5. **Phase A — 文字骨架**：從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog；列出 Bootstrap Grid 對應與 Snippet；停下等確認
-6. **Phase B — 分段生成頁面內容 XML + SCSS**（只處理 `<div id='wrap'>` 內 sections，不含 Footer；依 section 數量拆 1~3 段：≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）：
+0. **Preview 前置資訊收集（必做）**：若任務後續會牽涉 layout preview、正式 preview、樣式對齊、1:1 還原或外部設計轉 Odoo，必須先主動要求使用者直接貼上**目前案件前台網址**，不可只做選項題而沒有文字輸入空間。建議提示文字：`請直接貼上目前網站前台網址（例如 https://example.com ）`。若使用者暫時沒有網址，需明確告知：可以先做灰階 / fallback 骨架，但正式 preview 前仍必須補網址。
+1. **Terse prompt 偵測（experimental）**：若使用者輸入少於 20 字或只有抽象形容詞（「歐美簡約」「高級感」「現代」）而無具體版面指示，優先呼叫 `design-director` 子代理反問 3 個關鍵決策；若環境不支援 subagent，改由主流程直接反問同一組 3 題。取得擴寫過的 brief.json 後才繼續。具體輸入則跳過此步。
+2. 讀 `.agent/skills/icb_page_generator/SKILL.md`
+3. 讀 `docs/design/PROJECT_THEME.css` 與 `docs/design/user_custom_rules.scss`（字體大小變數、客製 class）
+4. `home_recipes.md` 僅作靈感參考，非強制套用
+5. **Phase 0 — 內容解析**：若 Step 1 已由 design-director 或 fallback 產 brief，則跳過；否則輸出 `outputs/<日期時間>_brief.json`，停下等確認
+6. **Phase A — 文字骨架 / Layout HTML**：從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog；列出 Bootstrap Grid 對應與 Snippet。若使用者表示「骨架想直接看版型」，此階段應優先提供 layout-only HTML 供確認；停下等確認。
+7. **Phase B — 分段生成頁面內容 XML + SCSS**（只處理 `<div id='wrap'>` 內 sections，不含 Footer；依 section 數量拆 1~3 段：≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）：
    - 首頁專屬：`<t t-call="website.layout">` 內必加 `<t t-set="pageName" t-value="'homepage'"/>`
    - 每個 section 明確使用 pt-*/pb-* 間距 utility（含斷點變體），8 的倍數
    - 標題字級一律 var(--h1)~var(--h6)，禁止硬編 clamp/rem

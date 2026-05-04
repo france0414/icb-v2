@@ -8,17 +8,19 @@
 - ❌ 標題字級禁止硬編 clamp/rem/px，一律用 var(--h1)~var(--h6)。
 
 ## Phase 0：內容解析（中介層）
-0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。
-1. 讀 `.agent/skills/icb_page_generator/SKILL.md`、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`
-2. 解析輸入（純文字 / 抓站 HTML），抽出 business / keyAssets / mustHaves / excluded / visualDirection
-3. 輸出 `outputs/<日期時間>_brief.json`
-4. 🚦 **停下等使用者確認**
+0. **Preview 前置資訊收集（必做）**：若任務後續會牽涉 layout preview、正式 preview、樣式對齊、1:1 還原或外部設計轉 Odoo，必須先主動要求使用者直接貼上**目前案件前台網址**，不可只做選項題而沒有文字輸入空間。建議提示文字：`請直接貼上目前網站前台網址（例如 https://example.com ）`。若使用者暫時沒有網址，需明確告知：可以先做灰階 / fallback 骨架，但正式 preview 前仍必須補網址。
+1. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。
+2. 讀 `.agent/skills/icb_page_generator/SKILL.md`、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`
+3. 解析輸入（純文字 / 抓站 HTML），抽出 business / keyAssets / mustHaves / excluded / visualDirection
+4. 輸出 `outputs/<日期時間>_brief.json`
+5. 🚦 **停下等使用者確認**
 
 ## Phase A：文字骨架
-5. 若使用者明確指定 Layout-first，先做灰色色塊占位對稿版；未指定則維持一般骨架流程
-6. 從 brief 推導版面，每個區塊選擇必須引用 brief 欄位說明理由
-7. 列出 section 類型、Bootstrap Grid 對應、間距（pt-*/pb-*）、Snippet 類型
-8. 🚦 **停下等使用者確認**
+6. 若使用者明確指定 Layout-first，先做灰色色塊占位對稿版；未指定則維持一般骨架流程
+7. 若使用者表示骨架想直接看版型，應優先提供 layout-only HTML
+8. 從 brief 推導版面，每個區塊選擇必須引用 brief 欄位說明理由
+9. 列出 section 類型、Bootstrap Grid 對應、間距（pt-*/pb-*）、Snippet 類型
+10. 🚦 **停下等使用者確認**
 
 ## Phase B：分段生成 XML + SCSS
 9. 拆 2–3 段，每段寫完 preview 確認再下一段；骨架先行、文案後填

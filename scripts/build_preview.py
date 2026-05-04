@@ -78,9 +78,7 @@ PREVIEW_TEMPLATE = """\
 <body>
     <div id="wrapwrap" class="homepage">
         <main>
-            <div id="wrap" class="oe_structure oe_empty">
 {content}
-            </div>
         </main>
     </div>
 
@@ -94,7 +92,7 @@ PREVIEW_TEMPLATE = """\
 
 
 def compile_scss() -> None:
-    """編譯 user_custom_rules.scss → preview/custom.css"""
+    """編譯 user_custom_rules.scss → preview/custom.css；失敗時改用空 CSS，避免錯誤直接顯示在預覽頁。"""
     if not SCSS_SOURCE.exists():
         print(f"⚠️  找不到 SCSS 來源: {SCSS_SOURCE}")
         print("   將跳過自訂樣式編譯，preview 只會載入測試機 CSS。")
@@ -112,13 +110,29 @@ def compile_scss() -> None:
     )
     if result.returncode != 0:
         err_msg = (result.stderr or "")[:500]
-        print(f"⚠️  SCSS 編譯有警告或錯誤（但仍繼續）:\n{err_msg}")
-        # 如果完全失敗，寫一個空 CSS
-        if not CUSTOM_CSS_OUTPUT.exists():
-            CUSTOM_CSS_OUTPUT.write_text(f"/* SCSS compile error */\n", encoding="utf-8")
+        print(f"⚠️  SCSS 編譯失敗，改以空 custom.css 繼續預覽:\n{err_msg}")
+        CUSTOM_CSS_OUTPUT.write_text("/* skipped user_custom_rules.scss for preview */\n", encoding="utf-8")
     else:
         size_kb = CUSTOM_CSS_OUTPUT.stat().st_size / 1024
         print(f"✅ 編譯成功！custom.css ({size_kb:.1f} KB)")
+
+        if result.stderr:
+            warn_msg = result.stderr[:500]
+            print(f"⚠️  SCSS 編譯有警告（已忽略，不影響預覽）:\n{warn_msg}")
+
+        output_text = CUSTOM_CSS_OUTPUT.read_text(encoding="utf-8")
+        if "Error:" in output_text or "Undefined mixin" in output_text:
+            print("⚠️  custom.css 內容含錯誤訊息，改以空 custom.css 繼續預覽")
+            CUSTOM_CSS_OUTPUT.write_text("/* skipped broken user_custom_rules.scss for preview */\n", encoding="utf-8")
+        return
+
+    if CUSTOM_CSS_OUTPUT.exists():
+        output_text = CUSTOM_CSS_OUTPUT.read_text(encoding="utf-8")
+        if "Error:" in output_text or "Undefined mixin" in output_text:
+            CUSTOM_CSS_OUTPUT.write_text("/* skipped broken user_custom_rules.scss for preview */\n", encoding="utf-8")
+            print("ℹ️  已清空錯誤的 custom.css，避免預覽頁顯示 SCSS 錯誤內容")
+
+    return
 
 
 def strip_qweb(xml_content: str) -> str:
