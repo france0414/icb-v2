@@ -38,15 +38,14 @@
 - 首頁必備：Hero → 服務亮點 → 產品/案例 → 關於我們 → 最新消息
 - **停下等使用者確認**
 
-## Phase B：分段生成 XML + SCSS
+## Phase B：生成 XML + SCSS
 
 **Phase B 只處理頁面內容區（`<div id="wrap">` 內的 sections），不含 Footer。**
 
-- 依 section 數量拆 2–3 段：
-  - section ≤ 4：一次到位（不分段）
-  - section 5–7：拆 B1 上半頁（section 1–3 或 1–4）/ B2 下半頁（剩餘 sections）
-  - section ≥ 8：拆 B1 / B2 / B3（每段 2–3 個 section）
-- 每段 preview 確認後再下一段
+- 可依 section 數量分段思考與分段生成，以降低單次輸出壓力
+- 若中途分段，允許逐段 preview 確認後再繼續下一段
+- 但 **B1 / B2 / B3 只能是中間產物，不可作為最終交付**
+- 收尾時必須將全部 sections 合併成單一 `outputs/<時間>_full.xml` 與 `outputs/<時間>_full.scss`
 - 骨架先行、文案後填
 - 首頁必加 `<t t-set="pageName" t-value="'homepage'"/>`
 

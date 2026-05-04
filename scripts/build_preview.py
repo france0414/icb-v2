@@ -8,18 +8,26 @@ Odoo Local Preview Builder
 1. 讀取指定的 Odoo XML 檔案
 2. 去掉 QWeb 語法（<t t-call>, <t t-set> 等），只保留 HTML 結構
 3. 編譯 docs/design/user_custom_rules.scss → preview/custom.css
-4. 產出 preview/index.html，引入：
+4. 產出 preview/<時間>_<頁面名>.html，引入：
    - 測試機的完整 Odoo CSS (遠端)
    - 局部自訂 CSS (本地編譯)
 5. 自動開啟瀏覽器預覽
 """
 
 import json
+import os
 import re
 import subprocess
 import sys
 import webbrowser
+from datetime import datetime
 from pathlib import Path
+
+os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PREVIEW_DIR = REPO_ROOT / "preview"
@@ -36,7 +44,7 @@ FALLBACK_CSS_URLS = [
 def load_odoo_css_urls() -> list[str]:
     """讀 docs/design/PROJECT_SITE.json 組出 CSS URL 清單；找不到則 fallback。"""
     if not PROJECT_SITE_JSON.exists():
-        print(f"ℹ️  未找到 {PROJECT_SITE_JSON.name}，使用 fallback（demo-design 原廠站）")
+        print(f"[INFO] 未找到 {PROJECT_SITE_JSON.name}，使用 fallback（demo-design 原廠站）")
         return FALLBACK_CSS_URLS
 
     try:
@@ -45,12 +53,12 @@ def load_odoo_css_urls() -> list[str]:
         bundles = cfg.get("assetBundles", {})
         urls = [base + path for key, path in bundles.items() if key.endswith("_css")]
         if not urls:
-            print(f"⚠️  {PROJECT_SITE_JSON.name} 沒有 *_css bundle，fallback")
+            print(f"[WARN] {PROJECT_SITE_JSON.name} 沒有 *_css bundle，fallback")
             return FALLBACK_CSS_URLS
-        print(f"🌐 預覽 CSS 來源：{base}（{len(urls)} 個 bundle）")
+        print(f"[INFO] 預覽 CSS 來源：{base}（{len(urls)} 個 bundle）")
         return urls
     except Exception as e:
-        print(f"⚠️  讀取 {PROJECT_SITE_JSON.name} 失敗：{e}，fallback")
+        print(f"[WARN] 讀取 {PROJECT_SITE_JSON.name} 失敗：{e}，fallback")
         return FALLBACK_CSS_URLS
 
 PREVIEW_TEMPLATE = """\
@@ -76,7 +84,7 @@ PREVIEW_TEMPLATE = """\
     </style>
 </head>
 <body>
-    <div id="wrapwrap" class="homepage">
+    <div id="wrapwrap"{wrapwrap_class_attr}>
         <main>
 {content}
         </main>
@@ -94,12 +102,12 @@ PREVIEW_TEMPLATE = """\
 def compile_scss() -> None:
     """編譯 user_custom_rules.scss → preview/custom.css；失敗時改用空 CSS，避免錯誤直接顯示在預覽頁。"""
     if not SCSS_SOURCE.exists():
-        print(f"⚠️  找不到 SCSS 來源: {SCSS_SOURCE}")
+        print(f"[WARN] 找不到 SCSS 來源: {SCSS_SOURCE}")
         print("   將跳過自訂樣式編譯，preview 只會載入測試機 CSS。")
         CUSTOM_CSS_OUTPUT.write_text("/* user_custom_rules.scss not found */\n", encoding="utf-8")
         return
 
-    print(f"🔧 編譯 SCSS: {SCSS_SOURCE.name} → custom.css")
+    print(f"[INFO] 編譯 SCSS: {SCSS_SOURCE.name} -> custom.css")
     result = subprocess.run(
         f'npx sass --no-source-map --style=compressed "{SCSS_SOURCE}" "{CUSTOM_CSS_OUTPUT}"',
         capture_output=True,
@@ -110,19 +118,19 @@ def compile_scss() -> None:
     )
     if result.returncode != 0:
         err_msg = (result.stderr or "")[:500]
-        print(f"⚠️  SCSS 編譯失敗，改以空 custom.css 繼續預覽:\n{err_msg}")
+        print(f"[WARN] SCSS 編譯失敗，改以空 custom.css 繼續預覽:\n{err_msg}")
         CUSTOM_CSS_OUTPUT.write_text("/* skipped user_custom_rules.scss for preview */\n", encoding="utf-8")
     else:
         size_kb = CUSTOM_CSS_OUTPUT.stat().st_size / 1024
-        print(f"✅ 編譯成功！custom.css ({size_kb:.1f} KB)")
+        print(f"[OK] 編譯成功 custom.css ({size_kb:.1f} KB)")
 
         if result.stderr:
             warn_msg = result.stderr[:500]
-            print(f"⚠️  SCSS 編譯有警告（已忽略，不影響預覽）:\n{warn_msg}")
+            print(f"[WARN] SCSS 編譯有警告（已忽略，不影響預覽）:\n{warn_msg}")
 
         output_text = CUSTOM_CSS_OUTPUT.read_text(encoding="utf-8")
         if "Error:" in output_text or "Undefined mixin" in output_text:
-            print("⚠️  custom.css 內容含錯誤訊息，改以空 custom.css 繼續預覽")
+            print("[WARN] custom.css 內容含錯誤訊息，改以空 custom.css 繼續預覽")
             CUSTOM_CSS_OUTPUT.write_text("/* skipped broken user_custom_rules.scss for preview */\n", encoding="utf-8")
         return
 
@@ -130,7 +138,7 @@ def compile_scss() -> None:
         output_text = CUSTOM_CSS_OUTPUT.read_text(encoding="utf-8")
         if "Error:" in output_text or "Undefined mixin" in output_text:
             CUSTOM_CSS_OUTPUT.write_text("/* skipped broken user_custom_rules.scss for preview */\n", encoding="utf-8")
-            print("ℹ️  已清空錯誤的 custom.css，避免預覽頁顯示 SCSS 錯誤內容")
+            print("[INFO] 已清空錯誤的 custom.css，避免預覽頁顯示 SCSS 錯誤內容")
 
     return
 
@@ -216,6 +224,12 @@ def lint_odoo_xml(xml_text: str, xml_path: Path, scss_text: str = "") -> list[st
     return warnings
 
 
+def is_homepage_xml(xml_text: str, xml_path: Path) -> bool:
+    if re.search(r"""t-set\s*=\s*[\"']pageName[\"']\s+t-value\s*=\s*[\"']'homepage'[\"']""", xml_text):
+        return True
+    return "home" in xml_path.stem.lower() and 't-call="website.layout"' in xml_text
+
+
 def build_preview(xml_path: Path, page_css: str = "") -> Path:
     """從 XML 檔案建立預覽 HTML"""
     PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
@@ -231,11 +245,11 @@ def build_preview(xml_path: Path, page_css: str = "") -> Path:
     scss_text = scss_sibling.read_text(encoding="utf-8") if scss_sibling.exists() else ""
     lint_warnings = lint_odoo_xml(raw_xml, xml_path, scss_text)
     if lint_warnings:
-        print(f"🔎 Odoo-aware lint：{len(lint_warnings)} 個警告")
+        print(f"[INFO] Odoo-aware lint：{len(lint_warnings)} 個警告")
         for w in lint_warnings:
-            print(f"   ⚠️  {w}")
+            print(f"   [WARN] {w}")
     else:
-        print("🔎 Odoo-aware lint：通過")
+        print("[INFO] Odoo-aware lint：通過")
 
     clean_html = strip_qweb(raw_xml)
 
@@ -245,16 +259,23 @@ def build_preview(xml_path: Path, page_css: str = "") -> Path:
     odoo_css_links = "\n".join(
         f'    <link rel="stylesheet" href="{u}">' for u in css_urls
     )
+    wrapwrap_class_attr = ' class="homepage"' if is_homepage_xml(raw_xml, xml_path) else ""
     preview_html = PREVIEW_TEMPLATE.format(
         title=title,
         odoo_css_links=odoo_css_links,
         page_css=page_css,
         content=clean_html,
+        wrapwrap_class_attr=wrapwrap_class_attr,
     )
 
-    output_path = PREVIEW_DIR / "index.html"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    safe_title = re.sub(r"[^A-Za-z0-9._-]+", "_", title).strip("_") or "preview"
+    output_path = PREVIEW_DIR / f"{timestamp}_{safe_title}.html"
     output_path.write_text(preview_html, encoding="utf-8", newline="\n")
-    print(f"📄 預覽檔已產出: {output_path}")
+    latest_path = PREVIEW_DIR / "index.html"
+    latest_path.write_text(preview_html, encoding="utf-8", newline="\n")
+    print(f"[OK] 本次預覽檔（保存版）: {output_path}")
+    print(f"[INFO] 最新預覽捷徑: {latest_path}")
     return output_path
 
 
@@ -268,10 +289,10 @@ def compile_page_scss(scss_path: Path) -> str:
     if libsass is not None:
         try:
             css = libsass.compile(filename=str(scss_path), output_style="compressed")
-            print(f"🎨 頁面 SCSS 已以 libsass 編譯: {scss_path.name}")
+            print(f"[INFO] 頁面 SCSS 已以 libsass 編譯: {scss_path.name}")
             return css
         except libsass.CompileError as e:
-            print(f"⚠️  libsass 編譯錯誤，改嘗試 sass CLI:\n{str(e)[:400]}")
+            print(f"[WARN] libsass 編譯錯誤，改嘗試 sass CLI:\n{str(e)[:400]}")
 
     result = subprocess.run(
         f'npx sass --no-source-map --style=compressed "{scss_path}"',
@@ -282,13 +303,13 @@ def compile_page_scss(scss_path: Path) -> str:
         errors="replace",
     )
     if result.returncode == 0 and result.stdout.strip():
-        print(f"🎨 頁面 SCSS 已以 sass CLI 編譯: {scss_path.name}")
+        print(f"[INFO] 頁面 SCSS 已以 sass CLI 編譯: {scss_path.name}")
         return result.stdout
 
     err_msg = (result.stderr or "")[:500]
     if not err_msg:
         err_msg = "未安裝 libsass，且系統找不到 sass CLI。"
-    print(f"⚠️  頁面 SCSS 編譯失敗:\n{err_msg}")
+    print(f"[WARN] 頁面 SCSS 編譯失敗:\n{err_msg}")
     return ""
 
 
@@ -301,7 +322,7 @@ def main() -> None:
 
     xml_path = Path(sys.argv[1])
     if not xml_path.exists():
-        print(f"❌ 找不到檔案: {xml_path}")
+        print(f"[ERROR] 找不到檔案: {xml_path}")
         sys.exit(1)
 
     # 取得 SCSS 檔：優先用第 2 個 argv，其次自動抓同名同目錄 .scss
@@ -313,7 +334,7 @@ def main() -> None:
         sibling = xml_path.with_suffix(".scss")
         if sibling.exists():
             scss_path = sibling.resolve()
-            print(f"🔍 自動偵測到同名 SCSS: {sibling.name}")
+            print(f"[INFO] 自動偵測到同名 SCSS: {sibling.name}")
 
     if scss_path and scss_path.exists():
         page_css = compile_page_scss(scss_path)
@@ -321,9 +342,9 @@ def main() -> None:
     output_path = build_preview(xml_path, page_css)
 
     # 自動開啟瀏覽器
-    print("🌐 正在開啟瀏覽器...")
+    print("[INFO] 正在開啟瀏覽器...")
     webbrowser.open(output_path.as_uri())
-    print("✅ 完成！")
+    print("[OK] 完成")
 
 
 if __name__ == "__main__":

@@ -39,7 +39,7 @@
 
 1. `/create-home ...` 產生 brief
 2. 看 Phase A 骨架（先確認區塊順序與資訊層級）
-3. 進 Phase B 分段生成
+3. 進 Phase B 分段生成與逐段確認，但最終合併輸出 single full 檔
 4. 產出 Footer 獨立檔
 
 首頁常用排序（可調整）：

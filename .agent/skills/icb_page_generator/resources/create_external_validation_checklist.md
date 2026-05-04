@@ -20,7 +20,7 @@
    - `outputs/*.xml`
    - `outputs/*.report.md`
    - `outputs/*.mapping.scss`（若有 position/offset 對應）
-   - `preview/index.html`
+   - `preview/<時間>_<名稱>.html`（同時更新 `preview/index.html` 作為最新預覽捷徑）
 
 ## 2) QWeb 外框驗證（硬性）
 

@@ -67,7 +67,7 @@ metadata:
 37. **媒體查詢一律用 Bootstrap mixin：** SCSS 的 RWD 斷點禁止硬寫 @media (max-width: 991.98px) / @media (min-width: 768px) 這類數字，必須使用 Bootstrap 4.5 提供的 mixin：media-breakpoint-down(sm|md|lg|xl)（對應 max-width: 575.98 / 767.98 / 991.98 / 1199.98）、media-breakpoint-up(sm|md|lg|xl)、media-breakpoint-between(md, lg)。寫法範例 `@include media-breakpoint-down(md) { ... }`。若專案自訂斷點（docs/design/user_custom_rules.scss //自訂RWD 斷點變數）才用對應 mixin。例外：只有 @media (hover: hover) / (prefers-reduced-motion) 這類非尺寸的 media feature 才允許直接寫 @media。
 38. **區塊間距（外層 section pt/pb 預設配方、內層 col 預設 pt0 pb0）：** 詳見 .agent/skills/icb_page_generator/resources/spacing_rules.md。規則摘要：Hero→pt96 pb96、一般 section→pt80 pb80、次要→pt64 pb64、緊湊→pt48 pb48、Footer→pt96 pb48；col 不加 pt/pb；禁止 Bootstrap pt-4/pt-5 dash 寫法；偏離預設需 XML 註解寫理由。
 39. **自訂結構可編輯性（七條紅線 + 可點卡片 overlay）：** 詳見 .agent/skills/icb_page_generator/resources/editability_rules.md。摘要：文字在真實 HTML 元素、圖片不 SCSS hard-code、::before/::after 只做裝飾、wrapper 最多兩層、overlay 加 #wrapwrap:not(.odoo-editor-editable) 守護、pointer-events 不擋內容、需拖拉高度用 s_text；可點卡片用 s_custom_clickableCard + s_custom_cardLink::before，禁止 stretched-link。
-40. **/create 流程（Phase 0 brief.json → Phase A 文字骨架 → Phase B 頁面內容分段 XML+SCSS → Phase C Footer 獨立輸出，僅 /create-home）與 designMoves 規範：** 詳見 .agent/skills/icb_page_generator/resources/create_workflow.md。摘要：(1) Phase B 只處理 <div id='wrap'> 內 sections，依數量拆 1~3 段（≤4 一次到位、5–7 拆 B1/B2、≥8 拆 B1/B2/B3）。(2) Footer 是獨立 xpath 檔，不屬於 Phase B 任何一段。(3) 每階段停下等確認；brief.json 必含 3–5 個具名 designMoves、Phase A 至少採用 2 個。(4) /create-home 需 pageName='homepage' + Footer 獨立輸出；一般 /create 不輸出 Footer。(5) 抓站草稿放 outputs/、分離 xml/scss、對接動態 snippet。
+40. **/create 流程（Phase 0 brief.json → Phase A 文字骨架 → Phase B 頁面內容 XML+SCSS → Phase C Footer 獨立輸出，僅 /create-home）與 designMoves 規範：** 詳見 .agent/skills/icb_page_generator/resources/create_workflow.md。摘要：(1) Phase B 只處理 <div id='wrap'> 內 sections，可分段思考與逐段 preview，但最終必須合併輸出為單一 `full.xml` + `full.scss`，B1/B2/B3 只作中間產物。(2) Footer 是獨立 xpath 檔，不屬於 Phase B 任何一段。(3) 每階段停下等確認；brief.json 必含 3–5 個具名 designMoves、Phase A 至少採用 2 個。(4) /create-home 需 pageName='homepage' + Footer 獨立輸出；一般 /create 不輸出 Footer。(5) 抓站草稿放 outputs/、分離 xml/scss、對接動態 snippet。
 41. **Layout-first 對稿模式：** 內頁 /create 可切換 Layout-first（只做結構骨架），圖片位置用灰色色塊占位、不放彩圖；若未指定則維持一般 /create 正常流程。
 42. **產品/Blog 區塊策略：** 在 Layout-first 或使用者未要求 dynamic 時，預設用一般 section + row/col 的靜態結構（sheet 方式）；只有明確要求動態資料時才切 s_dynamic_snippet*。
 43. **Hero 版型規則：** 背景主視覺內層必用 row/col 總和 12，可用 3:9、4:8、5:7、6:6 等比例；同一輪播需維持一致高度策略避免 CLS；小螢幕看不到的裝飾元素可直接隱藏，不強制保留。
@@ -125,7 +125,7 @@ metadata:
 | `/js` | 加入互動 JS 元件 |
 | `/block` | 呼叫已整理的客製化歷史區塊 |
 | `/page-home` | 首頁套版模式（自動帶入 pageName 專屬結構，參考 home-recipes 1–4 配方） |
-| `/create-home` | 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 分段 XML+SCSS，首頁需 pageName + Footer 獨立輸出） |
+| `/create-home` | 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔，首頁需 pageName + Footer 獨立輸出） |
 
 ## 輸出原則
 

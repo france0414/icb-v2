@@ -49,7 +49,7 @@ Rules:
 - 🚨 **SCSS 禁止項（近期新增）：** (1) 禁止硬寫 `@media (max-width: ...)` 數字，一律用 `@include media-breakpoint-down(md)` 等 mixin。(2) 禁止 `font-family:` 覆蓋（主題已全站載入字體），只能調 `font-weight / letter-spacing / line-height`。(3) 字級一律 `var(--h1)~var(--h6)`，禁硬編 `font-size: clamp()` / `rem`。
 - 🚨 **間距規則（外層 section 預設配方、內層 col 預設 pt0 pb0）：** 格式 `pt{px} pb{px}`，禁 dash 寫法。詳見 `.agent/skills/icb_page_generator/resources/spacing_rules.md`。
 - 🚨 **自訂結構可編輯性七條紅線 + 可點卡片 overlay：** 詳見 `.agent/skills/icb_page_generator/resources/editability_rules.md`。
-- 🚨 **`/create` 三階段流程（Phase 0 brief → Phase A 骨架 → Phase B 分段）：** 詳見 `.agent/skills/icb_page_generator/resources/create_workflow.md`。
+- 🚨 **`/create` 三階段流程（Phase 0 brief → Phase A 骨架 → Phase B 生成與合併輸出）：** 詳見 `.agent/skills/icb_page_generator/resources/create_workflow.md`。
 
 ## 可用 Commands
 
@@ -57,8 +57,8 @@ Rules:
 |------|------|
 | `/page` | 生成完整頁面（🏷️ 套版模式） |
 | `/page-home` | 首頁套版模式（含 pageName + Footer，參考 home_recipes 1–4） |
-| `/create` | 創作全新頁面（三階段：Phase 0 brief.json → Phase A 骨架 → Phase B 分段 XML+SCSS） |
-| `/create-home` | 首頁創作模式（同 /create 三階段，額外 pageName + Footer 獨立輸出） |
+| `/create` | 創作全新頁面（三階段：Phase 0 brief.json → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔） |
+| `/create-home` | 首頁創作模式（同 /create 三階段，最終輸出單一 full 檔，額外 pageName + Footer 獨立輸出） |
 | `/dynamic` | 快速加入動態產品/消息區塊 |
 | `/btn` | 套用按鈕風格 |
 | `/js` | 加入互動 JS 元件 |

@@ -13,7 +13,7 @@
     "- page.md → 套版模式快速生成頁面",
     "- page-home.md → 首頁套版模式（含 pageName 專屬結構，讀 home_recipes.md 配方）",
     "- create.md → 創作模式（先文字骨架，確認後才生成 XML+SCSS。支援純文字或外部網址輸入）",
-    "- create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 分段 XML+SCSS，含 pageName + Footer 獨立輸出）",
+    "- create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔，含 pageName + Footer 獨立輸出）",
     "- dynamic.md → 加入動態區塊",
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",

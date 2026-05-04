@@ -47,6 +47,9 @@
 
 
 
+
+
+
 <!-- ICB_SKILL_INSTRUCTIONS_START -->
 ## Odoo AI Development Rules (Auto-synced)
 
@@ -67,7 +70,7 @@
 15. - block.md → 呼叫已整理的客製化歷史區塊
 16. - stitch-pg.md → 一鍵執行 AI 生成頁面轉換 + preview（可直接給 clientinfo 資料夾路徑）
 17. - page-home.md → 首頁套版模式（含 pageName 專屬結構，參考 home-recipes 1–4 配方）
-18. - create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 分段 XML+SCSS，含 pageName + Footer 獨立輸出）
+18. - create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔，含 pageName + Footer 獨立輸出）
 19. /page 為套版模式，允許依配方快速組裝；/create 與 /create-home 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。
 20. design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。
 21. 內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。
