@@ -16,6 +16,10 @@ preview/
 
 # 忽略 worktrees 資料夾
 .worktrees/
+.claude/worktrees/
+
+# 不要上傳本機 Claude 設定
+.claude/settings.local.json
 
 # 忽略 VS Code 設定
 .vscode/
