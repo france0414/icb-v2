@@ -50,6 +50,11 @@
 
 
 
+
+
+
+
+
 <!-- ICB_SKILL_INSTRUCTIONS_START -->
 ## Odoo AI Development Rules (Auto-synced)
 
@@ -73,14 +78,14 @@
 18. - create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔，含 pageName + Footer 獨立輸出）
 19. /page 為套版模式，允許依配方快速組裝；/create 與 /create-home 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。
 20. design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。
-21. 內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。
+21. Layout-first 對稿策略：/create 與 /create-home 都保留原三階段創作流程；當使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架時，Phase A 必須先輸出灰階占位對稿版與可視化佈局圖，確認後才可進正式生成。
 22. 產品/Blog 區塊：若未明確要求 dynamic，預設使用一般靜態 sheet + row/col；明確要求動態資料才使用 s_dynamic_snippet*。
 23. 首頁內容排序偏好：解決方案後可放關於我們，再放 Blog；全站主要 CTA 置於 Pre-Footer/Footer 共用區。
 24. /page-home 為首頁專用套版模式，必須在 website.layout 內加入 <t t-set="pageName" t-value="'homepage'"/>，勿遺漏。
 25. 深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。
 26. 模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。
 27. AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。
-28. 所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 邏輯都應一致：若任務涉及 preview、樣式對齊、1:1 還原或外部設計轉 Odoo，而使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。只有在明確沒有案件網址時，才使用 fallback CSS。
+28. 所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 與排版流程都應一致：若任務涉及 preview、樣式對齊、1:1 還原、排版畫面確認，或需要判斷案件目前主題配色，且使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件前台網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。首頁的 `home` 只影響命名，沿用 `home + 時間` 的輸出方式，不是網址詢問例外。此規則只要求先取得網址，不需另外要求不同名稱.
 29. 抓站轉化（/create 外部網址）：嚴禁將轉化的草稿直接放入 templates/，且必須分離 XML/SCSS，必定遵守 QWeb 外框與動態 Snippet 規則，產出在 outputs/ 沙盒中。
 30. /create 抓站規則：請優先呼叫本地的 Fetch 或 Browser MCP (如 Playwright, Google Chrome DevTools MCP) 抓回 HTML。目前暫時不啟用 Firecrawl。
 31. 本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。

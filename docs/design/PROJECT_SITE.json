@@ -1,14 +1,11 @@
 {
   "liveUrl": "https://demo-france0414.gtmc.app",
   "assetBundles": {
-    "common_css": "/web/assets/4710-3353fb9/1/web.assets_common.min.css",
-    "frontend_css": "/web/assets/4727-6cac3a8/1/web.assets_frontend.min.css"
+    "common_css": "/web/assets/4840-8e48e5b/1/web.assets_common.min.css",
+    "frontend_css": "/web/assets/4841-bcf4d8a/1/web.assets_frontend.min.css"
   },
-  "assetsCheckedAt": "2026-04-30 16:03:30",
-  "assetBundlesVerified": true,
-  "verifiedBundleKeys": [
-    "common_css",
-    "frontend_css"
-  ],
-  "note": "asset hash 會隨 Odoo 更新、SCSS/theme 調整而變動。preview 前若有案件網址，應先重新抓取目前 <link rel=stylesheet> 中的 /web/assets/*.css 後再更新此檔。 已驗證可用 bundle: common_css, frontend_css。"
+  "assetsCheckedAt": "2026-05-04 18:20:12",
+  "assetBundlesVerified": false,
+  "verifiedBundleKeys": [],
+  "note": "asset hash 會隨 Odoo 更新、SCSS/theme 調整而變動。preview 前若有案件網址，應先重新抓取目前 <link rel=stylesheet> 中的 /web/assets/*.css 後再更新此檔。 本次尚未完成 bundle 可用性驗證。"
 }

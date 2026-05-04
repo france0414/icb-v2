@@ -75,7 +75,7 @@
     "區塊間距（外層 section pt/pb 預設配方、內層 col 預設 pt0 pb0）：詳見 .agent/skills/icb_page_generator/resources/spacing_rules.md。規則摘要：Hero→pt96 pb96、一般 section→pt80 pb80、次要→pt64 pb64、緊湊→pt48 pb48、Footer→pt96 pb48；col 不加 pt/pb；禁止 Bootstrap pt-4/pt-5 dash 寫法；偏離預設需 XML 註解寫理由。",
     "自訂結構可編輯性（七條紅線 + 可點卡片 overlay）：詳見 .agent/skills/icb_page_generator/resources/editability_rules.md。摘要：文字在真實 HTML 元素、圖片不 SCSS hard-code、::before/::after 只做裝飾、wrapper 最多兩層、overlay 加 #wrapwrap:not(.odoo-editor-editable) 守護、pointer-events 不擋內容、需拖拉高度用 s_text；可點卡片用 s_custom_clickableCard + s_custom_cardLink::before，禁止 stretched-link。",
     "/create 流程（Phase 0 brief.json → Phase A 文字骨架 → Phase B 頁面內容 XML+SCSS → Phase C Footer 獨立輸出，僅 /create-home）與 designMoves 規範：詳見 .agent/skills/icb_page_generator/resources/create_workflow.md。摘要：(1) Phase B 只處理 <div id='wrap'> 內 sections，可分段思考與逐段 preview，但最終必須合併輸出為單一 `full.xml` + `full.scss`，B1/B2/B3 只作中間產物。(2) Footer 是獨立 xpath 檔，不屬於 Phase B 任何一段。(3) 每階段停下等確認；brief.json 必含 3–5 個具名 designMoves、Phase A 至少採用 2 個。(4) /create-home 需 pageName='homepage' + Footer 獨立輸出；一般 /create 不輸出 Footer。(5) 抓站草稿放 outputs/、分離 xml/scss、對接動態 snippet。",
-    "Layout-first 對稿模式：內頁 /create 可切換 Layout-first（只做結構骨架），圖片位置用灰色色塊占位、不放彩圖；若未指定則維持一般 /create 正常流程。",
+    "Layout-first 對稿模式：/create 與 /create-home 都可切換 Layout-first（只做結構骨架），圖片位置用灰色色塊占位、不放彩圖；若使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架，必須先輸出灰階占位對稿版，內容至少包含 section 順序、左右欄配置、每區目的，並附可視化佈局圖（ASCII / 結構圖皆可）；未確認前禁止直接進正式 XML/SCSS。",
     "產品/Blog 區塊策略：在 Layout-first 或使用者未要求 dynamic 時，預設用一般 section + row/col 的靜態結構（sheet 方式）；只有明確要求動態資料時才切 s_dynamic_snippet*。",
     "Hero 版型規則：背景主視覺內層必用 row/col 總和 12，可用 3:9、4:8、5:7、6:6 等比例；同一輪播需維持一致高度策略避免 CLS；小螢幕看不到的裝飾元素可直接隱藏，不強制保留。",
     "輪播效果來源規則：若需求涉及輪播/slider 視覺效果，優先對照 `templates/base/base-Static-Snippet.xml` 內既有對應結構後再生成，避免自創不相容輪播骨架。"
@@ -267,14 +267,14 @@
     "- block.md → 呼叫已整理的客製化歷史區塊",
     "- stitch-pg.md → 一鍵執行 AI 生成頁面轉換 + preview（可直接給 clientinfo 資料夾路徑）",
     "design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。",
-    "內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。",
+    "Layout-first 對稿策略：/create 與 /create-home 都保留原三階段創作流程；當使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架時，Phase A 必須先輸出灰階占位對稿版與可視化佈局圖，確認後才可進正式生成。",
     "產品/Blog 區塊：若未明確要求 dynamic，預設使用一般靜態 sheet + row/col；明確要求動態資料才使用 s_dynamic_snippet*。",
     "首頁內容排序偏好：解決方案後可放關於我們，再放 Blog；全站主要 CTA 置於 Pre-Footer/Footer 共用區。",
     "/page 為套版模式，允許依配方快速組裝；/page-home 為首頁專用，必須加 pageName；/create 與 /create-home 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引在 .agent/skills/icb_page_generator/resources/indexes/templates_index.json，用於快速定位模板。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
-    "所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 邏輯都應一致：若任務涉及 preview、樣式對齊、1:1 還原或外部設計轉 Odoo，而使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。只有在明確沒有案件網址時，才使用 fallback CSS。",
+    "所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 與排版流程都應一致：若任務涉及 preview、樣式對齊、1:1 還原、排版畫面確認，或需要判斷案件目前主題配色，且使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件前台網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。首頁的 `home` 只影響命名，沿用 `home + 時間` 的輸出方式，不是網址詢問例外。此規則只要求先取得網址，不需另外要求不同名稱.",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
     "/create 抓站規則：請優先呼叫 Fetch 或 Browser MCP（如 Playwright, Google Chrome DevTools MCP）直接在本地抓回 HTML。目前暫停使用外部付費抓站 API。",
     "本專案禁止使用 git worktree；不得建立 .worktrees/ 或任何 worktree 目錄。",
@@ -304,14 +304,14 @@
     "- create-home.md → 首頁創作模式（三階段：Phase 0 brief JSON → Phase A 骨架 → Phase B 生成 XML+SCSS 並合併為單一 full 檔，含 pageName + Footer 獨立輸出）",
     "/page 為套版模式，允許依配方快速組裝；/create 與 /create-home 為創作全新頁面，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "design-director 現況：目前定義為 experimental；僅在 /create 與 /create-home 且輸入 terse/抽象時觸發。若執行環境不支援 subagent，主流程改為直接反問同一組 3 題後再產 brief.json（fallback）。",
-    "內頁執行策略：/create 保留原三階段創作流程；僅在使用者明確要求 Layout-first 時，才先輸出灰色色塊占位對稿版。",
+    "Layout-first 對稿策略：/create 與 /create-home 都保留原三階段創作流程；當使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架時，Phase A 必須先輸出灰階占位對稿版與可視化佈局圖，確認後才可進正式生成。",
     "產品/Blog 區塊：若未明確要求 dynamic，預設使用一般靜態 sheet + row/col；明確要求動態資料才使用 s_dynamic_snippet*。",
     "首頁內容排序偏好：解決方案後可放關於我們，再放 Blog；全站主要 CTA 置於 Pre-Footer/Footer 共用區。",
     "/page-home 為首頁專用套版模式，必須在 website.layout 內加入 <t t-set=\"pageName\" t-value=\"'homepage'\"/>，勿遺漏。",
     "深度知識庫（SCSS參考、按鈕風格等）位於 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "模板索引用於快速定位模板：.agent/skills/icb_page_generator/resources/indexes/templates_index.json。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/，檔名需包含日期時間。",
-    "所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 邏輯都應一致：若任務涉及 preview、樣式對齊、1:1 還原或外部設計轉 Odoo，而使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。只有在明確沒有案件網址時，才使用 fallback CSS。",
+    "所有 `/create`、`/create-home`、`/page`、`/page-home` 的 preview 與排版流程都應一致：若任務涉及 preview、樣式對齊、1:1 還原、排版畫面確認，或需要判斷案件目前主題配色，且使用者尚未提供案件前台網址，必須先主動詢問網址，再繼續後續生成或預覽。若已知案件前台網址，先重新抓取該站目前有效的 Odoo CSS bundle 更新預覽設定，再載入本次輸出的 XML/SCSS；且每次生成 HTML 或重跑 preview 前，都要重新檢查目前網頁上實際引用的最新 CSS URL，不可沿用舊 asset 路徑，因為存檔後 CSS/asset 變數代號可能更新。不可寫死 asset 路徑。首頁的 `home` 只影響命名，沿用 `home + 時間` 的輸出方式，不是網址詢問例外。此規則只要求先取得網址，不需另外要求不同名稱.",
     "抓站轉化（/create 外部網址）：嚴禁將轉化的草稿直接放入 templates/，且必須分離 XML/SCSS，必定遵守 QWeb 外框與動態 Snippet 規則，產出在 outputs/ 沙盒中。",
 
     "/create 抓站規則：請優先呼叫本地的 Fetch 或 Browser MCP (如 Playwright, Google Chrome DevTools MCP) 抓回 HTML。目前暫時不啟用 Firecrawl。",
@@ -381,7 +381,7 @@
     },
     {
       "file": "create-home.md",
-      "content": "# create-home（🎨 首頁創作模式 / 三階段）\n\n設計全新首頁。結合 /create 三階段 + /page-home 首頁專屬規範。\n\n## Hard Rules\n- 首頁 XML 必須在 `website.layout` 內加入 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，切勿遺漏。\n- Footer 必須**獨立輸出**（Odoo footer 為獨立 xpath 繼承區）。\n- 禁止 git worktree；禁止硬編字級；禁止 stretched-link / 手刻假卡片。\n\n## Steps\n\n### Phase 0：內容解析\n0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。\n1. 讀 Skill 主檔、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. `home_recipes.md` 僅作靈感參考，非強制套用\n3. 輸出 `outputs/<日期時間>_brief.json`，停下等確認\n\n### Phase A：文字骨架\n4. 從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog\n5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；停下等確認\n\n### Phase B：生成頁面內容（只處理 `<div id='wrap'>` 內 sections，不含 Footer）\n   - 可依 section 數量分段思考與分段 preview\n   - 但最終必須合併輸出為單一 full 檔案，不可把 B1/B2/B3 當最終交付\n6. `<t t-call=\"website.layout\">` 內加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n7. 外層 section 用 pt/pb 預設配方（pt96/pt80/pt64/pt48），內層 col 預設 pt0 pb0；詳見 resources/spacing_rules.md\n8. 標題字級 var(--h1)~var(--h6)，禁止硬編 clamp/rem；禁止 font-family 覆蓋；媒體查詢用 Bootstrap mixin\n9. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink，SCSS 用 #wrapwrap:not(.odoo-editor-editable) ::before overlay\n10. 產品/Blog 區塊若未明確要求動態資料，預設用靜態 sheet + row/col\n11. 若中途分段生成，逐段 preview 確認後，收尾時必須合併成 `outputs/<時間>_full.xml` + `outputs/<時間>_full.scss`\n\n### Phase C：Footer 獨立輸出（首頁專屬，不屬於 Phase B 任一段）\n12. 另產 `outputs/<時間>_footer.xml` + `.scss`\n13. 用 `<data inherit_id=\"website.layout\" name=\"...\" active=\"False\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆\n14. 依專案內容客製欄位（不照抄公版選單）\n\n### 預覽\n15. `PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<時間>_full.xml`\n"
+      "content": "# create-home（🎨 首頁創作模式 / 三階段）\n\n設計全新首頁。結合 /create 三階段 + /page-home 首頁專屬規範。\n\n## Hard Rules\n- 首頁 XML 必須在 `website.layout` 內加入 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`，切勿遺漏。\n- Footer 必須**獨立輸出**（Odoo footer 為獨立 xpath 繼承區）。\n- 禁止 git worktree；禁止硬編字級；禁止 stretched-link / 手刻假卡片。\n\n## Steps\n\n### Phase 0：內容解析\n0. **Terse prompt 偵測（experimental）**：輸入少於 20 字或僅抽象形容詞時，若環境支援 subagent 則呼叫 `design-director` 先反問 3 題；若環境不支援 subagent，則由主流程直接反問同一組 3 題後再產 brief。\n1. 讀 Skill 主檔、`docs/design/PROJECT_THEME.css`、`docs/design/user_custom_rules.scss`\n2. `home_recipes.md` 僅作靈感參考，非強制套用\n3. 輸出 `outputs/<日期時間>_brief.json`，停下等確認\n\n### Phase A：文字骨架 / Layout-first 對稿\n4. 從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog\n5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；若使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架，必須先輸出灰階占位對稿版，內容至少包含 section 順序、左右欄配置、每區目的，並附可視化佈局圖（ASCII / 結構圖皆可）；未確認前禁止直接進正式 XML/SCSS；停下等確認\n\n### Phase B：生成頁面內容（只處理 `<div id='wrap'>` 內 sections，不含 Footer）\n   - 可依 section 數量分段思考與分段 preview\n   - 但最終必須合併輸出為單一 full 檔案，不可把 B1/B2/B3 當最終交付\n6. `<t t-call=\"website.layout\">` 內加 `<t t-set=\"pageName\" t-value=\"'homepage'\"/>`\n7. 外層 section 用 pt/pb 預設配方（pt96/pt80/pt64/pt48），內層 col 預設 pt0 pb0；詳見 resources/spacing_rules.md\n8. 標題字級 var(--h1)~var(--h6)，禁止硬編 clamp/rem；禁止 font-family 覆蓋；媒體查詢用 Bootstrap mixin\n9. 可點卡片：父層 s_custom_clickableCard + 既有 <a> 加 s_custom_cardLink，SCSS 用 #wrapwrap:not(.odoo-editor-editable) ::before overlay\n10. 產品/Blog 區塊若未明確要求動態資料，預設用靜態 sheet + row/col\n11. 若中途分段生成，逐段 preview 確認後，收尾時必須合併成 `outputs/<時間>_full.xml` + `outputs/<時間>_full.scss`\n\n### Phase C：Footer 獨立輸出（首頁專屬，不屬於 Phase B 任一段）\n12. 另產 `outputs/<時間>_footer.xml` + `.scss`\n13. 用 `<data inherit_id=\"website.layout\" name=\"...\" active=\"False\"><xpath expr=\"//div[@id='footer']\" position=\"replace\">` 包覆\n14. 依專案內容客製欄位（不照抄公版選單）\n\n### 預覽\n15. `PYTHONIOENCODING=utf-8 python scripts/build_preview.py outputs/<時間>_full.xml`\n"
     },
     {
       "file": "dynamic.md",

@@ -15,9 +15,9 @@
 2. `home_recipes.md` 僅作靈感參考，非強制套用
 3. 輸出 `outputs/<日期時間>_brief.json`，停下等確認
 
-### Phase A：文字骨架
+### Phase A：文字骨架 / Layout-first 對稿
 4. 從 brief 推導版面；首頁建議順序可用 Hero → 服務亮點 → 產品/案例 → 解決方案/產業應用 → 關於我們 → Blog
-5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；停下等確認
+5. 每個區塊說明 Bootstrap Grid 對應、間距、Snippet 類型；若使用者明確要求 first-layout / layout-first / 先看版型 / 先看骨架，必須先輸出灰階占位對稿版，內容至少包含 section 順序、左右欄配置、每區目的，並附可視化佈局圖（ASCII / 結構圖皆可）；未確認前禁止直接進正式 XML/SCSS；停下等確認
 
 ### Phase B：生成頁面內容（只處理 `<div id='wrap'>` 內 sections，不含 Footer）
    - 可依 section 數量分段思考與分段 preview

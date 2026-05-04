@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input", required=True, help="Input HTML file or folder containing code.html")
     parser.add_argument("--homepage", action="store_true", help="Wrap output as homepage with pageName=homepage")
     parser.add_argument("--live-url", help="Frontend live URL for refreshing preview assets before build")
-    parser.add_argument("--name", help="Override output slug")
+    parser.add_argument("--name", help="Optional output slug override; omit to reuse the input-derived name")
     parser.add_argument("--no-open", action="store_true", help="Do not open preview in the browser")
     return parser.parse_args()
 
