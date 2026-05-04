@@ -103,7 +103,7 @@ def compile_scss() -> None:
 
     print(f"🔧 編譯 SCSS: {SCSS_SOURCE.name} → custom.css")
     result = subprocess.run(
-        f'sass --no-source-map --style=compressed "{SCSS_SOURCE}" "{CUSTOM_CSS_OUTPUT}"',
+        f'npx sass --no-source-map --style=compressed "{SCSS_SOURCE}" "{CUSTOM_CSS_OUTPUT}"',
         capture_output=True,
         text=True,
         shell=True,
@@ -245,20 +245,37 @@ def build_preview(xml_path: Path, page_css: str = "") -> Path:
 
 
 def compile_page_scss(scss_path: Path) -> str:
-    """編譯單一 SCSS 檔為 CSS 字串，優先用 libsass（無需外部 sass CLI）。"""
+    """編譯單一 SCSS 檔為 CSS 字串，優先用 libsass，否則退回 sass CLI。"""
     try:
         import sass as libsass  # libsass
     except ImportError:
-        print("⚠️  未安裝 libsass（pip install libsass），跳過 SCSS 編譯")
-        return ""
+        libsass = None
 
-    try:
-        css = libsass.compile(filename=str(scss_path), output_style="compressed")
-        print(f"🎨 頁面 SCSS 已編譯: {scss_path.name}")
-        return css
-    except libsass.CompileError as e:
-        print(f"⚠️  SCSS 編譯錯誤:\n{str(e)[:400]}")
-        return ""
+    if libsass is not None:
+        try:
+            css = libsass.compile(filename=str(scss_path), output_style="compressed")
+            print(f"🎨 頁面 SCSS 已以 libsass 編譯: {scss_path.name}")
+            return css
+        except libsass.CompileError as e:
+            print(f"⚠️  libsass 編譯錯誤，改嘗試 sass CLI:\n{str(e)[:400]}")
+
+    result = subprocess.run(
+        f'npx sass --no-source-map --style=compressed "{scss_path}"',
+        capture_output=True,
+        text=True,
+        shell=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if result.returncode == 0 and result.stdout.strip():
+        print(f"🎨 頁面 SCSS 已以 sass CLI 編譯: {scss_path.name}")
+        return result.stdout
+
+    err_msg = (result.stderr or "")[:500]
+    if not err_msg:
+        err_msg = "未安裝 libsass，且系統找不到 sass CLI。"
+    print(f"⚠️  頁面 SCSS 編譯失敗:\n{err_msg}")
+    return ""
 
 
 def main() -> None:
