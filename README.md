@@ -7,6 +7,8 @@
 核心功能：
 - **套版模式 `/page`**：從 `templates/` 挑選配方與積木，直接組裝現成頁面。
 - **創作模式 `/create`**：AI 全新設計版面（接受純文字描述 或 外部網址/截圖）。AI 會執行結構解析，並嚴格轉換為 Odoo 的 Bootstrap 4 QWeb 架構。
+- **首頁專用模式 `/page-home`、`/create-home`**：在首頁輸出流程中自動納入 `pageName='homepage'` 與 Footer 獨立輸出規則。
+- **Layout-first 對稿**：當使用者指定 `first-layout` / `layout-first` / `先看版型` / `先看骨架`，會先輸出灰階骨架對稿版，確認後才進正式 XML+SCSS。
 
 ## 🏗️ 專案架構
 
@@ -56,15 +58,19 @@ icb-v2/
 │       └── snippet_spec_template.md
 │
 ├── ── 客戶素材 & 產出 ────────────────────
-├── clientinfo/                      # 客戶素材（gitignored）
-├── outputs/                         # AI 產出的 XML/SCSS（gitignored）
+├── clientinfo/                      # 客戶素材（目錄會保留在版本控制）
+├── outputs/                         # AI 產出的 XML/SCSS（預設 gitignored）
 │
 ├── ── 工具 & 雜項 ────────────────────────
 ├── scripts/
+│   ├── auto_convert_preview.py      # HTML/資料夾轉 preview 流程
 │   ├── sync_icb_skill.py           # Skill 同步腳本
 │   ├── sync_icb_skill.sh           # macOS/Linux 快捷
 │   ├── sync_icb_skill.bat          # Windows 快捷
 │   ├── build_preview.py
+│   ├── update_project_site_assets.py
+│   ├── normalize_ai_build.py
+│   ├── build_search_index.py
 │   └── validate_dynamic_lock.py
 ├── playground/                      # 實驗草稿區（gitignored）
 ├── _archived/                       # 歸檔區（gitignored）
@@ -102,6 +108,7 @@ icb-v2/
 /btn                          # 套用按鈕風格
 /js                           # 加入互動 JS 元件
 /block                        # 呼叫歷史客製化區塊
+/stitch-pg clientinfo/xxx     # 一鍵執行 AI 生成頁面轉換 + preview
 ```
 
 ### 2. 放置客戶素材
